@@ -1,6 +1,25 @@
+/* Global styles */
+body {
+    background-image: url('onepiece.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full viewport height */
+}
+
+h1 {
+    text-align: center;
+    color: #F0F421;
+}
+
 .box {
     width: 40%;
-    height: 20%px;
+    height: 20%;
     background-color: #4CAF50;
     color: white;
     display: flex;
@@ -8,8 +27,39 @@
     align-items: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; /* Add margin between boxes */
 }
 
 .box p {
     margin-left: 5%;
+}
+
+/* Styles for bottom boxes */
+.bottom-boxes {
+    display: flex;
+    justify-content: space-around; /* Adjust alignment as needed */
+    margin-top: auto; /* Pushes boxes to the bottom */
+    width: 100%; /* Ensures boxes span full width */
+}
+
+.bottom-boxes .box {
+    width: 278px; /* Adjust width to fit five boxes within viewport */
+    height: 184px; /* Adjust height as needed */
+    background-color: #4CAF50; /* Fallback background color */
+    background-image: url('onepiece.png');
+    background-size: cover; /* Ensure the image covers the entire box */
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Space between each box */
+}
+
+.bottom-boxes .box:nth-child(3) {
+    width: 369px; /* Width of the middle box */
+    height: 218px; /* Height of the middle box */
+    margin-top: -30px; /* Move the middle box up */
 }
