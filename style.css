@@ -1,6 +1,6 @@
 /* Global styles */
 body {
-    background-image: url('Shonen/onepiece.png');
+    background-image: url('Background/onepieceBack.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; /* Fix the background image */
@@ -52,7 +52,6 @@ h1 {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px; /* Space between each box */
     overflow: hidden; /* Ensure image doesn't overflow the box */
 }
@@ -68,4 +67,23 @@ h1 {
     max-height: 100%;
     border-radius: 10px;
     object-fit: cover; /* Ensure the image covers the entire box */
+}
+
+.footer {
+    width: 1920px;
+    height: 336px;
+    background: linear-gradient(to top, black -2%, transparent 62%);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.sidebox{
+    width: 912px;
+    height: 1080px;
+    background: linear-gradient(to right, black -2%, transparent 62%);
+    position: fixed;
+    left: 0;
+    z-index: -1;
 }
