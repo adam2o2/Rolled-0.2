@@ -23,27 +23,10 @@ h1 {
     justify-content: space-around; /* Adjust alignment as needed */
     margin-top: auto; /* Pushes boxes to the bottom */
     width: 100%; /* Ensures boxes span full width */
+    position: relative; /* To position children absolutely */
 }
 
-.bottom-boxes .box {
-    width: 278px; /* Adjust width to fit five boxes within viewport */
-    height: 184px; /* Adjust height as needed */
-    background-size: cover; /* Ensure the image covers the entire box */
-    background-repeat: no-repeat;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; /* Space between each box */
-}
-
-.bottom-boxes .box-1,
-.bottom-boxes .box-2,
-.bottom-boxes .box-3,
-.bottom-boxes .box-4,
-.bottom-boxes .box-5 {
+.bottom-boxes > div {
     width: 278px; /* Adjust width to fit five boxes within viewport */
     height: 184px; /* Adjust height as needed */
     background-size: cover; /* Ensure the image covers the entire box */
@@ -54,12 +37,17 @@ h1 {
     border-radius: 10px;
     margin-top: 20px; /* Space between each box */
     overflow: hidden; /* Ensure image doesn't overflow the box */
+    transition: transform 0.3s ease; /* Smooth transition for transform */
 }
 
-.bottom-boxes .box-3 {
-    width: 369px; /* Width of the middle box */
-    height: 218px; /* Height of the middle box */
-    margin-top: -30px; /* Move the middle box up */
+.bottom-boxes > div:hover {
+    transform: translateY(-10px) scale(1.1); /* Moves the image up by 10px and increases size by 10% */
+}
+
+.box-3 {
+    transform: translateY(-20px) scale(1.2); /* Initial state for box 3 */
+    position: absolute;
+    bottom: 50px; /* Distance from the bottom of the webpage */
 }
 
 .bottom-boxes img {
@@ -79,11 +67,20 @@ h1 {
     z-index: -1;
 }
 
-.sidebox{
+.sidebox {
     width: 912px;
     height: 1080px;
     background: linear-gradient(to right, black -2%, transparent 62%);
     position: fixed;
     left: 0;
     z-index: -1;
+}
+
+#nextBtn {
+    position: absolute;
+    top: 20px; /* Distance from the top of the screen */
+    right: 20px; /* Distance from the right side of the screen */
+    padding: 10px 20px;
+    font-size: 16px;
+    z-index: 10;
 }
