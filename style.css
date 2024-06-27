@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
 /* Global styles */
 body {
     background-image: url('Background/onepieceBack.png');
@@ -83,4 +84,42 @@ h1 {
     padding: 10px 20px;
     font-size: 16px;
     z-index: 10;
+}
+
+.logo {
+    position: absolute;
+    top: -600px;
+    left: 77px;
+    width: 581px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.bottom-boxes p {
+    position: absolute;
+    top: -350px;
+    left: 6%;
+    width: 581px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    color: white;
+}
+
+.watch {
+    position: absolute;
+    width: 140px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    background-color: #F0F421;
+    bottom: 400px; /* Adjust the bottom position */
+    left: 9.6%;
+    transform: translateX(-50%);
+    z-index: 10; /* Ensure it is above other elements */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align text to the bottom */
+    text-align: center;
+    padding-bottom: 5px; /* Add some padding if needed */
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 10px;
 }
