@@ -1,12 +1,12 @@
 /* Global styles */
 body {
-    background-image: url('onepiece.png');
+    background-image: url('Shonen/onepiece.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed; /* Fix the background image */
     color: #333;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Ensures full viewport height */
@@ -46,7 +46,6 @@ h1 {
     width: 278px; /* Adjust width to fit five boxes within viewport */
     height: 184px; /* Adjust height as needed */
     background-color: #4CAF50; /* Fallback background color */
-    background-image: url('onepiece.png');
     background-size: cover; /* Ensure the image covers the entire box */
     background-repeat: no-repeat;
     color: white;
