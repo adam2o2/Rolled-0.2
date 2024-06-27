@@ -9,15 +9,13 @@ const backgrounds = [
 let currentIndex = 2;
 
 document.getElementById('nextBtn').addEventListener('click', () => {
-    // Remove the class 'box-3' from the current box
-    boxes[currentIndex].classList.remove('box-3');
+    const container = document.querySelector('.bottom-boxes');
+    const firstBox = container.firstElementChild;
 
-    // Update the index
-    currentIndex = (currentIndex + 1) % boxes.length;
+    // Move the first box to the end
+    container.appendChild(firstBox);
 
-    // Add the class 'box-3' to the new current box
-    boxes[currentIndex].classList.add('box-3');
-
-    // Change the background image
+    // Update the background image
+    currentIndex = (currentIndex + 1) % backgrounds.length;
     document.body.style.backgroundImage = `url(${backgrounds[currentIndex]})`;
 });
