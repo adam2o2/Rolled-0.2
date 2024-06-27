@@ -44,11 +44,6 @@ h1 {
     transform: translateY(-10px) scale(1.1); /* Moves the image up by 10px and increases size by 10% */
 }
 
-.box-3 {
-    transform: translateY(-20px) scale(1.2); /* Initial state for box 3 */
-    position: absolute;
-    bottom: 50px; /* Distance from the bottom of the webpage */
-}
 
 .bottom-boxes img {
     max-width: 100%;
