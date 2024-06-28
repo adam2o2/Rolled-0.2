@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
 /* Global styles */
 body {
-    background-image: url('Background/onepieceBack.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Fix the background image */
+    background-attachment: fixed;
     color: #333;
     font-family: Arial, sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures full viewport height */
+    min-height: 100vh;
 }
+
 
 h1 {
     margin-left: 20px;
@@ -21,10 +21,12 @@ h1 {
 /* Styles for bottom boxes */
 .bottom-boxes {
     display: flex;
-    justify-content: space-around; /* Adjust alignment as needed */
-    margin-top: auto; /* Pushes boxes to the bottom */
-    width: 100%; /* Ensures boxes span full width */
-    position: relative; /* To position children absolutely */
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+    top: 50px; /* Move the boxes down by 50px, adjust as needed */
+    margin-top: 50px; /* Additional margin if needed */
+    z-index: 2; /* Higher z-index than sidebox to be on top */
 }
 
 .bottom-boxes > div {
@@ -69,12 +71,14 @@ h1 {
 
 .sidebox {
     width: 912px;
-    height: 1080px;
+    height: 100vh; /* Ensure it covers the entire viewport height */
     background: linear-gradient(to right, black -2%, transparent 62%);
     position: fixed;
     left: 0;
-    z-index: -1;
+    top: 0; /* Ensure it starts from the top of the screen */
+    z-index: -1; /* Ensure it is above other elements */
 }
+
 
 #nextBtn {
     position: absolute;
