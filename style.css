@@ -45,6 +45,10 @@ h1 {
     transform: translateY(-10px) scale(1.1); /* Moves the image up by 10px and increases size by 10% */
 }
 
+.highlight {
+    transform: translateY(-20px) scale(1.2); /* Make the highlighted box larger and higher */
+    position: relative; /* Ensure it doesn't break layout */
+}
 
 .bottom-boxes img {
     max-width: 100%;
