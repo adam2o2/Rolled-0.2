@@ -6,7 +6,7 @@ const backgrounds = [
     'Background/fireforceBack.png',
     'Background/kaijuno8Back.png'
 ];
-let currentIndex = 2; // Initialize the currentIndex to the position of the initial highlighted image
+let currentIndex = 0; // Initialize the currentIndex to the position of the initial highlighted image
 
 document.getElementById('nextBtn').addEventListener('click', () => {
     const container = document.querySelector('.bottom-boxes');
