@@ -40,7 +40,7 @@ h1 {
     border-radius: 10px;
     margin-top: 20px; /* Space between each box */
     overflow: hidden; /* Ensure image doesn't overflow the box */
-    transition: transform 0.3s ease; /* Smooth transition for transform */
+    transition: transform 0.4s ease; /* Smooth transition for transform */
 }
 
 .bottom-boxes > div:hover {
