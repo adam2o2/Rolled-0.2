@@ -44,7 +44,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 1430px;
     z-index: -1;
     background-image: url('kaijuno8.png');
     background-size: cover;
@@ -83,7 +83,95 @@ body {
 }
 
 .box img {
-    width: 1357px;
-    height: 742px;
+    width: 1664.47px;
+    height: 801px;
     border-radius: 20px;
+}
+
+.action-text {
+    color: #FFF500; /* Adjust the color as needed */
+    font-size: 72px; /* Set the font size */
+    font-weight: 700; /* Make the text bold */
+    text-align: left; /* Center the text */
+    margin-top: 375px; /* Adjust the margin as needed */
+    margin-left: calc((100% - 1790px) / 2);
+}
+
+.yellow-box-container {
+    display: flex;
+    gap: 50px; /* Space between each yellow box */
+    margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
+    margin-top: 47px; /* Space between the "Action" text and the yellow box */
+}
+
+.yellow-box {
+    width: 410px;
+    height: 536px;
+    background-color: #FFF500; /* Yellow color */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 20px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.box-text {
+    text-align: center;
+}
+
+.title {
+    color: white;
+    font-size: 24px;
+    font-weight: 700; /* Bold text */
+}
+
+.episodes {
+    color: #7D7D7D;
+    font-size: 24px;
+    font-weight: 400; /* Regular text */
+}
+
+.romance-text {
+    color: #ff0000; /* Adjust the color as needed */
+    font-size: 72px; /* Set the font size */
+    font-weight: 700; /* Make the text bold */
+    text-align: left; /* Center the text */
+    margin-top: 375px; /* Adjust the margin as needed */
+    margin-left: calc((100% - 1790px) / 2);
+}
+
+.red-box-container {
+    display: flex;
+    gap: 50px; /* Space between each yellow box */
+    margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
+    margin-top: 47px; /* Space between the "Action" text and the yellow box */
+}
+
+.red-box {
+    width: 410px;
+    height: 536px;
+    background-color: #ff0000; /* Yellow color */
+}
+
+.isekai-text {
+    color: #1100ff; /* Adjust the color as needed */
+    font-size: 72px; /* Set the font size */
+    font-weight: 700; /* Make the text bold */
+    text-align: left; /* Center the text */
+    margin-top: 375px; /* Adjust the margin as needed */
+    margin-left: calc((100% - 1790px) / 2);
+}
+
+.blue-box-container {
+    display: flex;
+    gap: 50px; /* Space between each yellow box */
+    margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
+    margin-top: 47px; /* Space between the "Action" text and the yellow box */
+}
+
+.blue-box {
+    width: 410px;
+    height: 536px;
+    background-color: #1100ff; /* Yellow color */
 }
