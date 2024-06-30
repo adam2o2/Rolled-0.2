@@ -58,6 +58,8 @@ body {
     align-items: flex-end;
     padding-top: 100px; /* Adjust this value */
     font-size: 130px;
+    font-weight: 400;
+    font-family: 'PP Editorial New', sans-serif;
 }
 
 .text1 p {
@@ -88,6 +90,13 @@ body {
     border-radius: 20px;
 }
 
+.icon {
+    vertical-align: middle;
+    width: 32px; /* Increased size */
+    height: 32px; /* Increased size */
+    margin-right: 8px; /* Adjust spacing between the icon and the text */
+}
+
 .action-text {
     color: #ffffff; /* Adjust the color as needed */
     font-size: 72px; /* Set the font size */
@@ -95,11 +104,15 @@ body {
     text-align: left; /* Center the text */
     margin-top: 375px; /* Adjust the margin as needed */
     margin-left: calc((100% - 1790px) / 2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.action-text span{
-    margin-left: 79.1%;
+.action-text span {
     font-size: 20px;
+    margin-left: auto;
+    margin-right: 44px; /* Align to the right side of the container */
 }
 
 .yellow-box-container {
@@ -157,11 +170,15 @@ body {
     text-align: left; /* Center the text */
     margin-top: 375px; /* Adjust the margin as needed */
     margin-left: calc((100% - 1790px) / 2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .romance-text span{
-    margin-left: 73%;
     font-size: 20px;
+    margin-left: auto;
+    margin-right: 44px;
 }
 
 .red-box-container {
@@ -197,11 +214,15 @@ body {
     text-align: left; /* Center the text */
     margin-top: 375px; /* Adjust the margin as needed */
     margin-left: calc((100% - 1790px) / 2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .isekai-text span{
-    margin-left: 80.3%;
     font-size: 20px;
+    margin-left: auto;
+    margin-right: 44px;
 }
 
 .blue-box-container {
