@@ -143,7 +143,7 @@ body {
 }
 
 .action-info {
-    text-align: center;
+    text-align: left;
     position: absolute; /* Position it absolutely */
     top: 550px; /* Adjust as needed to move it below the box */
     width: 100%; /* Align with the width of the yellow box */
@@ -152,15 +152,13 @@ body {
 .title {
     color: white;
     font-size: 24px;
-    font-weight: 700; /* Bold text */
-    margin-left: -227px;
+    font-weight: 700;
 }
 
 .episodes {
     color: #7D7D7D;
     font-size: 24px;
     font-weight: 400; /* Regular text */
-    margin-left: -268px;
 }
 
 /* The other cards start here */
@@ -202,7 +200,7 @@ body {
 }
 
 .romance-info {
-    text-align: center;
+    text-align: left;
     position: absolute; /* Position it absolutely */
     top: 550px; /* Adjust as needed to move it below the box */
     width: 100%; /* Align with the width of the yellow box */
@@ -246,7 +244,7 @@ body {
 }
 
 .isekai-info {
-    text-align: center;
+    text-align: left;
     position: absolute; /* Position it absolutely */
     top: 550px; /* Adjust as needed to move it below the box */
     width: 100%; /* Align with the width of the yellow box */
