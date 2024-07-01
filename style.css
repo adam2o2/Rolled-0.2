@@ -46,7 +46,7 @@ body {
     width: 100%;
     height: 1430px;
     z-index: -1;
-    background-image: url('kaijuno8.png');
+    background-image: url('Feature/kaijuno8Card.png');
     background-size: cover;
     filter: blur(159.4px); /* Adjust blur amount as needed */
 }
@@ -163,6 +163,7 @@ body {
     margin-left: -268px;
 }
 
+/* The other cards start here */
 .romance-text {
     color: #ffffff; /* Adjust the color as needed */
     font-size: 72px; /* Set the font size */
@@ -249,4 +250,11 @@ body {
     position: absolute; /* Position it absolutely */
     top: 550px; /* Adjust as needed to move it below the box */
     width: 100%; /* Align with the width of the yellow box */
+}
+/* The other cards start here */
+
+
+a {
+    color: inherit; /* Keeps the link text color the same as the surrounding text */
+    text-decoration: none; /* Removes the underline */
 }
