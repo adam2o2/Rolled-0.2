@@ -54,13 +54,13 @@ body {
 .text1 h1 {
     color: aliceblue;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Align text to the left */
     align-items: flex-end;
     padding-top: 100px; /* Adjust this value */
     font-size: 130px;
     font-weight: 400;
     font-family: 'PP Editorial New', sans-serif;
-    margin-right: 46.6%;
+    margin-left: 113px;
     margin-top: 131px;
 }
 

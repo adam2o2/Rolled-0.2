@@ -2,9 +2,14 @@ document.querySelectorAll('.yellow-box').forEach(box => {
     box.addEventListener('click', function() {
         const backgroundUrl = this.getAttribute('data-background');
         const featureUrl = this.getAttribute('data-feature');
+        const actionUrl = this.getAttribute('data-action');
+        const videoUrl = this.getAttribute('data-video');
+        const title = this.getAttribute('data-title');
 
         document.getElementById('background').style.backgroundImage = `url(${backgroundUrl})`;
         document.getElementById('feature-image').src = featureUrl;
+        document.getElementById('video-iframe').src = videoUrl;
+        document.querySelector('.text1 h1').textContent = title;
     });
 });
 
