@@ -18,17 +18,17 @@
     <div class="content">
         <div class="text1">
             <!-- took the header off -->
-            <h1></h1>
+            <h1 id="anime-title"></h1>
             <div class="action-box">
                 Action
             </div>
             <p>
-                <span>Shonen</span> <span>3 Seasons</span> <span>107 Episodes</span>
+                <span id="anime-genre">Shonen</span> <span id="anime-seasons">3 Seasons</span> <span id="anime-episodes">107 Episodes</span>
             </p>
         </div>
         <div class="box" id="feature-box">
             <!-- took the image off here -->
-            <img src="" alt="Jjk Feature" id="feature-image">              
+            <img src="" alt="Feature Image" id="feature-image">              
         </div>
         <div class="play-button">
             <div class="circle">
@@ -39,6 +39,9 @@
         </div>
         <div id="video-overlay" class="video-overlay">
         <iframe id="video-iframe" frameborder="0" allowfullscreen></iframe>
+        <div class="action-text">
+            <img src="Fire.svg" alt="Fire Icon" class="icon" id="action-icon">All Action Titles<span> </span>
+        </div>
         <a href="https://www.crunchyroll.com/" class="watch-button">
             <img src="logo/logo.png" alt="Crunchyroll Logo">
             <span>Watch on Crunchyroll</span>
@@ -46,35 +49,35 @@
         </div>
         <div class="action-text"><img src="Fire.svg" alt="Fire Icon" class="icon" id="action-icon">All Action Titles<span> </span></div>
         <div class="yellow-box-container">
-            <div class="yellow-box" data-background="Feature/opmcard.png" data-feature="Feature/opmcard.png" data-action="Action/opm.png" data-video="https://www.youtube.com/embed/YUH1mfV3IEU" data-title="One Punch Man">
+            <div class="yellow-box" data-background="Feature/opmcard.png" data-feature="Feature/opmcard.png" data-video="https://www.youtube.com/embed/YUH1mfV3IEU" data-title="One Punch Man" data-genre="Action" data-seasons="2 Season" data-episodes="24 Episodes">
                 <img src="Action/opm.png" alt="One Punch Man" class="box-image">
                 <div class="action-info"><br>
                     <div class="title">One Punch Man</div><br>
                     <div class="episodes">24 episodes</div>
                 </div>
             </div>
-            <div class="yellow-box" data-background="Feature/fireforcecard.png" data-feature="Feature/fireforcecard.png" data-action="Action/fireforce.png" data-video="https://www.youtube.com/embed/fzM43HZ6oeg" data-title="Fire Force">
+            <div class="yellow-box" data-background="Feature/fireforcecard.png" data-feature="Feature/fireforcecard.png" data-action="Action/fireforce.png" data-video="https://www.youtube.com/embed/fzM43HZ6oeg" data-title="Fire Force" data-genre="Action" data-seasons="2 Season" data-episodes="48 Episodes">
                 <img src="Action/fireforce.png" alt="Fire Force" class="box-image">
                 <div class="action-info"><br>
                     <div class="title">Fire Force</div><br>
                     <div class="episodes">48 episodes</div>
                 </div>
             </div>
-            <div class="yellow-box" data-background="Feature/demonslayercard.png" data-feature="Feature/demonslayercard.png" data-action="Action/demonslayer.png" data-video="https://www.youtube.com/embed/Sl2k7bfBeCw" data-title="Demon Slayer">
+            <div class="yellow-box" data-background="Feature/demonslayercard.png" data-feature="Feature/demonslayercard.png" data-action="Action/demonslayer.png" data-video="https://www.youtube.com/embed/Sl2k7bfBeCw" data-title="Demon Slayer" data-genre="Action" data-seasons="5 Season" data-episodes="55 Episodes">
                 <img src="Action/demonslayer.png" alt="Demon Slayer" class="box-image">
                 <div class="action-info"><br>
                     <div class="title">Demon Slayer</div><br>
                     <div class="episodes">55 episodes</div>
                 </div>
             </div>
-            <div class="yellow-box" data-background="Action/akame.png" data-feature="Feature/akamecard.png" data-action="Action/akame.png" data-video="https://www.youtube.com/embed/NIeKMKwON0U" data-title="Akame Ga Kill">
+            <div class="yellow-box" data-background="Action/akame.png" data-feature="Feature/akamecard.png" data-action="Action/akame.png" data-video="https://www.youtube.com/embed/NIeKMKwON0U" data-title="Akame Ga Kill" data-genre="Action" data-seasons="1 Season" data-episodes="24 Episodes">
                 <img src="Action/akame.png" alt="Akame Ga Kill" class="box-image">
                 <div class="action-info"><br>
                     <div class="title">Akame Ga Kill</div><br>
                     <div class="episodes">24 episodes</div>
                 </div>
             </div>
-            <div class="yellow-box" data-background="Action/aot.png" data-feature="Feature/aotcard.png" data-action="Action/aot.png" data-video="https://www.youtube.com/embed/n4Nj6Y_SNYI" data-title="Attack On Titan">
+            <div class="yellow-box" data-background="Action/aot.png" data-feature="Feature/aotcard.png" data-action="Action/aot.png" data-video="https://www.youtube.com/embed/n4Nj6Y_SNYI" data-title="Attack On Titan" data-genre="Action" data-seasons="4 Seasons" data-episodes="94 Episodes">
                 <img src="Action/aot.png" alt="Attack On Titan" class="box-image">
                 <div class="action-info"><br>
                     <div class="title">Attack On Titan</div><br>
@@ -94,28 +97,28 @@
                     <div class="episodes">24 episodes</div>
                 </div>
             </div>
-            <div class="yellow-box" data-background="Action/vinland.png" data-feature="Feature/vinlandcard.png" data-action="Action/vinland.png" data-video="https://www.youtube.com/embed/f8JrZ7Q_p-8" data-title="Vinland Saga">
+            <div class="yellow-box" data-background="Action/vinland.png" data-feature="Feature/vinlandcard.png" data-action="Action/vinland.png" data-video="https://www.youtube.com/embed/f8JrZ7Q_p-8" data-title="Vinland Saga" data-genre="Action" data-seasons="2 Seasons" data-episodes="48 Episodes">
                 <img src="Action/vinland.png" alt="Vinland Saga" class="box-image">
                 <div class="action-info"><br>
                     <div class="title">Vinland Saga</div><br>
                     <div class="episodes">24 episodes</div>
                 </div>
             </div>
-            <div class="yellow-box" data-background="Action/jjk.png" data-feature="Feature/jjkcard.png" data-action="Action/jjk.png" data-video="https://www.youtube.com/embed/pkKu9hLT-t8" data-title="Jujutsi Kaisen">
+            <div class="yellow-box" data-background="Action/jjk.png" data-feature="Feature/jjkcard.png" data-action="Action/jjk.png" data-video="https://www.youtube.com/embed/pkKu9hLT-t8" data-title="Jujutsu Kaisen" data-genre="Action" data-seasons="2 Season" data-episodes="47 Episodes">
                 <img src="Action/jjk.png" alt="Jujutsu Kaisen" class="box-image">
                 <div class="action-info"><br>
                     <div class="title">Jujutsu Kaisen</div><br>
                     <div class="episodes">47 episodes</div>
                 </div>
             </div>
-            <div class="yellow-box" data-background="Action/mha.png" data-feature="Feature/mhacard.png" data-action="Action/mha.png" data-video="https://www.youtube.com/embed/LqJQqcDQxBg" data-title="My Hero Academia">
+            <div class="yellow-box" data-background="Action/mha.png" data-feature="Feature/mhacard.png" data-action="Action/mha.png" data-video="https://www.youtube.com/embed/LqJQqcDQxBg" data-title="My Hero Academia" data-genre="Action" data-seasons="5 Season" data-episodes="138 Episodes">
                 <img src="Action/mha.png" alt="My Hero Academia" class="box-image">
                 <div class="action-info"><br>
                     <div class="title">My Hero Academia</div><br>
                     <div class="episodes">138 episodes</div>
                 </div>
             </div>
-            <div class="yellow-box" data-background="Action/godofhighschool.png" data-feature="Feature/godofhighschoolcard.png" data-action="Action/godofhighschool.png" data-video="https://www.youtube.com/embed/oqjwUfprNAk" data-title="The God Of Highschool">
+            <div class="yellow-box" data-background="Action/godofhighschool.png" data-feature="Feature/godofhighschoolcard.png" data-action="Action/godofhighschool.png" data-video="https://www.youtube.com/embed/oqjwUfprNAk" data-title="The God Of Highschool" data-genre="Action" data-seasons="1 Season" data-episodes="13 Episodes">
                 <img src="Action/godofhighschool.png" alt="The God Of Highschool" class="box-image">
                 <div class="action-info"><br>
                     <div class="title">The God Of Highschool</div><br>
@@ -127,7 +130,7 @@
         <!-- row three -->
         <div class="row-three"></div>
         <div class="row-three-container">
-            <div class="yellow-box" data-background="Action/hellsparadise.png" data-feature="Feature/hellsparadisecard.png" data-action="Action/hellsparadise.png" data-video="https://www.youtube.com/embed/aaHZdwPZX6g" data-title="Hell's Paradise">
+            <div class="yellow-box" data-background="Action/hellsparadise.png" data-feature="Feature/hellsparadisecard.png" data-action="Action/hellsparadise.png" data-video="https://www.youtube.com/embed/aaHZdwPZX6g" data-title="Hell's Paradise" data-genre="Action" data-seasons="1 Season" data-episodes="13 Episodes">
                 <img src="Action/hellsparadise.png" alt="Hell's Paradise" class="box-image">
                 <div class="action-info"><br>
                     <div class="title">Hell's Paradise</div><br>
