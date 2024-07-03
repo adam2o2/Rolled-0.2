@@ -273,3 +273,37 @@ a {
     background: rgba(0, 0, 0, 0.2);
     z-index: 9; /* Adjust the z-index as needed */
 }
+
+.watch-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 303px;
+    height: 49px;
+    background-color: #F47521;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 52px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.watch-button:hover {
+    opacity: 0.9;
+}
+
+.watch-button span {
+    font-size: 18px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.watch-button img {
+    width: 29px;
+    height: 26px;
+    vertical-align: middle;
+}
