@@ -2,14 +2,19 @@ document.querySelectorAll('.yellow-box').forEach(box => {
     box.addEventListener('click', function() {
         const backgroundUrl = this.getAttribute('data-background');
         const featureUrl = this.getAttribute('data-feature');
-        const actionUrl = this.getAttribute('data-action');
         const videoUrl = this.getAttribute('data-video');
         const title = this.getAttribute('data-title');
+        const genre = this.getAttribute('data-genre');
+        const seasons = this.getAttribute('data-seasons');
+        const episodes = this.getAttribute('data-episodes');
 
         document.getElementById('background').style.backgroundImage = `url(${backgroundUrl})`;
         document.getElementById('feature-image').src = featureUrl;
         document.getElementById('video-iframe').src = videoUrl;
-        document.querySelector('.text1 h1').textContent = title;
+        document.getElementById('anime-title').textContent = title;
+        document.getElementById('anime-genre').textContent = genre;
+        document.getElementById('anime-seasons').textContent = seasons;
+        document.getElementById('anime-episodes').textContent = episodes;
     });
 });
 
@@ -47,11 +52,18 @@ document.addEventListener('DOMContentLoaded', function() {
         featureImage.src = selectedImage.src;
         document.querySelector('.text1 h1').textContent = selectedImage.title;
 
+        // Display seasons and episodes based on selected feature image
+        selectedBox = [...yellowBoxes].find(box => box.getAttribute('data-feature') === selectedImage.src);
+        if (selectedBox) {
+            const seasons = selectedBox.getAttribute('data-seasons');
+            const episodes = selectedBox.getAttribute('data-episodes');
+            document.getElementById('anime-genre').textContent = selectedBox.getAttribute('data-genre');
+            document.getElementById('anime-seasons').textContent = seasons;
+            document.getElementById('anime-episodes').textContent = episodes;
+        }
+
         // Change background image dynamically
         background.style.backgroundImage = `url(${selectedImage.src})`;
-
-        // Set selectedBox based on the currently displayed feature image
-        selectedBox = [...yellowBoxes].find(box => box.getAttribute('data-feature') === selectedImage.src);
     }
 
     // Initialize on page load
