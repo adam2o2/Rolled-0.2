@@ -16,9 +16,10 @@ document.querySelectorAll('.yellow-box').forEach(box => {
 document.addEventListener('DOMContentLoaded', function() {
     const yellowBoxes = document.querySelectorAll('.yellow-box');
     const featureImage = document.getElementById('feature-image');
-    const playButton = document.querySelector('.play-button');
     const videoIframe = document.getElementById('video-iframe');
     const background = document.getElementById('background');
+    const playButton = document.querySelector('.play-button');
+    const videoOverlay = document.getElementById('video-overlay');
     let selectedBox = null;
 
     const featureImages = [
@@ -44,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const selectedImage = featureImages[index];
 
         featureImage.src = selectedImage.src;
-        videoIframe.src = selectedImage.video;
         document.querySelector('.text1 h1').textContent = selectedImage.title;
 
         // Change background image dynamically
@@ -61,13 +61,11 @@ document.addEventListener('DOMContentLoaded', function() {
     function handleYellowBoxClick() {
         const backgroundUrl = this.getAttribute('data-background');
         const featureUrl = this.getAttribute('data-feature');
-        const actionUrl = this.getAttribute('data-action');
         const videoUrl = this.getAttribute('data-video');
         const title = this.getAttribute('data-title');
 
         background.style.backgroundImage = `url(${backgroundUrl})`;
         featureImage.src = featureUrl;
-        videoIframe.src = videoUrl;
         document.querySelector('.text1 h1').textContent = title;
 
         // Set the selectedBox to the current box clicked
@@ -78,26 +76,48 @@ document.addEventListener('DOMContentLoaded', function() {
         box.addEventListener('click', handleYellowBoxClick);
     });
 
+    // Function to play video
+    function playVideo(videoUrl) {
+        if (videoUrl) {
+            videoIframe.src = videoUrl;
+            videoIframe.style.width = '1666.47px';
+            videoIframe.style.height = '801px';
+            videoIframe.style.display = 'block';
+            videoIframe.style.position = 'fixed';
+            videoIframe.style.top = '50%';
+            videoIframe.style.left = '50%';
+            videoIframe.style.transform = 'translate(-50%, -50%)';
+            videoOverlay.style.display = 'block'; // Show overlay
+            document.body.style.overflow = 'hidden'; // Disable scrolling
+        } else {
+            videoIframe.style.display = 'none';
+        }
+    }
+
     playButton.addEventListener('click', function(event) {
         event.stopPropagation(); // Stop propagation to prevent conflicts
 
         if (selectedBox) {
             const videoUrl = selectedBox.getAttribute('data-video');
-            if (videoUrl) {
-                videoIframe.src = videoUrl;
-                videoIframe.style.width = '1666.47px';
-                videoIframe.style.height = '801px';
-                videoIframe.style.display = 'block';
-            } else {
-                videoIframe.style.display = 'none';
-            }
+            playVideo(videoUrl);
         }
     });
 
-    document.body.addEventListener('click', function(event) {
-        if (!videoIframe.contains(event.target)) {
-            videoIframe.style.display = 'none';
-            videoIframe.src = '';
-        }
+    // Add click event listener to yellow boxes to play video immediately
+    yellowBoxes.forEach(box => {
+        box.addEventListener('click', function(event) {
+            event.stopPropagation(); // Stop propagation to prevent conflicts
+
+            const videoUrl = this.getAttribute('data-video');
+            playVideo(videoUrl);
+        });
+    });
+
+    // Click event listener for overlay to close video
+    videoOverlay.addEventListener('click', function() {
+        videoIframe.style.display = 'none';
+        videoIframe.src = '';
+        videoOverlay.style.display = 'none'; // Hide overlay
+        document.body.style.overflow = 'auto'; // Enable scrolling
     });
 });
