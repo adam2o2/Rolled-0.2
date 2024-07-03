@@ -177,6 +177,7 @@ body {
     padding-bottom: 20px;
     box-sizing: border-box;
     position: relative; /* Allows absolute positioning of .box-text */
+    cursor: pointer;
 }
 
 .box-image {
