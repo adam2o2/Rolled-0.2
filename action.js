@@ -101,21 +101,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-    document.addEventListener("DOMContentLoaded", function() {
-        const scrollImages = document.querySelectorAll("#box-scroll");
-
-        scrollImages.forEach(image => {
-            image.addEventListener("click", function() {
-                const featureBox = document.getElementById("feature-box");
-                const featureBoxRect = featureBox.getBoundingClientRect();
-                const scrollOffset = window.pageYOffset + featureBoxRect.top - (window.innerHeight / 2) + (featureBoxRect.height / 2);
-
-                window.scrollTo({
-                    top: scrollOffset,
-                    behavior: 'smooth'
-                });
-            });
-        });
-    });
-
