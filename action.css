@@ -177,6 +177,7 @@ body {
     padding-bottom: 20px;
     box-sizing: border-box;
     position: relative; /* Allows absolute positioning of .box-text */
+    cursor: pointer;
 }
 
 .box-image {
@@ -226,6 +227,17 @@ body {
 }
 
 .row-three-container {
+    display: flex;
+    gap: 50px; /* Space between each yellow box */
+    margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
+    margin-top: 47px; /* Space between the "Action" text and the yellow box */
+}
+
+.row-four {
+    margin-top: 87px; /* Adjust the margin as needed */
+}
+
+.row-four-container {
     display: flex;
     gap: 50px; /* Space between each yellow box */
     margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
