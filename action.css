@@ -235,3 +235,16 @@ a {
     color: inherit; /* Keeps the link text color the same as the surrounding text */
     text-decoration: none; /* Removes the underline */
 }
+
+#video-iframe {
+    display: none;
+    width: 1666.47px;
+    height: 801px;
+    border: none;
+    position: absolute;
+    top: 510px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    border-radius: 20px;
+}
