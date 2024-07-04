@@ -37,12 +37,12 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'Feature/shieldherocard.png', video: 'https://www.youtube.com/embed/rKnyi3TRznA', title: 'Shield Hero' },
         { src: 'Feature/slimecard.png', video: 'https://www.youtube.com/embed/uOzwqb74K34', title: 'Reincarnated as A Slime' },
         { src: 'Feature/tsukimichicard.png', video: 'https://www.youtube.com/embed/Q7IUIZix_yw', title: 'Tsukimichi' },
-        { src: 'Feature/parasytecard.png', video: 'https://www.youtube.com/embed/xWtUMR1BveU', title: 'Parasyte -the maxim-' },
-        { src: 'Feature/deathparadecard.png', video: 'https://www.youtube.com/embed/8ziUXV6t0ow', title: 'Death Parade' },
-        { src: 'Feature/detectiveconancard.png', video: 'https://www.youtube.com/embed/mz3b6Ym8s6s', title: 'Detective Conan' },
-        { src: 'Feature/kabanericard.png', video: 'https://www.youtube.com/embed/lQ9VjFBqfH8', title: 'Kabaneri' },
-        { src: 'Feature/inspectrecard.png', video: 'https://www.youtube.com/embed/l9QsM6PeTV4', title: 'In/Spectre' },
-        { src: 'Feature/deadmanwonderlandcard.png', video: 'https://www.youtube.com/embed/0OjJiQ_tB6k', title: 'Deadman Wonderland' },
+        { src: 'Feature/konosubacard.png', video: 'https://www.youtube.com/embed/5h4rQY9bpgE', title: 'Konosuba' },
+        { src: 'Feature/devilisaparttimercard.png', video: 'https://www.youtube.com/embed/9eCFxxQ4WE0', title: 'Devil is a Part Timer' },
+        { src: 'Feature/detectiveconancard.png', video: 'https://www.youtube.com/embed/IG1VhJ75r8k', title: 'Log Horizon' },
+        { src: 'Feature/blacksummonercard.png', video: 'https://www.youtube.com/embed/m3W8sZhn3-o', title: 'Black Summoner' },
+        { src: 'Feature/spidercard.png', video: 'https://www.youtube.com/embed/geMv8Lwk2sM', title: 'So What im a Spider' },
+        { src: 'Feature/vendingmachinecard.png', video: 'https://www.youtube.com/embed/mMOzW_UEdvg', title: 'Reborn as A Vending Machine' },
         // Add other images and their corresponding videos and titles here
     ];
 
