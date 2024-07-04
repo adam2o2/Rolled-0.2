@@ -125,7 +125,6 @@ body {
 .yellow-box {
     width: 410px;
     height: 536px;
-    background-color: #FFF500;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -190,7 +189,6 @@ body {
 .red-box {
     width: 410px;
     height: 536px;
-    background-color: #ff0000; /* Yellow color */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -234,7 +232,6 @@ body {
 .blue-box {
     width: 410px;
     height: 536px;
-    background-color: #1100ff; /* Yellow color */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -279,7 +276,6 @@ body {
 .green-box {
     width: 410px;
     height: 536px;
-    background-color: #00ff22; /* Yellow color */
     display: flex;
     justify-content: flex-end;
     align-items: center;
