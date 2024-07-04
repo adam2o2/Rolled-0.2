@@ -38,11 +38,11 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'Feature/quintupletscard.png', video: 'https://www.youtube.com/embed/ILDps6CfIwI', title: 'Quintessential Quintuplets' },
         { src: 'Feature/morethancard.png', video: 'https://www.youtube.com/embed/rL60dbSWgtE', title: 'More than a Married Couple' },
         { src: 'Feature/bunnygirlcard.png', video: 'https://www.youtube.com/embed/tGJTrM9RphQ', title: 'Bunny Girl Senpai' },
-        { src: 'Feature/kindomcard.png', video: 'https://www.youtube.com/embed/bYudboNENqs', title: 'Kindom' },
-        { src: 'Feature/hinomarucard.png', video: 'https://www.youtube.com/embed/Gxq9uR6EMd0', title: 'Hinomaru Sumo' },
-        { src: 'Feature/taktcard.png', video: 'https://www.youtube.com/embed/mv_SJoJY7sA', title: 'takt op.Destiny' },
-        { src: 'Feature/akudamacard.png', video: 'https://www.youtube.com/embed/H2vRwrLyzQM', title: 'Akudama Drive' },
-        { src: 'Feature/vinlandcard.png', video: 'https://www.youtube.com/embed/f8JrZ7Q_p-8', title: 'The Irregular' }
+        { src: 'Feature/loveaftercard.png', video: 'https://www.youtube.com/embed/t_LOPSpeYvE', title: 'Love After World Domination' },
+        { src: 'Feature/masamunecard.png', video: 'https://www.youtube.com/embed/dJSjZnKDbHk', title: 'Masamune-kuns Revenge' },
+        { src: 'Feature/mylittlecard.png', video: 'https://www.youtube.com/embed/SlD-8h96pDw', title: 'My Little Monster' },
+        { src: 'Feature/worldgodcard.png', video: 'https://www.youtube.com/embed/OdBmj4TWqzk', title: 'The World God Only Knows' },
+        { src: 'Feature/yamadakuncard.png', video: 'https://www.youtube.com/embed/iwyufFdfO80', title: 'Yamada-kun' }
         // Add other images and their corresponding videos and titles here
     ];
 
