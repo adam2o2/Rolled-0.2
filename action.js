@@ -60,8 +60,8 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'Feature/berserkcard.png', video: 'https://www.youtube.com/embed/0MIw4xzxcTU', title: 'Berserk' },
         { src: 'Feature/icebladecard.png', video: 'https://www.youtube.com/embed/l1hx7s7Ywcs', title: 'The Iceblade Sorcerer' },
         { src: 'Feature/plunderercard.png', video: 'https://www.youtube.com/embed/L1Y9r8psTmo', title: 'Plunderer' },
-        { src: 'Feature/irregularcard.png', video: 'https://www.youtube.com/embed/U-gkwdGooDU', title: 'NieR:Automata Ver1.1a' },
-        { src: 'Feature/vinlandcard.png', video: 'https://www.youtube.com/embed/f8JrZ7Q_p-8', title: 'The Irregular' }
+        { src: 'Feature/irregularcard.png', video: 'https://www.youtube.com/embed/U-gkwdGooDU', title: 'The Irregular' },
+        { src: 'Feature/vinlandcard.png', video: 'https://www.youtube.com/embed/f8JrZ7Q_p-8', title: 'Vinland Saga' }
         // Add other images and their corresponding videos and titles here
     ];
 
