@@ -37,6 +37,15 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'Feature/fireforcecard.png', video: 'https://www.youtube.com/embed/fzM43HZ6oeg', title: 'Fire Force' },
         { src: 'Feature/godofhighschoolcard.png', video: 'https://www.youtube.com/embed/oqjwUfprNAk', title: 'God of High School' },
         { src: 'Feature/opmcard.png', video: 'https://www.youtube.com/embed/YUH1mfV3IEU', title: 'One Punch Man' },
+        { src: 'Feature/kenichicard.png', video: 'https://www.youtube.com/embed/4xDehi5Qjqs', title: 'KenIchi' },
+        { src: 'Feature/kindomcard.png', video: 'https://www.youtube.com/embed/bYudboNENqs', title: 'Kindom' },
+        { src: 'Feature/hinomarucard.png', video: 'https://www.youtube.com/embed/Gxq9uR6EMd0', title: 'Hinomaru Sumo' },
+        { src: 'Feature/taktcard.png', video: 'https://www.youtube.com/embed/mv_SJoJY7sA', title: 'takt op.Destiny' },
+        { src: 'Feature/akudamacard.png', video: 'https://www.youtube.com/embed/H2vRwrLyzQM', title: 'Akudama Drive' },
+        { src: 'Feature/peachcard.png', video: 'https://www.youtube.com/embed/7vtl3NGuG1c', title: 'Peach Boy Riverside' },
+        { src: 'Feature/tenjhocard.png', video: 'https://www.youtube.com/embed/BM-dTZY9HI0', title: 'Tenjho Tenge' },
+        { src: 'Feature/mushibugyocard.png', video: 'https://www.youtube.com/embed/uv7dT2VSpp8', title: 'Mushibugyo' },
+        { src: 'Feature/monsterstrikecard.png', video: 'https://www.youtube.com/embed/Yz-57Anl-Os', title: 'Monster Strike' },
         { src: 'Feature/vinlandcard.png', video: 'https://www.youtube.com/embed/f8JrZ7Q_p-8', title: 'Vinland Saga' }
         // Add other images and their corresponding videos and titles here
     ];
