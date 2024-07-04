@@ -244,6 +244,72 @@ body {
     margin-top: 47px; /* Space between the "Action" text and the yellow box */
 }
 
+.row-five {
+    margin-top: 87px; /* Adjust the margin as needed */
+}
+
+.row-five-container {
+    display: flex;
+    gap: 50px; /* Space between each yellow box */
+    margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
+    margin-top: 47px; /* Space between the "Action" text and the yellow box */
+}
+
+.row-six {
+    margin-top: 87px; /* Adjust the margin as needed */
+}
+
+.row-six-container {
+    display: flex;
+    gap: 50px; /* Space between each yellow box */
+    margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
+    margin-top: 47px; /* Space between the "Action" text and the yellow box */
+}
+
+.row-seven {
+    margin-top: 87px; /* Adjust the margin as needed */
+}
+
+.row-seven-container {
+    display: flex;
+    gap: 50px; /* Space between each yellow box */
+    margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
+    margin-top: 47px; /* Space between the "Action" text and the yellow box */
+}
+
+.row-eight {
+    margin-top: 87px; /* Adjust the margin as needed */
+}
+
+.row-eight-container {
+    display: flex;
+    gap: 50px; /* Space between each yellow box */
+    margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
+    margin-top: 47px; /* Space between the "Action" text and the yellow box */
+}
+
+.row-nine {
+    margin-top: 87px; /* Adjust the margin as needed */
+}
+
+.row-nine-container {
+    display: flex;
+    gap: 50px; /* Space between each yellow box */
+    margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
+    margin-top: 47px; /* Space between the "Action" text and the yellow box */
+}
+
+.row-ten {
+    margin-top: 87px; /* Adjust the margin as needed */
+}
+
+.row-ten-container {
+    display: flex;
+    gap: 50px; /* Space between each yellow box */
+    margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
+    margin-top: 47px; /* Space between the "Action" text and the yellow box */
+}
+
 a {
     color: inherit; /* Keeps the link text color the same as the surrounding text */
     text-decoration: none; /* Removes the underline */
