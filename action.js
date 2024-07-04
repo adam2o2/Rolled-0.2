@@ -46,7 +46,22 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'Feature/tenjhocard.png', video: 'https://www.youtube.com/embed/BM-dTZY9HI0', title: 'Tenjho Tenge' },
         { src: 'Feature/mushibugyocard.png', video: 'https://www.youtube.com/embed/uv7dT2VSpp8', title: 'Mushibugyo' },
         { src: 'Feature/monsterstrikecard.png', video: 'https://www.youtube.com/embed/Yz-57Anl-Os', title: 'Monster Strike' },
-        { src: 'Feature/vinlandcard.png', video: 'https://www.youtube.com/embed/f8JrZ7Q_p-8', title: 'Vinland Saga' }
+        { src: 'Feature/shangrilacard.png', video: 'https://www.youtube.com/embed/rsTbPKiGQdo', title: 'Shangri-La Frontier' },
+        { src: 'Feature/solocard.png', video: 'https://www.youtube.com/embed/bssSj4cKsrI', title: 'Solo Leveling' },
+        { src: 'Feature/revengerscard.png', video: 'https://www.youtube.com/embed/idlLFNNpZiI', title: 'Tokyo Revengers' },
+        { src: 'Feature/bungocard.png', video: 'https://www.youtube.com/embed/pYDv2ZR25GE', title: 'Bungo Stray Dogs' },
+        { src: 'Feature/metalliccard.png', video: 'https://www.youtube.com/embed/yv8eVL4xBI4', title: 'Metallic Rouge' },
+        { src: 'Feature/deadmountcard.png', video: 'https://www.youtube.com/embed/_BDDj_4nmNg', title: 'Dead Mount Death Play' },
+        { src: 'Feature/gluttonycard.png', video: 'https://www.youtube.com/embed/f3FwcHciZZ0', title: 'Berserk of Gluttony' },
+        { src: 'Feature/dragoncard.png', video: 'https://www.youtube.com/embed/2Vej889SS6s', title: 'Dragon Ball Super' },
+        { src: 'Feature/bloodcard.png', video: 'https://www.youtube.com/embed/aMe0J7c8uOU', title: 'Blood Blockade Battlefront' },
+        { src: 'Feature/niercard.png', video: 'https://www.youtube.com/embed/eIMZYgb85xg', title: 'NieR:Automata Ver1.1a' },
+        { src: 'Feature/killlakillcard.png', video: 'https://www.youtube.com/embed/B98NY8Hfo7I', title: 'Kill La Kill' },
+        { src: 'Feature/berserkcard.png', video: 'https://www.youtube.com/embed/0MIw4xzxcTU', title: 'Berserk' },
+        { src: 'Feature/icebladecard.png', video: 'https://www.youtube.com/embed/l1hx7s7Ywcs', title: 'The Iceblade Sorcerer' },
+        { src: 'Feature/plunderercard.png', video: 'https://www.youtube.com/embed/L1Y9r8psTmo', title: 'Plunderer' },
+        { src: 'Feature/irregularcard.png', video: 'https://www.youtube.com/embed/U-gkwdGooDU', title: 'NieR:Automata Ver1.1a' },
+        { src: 'Feature/vinlandcard.png', video: 'https://www.youtube.com/embed/f8JrZ7Q_p-8', title: 'The Irregular' }
         // Add other images and their corresponding videos and titles here
     ];
 
