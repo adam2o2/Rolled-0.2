@@ -291,6 +291,49 @@ body {
     width: 100%; /* Align with the width of the yellow box */
 }
 
+.adventure-text {
+    color: #ffffff; /* Adjust the color as needed */
+    font-size: 72px; /* Set the font size */
+    font-weight: 700; /* Make the text bold */
+    text-align: left; /* Center the text */
+    margin-top: 375px; /* Adjust the margin as needed */
+    margin-left: calc((100% - 1790px) / 2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adventure-text span{
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: 44px;
+}
+
+.black-box-container {
+    display: flex;
+    gap: 50px; /* Space between each yellow box */
+    margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
+    margin-top: 47px; /* Space between the "Action" text and the yellow box */
+}
+
+.black-box {
+    width: 410px;
+    height: 536px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    position: relative; /* Allows absolute positioning of .box-text */
+}
+
+.adventure-info {
+    text-align: left;
+    position: absolute; /* Position it absolutely */
+    top: 550px; /* Adjust as needed to move it below the box */
+    width: 100%; /* Align with the width of the yellow box */
+}
+
 a {
     color: inherit; /* Keeps the link text color the same as the surrounding text */
     text-decoration: none; /* Removes the underline */
