@@ -28,21 +28,21 @@ document.addEventListener('DOMContentLoaded', function() {
     let selectedBox = null;
 
     const featureImages = [
-        { src: 'Feature/erasedcard.png', video: 'https://www.youtube.com/embed/dky7my5xd2c', title: 'Erased' },
-        { src: 'Feature/futurediarycard.png', video: 'https://www.youtube.com/embed/KfznTm8mJA4', title: 'Future Diary' },
-        { src: 'Feature/hellsingcard.png', video: 'https://www.youtube.com/embed/7CQKMDFAKMk', title: 'Hellsing' },
-        { src: 'Feature/paranoiaagentcard.png', video: 'https://www.youtube.com/embed/QEsNDDwhSJ4', title: 'Paranoia Agent' },
-        { src: 'Feature/psychopasscard.png', video: 'https://www.youtube.com/embed/YzuJnyebc40', title: 'Psycho-Pass' },
-        { src: 'Feature/terrorinresonancecard.png', video: 'https://www.youtube.com/embed/aiZrjeZvF8Y', title: 'Terror in Resonance' },
-        { src: 'Feature/thepromisedneverlandcard.png', video: 'https://www.youtube.com/embed/5llQ56toiPs', title: 'The Promised Neverland' },
-        { src: 'Feature/tokyoghoulcard.png', video: 'https://www.youtube.com/embed/vGuQeQsoRgU', title: 'Tokyo Ghoul' },
-        { src: 'Feature/tomodachicard.png', video: 'https://www.youtube.com/embed/y-hPQ0-orMM', title: 'Tomodachi Game' },
-        { src: 'Feature/parasytecard.png', video: 'https://www.youtube.com/embed/xWtUMR1BveU', title: 'Parasyte -the maxim-' },
-        { src: 'Feature/deathparadecard.png', video: 'https://www.youtube.com/embed/8ziUXV6t0ow', title: 'Death Parade' },
-        { src: 'Feature/detectiveconancard.png', video: 'https://www.youtube.com/embed/mz3b6Ym8s6s', title: 'Detective Conan' },
-        { src: 'Feature/kabanericard.png', video: 'https://www.youtube.com/embed/lQ9VjFBqfH8', title: 'Kabaneri' },
-        { src: 'Feature/inspectrecard.png', video: 'https://www.youtube.com/embed/l9QsM6PeTV4', title: 'In/Spectre' },
-        { src: 'Feature/deadmanwonderlandcard.png', video: 'https://www.youtube.com/embed/0OjJiQ_tB6k', title: 'Deadman Wonderland' },
+        { src: 'Feature/bucchigiricard.png', video: 'https://www.youtube.com/embed/Kw6JkejW_Hw', title: 'BUCCHIGIRI?!' },
+        { src: 'Feature/buddycard.png', video: 'https://www.youtube.com/embed/Oqxm1mn917g', title: 'Buddy Daddies' },
+        { src: 'Feature/combatantscard.png', video: 'https://www.youtube.com/embed/-uJdqz-fBl8', title: 'Combatants Will...' },
+        { src: 'Feature/ghostcard.png', video: 'https://www.youtube.com/embed/kOi5SpwDQR4', title: 'Ghost Stories' },
+        { src: 'Feature/gintamacard.png', video: 'https://www.youtube.com/embed/Eh43PgDfSxU', title: 'Gintama' },
+        { src: 'Feature/grandbluecard.png', video: 'https://www.youtube.com/embed/YILULCpNg9U', title: 'Grand Blue' },
+        { src: 'Feature/gurrencard.png', video: 'https://www.youtube.com/embed/rAQylCHv8Cw', title: 'Gurren Lagann' },
+        { src: 'Feature/konosubacard.png', video: 'https://www.youtube.com/embed/N1AO7k2o78g', title: 'Konosuba' },
+        { src: 'Feature/mashlecard.png', video: 'https://www.youtube.com/embed/_ce5_P1Hj5A', title: 'Mashle' },
+        { src: 'Feature/mobcard.png', video: 'https://www.youtube.com/embed/nTze7vAdRpM', title: 'Mob Psycho 100' },
+        { src: 'Feature/nichijoucard.png', video: 'https://www.youtube.com/embed/0AEV-8d_vbg', title: 'Nichijou' },
+        { src: 'Feature/pickupcard.png', video: 'https://www.youtube.com/embed/Nk23ix2xgTg', title: 'Is It Wrong to Try...' },
+        { src: 'Feature/robocard.png', video: 'https://www.youtube.com/embed/M0X4J1jpApw', title: 'ME & ROBOCO' },
+        { src: 'Feature/spacedandycard.png', video: 'https://www.youtube.com/embed/S4qW86moTys', title: 'Space Dandy' },
+        { src: 'Feature/spyxfamilycard.png', video: 'https://www.youtube.com/embed/6sosTNRw_uQ', title: 'Spy x Family' },
         // Add other images and their corresponding videos and titles here
     ];
 
