@@ -38,11 +38,12 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'Feature/hxhcard.png', video: 'https://www.youtube.com/embed/d6kBeJjTGnY', title: 'Hunter X Hunter' },
         { src: 'Feature/somalicard.png', video: 'https://www.youtube.com/embed/Xfw57amXb8Q', title: 'Somali' },
         { src: 'Feature/onepiececard.png', video: 'https://www.youtube.com/embed/TbHtbzAnZJ4', title: 'One Piece' },
-        { src: 'Feature/loveaftercard.png', video: 'https://www.youtube.com/embed/t_LOPSpeYvE', title: 'Love After World Domination' },
-        { src: 'Feature/masamunecard.png', video: 'https://www.youtube.com/embed/dJSjZnKDbHk', title: 'Masamune-kuns Revenge' },
-        { src: 'Feature/mylittlecard.png', video: 'https://www.youtube.com/embed/SlD-8h96pDw', title: 'My Little Monster' },
-        { src: 'Feature/worldgodcard.png', video: 'https://www.youtube.com/embed/OdBmj4TWqzk', title: 'The World God Only Knows' },
-        { src: 'Feature/yamadakuncard.png', video: 'https://www.youtube.com/embed/iwyufFdfO80', title: 'Yamada-kun' }
+        { src: 'Feature/marksmancard.png', video: 'https://www.youtube.com/embed/u6Pm0tDeGQQ', title: 'Lord Marksman' },
+        { src: 'Feature/chroniclecard.png', video: 'https://www.youtube.com/embed/wcwHx5NTJFo', title: 'Chain Chronicle' },
+        { src: 'Feature/mydaughtercard.png', video: 'https://www.youtube.com/embed/hnhdx8TQ4UU', title: 'My Daughter Left' },
+        { src: 'Feature/stabbercard.png', video: 'https://www.youtube.com/embed/1m9S8wQ3SlE', title: 'Sorcerous Stabber Orphen' },
+        { src: 'Feature/magicard.png', video: 'https://www.youtube.com/embed/2E7o26G1T0c', title: 'Magi' }
+
         // Add other images and their corresponding videos and titles here
     ];
 
