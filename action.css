@@ -109,23 +109,22 @@ body {
     border-radius: 20px;
 }
 
+.circle {
+    width: 1667px;
+    height: 801px;
+    border-radius: 20px;
+    background-color: #42ff0000;
+    display: flex;
+    align-items: center;
+} 
+
 .play-button {
     position: absolute;
-    z-index: 9999;
-    right: 8%;
-    bottom: -35%;
+    z-index: 2;
+    right: 6.2%;
+    bottom: -37.6%;
     cursor: pointer;
 }
-  
-.circle {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
 .playicon {
     vertical-align: middle;
