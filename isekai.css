@@ -79,6 +79,10 @@ body {
     border-radius: 35px;
 }
 
+.isekai-box-container{
+    margin-left: calc((100% - 1790px) / 2);
+    margin-right: calc((100% - 1790px) / 2);
+}
 
 .text1 p {
     color: aliceblue;
@@ -163,6 +167,7 @@ body {
     display: flex;
     gap: 50px; /* Space between each yellow box */
     margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
+    margin-right: calc((100% - 1882px) / 2);
     margin-top: 47px; /* Space between the "isekai" text and the yellow box */
 }
 
@@ -218,6 +223,7 @@ body {
     display: flex;
     gap: 50px; /* Space between each yellow box */
     margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
+    margin-right: calc((100% - 1882px) / 2);
     margin-top: 47px; /* Space between the "isekai" text and the yellow box */
 }
 
@@ -229,6 +235,7 @@ body {
     display: flex;
     gap: 50px; /* Space between each yellow box */
     margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
+    margin-right: calc((100% - 1882px) / 2);
     margin-top: 47px; /* Space between the "isekai" text and the yellow box */
 }
 
@@ -240,6 +247,7 @@ body {
     display: flex;
     gap: 50px; /* Space between each yellow box */
     margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
+    margin-right: calc((100% - 1882px) / 2);
     margin-top: 47px; /* Space between the "isekai" text and the yellow box */
 }
 
@@ -251,6 +259,7 @@ body {
     display: flex;
     gap: 50px; /* Space between each yellow box */
     margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
+    margin-right: calc((100% - 1882px) / 2);
     margin-top: 47px; /* Space between the "isekai" text and the yellow box */
 }
 
@@ -262,6 +271,7 @@ body {
     display: flex;
     gap: 50px; /* Space between each yellow box */
     margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
+    margin-right: calc((100% - 1882px) / 2);
     margin-top: 47px; /* Space between the "isekai" text and the yellow box */
 }
 
@@ -273,6 +283,7 @@ body {
     display: flex;
     gap: 50px; /* Space between each yellow box */
     margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
+    margin-right: calc((100% - 1882px) / 2);
     margin-top: 47px; /* Space between the "isekai" text and the yellow box */
 }
 
@@ -284,6 +295,7 @@ body {
     display: flex;
     gap: 50px; /* Space between each yellow box */
     margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
+    margin-right: calc((100% - 1882px) / 2);
     margin-top: 47px; /* Space between the "isekai" text and the yellow box */
 }
 
@@ -295,6 +307,7 @@ body {
     display: flex;
     gap: 50px; /* Space between each yellow box */
     margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
+    margin-right: calc((100% - 1882px) / 2);
     margin-top: 47px; /* Space between the "isekai" text and the yellow box */
 }
 
@@ -306,6 +319,7 @@ body {
     display: flex;
     gap: 50px; /* Space between each yellow box */
     margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
+    margin-right: calc((100% - 1882px) / 2);
     margin-top: 47px; /* Space between the "isekai" text and the yellow box */
 }
 

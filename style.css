@@ -102,8 +102,9 @@ body {
     font-size: 72px; /* Set the font size */
     font-weight: 700; /* Make the text bold */
     text-align: left; /* Center the text */
-    margin-top: 375px; /* Adjust the margin as needed */
+margin-top: 375px; /* Adjust the margin as needed */
     margin-left: calc((100% - 1790px) / 2);
+    margin-right: calc((100% - 1882px) / 2);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -168,6 +169,7 @@ body {
     text-align: left; /* Center the text */
     margin-top: 375px; /* Adjust the margin as needed */
     margin-left: calc((100% - 1790px) / 2);
+    margin-right: calc((100% - 1882px) / 2);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -211,6 +213,7 @@ body {
     text-align: left; /* Center the text */
     margin-top: 375px; /* Adjust the margin as needed */
     margin-left: calc((100% - 1790px) / 2);
+    margin-right: calc((100% - 1882px) / 2);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -255,6 +258,7 @@ body {
     text-align: left; /* Center the text */
     margin-top: 375px; /* Adjust the margin as needed */
     margin-left: calc((100% - 1790px) / 2);
+    margin-right: calc((100% - 1882px) / 2);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -298,6 +302,7 @@ body {
     text-align: left; /* Center the text */
     margin-top: 375px; /* Adjust the margin as needed */
     margin-left: calc((100% - 1790px) / 2);
+    margin-right: calc((100% - 1882px) / 2);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -341,6 +346,7 @@ body {
     text-align: left; /* Center the text */
     margin-top: 375px; /* Adjust the margin as needed */
     margin-left: calc((100% - 1790px) / 2);
+    margin-right: calc((100% - 1882px) / 2);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -384,6 +390,7 @@ body {
     text-align: left; /* Center the text */
     margin-top: 375px; /* Adjust the margin as needed */
     margin-left: calc((100% - 1790px) / 2);
+    margin-right: calc((100% - 1882px) / 2);
     display: flex;
     justify-content: space-between;
     align-items: center;
