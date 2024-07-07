@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Select all yellow boxes for action anime
     const yellowBoxes = document.querySelectorAll('.yellow-box');
 
     // Define array for action anime images with titles, videos, and episodes
@@ -91,11 +92,13 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'vinland.png', video: 'https://www.youtube.com/embed/f8JrZ7Q_p-8', title: 'Vinland Saga', episodes: '24 episodes' },
     ];
 
+    // Function to get random index
     function getRandomIndex(max) {
         return Math.floor(Math.random() * max);
     }
 
-    function loadRandomAnime() {
+    // Function to load random action anime
+    function loadRandomActionAnime() {
         yellowBoxes.forEach(box => {
             if (actionImages.length === 0) {
                 console.log('No more unique anime images available.');
@@ -120,9 +123,65 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Call the function to load random anime on page load
-    loadRandomAnime();
+    // Call the function to load random action anime on page load
+    loadRandomActionAnime();
 
     // Log a message to confirm script execution
-    console.log('Script executed successfully.');
+    console.log('Action anime script executed successfully.');
+
+
+    // Select all red boxes for romance anime
+    const redBoxes = document.querySelectorAll('.red-box');
+
+    // Define array for romance anime images with titles, videos, and episodes
+    const romanceImages = [
+        { src: 'duke.png', video: 'https://www.youtube.com/embed/55T_YNvgBbE', title: 'The Duke of Death', episodes: '12 episodes' },
+        { src: 'asign.png', video: 'https://www.youtube.com/embed/v50CI8LVwEY', title: 'A Sign of Affection', episodes: '12 episodes' },
+        { src: 'dressup.png', video: 'https://www.youtube.com/embed/8oveGY6h6T8', title: 'My Dress-Up Darling', episodes: '12 episodes' },
+        { src: 'nagatoro.png', video: 'https://www.youtube.com/embed/6dVQ93xBYUg', title: 'NAGATORO', episodes: '12 episodes' },
+        { src: 'tonikawa.png', video: 'https://www.youtube.com/embed/97wksuHdnF4', title: 'TONIKAWA', episodes: '24 episodes' },
+        { src: 'girlfriend.png', video: 'https://www.youtube.com/embed/1foV8Fh0WRc', title: 'Girlfriend Girlfriend', episodes: '12 episodes' },
+        { src: 'cuckoos.png', video: 'https://www.youtube.com/embed/4dhHnE_Jsbo', title: 'A Couple of Cuckoos', episodes: '24 episodes' },
+        { src: 'quintuplets.png', video: 'https://www.youtube.com/embed/ILDps6CfIwI', title: 'Quintessential Quintuplets', episodes: '24 episodes' },
+        { src: 'morethan.png', video: 'https://www.youtube.com/embed/rL60dbSWgtE', title: 'More than a Married Couple', episodes: '12 episodes' },
+        { src: 'bunnygirl.png', video: 'https://www.youtube.com/embed/tGJTrM9RphQ', title: 'Bunny Girl Senpai', episodes: '13 episodes' },
+        { src: 'loveafter.png', video: 'https://www.youtube.com/embed/t_LOPSpeYvE', title: 'Love After World Domination', episodes: '12 episodes' },
+        { src: 'masamune.png', video: 'https://www.youtube.com/embed/dJSjZnKDbHk', title: 'Masamune-kuns Revenge', episodes: '12 episodes' },
+        { src: 'mylittle.png', video: 'https://www.youtube.com/embed/SlD-8h96pDw', title: 'My Little Monster', episodes: '13 episodes' },
+        { src: 'worldgod.png', video: 'https://www.youtube.com/embed/OdBmj4TWqzk', title: 'The World God Only Knows', episodes: '12 episodes' },
+        { src: 'yamadakun.png', video: 'https://www.youtube.com/embed/iwyufFdfO80', title: 'Yamada-kun', episodes: '12 episodes' }
+        
+    ];
+
+    // Function to load random romance anime
+    function loadRandomRomanceAnime() {
+        redBoxes.forEach(box => {
+            if (romanceImages.length === 0) {
+                console.log('No more unique anime images available.');
+                return;
+            }
+
+            const index = getRandomIndex(romanceImages.length);
+            const selectedAnime = romanceImages[index];
+
+            const imageElement = box.querySelector('.box-image');
+            const titleElement = box.querySelector('.title');
+            const episodesElement = box.querySelector('.episodes');
+
+            // Set image source, alt text, title, and episodes
+            imageElement.src = `Romance/${selectedAnime.src}`;
+            imageElement.alt = selectedAnime.title;
+            titleElement.textContent = selectedAnime.title;
+            episodesElement.textContent = selectedAnime.episodes;
+
+            // Remove the selected anime from romanceImages array to avoid duplicates
+            romanceImages.splice(index, 1);
+        });
+    }
+
+    // Call the function to load random romance anime on page load
+    loadRandomRomanceAnime();
+
+    // Log a message to confirm script execution
+    console.log('Romance anime script executed successfully.');
 });
