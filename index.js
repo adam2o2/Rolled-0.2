@@ -184,4 +184,289 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Log a message to confirm script execution
     console.log('Romance anime script executed successfully.');
+
+// Select all blue boxes for isekai anime
+const blueBoxes = document.querySelectorAll('.blue-box');
+
+// Define array for isekai anime images with titles, videos, and episodes
+const isekaiImages = [
+    { src: 'mushoku.png', video: 'https://www.youtube.com/embed/k5VxfJpzy1Q', title: 'Mushoku Tensei', episodes: '23 episodes' },
+    { src: 'nogamenolife.png', video: 'https://www.youtube.com/embed/ZgWgnSG9PB0', title: 'No Game No Life', episodes: '12 episodes' },
+    { src: 'overlord.png', video: 'https://www.youtube.com/embed/uhlBqFj9kDw', title: 'OverLord', episodes: '52 episodes' },
+    { src: 'rezero.png', video: 'https://www.youtube.com/embed/lXs3yIc_2CU', title: 'Re:Zero', episodes: '50 episodes' },
+    { src: 'sagaoftanya.png', video: 'https://www.youtube.com/embed/V8Gx2_sHMRI', title: 'Saga of Tanya', episodes: '12 episodes' },
+    { src: 'sao.png', video: 'https://www.youtube.com/embed/6ohYYtxfDCg', title: 'Sword Art Online', episodes: '96 episodes' },
+    { src: 'shieldhero.png', video: 'https://www.youtube.com/embed/rKnyi3TRznA', title: 'Shield Hero', episodes: '38 episodes' },
+    { src: 'slime.png', video: 'https://www.youtube.com/embed/uOzwqb74K34', title: 'Reincarnated as A Slime', episodes: '48 episodes' },
+    { src: 'tsukimichi.png', video: 'https://www.youtube.com/embed/Q7IUIZix_yw', title: 'Tsukimichi', episodes: '12 episodes' },
+    { src: 'konosuba.png', video: 'https://www.youtube.com/embed/5h4rQY9bpgE', title: 'Konosuba', episodes: '20 episodes' },
+    { src: 'devilisaparttimer.png', video: 'https://www.youtube.com/embed/9eCFxxQ4WE0', title: 'Devil is a Part Timer', episodes: '26 episodes' },
+    { src: 'loghorizon.png', video: 'https://www.youtube.com/embed/IG1VhJ75r8k', title: 'Log Horizon', episodes: '62 episodes' },
+    { src: 'blacksummoner.png', video: 'https://www.youtube.com/embed/m3W8sZhn3-o', title: 'Black Summoner', episodes: '12 episodes' },
+    { src: 'spider.png', video: 'https://www.youtube.com/embed/geMv8Lwk2sM', title: 'So What im a Spider', episodes: '24 episodes' },
+    { src: 'vendingmachine.png', video: 'https://www.youtube.com/embed/mMOzW_UEdvg', title: 'Reborn as A Vending Machine', episodes: '12 episodes' }
+];
+
+
+// Function to load random isekai anime
+function loadRandomIsekaiAnime() {
+    blueBoxes.forEach(box => {
+        if (isekaiImages.length === 0) {
+            console.log('No more unique anime images available.');
+            return;
+        }
+
+        const index = getRandomIndex(isekaiImages.length);
+        const selectedAnime = isekaiImages[index];
+
+        const imageElement = box.querySelector('.box-image');
+        const titleElement = box.querySelector('.title');
+        const episodesElement = box.querySelector('.episodes');
+
+        // Set image source, alt text, title, and episodes
+        imageElement.src = `Isekai/${selectedAnime.src}`;
+        imageElement.alt = selectedAnime.title;
+        titleElement.textContent = selectedAnime.title;
+        episodesElement.textContent = selectedAnime.episodes;
+
+        // Remove the selected anime from isekaiImages array to avoid duplicates
+        isekaiImages.splice(index, 1);
+    });
+}
+
+// Call the function to load random isekai anime on page load
+loadRandomIsekaiAnime();
+
+// Log a message to confirm script execution
+console.log('isekai anime script executed successfully.');
+
+
+// Select all green boxes for thriller anime
+const greenBoxes = document.querySelectorAll('.green-box');
+
+// Define array for thriller anime images with titles, videos, and episodes
+const thrillerImages = [
+    { src: 'erased.png', video: 'https://www.youtube.com/embed/dky7my5xd2c', title: 'Erased', episodes: '12 episodes' },
+    { src: 'futurediary.png', video: 'https://www.youtube.com/embed/KfznTm8mJA4', title: 'Future Diary', episodes: '26 episodes' },
+    { src: 'hellsing.png', video: 'https://www.youtube.com/embed/7CQKMDFAKMk', title: 'Hellsing', episodes: '13 episodes' },
+    { src: 'paranoiaagent.png', video: 'https://www.youtube.com/embed/QEsNDDwhSJ4', title: 'Paranoia Agent', episodes: '13 episodes' },
+    { src: 'psychopass.png', video: 'https://www.youtube.com/embed/YzuJnyebc40', title: 'Psycho-Pass', episodes: '22 episodes' },
+    { src: 'terrorinresonance.png', video: 'https://www.youtube.com/embed/aiZrjeZvF8Y', title: 'Terror in Resonance', episodes: '11 episodes' },
+    { src: 'thepromisedneverland.png', video: 'https://www.youtube.com/embed/5llQ56toiPs', title: 'The Promised Neverland', episodes: '23 episodes' },
+    { src: 'tokyoghoul.png', video: 'https://www.youtube.com/embed/vGuQeQsoRgU', title: 'Tokyo Ghoul', episodes: '24 episodes' },
+    { src: 'tomodachi.png', video: 'https://www.youtube.com/embed/y-hPQ0-orMM', title: 'Tomodachi Game', episodes: '12 episodes' },
+    { src: 'parasyte.png', video: 'https://www.youtube.com/embed/xWtUMR1BveU', title: 'Parasyte -the maxim-', episodes: '24 episodes' },
+    { src: 'deathparade.png', video: 'https://www.youtube.com/embed/8ziUXV6t0ow', title: 'Death Parade', episodes: '12 episodes' },
+    { src: 'detectiveconan.png', video: 'https://www.youtube.com/embed/mz3b6Ym8s6s', title: 'Detective Conan', episodes: '1,056 episodes' },
+    { src: 'kabaneri.png', video: 'https://www.youtube.com/embed/lQ9VjFBqfH8', title: 'Kabaneri', episodes: '12 episodes' },
+    { src: 'inspectre.png', video: 'https://www.youtube.com/embed/l9QsM6PeTV4', title: 'In/Spectre', episodes: '24 episodes' },
+    { src: 'deadmanwonderland.png', video: 'https://www.youtube.com/embed/0OjJiQ_tB6k', title: 'Deadman Wonderland', episodes: '12 episodes' }
+];
+
+
+// Function to load random thriller anime
+function loadRandomThrillerAnime() {
+    greenBoxes.forEach(box => {
+        if (thrillerImages.length === 0) {
+            console.log('No more unique anime images available.');
+            return;
+        }
+
+        const index = getRandomIndex(thrillerImages.length);
+        const selectedAnime = thrillerImages[index];
+
+        const imageElement = box.querySelector('.box-image');
+        const titleElement = box.querySelector('.title');
+        const episodesElement = box.querySelector('.episodes');
+
+        // Set image source, alt text, title, and episodes
+        imageElement.src = `Thriller/${selectedAnime.src}`;
+        imageElement.alt = selectedAnime.title;
+        titleElement.textContent = selectedAnime.title;
+        episodesElement.textContent = selectedAnime.episodes;
+
+        // Remove the selected anime from thrillerImages array to avoid duplicates
+        thrillerImages.splice(index, 1);
+    });
+}
+
+// Call the function to load random thriller anime on page load
+loadRandomThrillerAnime();
+
+// Log a message to confirm script execution
+console.log('thriller anime script executed successfully.');
+
+
+// Select all black boxes for adventure anime
+const blackBoxes = document.querySelectorAll('.black-box');
+
+// Define array for adventure anime images with titles, videos, and episodes
+const adventureImages = [
+    { src: 'fairytail.png', video: 'https://www.youtube.com/embed/mAAKPx-ndAg', title: 'Fairy Tail', episodes: '328 episodes' },
+    { src: 'drstone.png', video: 'https://www.youtube.com/embed/S6OmSIxSj14', title: 'Dr. Stone', episodes: '35 episodes' },
+    { src: 'frieren.png', video: 'https://www.youtube.com/embed/pqUZaKn7flw', title: 'Frieren', episodes: 'TBD' },
+    { src: 'yuyu.png', video: 'https://www.youtube.com/embed/bGc1Na8mlw0', title: 'Yuyu Hakusho', episodes: '112 episodes' },
+    { src: 'fullmetal.png', video: 'https://www.youtube.com/embed/kx0nBaS_q50', title: 'Full Metal Alchemist', episodes: '51 episodes' },
+    { src: 'goldenkamuy.png', video: 'https://www.youtube.com/embed/Qqy7MCK4GeI', title: 'Golden Kamuy', episodes: '49 episodes' },
+    { src: 'goldenwind.png', video: 'https://www.youtube.com/embed/fvSKmPdD2a4', title: 'Golden Wind', episodes: '39 episodes' },
+    { src: 'hxh.png', video: 'https://www.youtube.com/embed/d6kBeJjTGnY', title: 'Hunter X Hunter', episodes: '148 episodes' },
+    { src: 'somali.png', video: 'https://www.youtube.com/embed/Xfw57amXb8Q', title: 'Somali', episodes: '12 episodes' },
+    { src: 'onepiece.png', video: 'https://www.youtube.com/embed/TbHtbzAnZJ4', title: 'One Piece', episodes: '1,057 episodes' },
+    { src: 'marksman.png', video: 'https://www.youtube.com/embed/u6Pm0tDeGQQ', title: 'Lord Marksman', episodes: '24 episodes' },
+    { src: 'chronicle.png', video: 'https://www.youtube.com/embed/wcwHx5NTJFo', title: 'Chain Chronicle', episodes: '12 episodes' },
+    { src: 'mydaughter.png', video: 'https://www.youtube.com/embed/hnhdx8TQ4UU', title: 'My Daughter Left', episodes: '12 episodes' },
+    { src: 'stabber.png', video: 'https://www.youtube.com/embed/1m9S8wQ3SlE', title: 'Sorcerous Stabber Orphen', episodes: '47 episodes' },
+    { src: 'magi.png', video: 'https://www.youtube.com/embed/2E7o26G1T0c', title: 'Magi', episodes: '50 episodes' }
+];
+
+
+// Function to load random adventure anime
+function loadRandomAdventureAnime() {
+    blackBoxes.forEach(box => {
+        if (adventureImages.length === 0) {
+            console.log('No more unique anime images available.');
+            return;
+        }
+
+        const index = getRandomIndex(adventureImages.length);
+        const selectedAnime = adventureImages[index];
+
+        const imageElement = box.querySelector('.box-image');
+        const titleElement = box.querySelector('.title');
+        const episodesElement = box.querySelector('.episodes');
+
+        // Set image source, alt text, title, and episodes
+        imageElement.src = `Adventure/${selectedAnime.src}`;
+        imageElement.alt = selectedAnime.title;
+        titleElement.textContent = selectedAnime.title;
+        episodesElement.textContent = selectedAnime.episodes;
+
+        // Remove the selected anime from adventureImages array to avoid duplicates
+        adventureImages.splice(index, 1);
+    });
+}
+
+// Call the function to load random adventure anime on page load
+loadRandomAdventureAnime();
+
+// Log a message to confirm script execution
+console.log('adventure anime script executed successfully.');
+
+
+// Select all purple boxes for sports anime
+const purpleBoxes = document.querySelectorAll('.purple-box');
+
+// Define array for sports anime images with titles, videos, and episodes
+const sportsImages = [
+    { src: 'haikyu.png', video: 'https://www.youtube.com/embed/KhZG9Uw7PxM', title: 'Haikyu!!', episodes: '85 episodes' },
+    { src: 'yuri.png', video: 'https://www.youtube.com/embed/KuhLOnIszok', title: 'Yuri on Ice', episodes: '12 episodes' },
+    { src: 'ippo.png', video: 'https://www.youtube.com/embed/a94NcwNgPdo?start=1', title: 'Hajime No Ippo', episodes: '127 episodes' },
+    { src: 'kurokobasket.png', video: 'https://www.youtube.com/embed/1KLvA6FMNiE', title: 'Kurokos Basketball', episodes: '75 episodes' },
+    { src: 'princeoftennis.png', video: 'https://www.youtube.com/embed/H0aHXo8q85g', title: 'The Prince of Tennis', episodes: '178 episodes' },
+    { src: 'runwiththewind.png', video: 'https://www.youtube.com/embed/hECoG4DhFVQ', title: 'Run With the Wind', episodes: '23 episodes' },
+    { src: 'pedal.png', video: 'https://www.youtube.com/embed/4pwc916s8J0', title: 'Yowamushi Pedal', episodes: '112 episodes' },
+    { src: 'slamdunk.png', video: 'https://www.youtube.com/embed/CbK6Yy4f4zY', title: 'Slam Dunk', episodes: '101 episodes' },
+    { src: 'freedive.png', video: 'https://www.youtube.com/embed/iLUZd5e_9vs', title: 'Free', episodes: '37 episodes' },
+    { src: 'aoashi.jpg', video: 'https://www.youtube.com/embed/UdKoCImaUeQ', title: 'Aoashi', episodes: '24 episodes' },
+    { src: 'bluelock.jpg', video: 'https://www.youtube.com/embed/IVsII3dLbWc?start=1', title: 'Blue Lock', episodes: '24 episodes' },
+    { src: 'megalobox.jpg', video: 'https://www.youtube.com/embed/gVxLZityaR0', title: 'MEGALOBOX', episodes: '26 episodes' },
+    { src: 'sk8.jpg', video: 'https://www.youtube.com/embed/vuoYi-1rCA4', title: 'SK8 the Infinity', episodes: '12 episodes' },
+    { src: 'eyeshield.jpg', video: 'https://www.youtube.com/embed/IYgnjsihha4', title: 'Eyeshield', episodes: '145 episodes' },
+    { src: 'ahirunosora.jpg', video: 'https://www.youtube.com/embed/rsqxACPa8EU', title: 'Ahiru no Sora', episodes: '50 episodes' }
+];
+
+
+
+
+// Function to load random sports anime
+function loadRandomSportsAnime() {
+    purpleBoxes.forEach(box => {
+        if (sportsImages.length === 0) {
+            console.log('No more unique anime images available.');
+            return;
+        }
+
+        const index = getRandomIndex(sportsImages.length);
+        const selectedAnime = sportsImages[index];
+
+        const imageElement = box.querySelector('.box-image');
+        const titleElement = box.querySelector('.title');
+        const episodesElement = box.querySelector('.episodes');
+
+        // Set image source, alt text, title, and episodes
+        imageElement.src = `Sports/${selectedAnime.src}`;
+        imageElement.alt = selectedAnime.title;
+        titleElement.textContent = selectedAnime.title;
+        episodesElement.textContent = selectedAnime.episodes;
+
+        // Remove the selected anime from sportsImages array to avoid duplicates
+        sportsImages.splice(index, 1);
+    });
+}
+
+// Call the function to load random sports anime on page load
+loadRandomSportsAnime();
+
+// Log a message to confirm script execution
+console.log('sports anime script executed successfully.');
+
+
+// Select all orange boxes for comedy anime
+const orangeBoxes = document.querySelectorAll('.orange-box');
+
+// Define array for comedy anime images with titles, videos, and episodes
+const comedyImages = [
+    { src: 'bucchigiri.png', video: 'https://www.youtube.com/embed/Kw6JkejW_Hw', title: 'BUCCHIGIRI?!', episodes: '12 episodes' },
+    { src: 'buddy.png', video: 'https://www.youtube.com/embed/Oqxm1mn917g', title: 'Buddy Daddies', episodes: '12 episodes' },
+    { src: 'combatants.png', video: 'https://www.youtube.com/embed/-uJdqz-fBl8', title: 'Combatants Will...', episodes: '12 episodes' },
+    { src: 'ghost.png', video: 'https://www.youtube.com/embed/kOi5SpwDQR4', title: 'Ghost Stories', episodes: '20 episodes' },
+    { src: 'gintama.png', video: 'https://www.youtube.com/embed/Eh43PgDfSxU', title: 'Gintama', episodes: '367 episodes' },
+    { src: 'grandblue.png', video: 'https://www.youtube.com/embed/YILULCpNg9U', title: 'Grand Blue', episodes: '12 episodes' },
+    { src: 'gurren.png', video: 'https://www.youtube.com/embed/rAQylCHv8Cw', title: 'Gurren Lagann', episodes: '27 episodes' },
+    { src: 'konosuba.png', video: 'https://www.youtube.com/embed/N1AO7k2o78g', title: 'Konosuba', episodes: '20 episodes' },
+    { src: 'mashle.png', video: 'https://www.youtube.com/embed/_ce5_P1Hj5A', title: 'Mashle', episodes: '12 episodes' },
+    { src: 'mob.png', video: 'https://www.youtube.com/embed/nTze7vAdRpM', title: 'Mob Psycho 100', episodes: '25 episodes' },
+    { src: 'nichijou.png', video: 'https://www.youtube.com/embed/0AEV-8d_vbg', title: 'Nichijou', episodes: '26 episodes' },
+    { src: 'pickup.png', video: 'https://www.youtube.com/embed/Nk23ix2xgTg', title: 'Is It Wrong to Try...', episodes: '37 episodes' },
+    { src: 'robo.png', video: 'https://www.youtube.com/embed/M0X4J1jpApw', title: 'ME & ROBOCO', episodes: '20 episodes' },
+    { src: 'spacedandy.png', video: 'https://www.youtube.com/embed/S4qW86moTys', title: 'Space Dandy', episodes: '26 episodes' },
+    { src: 'spyxfamily.png', video: 'https://www.youtube.com/embed/6sosTNRw_uQ', title: 'Spy x Family', episodes: '25 episodes' }
+];
+
+
+
+// Function to load random comedy anime
+function loadRandomComedyAnime() {
+    orangeBoxes.forEach(box => {
+        if (comedyImages.length === 0) {
+            console.log('No more unique anime images available.');
+            return;
+        }
+
+        const index = getRandomIndex(comedyImages.length);
+        const selectedAnime = comedyImages[index];
+
+        const imageElement = box.querySelector('.box-image');
+        const titleElement = box.querySelector('.title');
+        const episodesElement = box.querySelector('.episodes');
+
+        // Set image source, alt text, title, and episodes
+        imageElement.src = `Comedy/${selectedAnime.src}`;
+        imageElement.alt = selectedAnime.title;
+        titleElement.textContent = selectedAnime.title;
+        episodesElement.textContent = selectedAnime.episodes;
+
+        // Remove the selected anime from comedyImages array to avoid duplicates
+        comedyImages.splice(index, 1);
+    });
+}
+
+// Call the function to load random comedy anime on page load
+loadRandomComedyAnime();
+
+// Log a message to confirm script execution
+console.log('comedy anime script executed successfully.');
 });
+
+
+
