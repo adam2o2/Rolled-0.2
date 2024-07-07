@@ -431,3 +431,113 @@ a {
     color: inherit; /* Keeps the link text color the same as the surrounding text */
     text-decoration: none; /* Removes the underline */
 }
+
+
+@media (max-width: 414px) {
+    .ribbon {
+        width: 400px;
+        height: 50px;
+    }
+    
+    .ribbon-right span {
+        font-size: 10px;
+    }
+    
+    .ribbon-left a {
+        font-size: 18px;
+    }
+
+    .content h1 {
+        align-items: center;
+        font-size: 53px;
+        margin-top: 15px;
+        margin-bottom: 95px;
+    }
+    
+    .text1 p {
+        align-items: center;
+        font-size: 12px;
+    }
+    
+    .content img {
+        width: 1064.47px;
+        height: 201px;
+    }
+    
+    .background-image {
+        height: auto;
+        background-size: cover;
+        filter: blur(50px); /* Reduce blur for smaller screens */
+    }
+    
+    .text1 h1 {
+        font-size: 36px; /* Adjusted to fit the screen */
+        padding-top: 62px; /* Reduce padding */
+    }
+    
+    .text1 p {
+        font-size: 14px; /* Adjust font size */
+        margin-top: -82px; /* Adjust margin */
+    }
+
+    .box img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px; /* Reduce border-radius */
+    }
+    
+    .action-text, .romance-text, .isekai-text, .thriller-text, .adventure-text, .sports-text, .comedy-text {
+        font-size: 14px; /* Reduce font size */
+        margin-top: 40px; /* Reduce margin-top */
+        margin-left: 3px;
+        margin-right: 15px; /* Adjust margin for smaller screens */
+        display: flex;
+        justify-content: space-between; /* Ensure genre names are on the left and "view all" is on the right */
+    }
+    
+    .action-text span, .romance-text span, .isekai-text span, .thriller-text span, .adventure-text span, .sports-text span, .comedy-text span {
+        font-size: 14px; /* Reduce font size for the span elements */
+        margin-right: 0; /* Reset margin-right */
+        margin-left: auto; /* Align "view all" to the right */
+    }
+    
+    .yellow-box-container, .red-box-container, .blue-box-container, .green-box-container, .black-box-container, .purple-box-container, .orange-box-container {
+        flex-direction: row; /* Ensure boxes are side by side */
+        gap: 10px; /* Reduce the gap between boxes */
+        margin-left: 5px; /* Adjust margin */
+        margin-right: 5px; /* Adjust margin */
+        margin-top: 10px; /* Adjust margin-top */
+        flex-wrap: wrap; /* Allow wrapping to fit in the screen */
+    }
+
+    .yellow-box, .red-box, .blue-box, .green-box, .black-box, .purple-box, .orange-box {
+        width: calc(25% - 10px); /* Make the boxes 25% width with margin */
+        height: auto; /* Adjust height */
+        padding-bottom: 10px; /* Reduce padding */
+    }
+    
+    .box-image {
+        max-height: 150px; /* Reduce max-height for images */
+        margin-top: 10px; /* Adjust margin */
+    }
+    
+
+
+    .title {
+        font-size: 9px; /* Adjust font size */
+        margin-top: -449px; /* Adjust top margin */
+    }
+
+    .episodes {
+        font-size: 10px; /* Adjust font size */
+        margin-top: -28px; /* Adjust top margin */
+    }
+
+    a {
+        font-size: 14px; /* Adjust link font size */
+    }
+    .icon {
+        width: 16px;
+        height: 23px; /* Adjust height as needed */
+    }
+}
