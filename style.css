@@ -460,8 +460,8 @@ a {
     }
     
     .content img {
-        width: 1064.47px;
-        height: 201px;
+        width: 100%;
+        height: auto;
     }
     
     .background-image {
@@ -487,13 +487,13 @@ a {
     }
     
     .action-text, .romance-text, .isekai-text, .thriller-text, .adventure-text, .sports-text, .comedy-text {
-        font-size: 14px; /* Reduce font size */
-        margin-top: 40px; /* Reduce margin-top */
-        margin-left: 3px;
-        margin-right: 15px; /* Adjust margin for smaller screens */
-        display: flex;
-        justify-content: space-between; /* Ensure genre names are on the left and "view all" is on the right */
-    }
+    font-size: 16px; /* Reduce font size */
+    margin-top: 49px; /* Reduce margin-top */
+    margin-left: 3px;
+    margin-right: 15px; /* Adjust margin for smaller screens */
+    display: flex;
+    justify-content: space-between; /* Ensure genre names are on the left and "view all" is on the right */
+}
     
     .action-text span, .romance-text span, .isekai-text span, .thriller-text span, .adventure-text span, .sports-text span, .comedy-text span {
         font-size: 14px; /* Reduce font size for the span elements */
@@ -520,24 +520,45 @@ a {
         max-height: 150px; /* Reduce max-height for images */
         margin-top: 10px; /* Adjust margin */
     }
-    
-
 
     .title {
         font-size: 9px; /* Adjust font size */
-        margin-top: -449px; /* Adjust top margin */
+        margin-top: -10px; /* Adjust top margin */
     }
 
     .episodes {
         font-size: 10px; /* Adjust font size */
-        margin-top: -28px; /* Adjust top margin */
+        margin-top: -10px; /* Adjust top margin */
     }
 
     a {
         font-size: 14px; /* Adjust link font size */
     }
+
     .icon {
         width: 16px;
         height: 23px; /* Adjust height as needed */
     }
+
+    /* Add styles for .comedy-info and .sports-info */
+    .comedy-info, .sports-info, .action-info, .romance-info, .isekai-info, .thriller-info, .adventure-info {
+        font-size: 10px; /* Adjust font size */
+        margin-top: -429px; /* Adjust top margin */
+        margin-left: 10px; /* Adjust left margin */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1430px;
+        z-index: -1;
+        background-image: url('Feature/jjkCard.png');
+        background-size: cover;
+        filter: blur(159.4px); /* Adjust blur amount as needed */
+    }
+    
 }
