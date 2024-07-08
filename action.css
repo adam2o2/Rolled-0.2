@@ -418,14 +418,16 @@ a {
 
     .action-box-container h1 {
         font-size: 1.5em;
-        margin: 0;
+        margin: 0; 
     }
 
     .action-box {
-        padding: 10px;
-        border-radius: 5px;
+        border-radius: 50px;
         text-align: center;
-        font-size: 1.2em;
+        font-size: 10px;
+        margin-top: 153px;
+        height: 23px; 
+        width: 56px;
     }
 
     .action-info .title {
@@ -442,23 +444,24 @@ a {
     .row-four-container,
     .row-five-container,
     .row-six-container,
-    .row-seven-container,
-    .row-eight-container{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-left: 10px;
+    .row-seven-container{
+        flex-direction: row; /* Ensure boxes are side by side */
+        gap: 10px; /* Reduce the gap between boxes */
+        margin-left: 2px; /* Adjust margin */
+        margin-right: -7px; /* Adjust margin */
+        margin-top: 28px; /* Adjust margin-top */
+        flex-wrap: wrap; 
     }
 
     .yellow-box {
         flex: 1 1 calc(20% - 10px); /* 5 boxes per row with gap */
-        height: 264px;
+        height: 123px;
     }
 
     .box-image {
         width: 100%;
         height: auto;
-        border-radius: 5px;
+        margin-right: 0px;
     }
 
     .play-button {
@@ -508,8 +511,9 @@ a {
     }
 
     .action-info{
-        margin-top: -254px;
+        margin-top: -398px;
         margin-right: 0px;
+        font-size: 8px;
     }
 
     .icon {
@@ -517,6 +521,33 @@ a {
         height: 24px;
     }
 
+    .row-two,
+    .row-three,
+    .row-four,
+    .row-five,
+    .row-six,
+    .row-seven{
+        margin-top: 10px;
+    }
+
+    .action-box-container{
+    margin-left: calc((100% - 37px) / 2);
+    margin-right: calc((100% - 297px) / 2);
+    }
+
+    .text1 h1 {
+        font-size: 36px; /* Adjusted to fit the screen */
+        padding-top: 92px; /* Reduce padding */
+        text-wrap: wrap;
+        margin-left: -172px;
+        margin-bottom: 10px;
+    }
     
+    .text1 p {
+        font-size: 14px; /* Adjust font size */
+        margin-top: -152px; /* Adjust margin */
+        text-wrap: nowrap;
+    }
+
 }
 
