@@ -139,3 +139,22 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.overflow = 'auto'; // Enable scrolling
     });
 });
+
+// For the crunchyroll button
+document.addEventListener('DOMContentLoaded', () => {
+    const yellowBoxes = document.querySelectorAll('.yellow-box');
+    const videoIframe = document.getElementById('video-iframe');
+    const crunchyrollButton = document.getElementById('crunchyroll-button');
+
+    yellowBoxes.forEach(box => {
+        box.addEventListener('click', () => {
+            const videoUrl = box.getAttribute('data-video');
+            const crunchyrollUrl = box.getAttribute('data-crunchyroll');
+            
+            videoIframe.src = videoUrl;
+            crunchyrollButton.href = crunchyrollUrl;
+            
+            document.getElementById('video-overlay').style.display = 'block';
+        });
+    });
+});
