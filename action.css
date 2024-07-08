@@ -386,3 +386,137 @@ a {
     height: 26px;
     vertical-align: middle;
 }
+
+@media  (max-width: 414px) {
+    .ribbon {
+        width: 400px;
+        height: 50px;
+    }
+    
+    .ribbon-right span {
+        font-size: 10px;
+    }
+    
+    .ribbon-left a {
+        font-size: 18px;
+    }
+    .box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .background-image {
+        background-image: url('your_background_image.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .action-box-container h1 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    .action-box {
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    .action-info .title {
+        font-size: 1em;
+    }
+
+    .action-info .episodes {
+        font-size: 0.8em;
+    }
+
+    .yellow-box-container,
+    .row-two-container,
+    .row-three-container,
+    .row-four-container,
+    .row-five-container,
+    .row-six-container,
+    .row-seven-container,
+    .row-eight-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-left: 10px;
+    }
+
+    .yellow-box {
+        flex: 1 1 calc(20% - 10px); /* 5 boxes per row with gap */
+        height: 264px;
+    }
+
+    .box-image {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .play-button {
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+    }
+
+    .video-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .watch-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        background-color: orange;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .watch-button img {
+        width: 36px;
+        height: 36px;
+        margin-right: 10px;
+    }
+
+    .action-text {
+        font-size: 1.2em;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .action-info{
+        margin-top: -254px;
+        margin-right: 0px;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    
+}
+
