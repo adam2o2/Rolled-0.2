@@ -115,6 +115,8 @@ body {
     background-color: #42ff0000;
     display: flex;
     align-items: center;
+    margin-top: -802px;
+    margin-left: 109px;
 } 
 
 .play-button {
@@ -253,7 +255,7 @@ a {
     width: 29px;
     height: 26px;
     vertical-align: middle;
-}
+} 
 
 
 @media  (max-width: 414px) {
@@ -307,29 +309,24 @@ a {
         font-size: 0.8em;
     }
 
-    .yellow-box-container,
-    .row-two-container,
-    .row-three-container,
-    .row-four-container,
-    .row-five-container,
-    .row-six-container,
-    .row-seven-container{
+    .grid-container{
         flex-direction: row; /* Ensure boxes are side by side */
-        gap: 10px; /* Reduce the gap between boxes */
+        gap: 57px 37px; /* Reduce the gap between boxes */
         margin-left: 2px; /* Adjust margin */
         margin-right: -7px; /* Adjust margin */
         margin-top: 28px; /* Adjust margin-top */
         flex-wrap: wrap; 
-    }
+        grid-template-columns: auto auto auto;
+    } 
 
     .yellow-box {
-        flex: 1 1 calc(20% - 10px); /* 5 boxes per row with gap */
-        height: 123px;
+        width: 100px;
+        height: 130px;
     }
 
     .box-image {
-        width: 100%;
-        height: auto;
+        width: 100px;
+        height: 130px;
         margin-right: 0px;
     }
 
@@ -380,23 +377,13 @@ a {
     }
 
     .action-info{
-        margin-top: -398px;
-        margin-right: 0px;
+        margin-top: -14px;
         font-size: 8px;
     }
 
     .icon {
         width: 24px;
         height: 24px;
-    }
-
-    .row-two,
-    .row-three,
-    .row-four,
-    .row-five,
-    .row-six,
-    .row-seven{
-        margin-top: 10px;
     }
 
     .action-box-container{
@@ -418,5 +405,11 @@ a {
         text-wrap: nowrap;
     }
 
+    .circle{
+        width: 378px;
+        height: 214px;
+        margin-top: -215px;
+        margin-left: 0px;
+    }
 }
 
