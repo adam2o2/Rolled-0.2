@@ -79,11 +79,6 @@ body {
     border-radius: 35px;
 }
 
-.action-box-container{
-    margin-left: calc((100% - 1790px) / 2);
-    margin-right: calc((100% - 1790px) / 2);
-}
-
 .text1 p {
     color: aliceblue;
     display: flex;
@@ -130,14 +125,6 @@ body {
     cursor: pointer;
 }
 
-.playicon {
-    vertical-align: middle;
-    width: 32px;
-    height: 32px;
-    margin-right: -10px;
-    margin-top: 9px;
-}
-  
 .icon {
     vertical-align: middle;
     width: 32px; /* Increased size */
@@ -163,23 +150,18 @@ body {
     margin-right: 44px; /* Align to the right side of the container */
 }
 
-.yellow-box-container {
-    display: flex;
-    gap: 50px; /* Space between each yellow box */
-    margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
-    margin-right: calc((100% - 1882px) / 2);
-    margin-top: 47px; /* Space between the "Action" text and the yellow box */
+.grid-container{
+    display: grid;
+    gap: 141px 0px;
+    grid-template-columns: auto auto auto auto auto;
+    margin-left: 43px;
 }
 
+
 .yellow-box {
-    width: 410px;
-    height: 536px;
+    width: 327px;
+    height: 427px;
     background-color: #fff70000;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-bottom: 20px;
-    box-sizing: border-box;
     position: relative; /* Allows absolute positioning of .box-text */
     cursor: pointer;
 }
@@ -188,18 +170,12 @@ body {
     width: 100%;
     height: auto;
     max-height: 104%;
-    object-fit: cover;
-    margin-top: 19px;
-    margin-right: 23px;
+    object-fit: cover; 
 }
 
 .action-info {
-    text-align: left;
     position: absolute;
-    top: 493px;
-    width: 100%;
-    margin-right: 23px;
-    margin-top: -11px;
+    margin-top: -27px;
 }
 
 .title {
@@ -213,114 +189,6 @@ body {
     color: #7D7D7D;
     font-size: 24px;
     font-weight: 400;
-}
-
-.row-two {
-    margin-top: 87px; /* Adjust the margin as needed */
-}
-
-.row-two-container {
-    display: flex;
-    gap: 50px; /* Space between each yellow box */
-    margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
-    margin-right: calc((100% - 1882px) / 2);
-    margin-top: 47px; /* Space between the "Action" text and the yellow box */
-}
-
-.row-three {
-    margin-top: 87px; /* Adjust the margin as needed */
-}
-
-.row-three-container {
-    display: flex;
-    gap: 50px; /* Space between each yellow box */
-    margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
-    margin-right: calc((100% - 1882px) / 2);
-    margin-top: 47px; /* Space between the "Action" text and the yellow box */
-}
-
-.row-four {
-    margin-top: 87px; /* Adjust the margin as needed */
-}
-
-.row-four-container {
-    display: flex;
-    gap: 50px; /* Space between each yellow box */
-    margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
-    margin-right: calc((100% - 1882px) / 2);
-    margin-top: 47px; /* Space between the "Action" text and the yellow box */
-}
-
-.row-five {
-    margin-top: 87px; /* Adjust the margin as needed */
-}
-
-.row-five-container {
-    display: flex;
-    gap: 50px; /* Space between each yellow box */
-    margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
-    margin-right: calc((100% - 1882px) / 2);
-    margin-top: 47px; /* Space between the "Action" text and the yellow box */
-}
-
-.row-six {
-    margin-top: 87px; /* Adjust the margin as needed */
-}
-
-.row-six-container {
-    display: flex;
-    gap: 50px; /* Space between each yellow box */
-    margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
-    margin-right: calc((100% - 1882px) / 2);
-    margin-top: 47px; /* Space between the "Action" text and the yellow box */
-}
-
-.row-seven {
-    margin-top: 87px; /* Adjust the margin as needed */
-}
-
-.row-seven-container {
-    display: flex;
-    gap: 50px; /* Space between each yellow box */
-    margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
-    margin-right: calc((100% - 1882px) / 2);
-    margin-top: 47px; /* Space between the "Action" text and the yellow box */
-}
-
-.row-eight {
-    margin-top: 87px; /* Adjust the margin as needed */
-}
-
-.row-eight-container {
-    display: flex;
-    gap: 50px; /* Space between each yellow box */
-    margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
-    margin-right: calc((100% - 1882px) / 2);
-    margin-top: 47px; /* Space between the "Action" text and the yellow box */
-}
-
-.row-nine {
-    margin-top: 87px; /* Adjust the margin as needed */
-}
-
-.row-nine-container {
-    display: flex;
-    gap: 50px; /* Space between each yellow box */
-    margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
-    margin-right: calc((100% - 1882px) / 2);
-    margin-top: 47px; /* Space between the "Action" text and the yellow box */
-}
-
-.row-ten {
-    margin-top: 87px; /* Adjust the margin as needed */
-}
-
-.row-ten-container {
-    display: flex;
-    gap: 50px; /* Space between each yellow box */
-    margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
-    margin-right: calc((100% - 1882px) / 2);
-    margin-top: 47px; /* Space between the "Action" text and the yellow box */
 }
 
 a {
@@ -386,6 +254,7 @@ a {
     height: 26px;
     vertical-align: middle;
 }
+
 
 @media  (max-width: 414px) {
     .ribbon {
