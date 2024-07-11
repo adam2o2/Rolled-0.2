@@ -134,8 +134,6 @@ document.addEventListener('DOMContentLoaded', function() {
     function playVideo(videoUrl) {
         if (videoUrl) {
             videoIframe.src = videoUrl;
-            videoIframe.style.width = '1666.47px';
-            videoIframe.style.height = '801px';
             videoIframe.style.display = 'block';
             videoIframe.style.position = 'fixed';
             videoIframe.style.top = '50%';
@@ -143,6 +141,16 @@ document.addEventListener('DOMContentLoaded', function() {
             videoIframe.style.transform = 'translate(-50%, -50%)';
             videoOverlay.style.display = 'block'; // Show overlay
             document.body.style.overflow = 'hidden'; // Disable scrolling
+    
+            if (window.innerWidth <= 414) {
+                // Mobile styles
+                videoIframe.style.width = '391px';
+                videoIframe.style.height = '221px';
+            } else {
+                // Desktop styles
+                videoIframe.style.width = '1666.47px';
+                videoIframe.style.height = '801px';
+            }
         } else {
             videoIframe.style.display = 'none';
         }
