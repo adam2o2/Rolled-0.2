@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'Feature/metalliccard.png', video: 'https://www.youtube.com/embed/yv8eVL4xBI4', title: 'Metallic Rouge' },
         { src: 'Feature/deadmountcard.png', video: 'https://www.youtube.com/embed/_BDDj_4nmNg', title: 'Dead Mount Death Play' },
         { src: 'Feature/gluttonycard.png', video: 'https://www.youtube.com/embed/f3FwcHciZZ0', title: 'Berserk of Gluttony' },
-        { src: 'Feature/dragoncard.png', video: 'https://www.youtube.com/embed/2Vej889SS6s', title: 'Dragon Ball Super' },
+        { src: 'Feature/dragonballcard.png', video: 'https://www.youtube.com/embed/2Vej889SS6s', title: 'Dragon Ball Super' },
         { src: 'Feature/bloodcard.png', video: 'https://www.youtube.com/embed/aMe0J7c8uOU', title: 'Blood Blockade Battlefront' },
         { src: 'Feature/niercard.png', video: 'https://www.youtube.com/embed/eIMZYgb85xg', title: 'NieR:Automata Ver1.1a' },
         { src: 'Feature/killlakillcard.png', video: 'https://www.youtube.com/embed/B98NY8Hfo7I', title: 'Kill La Kill' },
