@@ -120,8 +120,8 @@ body {
 } 
 
 .play-button {
-    position: absolute;
-    z-index: 2;
+    position: relative;
+    z-index: 3;
     right: 6.2%;
     bottom: -37.6%;
     cursor: pointer;
@@ -330,16 +330,18 @@ a {
         margin-right: 0px;
     }
 
-    .play-button {
-        width: 50px;
-        height: 50px;
-        background-color: #fff;
-        border-radius: 50%;
+    .play-button .circle{
+        width: 378px;
+        height: 214px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 20px auto;
     }
+    .play-button {
+        margin-top: 588px;
+        margin-left: -89px;
+    }
+
 
     .video-overlay {
         position: fixed;
@@ -405,11 +407,5 @@ a {
         text-wrap: nowrap;
     }
 
-    .circle{
-        width: 378px;
-        height: 214px;
-        margin-top: -215px;
-        margin-left: 0px;
-    }
 }
 
