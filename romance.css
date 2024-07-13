@@ -152,13 +152,21 @@ body {
     margin-right: 44px; /* Align to the right side of the container */
 }
 
-.grid-container{
+.boxwrap{
+    margin: 0 auto;
+    width: 1823px; 
+}
+.grid-wrap {
+    margin: 0 auto;
+    width: 1823px;
+}
+
+.grid-container {
     display: grid;
     gap: 141px 0px;
     grid-template-columns: auto auto auto auto auto;
     margin-left: 43px;
 }
-
 
 .yellow-box {
     width: 327px;
@@ -255,25 +263,27 @@ a {
     width: 29px;
     height: 26px;
     vertical-align: middle;
-} 
+}
 
-
-@media  (max-width: 414px) {
+/* Media query for mobile view with a minimum width of 414px */
+@media screen and (min-width: 414px) {
     .ribbon {
         width: 400px;
         height: 50px;
     }
-    
+
     .ribbon-right span {
         font-size: 10px;
     }
-    
+
     .ribbon-left a {
         font-size: 18px;
     }
+
     .box img {
         width: 100%;
         height: auto;
+        margin-left: 1px;
     }
 
     .background-image {
@@ -289,7 +299,7 @@ a {
 
     .romance-box-container h1 {
         font-size: 1.5em;
-        margin: 0; 
+        margin: 0;
     }
 
     .romance-box {
@@ -297,27 +307,42 @@ a {
         text-align: center;
         font-size: 10px;
         margin-top: 153px;
-        height: 23px; 
+        height: 23px;
         width: 56px;
     }
 
     .romance-info .title {
-        font-size: 1em;
+        font-size: 10px;
+        margin-top: -17px;
+        
     }
 
     .romance-info .episodes {
-        font-size: 0.8em;
+        font-size: 8px;
+        margin-top: -23px;
     }
 
-    .grid-container{
+    .boxwrap{
+        margin: 0 auto;
+        width: 0px; 
+    }
+
+    .grid-wrap{
+        width: 100%; /* Full width for responsiveness */
+        max-width: 414px; /* Ensure it doesn't exceed the device width */
+        margin: 0 auto;
+    }
+
+    .grid-container {
         flex-direction: row; /* Ensure boxes are side by side */
         gap: 57px 37px; /* Reduce the gap between boxes */
         margin-left: 2px; /* Adjust margin */
         margin-right: -7px; /* Adjust margin */
-        margin-top: 28px; /* Adjust margin-top */
-        flex-wrap: wrap; 
+        margin-top: 20px; /* Adjust margin-top */
+        flex-wrap: wrap;
         grid-template-columns: auto auto auto;
-    } 
+        width: 0px;
+    }
 
     .yellow-box {
         width: 100px;
@@ -330,83 +355,252 @@ a {
         margin-right: 0px;
     }
 
-    .play-button .circle{
+    .play-button{
+        width: 378px;
+        height: 214px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -189px;
+        margin-top: -214px;
+    }
+
+    .box{
         width: 378px;
         height: 214px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .play-button {
-        margin-top: 588px;
-        margin-left: -89px;
-    }
-
-
-    .video-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.8);
-        display: none;
+    .play-button .circle {
+        width: 378px;
+        height: 214px;
+        display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .circle {
+        width: 93px;
+        height: 53px;
+        background-color: #42ff0000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        margin-top: -1px;
+    }
+
+    .romance-info {
+        margin-top: -10px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .episodes {
+        font-size: 14px;
     }
 
     .watch-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0px;
-        background-color: #F47521;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        margin-bottom: 180px;
+        width: 200px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+        margin-bottom: 256px;
     }
 
     .watch-button img {
-        width: 36px;
-        height: 36px;
-        margin-right: 10px;
-    }
-
-    .romance-text {
-        font-size: 1.2em;
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    .romance-info{
-        margin-top: -14px;
-        font-size: 8px;
-    }
-
-    .icon {
         width: 24px;
-        height: 24px;
-    }
-
-    .romance-box-container{
-    margin-left: calc((100% - 37px) / 2);
-    margin-right: calc((100% - 297px) / 2);
+        height: 21px;
     }
 
     .text1 h1 {
-        font-size: 36px; /* Adjusted to fit the screen */
-        padding-top: 92px; /* Reduce padding */
-        text-wrap: wrap;
-        margin-left: -172px;
-        margin-bottom: 10px;
-    }
-    
-    .text1 p {
-        font-size: 14px; /* Adjust font size */
-        margin-top: -152px; /* Adjust margin */
-        text-wrap: nowrap;
+        font-size: 49px;
+        margin-left: 20px;
     }
 
+    .text1 p {
+        font-size: 14px;
+        margin-top: -151px;
+        margin-right: 10px;
+    }
+
+    .romance-text{
+        font-size: 1.2em;
+        width: 266px;
+        margin-top: 67px;
+        margin-left: 0px;
+    }
+
+    .boxwrap .box{
+        margin-left: -188px;
+    }
+
+    .watch-button span {
+        font-size: 12px;
+    }
 }
 
+/* Media query for desktop view with a minimum width of 1200px */
+@media screen and (min-width: 1200px) {
+    .ribbon {
+        width: 1453px;
+        height: 87px;
+        top: 20px; /* Adjust the spacing from the top */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .ribbon-left {
+        font-size: 18px; /* Adjust font size as needed */
+        margin-left: 24px;
+    }
+
+    .ribbon-right {
+        gap: 20px; /* Adjust the spacing as needed */
+        margin-right: 18px;
+    }
+
+    .ribbon-right span {
+        font-size: 18px; /* Adjust font size as needed */
+    }
+
+    .background-image {
+        height: 1430px;
+        background-size: cover;
+        filter: blur(159.4px); /* Adjust blur amount as needed */
+    }
+
+    .romance-info .title {
+        font-size: 27px;
+        margin-top: -17px;
+    }
+
+    .romance-info .episodes {
+        font-size: 19px;
+        margin-top: -17px;
+    }
+
+    .text1 h1 {
+        font-size: 130px;
+        font-weight: 400;
+        margin-left: 113px;
+        margin-top: 131px;
+    }
+
+    .romance-box {
+        width: 118px;
+        height: 50px;
+        margin-left: 88%;
+        font-size: 18px;
+        transform: translateY(-185px);
+    }
+
+    .text1 p {
+        font-size: 20px;
+        margin-top: -85px;
+        margin-right: 67%;
+    }
+
+    .box {
+        margin-top: 30px;
+    }
+
+    .box img {
+        width: 1664.47px;
+        height: 801px;
+        border-radius: 20px;
+        margin-top: 590px;
+    }
+
+    .circle {
+        width: 1667px;
+        height: 801px;
+        border-radius: 20px;
+        margin-top: -802px;
+        margin-left: 109px;
+    }
+
+    .play-button {
+        position: relative;
+        right: -3.8%;
+        bottom: -19.6%;
+        height: 802px;
+        width: 1676px;
+        margin-left: -834px;
+    }
+
+    .icon {
+        width: 32px; /* Increased size */
+        height: 32px; /* Increased size */
+        margin-right: 8px; /* Adjust spacing between the icon and the text */
+    }
+
+    .romance-text {
+        font-size: 72px; /* Set the font size */
+        font-weight: 700; /* Make the text bold */
+        margin-top: 121px; /* Adjust the margin as needed */
+        margin-left: calc((100% - 1790px) / 2);
+        width: 1000px;
+    }
+
+    .romance-text span {
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: 44px; /* Align to the right side of the container */
+    }
+
+    .grid-wrap {
+        width: 1823px;
+    }
+
+    .grid-container {
+        gap: 141px 38px;
+        grid-template-columns: auto auto auto auto auto;
+        margin-left: -679px;
+        margin-top: 10px;
+    }
+
+    .yellow-box {
+        width: 327px;
+        height: 427px;
+    }
+
+    .box-image {
+        width: 100%;
+        height: auto;
+        max-height: 104%;
+        object-fit: cover; 
+    }
+
+    .romance-info {
+        margin-top: -13px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .episodes {
+        font-size: 24px;
+    }
+
+    .watch-button {
+        width: 303px;
+        height: 49px;
+        line-height: 49px;
+        font-size: 18px;
+        margin-bottom: -2px;
+    }
+
+    .watch-button img {
+        width: 29px;
+        height: 26px;
+    }
+
+    .watch-button span {
+        font-size: 19px;
+    }
+}
