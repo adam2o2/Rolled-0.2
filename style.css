@@ -432,6 +432,32 @@ a {
     text-decoration: none; /* Removes the underline */
 }
 
+.action-text,
+.adventure-text,
+.comedy-text,
+.isekai-text,
+.romance-text,
+.sports-text,
+.thriller-text {
+    display: flex;
+    align-items: center;
+}
+
+.action-text .separator,
+.adventure-text .separator,
+.comedy-text .separator,
+.isekai-text .separator,
+.romance-text .separator,
+.sports-text .separator,
+.thriller-text .separator {
+    flex-grow: 1;
+    border-bottom: 1px solid gray; /* Thin gray line */
+    margin: 0 10px; /* Adjust spacing as needed */
+}
+
+
+
+
 
 
 @media screen and (min-width: 320px) {
