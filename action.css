@@ -408,6 +408,7 @@ a {
         height: 35px;
         line-height: 35px;
         font-size: 14px;
+        margin-bottom: 256px;
     }
 
     .watch-button img {
@@ -437,6 +438,9 @@ a {
         margin-left: -188px;
     }
 
+    .watch-button span {
+        font-size: 12px;
+    }
 }
 
 /* Media query for desktop view with a minimum width of 1200px */
@@ -588,10 +592,15 @@ a {
         height: 49px;
         line-height: 49px;
         font-size: 18px;
+        margin-bottom: -2px;
     }
 
     .watch-button img {
         width: 29px;
         height: 26px;
+    }
+
+    .watch-button span {
+        font-size: 19px;
     }
 }
