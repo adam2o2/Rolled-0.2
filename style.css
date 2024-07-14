@@ -435,6 +435,137 @@ a {
 
 
 
+@media screen and (min-width: 320px) {
+    .ribbon {
+        width: 400px;
+        height: 50px;
+    }
+    
+    .ribbon-right span {
+        font-size: 10px;
+    }
+    
+    .ribbon-left a {
+        font-size: 18px;
+    }
+
+    .content h1 {
+        align-items: center;
+        font-size: 53px;
+        margin-top: 15px;
+        margin-bottom: 95px;
+    }
+    
+    .text1 p {
+        align-items: center;
+        font-size: 12px;
+    }
+    
+    .content img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .background-image {
+        height: auto;
+        background-size: cover;
+        filter: blur(50px); /* Reduce blur for smaller screens */
+    }
+    
+    .text1 h1 {
+        font-size: 36px;
+        padding-top: 90px;
+    }
+    
+    .text1 p {
+        font-size: 14px;
+        margin-top: -92px;
+        margin-bottom: -18px;
+    }
+
+    .box img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px; /* Reduce border-radius */
+    }
+    
+    .action-text, .romance-text, .isekai-text, .thriller-text, .adventure-text, .sports-text, .comedy-text {
+        font-size: 16px;
+        margin-top: 49px;
+        margin-left: 3px;
+        margin-right: 6px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .action-text span, .romance-text span, .isekai-text span, .thriller-text span, .adventure-text span, .sports-text span, .comedy-text span {
+        font-size: 14px; /* Reduce font size for the span elements */
+        margin-right: 0; /* Reset margin-right */
+        margin-left: auto; /* Align "view all" to the right */
+    }
+    
+    .yellow-box-container, .red-box-container, .blue-box-container, .green-box-container, .black-box-container, .purple-box-container, .orange-box-container {
+        flex-direction: row;
+        gap: 10px;
+        margin-left: 5px;
+        margin-right: -5px;
+        margin-top: -9px;
+        flex-wrap: wrap;
+    }
+
+    .yellow-box, .red-box, .blue-box, .green-box, .black-box, .purple-box, .orange-box {
+        width: calc(25% - 10px); /* Make the boxes 25% width with margin */
+        height: auto; /* Adjust height */
+        padding-bottom: 10px; /* Reduce padding */
+    }
+    
+    .box-image {
+        max-height: 150px; /* Reduce max-height for images */
+        margin-top: 10px; /* Adjust margin */
+    }
+
+    .title {
+        font-size: 9px;
+        margin-top: -4px;
+    }
+
+    .episodes {
+        font-size: 10px;
+        margin-top: -13px;
+    }
+
+    a {
+        font-size: 14px; /* Adjust link font size */
+    }
+
+    .icon {
+        width: 16px;
+        height: 23px; /* Adjust height as needed */
+    }
+
+    /* Add styles for .comedy-info and .sports-info */
+    .comedy-info, .sports-info, .action-info, .romance-info, .isekai-info, .thriller-info, .adventure-info {
+        font-size: 10px; /* Adjust font size */
+        margin-top: -429px; /* Adjust top margin */
+        margin-left: 10px; /* Adjust left margin */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 450px;
+        z-index: -1;
+        background-image: url('Feature/jjkCard.png');
+        background-size: cover;
+        filter: blur(159.4px); /* Adjust blur amount as needed */
+    }
+    
+}
+
 
 /* Media query for mobile view with a minimum width of 414px */
 @media screen and (min-width: 414px) {
