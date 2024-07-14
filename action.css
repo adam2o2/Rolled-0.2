@@ -266,7 +266,7 @@ a {
 }
 
 /* Media query for mobile view with a minimum width of 414px */
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 414px), only screen and (min-width: 320px) {
     .ribbon {
         width: 400px;
         height: 50px;
@@ -513,6 +513,29 @@ a {
         height: 801px;
         border-radius: 20px;
         margin-top: 590px;
+    }
+
+    .action-box-container{
+    margin: 0 auto;
+    width: 1823px;
+    }
+
+    .play-button .circle{
+        width: 1667px;
+        height: 801px;
+        border-radius: 20px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .boxwrap{
+        margin: 0 auto;
+        width: 0px;
+    }
+
+    .boxwrap .box{
+        width: 1662px;
+        margin-left: -827px;
     }
 
     .circle {
