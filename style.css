@@ -970,7 +970,7 @@ a {
         height: 801px;
         border-radius: 20px;
         display: none;
-        cursor: pointer;
+        
     }
 
     .icon {
@@ -1023,7 +1023,8 @@ a {
         max-height: 104%;
         object-fit: cover;
         margin-top: 19px;
-        border-radius: 12px
+        border-radius: 12px;
+        cursor: pointer;
     }
 
     .action-info {
