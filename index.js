@@ -681,5 +681,21 @@ loadRandomComedyAnime();
 console.log('comedy anime script executed successfully.');
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const developerSpan = document.querySelector(".ribbon-right span:nth-child(3)");
+    const popupBox = document.getElementById("popup-box");
+    const overlay = document.getElementById("overlay");
+
+    developerSpan.addEventListener("click", function() {
+        popupBox.style.display = "block";
+        overlay.style.display = "block";
+    });
+
+
+    overlay.addEventListener("click", function() {
+        popupBox.style.display = "none";
+        overlay.style.display = "none";
+    });
+});
 
 
