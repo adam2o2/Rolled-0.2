@@ -92,6 +92,55 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
+
+            // Select all yellow boxes for action anime
+            const yellowBoxes = document.querySelectorAll('.yellow-box');
+            const videoOverlay = document.getElementById('video-overlay');
+            const videoIframe = document.getElementById('video-iframe');
+
+            // Define array for action anime images with titles, videos, and episodes
+            let actionImages = [
+                { src: 'mha.png', video: 'https://www.youtube.com/embed/zw5QhH3-1lI', title: 'My Hero Academia', episodes: '138 episodes' },
+                { src: 'fireforce.png', video: 'https://www.youtube.com/embed/fzM43HZ6oeg', title: 'Fire Force', episodes: '48 episodes' },
+                { src: 'bungo.png', video: 'https://www.youtube.com/embed/YUH1mfV3IEU', title: 'Bungo Stray Dogs', episodes: '62 episodes' },
+                { src: 'jjk.png', video: 'https://www.youtube.com/embed/pkKu9hLT-t8', title: 'Jujutsu Kaisen', episodes: '24 episodes' },
+                { src: 'akame.png', video: 'https://www.youtube.com/embed/NIeKMKwON0U', title: 'Akame Ga Kill', episodes: '24 episodes' },
+                { src: 'aot.png', video: 'https://www.youtube.com/embed/n4Nj6Y_SNYI', title: 'Attack on Titan', episodes: '75 episodes' },
+                { src: 'demonslayer.png', video: 'https://www.youtube.com/embed/Sl2k7bfBeCw', title: 'Demon Slayer', episodes: '26 episodes' },
+                { src: 'fate.png', video: 'https://www.youtube.com/embed/nfzKXkL_i54', title: 'Fate Stay Night', episodes: '24 episodes' },
+                { src: 'godofhighschool.png', video: 'https://www.youtube.com/embed/oqjwUfprNAk', title: 'God of High School', episodes: '13 episodes' },
+                { src: 'opm.png', video: 'https://www.youtube.com/embed/YUH1mfV3IEU', title: 'One Punch Man', episodes: '24 episodes' },
+                { src: 'kenichi.png', video: 'https://www.youtube.com/embed/4xDehi5Qjqs', title: 'KenIchi', episodes: '50 episodes' },
+                { src: 'kindom.png', video: 'https://www.youtube.com/embed/bYudboNENqs', title: 'Kindom', episodes: '79 episodes' },
+                { src: 'hinomaru.png', video: 'https://www.youtube.com/embed/Gxq9uR6EMd0', title: 'Hinomaru Sumo', episodes: '24 episodes' },
+                { src: 'takt.png', video: 'https://www.youtube.com/embed/mv_SJoJY7sA', title: 'takt op.Destiny', episodes: '24 episodes' },
+                { src: 'akudama.png', video: 'https://www.youtube.com/embed/H2vRwrLyzQM', title: 'Akudama Drive', episodes: '12 episodes' },
+                { src: 'peach.png', video: 'https://www.youtube.com/embed/7vtl3NGuG1c', title: 'Peach Boy Riverside', episodes: '12 episodes' },
+                { src: 'tenjho.png', video: 'https://www.youtube.com/embed/BM-dTZY9HI0', title: 'Tenjho Tenge', episodes: '24 episodes' },
+                { src: 'mushibugyo.png', video: 'https://www.youtube.com/embed/uv7dT2VSpp8', title: 'Mushibugyo', episodes: '26 episodes' },
+                { src: 'monsterstrike.png', video: 'https://www.youtube.com/embed/Yz-57Anl-Os', title: 'Monster Strike', episodes: '51 episodes' },
+                { src: 'shangrila.png', video: 'https://www.youtube.com/embed/rsTbPKiGQdo', title: 'Shangri-La Frontier', episodes: '12 episodes' },
+                { src: 'solo.png', video: 'https://www.youtube.com/embed/bssSj4cKsrI', title: 'Solo Leveling', episodes: 'Ongoing' },
+                { src: 'revengers.png', video: 'https://www.youtube.com/embed/idlLFNNpZiI', title: 'Tokyo Revengers', episodes: '24 episodes' },
+                { src: 'bungo.png', video: 'https://www.youtube.com/embed/pYDv2ZR25GE', title: 'Bungo Stray Dogs', episodes: '62 episodes' },
+                { src: 'metallic.png', video: 'https://www.youtube.com/embed/yv8eVL4xBI4', title: 'Metallic Rouge', episodes: '12 episodes' },
+                { src: 'deadmount.png', video: 'https://www.youtube.com/embed/_BDDj_4nmNg', title: 'Dead Mount Death Play', episodes: '13 episodes' },
+                { src: 'gluttony.png', video: 'https://www.youtube.com/embed/f3FwcHciZZ0', title: 'Berserk of Gluttony', episodes: '12 episodes' },
+                { src: 'dragon.png', video: 'https://www.youtube.com/embed/2Vej889SS6s', title: 'Dragon Ball Super', episodes: '131 episodes' },
+                { src: 'blood.png', video: 'https://www.youtube.com/embed/aMe0J7c8uOU', title: 'Blood Blockade Battlefront', episodes: '25 episodes' },
+                { src: 'nier.png', video: 'https://www.youtube.com/embed/eIMZYgb85xg', title: 'NieR:Automata Ver1.1a', episodes: 'Ongoing' },
+                { src: 'killlakill.png', video: 'https://www.youtube.com/embed/B98NY8Hfo7I', title: 'Kill La Kill', episodes: '24 episodes' },
+                { src: 'berserk.png', video: 'https://www.youtube.com/embed/0MIw4xzxcTU', title: 'Berserk', episodes: '25 episodes' },
+                { src: 'iceblade.png', video: 'https://www.youtube.com/embed/l1hx7s7Ywcs', title: 'The Iceblade Sorcerer', episodes: '12 episodes' },
+                { src: 'plunderer.png', video: 'https://www.youtube.com/embed/L1Y9r8psTmo', title: 'Plunderer', episodes: '24 episodes' },
+                { src: 'irregular.png', video: 'https://www.youtube.com/embed/U-gkwdGooDU', title: 'The Irregular', episodes: '13 episodes' },
+                { src: 'vinland.png', video: 'https://www.youtube.com/embed/f8JrZ7Q_p-8', title: 'Vinland Saga', episodes: '24 episodes' },
+            ];
+
+            // Function to get random index
+            function getRandomIndex(max) {
+                return Math.floor(Math.random() * max);
+              
     // Select all yellow boxes for action anime
     const yellowBoxes = document.querySelectorAll('.yellow-box');
 
@@ -147,29 +196,77 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            const index = getRandomIndex(actionImages.length);
-            const selectedAnime = actionImages[index];
+            // Function to load random action anime
+            function loadRandomActionAnime() {
+                yellowBoxes.forEach(box => {
+                    if (actionImages.length === 0) {
+                        console.log('No more unique anime images available.');
+                        return;
+                    }
 
-            const imageElement = box.querySelector('.box-image');
-            const titleElement = box.querySelector('.title');
-            const episodesElement = box.querySelector('.episodes');
+                    const index = getRandomIndex(actionImages.length);
+                    const selectedAnime = actionImages[index];
 
-            // Set image source, alt text, title, and episodes
-            imageElement.src = `Action/${selectedAnime.src}`;
-            imageElement.alt = selectedAnime.title;
-            titleElement.textContent = selectedAnime.title;
-            episodesElement.textContent = selectedAnime.episodes;
+                    const imageElement = box.querySelector('.box-image');
+                    const titleElement = box.querySelector('.title');
+                    const episodesElement = box.querySelector('.episodes');
 
-            // Remove the selected anime from actionImages array to avoid duplicates
-            actionImages.splice(index, 1);
-        });
-    }
+                    // Set image source, alt text, title, and episodes
+                    imageElement.src = `Action/${selectedAnime.src}`;
+                    imageElement.alt = selectedAnime.title;
+                    titleElement.textContent = selectedAnime.title;
+                    episodesElement.textContent = selectedAnime.episodes;
 
-    // Call the function to load random action anime on page load
-    loadRandomActionAnime();
+                    // Set the data-video-url attribute to the video URL
+                    box.setAttribute('data-video-url', selectedAnime.video);
 
-    // Log a message to confirm script execution
-    console.log('Action anime script executed successfully.');
+                    // Remove the selected anime from actionImages array to avoid duplicates
+                    actionImages.splice(index, 1);
+                });
+            }
+
+            // Call the function to load random action anime on page load
+            loadRandomActionAnime();
+
+            // Log a message to confirm script execution
+            console.log('Action anime script executed successfully.');
+
+            // Function to play video
+            function playVideo(videoUrl) {
+                if (videoUrl) {
+                    videoIframe.src = videoUrl;
+                    videoIframe.style.display = 'block';
+                    videoOverlay.style.display = 'flex'; // Show overlay
+                    document.body.style.overflow = 'hidden'; // Disable scrolling
+
+                    if (window.innerWidth <= 414) {
+                        // Mobile styles
+                        videoIframe.style.width = '391px';
+                        videoIframe.style.height = '221px';
+                    } else {
+                        // Desktop styles
+                        videoIframe.style.width = '1666.47px';
+                        videoIframe.style.height = '801px';
+                    }
+                } else {
+                    videoIframe.style.display = 'none';
+                    videoOverlay.style.display = 'none'; // Hide overlay
+                    document.body.style.overflow = 'auto'; // Enable scrolling
+                }
+            }
+
+            // Add event listener to yellow boxes
+            yellowBoxes.forEach(box => {
+                box.addEventListener('click', function() {
+                    const videoUrl = this.getAttribute('data-video-url');
+                    playVideo(videoUrl);
+                });
+            });
+
+            // Add event listener to video overlay to close the video
+            videoOverlay.addEventListener('click', function() {
+                playVideo(null);
+            });
 
 
     // Select all red boxes for romance anime
@@ -232,36 +329,77 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     // Function to load random romance anime
-    function loadRandomRomanceAnime() {
-        redBoxes.forEach(box => {
-            if (romanceImages.length === 0) {
-                console.log('No more unique anime images available.');
-                return;
-            }
+function loadRandomRomanceAnime() {
+    redBoxes.forEach(box => {
+        if (romanceImages.length === 0) {
+            console.log('No more unique romance anime images available.');
+            return;
+        }
 
-            const index = getRandomIndex(romanceImages.length);
-            const selectedAnime = romanceImages[index];
+        const index = getRandomIndex(romanceImages.length);
+        const selectedAnime = romanceImages[index];
 
-            const imageElement = box.querySelector('.box-image');
-            const titleElement = box.querySelector('.title');
-            const episodesElement = box.querySelector('.episodes');
+        const imageElement = box.querySelector('.box-image');
+        const titleElement = box.querySelector('.title');
+        const episodesElement = box.querySelector('.episodes');
 
-            // Set image source, alt text, title, and episodes
-            imageElement.src = `Romance/${selectedAnime.src}`;
-            imageElement.alt = selectedAnime.title;
-            titleElement.textContent = selectedAnime.title;
-            episodesElement.textContent = selectedAnime.episodes;
+        // Set image source, alt text, title, and episodes
+        imageElement.src = `Romance/${selectedAnime.src}`;
+        imageElement.alt = selectedAnime.title;
+        titleElement.textContent = selectedAnime.title;
+        episodesElement.textContent = selectedAnime.episodes;
 
-            // Remove the selected anime from romanceImages array to avoid duplicates
-            romanceImages.splice(index, 1);
-        });
+        // Set the data-video-url attribute to the video URL
+        box.setAttribute('data-video-url', selectedAnime.video);
+
+        // Remove the selected anime from romanceImages array to avoid duplicates
+        romanceImages.splice(index, 1);
+    });
+}
+
+// Call the function to load random romance anime on page load
+loadRandomRomanceAnime();
+
+// Log a message to confirm script execution
+console.log('Romance anime script executed successfully.');
+
+// Function to play video
+function playVideo(videoUrl) {
+    if (videoUrl) {
+        videoIframe.src = videoUrl;
+        videoIframe.style.display = 'block';
+        videoOverlay.style.display = 'flex'; // Show overlay
+        document.body.style.overflow = 'hidden'; // Disable scrolling
+
+        if (window.innerWidth <= 414) {
+            // Mobile styles
+            videoIframe.style.width = '391px';
+            videoIframe.style.height = '221px';
+        } else {
+            // Desktop styles
+            videoIframe.style.width = '1666.47px';
+            videoIframe.style.height = '801px';
+        }
+    } else {
+        videoIframe.style.display = 'none';
+        videoOverlay.style.display = 'none'; // Hide overlay
+        document.body.style.overflow = 'auto'; // Enable scrolling
     }
+}
 
-    // Call the function to load random romance anime on page load
-    loadRandomRomanceAnime();
+// Add event listener to red boxes
+redBoxes.forEach(box => {
+    box.addEventListener('click', function() {
+        const videoUrl = this.getAttribute('data-video-url');
+        playVideo(videoUrl);
+    });
+});
 
-    // Log a message to confirm script execution
-    console.log('Romance anime script executed successfully.');
+// Add event listener to video overlay to close the video
+videoOverlay.addEventListener('click', function() {
+    playVideo(null);
+});
+
 
 // Select all blue boxes for isekai anime
 const blueBoxes = document.querySelectorAll('.blue-box');
@@ -326,7 +464,7 @@ const isekaiImages = [
 function loadRandomIsekaiAnime() {
     blueBoxes.forEach(box => {
         if (isekaiImages.length === 0) {
-            console.log('No more unique anime images available.');
+            console.log('No more unique isekai anime images available.');
             return;
         }
 
@@ -343,6 +481,9 @@ function loadRandomIsekaiAnime() {
         titleElement.textContent = selectedAnime.title;
         episodesElement.textContent = selectedAnime.episodes;
 
+        // Set the data-video-url attribute to the video URL
+        box.setAttribute('data-video-url', selectedAnime.video);
+
         // Remove the selected anime from isekaiImages array to avoid duplicates
         isekaiImages.splice(index, 1);
     });
@@ -352,7 +493,45 @@ function loadRandomIsekaiAnime() {
 loadRandomIsekaiAnime();
 
 // Log a message to confirm script execution
-console.log('isekai anime script executed successfully.');
+console.log('Isekai anime script executed successfully.');
+
+// Function to play video
+function playVideo(videoUrl) {
+    if (videoUrl) {
+        videoIframe.src = videoUrl;
+        videoIframe.style.display = 'block';
+        videoOverlay.style.display = 'flex'; // Show overlay
+        document.body.style.overflow = 'hidden'; // Disable scrolling
+
+        if (window.innerWidth <= 414) {
+            // Mobile styles
+            videoIframe.style.width = '391px';
+            videoIframe.style.height = '221px';
+        } else {
+            // Desktop styles
+            videoIframe.style.width = '1666.47px';
+            videoIframe.style.height = '801px';
+        }
+    } else {
+        videoIframe.style.display = 'none';
+        videoOverlay.style.display = 'none'; // Hide overlay
+        document.body.style.overflow = 'auto'; // Enable scrolling
+    }
+}
+
+// Add event listener to blue boxes
+blueBoxes.forEach(box => {
+    box.addEventListener('click', function() {
+        const videoUrl = this.getAttribute('data-video-url');
+        playVideo(videoUrl);
+    });
+});
+
+// Add event listener to video overlay to close the video
+videoOverlay.addEventListener('click', function() {
+    playVideo(null);
+});
+
 
 
 // Select all green boxes for thriller anime
@@ -417,7 +596,7 @@ const thrillerImages = [
 function loadRandomThrillerAnime() {
     greenBoxes.forEach(box => {
         if (thrillerImages.length === 0) {
-            console.log('No more unique anime images available.');
+            console.log('No more unique thriller anime images available.');
             return;
         }
 
@@ -434,6 +613,9 @@ function loadRandomThrillerAnime() {
         titleElement.textContent = selectedAnime.title;
         episodesElement.textContent = selectedAnime.episodes;
 
+        // Set the data-video-url attribute to the video URL
+        box.setAttribute('data-video-url', selectedAnime.video);
+
         // Remove the selected anime from thrillerImages array to avoid duplicates
         thrillerImages.splice(index, 1);
     });
@@ -443,7 +625,45 @@ function loadRandomThrillerAnime() {
 loadRandomThrillerAnime();
 
 // Log a message to confirm script execution
-console.log('thriller anime script executed successfully.');
+console.log('Thriller anime script executed successfully.');
+
+// Function to play video
+function playVideo(videoUrl) {
+    if (videoUrl) {
+        videoIframe.src = videoUrl;
+        videoIframe.style.display = 'block';
+        videoOverlay.style.display = 'flex'; // Show overlay
+        document.body.style.overflow = 'hidden'; // Disable scrolling
+
+        if (window.innerWidth <= 414) {
+            // Mobile styles
+            videoIframe.style.width = '391px';
+            videoIframe.style.height = '221px';
+        } else {
+            // Desktop styles
+            videoIframe.style.width = '1666.47px';
+            videoIframe.style.height = '801px';
+        }
+    } else {
+        videoIframe.style.display = 'none';
+        videoOverlay.style.display = 'none'; // Hide overlay
+        document.body.style.overflow = 'auto'; // Enable scrolling
+    }
+}
+
+// Add event listener to green boxes
+greenBoxes.forEach(box => {
+    box.addEventListener('click', function() {
+        const videoUrl = this.getAttribute('data-video-url');
+        playVideo(videoUrl);
+    });
+});
+
+// Add event listener to video overlay to close the video
+videoOverlay.addEventListener('click', function() {
+    playVideo(null);
+});
+
 
 
 // Select all black boxes for adventure anime
@@ -508,7 +728,7 @@ const adventureImages = [
 function loadRandomAdventureAnime() {
     blackBoxes.forEach(box => {
         if (adventureImages.length === 0) {
-            console.log('No more unique anime images available.');
+            console.log('No more unique adventure anime images available.');
             return;
         }
 
@@ -525,6 +745,9 @@ function loadRandomAdventureAnime() {
         titleElement.textContent = selectedAnime.title;
         episodesElement.textContent = selectedAnime.episodes;
 
+        // Set the data-video-url attribute to the video URL
+        box.setAttribute('data-video-url', selectedAnime.video);
+
         // Remove the selected anime from adventureImages array to avoid duplicates
         adventureImages.splice(index, 1);
     });
@@ -534,7 +757,45 @@ function loadRandomAdventureAnime() {
 loadRandomAdventureAnime();
 
 // Log a message to confirm script execution
-console.log('adventure anime script executed successfully.');
+console.log('Adventure anime script executed successfully.');
+
+// Function to play video
+function playVideo(videoUrl) {
+    if (videoUrl) {
+        videoIframe.src = videoUrl;
+        videoIframe.style.display = 'block';
+        videoOverlay.style.display = 'flex'; // Show overlay
+        document.body.style.overflow = 'hidden'; // Disable scrolling
+
+        if (window.innerWidth <= 414) {
+            // Mobile styles
+            videoIframe.style.width = '391px';
+            videoIframe.style.height = '221px';
+        } else {
+            // Desktop styles
+            videoIframe.style.width = '1666.47px';
+            videoIframe.style.height = '801px';
+        }
+    } else {
+        videoIframe.style.display = 'none';
+        videoOverlay.style.display = 'none'; // Hide overlay
+        document.body.style.overflow = 'auto'; // Enable scrolling
+    }
+}
+
+// Add event listener to black boxes
+blackBoxes.forEach(box => {
+    box.addEventListener('click', function() {
+        const videoUrl = this.getAttribute('data-video-url');
+        playVideo(videoUrl);
+    });
+});
+
+// Add event listener to video overlay to close the video
+videoOverlay.addEventListener('click', function() {
+    playVideo(null);
+});
+
 
 
 // Select all purple boxes for sports anime
@@ -602,7 +863,7 @@ const sportsImages = [
 function loadRandomSportsAnime() {
     purpleBoxes.forEach(box => {
         if (sportsImages.length === 0) {
-            console.log('No more unique anime images available.');
+            console.log('No more unique sports anime images available.');
             return;
         }
 
@@ -619,6 +880,9 @@ function loadRandomSportsAnime() {
         titleElement.textContent = selectedAnime.title;
         episodesElement.textContent = selectedAnime.episodes;
 
+        // Set the data-video-url attribute to the video URL
+        box.setAttribute('data-video-url', selectedAnime.video);
+
         // Remove the selected anime from sportsImages array to avoid duplicates
         sportsImages.splice(index, 1);
     });
@@ -628,7 +892,44 @@ function loadRandomSportsAnime() {
 loadRandomSportsAnime();
 
 // Log a message to confirm script execution
-console.log('sports anime script executed successfully.');
+console.log('Sports anime script executed successfully.');
+
+// Function to play video
+function playVideo(videoUrl) {
+    if (videoUrl) {
+        videoIframe.src = videoUrl;
+        videoIframe.style.display = 'block';
+        videoOverlay.style.display = 'flex'; // Show overlay
+        document.body.style.overflow = 'hidden'; // Disable scrolling
+
+        if (window.innerWidth <= 414) {
+            // Mobile styles
+            videoIframe.style.width = '391px';
+            videoIframe.style.height = '221px';
+        } else {
+            // Desktop styles
+            videoIframe.style.width = '1666.47px';
+            videoIframe.style.height = '801px';
+        }
+    } else {
+        videoIframe.style.display = 'none';
+        videoOverlay.style.display = 'none'; // Hide overlay
+        document.body.style.overflow = 'auto'; // Enable scrolling
+    }
+}
+
+// Add event listener to purple boxes
+purpleBoxes.forEach(box => {
+    box.addEventListener('click', function() {
+        const videoUrl = this.getAttribute('data-video-url');
+        playVideo(videoUrl);
+    });
+});
+
+// Add event listener to video overlay to close the video
+videoOverlay.addEventListener('click', function() {
+    playVideo(null);
+});
 
 
 // Select all orange boxes for comedy anime
@@ -694,7 +995,7 @@ const comedyImages = [
 function loadRandomComedyAnime() {
     orangeBoxes.forEach(box => {
         if (comedyImages.length === 0) {
-            console.log('No more unique anime images available.');
+            console.log('No more unique comedy anime images available.');
             return;
         }
 
@@ -711,6 +1012,9 @@ function loadRandomComedyAnime() {
         titleElement.textContent = selectedAnime.title;
         episodesElement.textContent = selectedAnime.episodes;
 
+        // Set the data-video-url attribute to the video URL
+        box.setAttribute('data-video-url', selectedAnime.video);
+
         // Remove the selected anime from comedyImages array to avoid duplicates
         comedyImages.splice(index, 1);
     });
@@ -720,8 +1024,45 @@ function loadRandomComedyAnime() {
 loadRandomComedyAnime();
 
 // Log a message to confirm script execution
-console.log('comedy anime script executed successfully.');
+console.log('Comedy anime script executed successfully.');
+
+// Function to play video
+function playVideo(videoUrl) {
+    if (videoUrl) {
+        videoIframe.src = videoUrl;
+        videoIframe.style.display = 'block';
+        videoOverlay.style.display = 'flex'; // Show overlay
+        document.body.style.overflow = 'hidden'; // Disable scrolling
+
+        if (window.innerWidth <= 414) {
+            // Mobile styles
+            videoIframe.style.width = '391px';
+            videoIframe.style.height = '221px';
+        } else {
+            // Desktop styles
+            videoIframe.style.width = '1666.47px';
+            videoIframe.style.height = '801px';
+        }
+    } else {
+        videoIframe.style.display = 'none';
+        videoOverlay.style.display = 'none'; // Hide overlay
+        document.body.style.overflow = 'auto'; // Enable scrolling
+    }
+}
+
+// Add event listener to orange boxes
+orangeBoxes.forEach(box => {
+    box.addEventListener('click', function() {
+        const videoUrl = this.getAttribute('data-video-url');
+        playVideo(videoUrl);
+    });
 });
+
+// Add event listener to video overlay to close the video
+videoOverlay.addEventListener('click', function() {
+    playVideo(null);
+});
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const aboutSpan = document.querySelector(".ribbon-right span:nth-child(3)");
@@ -759,4 +1100,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
+})
