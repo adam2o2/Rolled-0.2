@@ -255,7 +255,7 @@ const romanceImages = [
 { src: 'annoying.png', video: 'https://www.youtube.com/embed/TxDxGA4i758', title: 'My Senpai Is Annoying', episodes: '12 episodes' },
 { src: 'domestic.png', video: 'https://www.youtube.com/embed/A8dh2392QsQ', title: 'Domestic Girlfriend', episodes: '12 episodes' },
 { src: 'kaguya.png', video: 'https://www.youtube.com/embed/S6p_PjK7naQ', title: 'Love Is War', episodes: '41 episodes' },
-{ src: 'gal.png', video: 'https://www.youtube.com/embed/9J3t8Q4uvL0', title: 'My First Girlfriend Is a Gal', episodes: '10 episodes' },
+{ src: 'gal.png', video: 'https://www.youtube.com/embed/LexsadMYp5A?start=11', title: 'My First Girlfriend Is a Gal', episodes: '10 episodes' },
 { src: 'tyrant.png', video: 'https://www.youtube.com/embed/7lVHNZK6Fn4', title: 'Love Tyrant', episodes: '12 episodes' },
 { src: 'hensuki.png', video: 'https://www.youtube.com/embed/a1BxLBr_O88', title: 'Hensuki', episodes: '12 episodes' },
 { src: 'engage.png', video: 'https://www.youtube.com/embed/Qsauwn7RnS4', title: 'Engage Kiss', episodes: '13 episodes' },
@@ -1009,6 +1009,7 @@ videoOverlay.addEventListener('click', function() {
 playVideo(null);
 });
 
+})
 
 document.addEventListener("DOMContentLoaded", function() {
 const aboutSpan = document.querySelector(".ribbon-right span:nth-child(3)");
@@ -1043,4 +1044,3 @@ overlay.style.display = "none";
 });
 });
 
-})
