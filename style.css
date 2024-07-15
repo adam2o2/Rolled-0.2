@@ -133,6 +133,7 @@ span:nth-child(3) {
     padding: 2px;
     background-color: #1b1b1b;
     border-radius: 8px;
+    margin-top: 40px;
 }
 
 .fyi-section h3 {
@@ -704,6 +705,7 @@ a {
     .box-image {
         max-height: 150px; /* Reduce max-height for images */
         margin-top: 10px; /* Adjust margin */
+        border-radius: 4px;
     }
 
     .title {
@@ -837,6 +839,7 @@ a {
     .box-image {
         max-height: 150px; /* Reduce max-height for images */
         margin-top: 10px; /* Adjust margin */
+        border-radius: 6px;
     }
 
     .title {
@@ -1020,6 +1023,7 @@ a {
         max-height: 104%;
         object-fit: cover;
         margin-top: 19px;
+        border-radius: 12px
     }
 
     .action-info {
