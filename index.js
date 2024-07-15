@@ -1008,7 +1008,7 @@ playVideo(videoUrl);
 videoOverlay.addEventListener('click', function() {
 playVideo(null);
 });
-
+})
 
 document.addEventListener("DOMContentLoaded", function() {
 const aboutSpan = document.querySelector(".ribbon-right span:nth-child(3)");
@@ -1043,4 +1043,3 @@ overlay.style.display = "none";
 });
 });
 
-})
