@@ -19,6 +19,67 @@ body {
     box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
+.ribbon-right span:nth-child(3) {
+    cursor: pointer;
+}
+
+.popup-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background-color: #0B0B0A;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 50px;
+}
+
+.popup-box h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.popup-box .version {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.fyi-section {
+    margin: 10px;
+    padding: 2px;
+    background-color: #1b1b1b;
+    border-radius: 8px;
+}
+
+.fyi-section h3 {
+    color: #FFF500;
+    text-align: center;
+}
+
+.fyi-section p {
+    color: white;
+    font-size: 16px;
+}
+
 .ribbon-left {
     color: #FFF500;
     font-size: 18px; /* Adjust font size as needed */
