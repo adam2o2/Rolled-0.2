@@ -1008,7 +1008,6 @@ playVideo(videoUrl);
 videoOverlay.addEventListener('click', function() {
 playVideo(null);
 });
-
 })
 
 document.addEventListener("DOMContentLoaded", function() {
