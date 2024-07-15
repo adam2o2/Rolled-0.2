@@ -705,6 +705,7 @@ a {
     .box-image {
         max-height: 150px; /* Reduce max-height for images */
         margin-top: 10px; /* Adjust margin */
+        border-radius: 4px;
     }
 
     .title {
@@ -838,6 +839,7 @@ a {
     .box-image {
         max-height: 150px; /* Reduce max-height for images */
         margin-top: 10px; /* Adjust margin */
+        border-radius: 6px;
     }
 
     .title {
@@ -1021,6 +1023,7 @@ a {
         max-height: 104%;
         object-fit: cover;
         margin-top: 19px;
+        border-radius: 12px
     }
 
     .action-info {
