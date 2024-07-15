@@ -186,6 +186,7 @@ span:nth-child(3) {
     font-size: 130px;
     font-weight: 400;
     font-family: 'PP Editorial New', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .text1 p {
@@ -197,6 +198,7 @@ span:nth-child(3) {
     font-size: 20px;
     margin-top: -85px;
     gap: 40px; /* Adjust the spacing as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .text1 p span {

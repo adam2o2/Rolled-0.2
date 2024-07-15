@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Define array for action anime images with titles, videos, and episodes
     let actionImages = [
-        { src: 'mha.png', video: 'https://www.youtube.com/embed/zw5QhH3-1lI', title: 'My Hero Academia', episodes: '138 episodes' },
+        { src: 'mha.png', video: 'https://www.youtube.com/embed/LqJQqcDQxBg', title: 'My Hero Academia', episodes: '138 episodes' },
         { src: 'fireforce.png', video: 'https://www.youtube.com/embed/fzM43HZ6oeg', title: 'Fire Force', episodes: '48 episodes' },
         { src: 'bungo.png', video: 'https://www.youtube.com/embed/YUH1mfV3IEU', title: 'Bungo Stray Dogs', episodes: '62 episodes' },
         { src: 'jjk.png', video: 'https://www.youtube.com/embed/pkKu9hLT-t8', title: 'Jujutsu Kaisen', episodes: '24 episodes' },

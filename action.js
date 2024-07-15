@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const featureImages = [
         { src: 'Feature/jjkcard.png', video: 'https://www.youtube.com/embed/pkKu9hLT-t8', title: 'Jujutsu Kaisen' },
-        { src: 'Feature/mhacard.png', video: 'https://www.youtube.com/embed/zw5QhH3-1lI', title: 'My Hero Academia' },
+        { src: 'Feature/mhacard.png', video: 'https://www.youtube.com/embed/LqJQqcDQxBg', title: 'My Hero Academia' },
         { src: 'Feature/akamecard.png', video: 'https://www.youtube.com/embed/NIeKMKwON0U', title: 'Akame Ga Kill' },
         { src: 'Feature/aotcard.png', video: 'https://www.youtube.com/embed/n4Nj6Y_SNYI', title: 'Attack on Titan' },
         { src: 'Feature/demonslayercard.png', video: 'https://www.youtube.com/embed/Sl2k7bfBeCw', title: 'Demon Slayer' },

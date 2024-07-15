@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'Feature/100card.png', video: 'https://www.youtube.com/embed/ls2VNcSifi4', title: 'The 100 Girlfriends...' },
         { src: 'Feature/mywifecard.png', video: 'https://www.youtube.com/embed/slxnDYn0dPY', title: 'My Wife is...' },
         { src: 'Feature/aharencard.png', video: 'https://www.youtube.com/embed/Rd4usifUuEY', title: 'Aharen-san' },
-        { src: 'Feature/kisshim.png', video: 'https://www.youtube.com/embed/d6Eh-y9BnUg', title: 'Kiss Him, Not Me' },
+        { src: 'Feature/kisshimcard.png', video: 'https://www.youtube.com/embed/d6Eh-y9BnUg', title: 'Kiss Him, Not Me' },
         { src: 'Feature/bokubencard.png', video: 'https://www.youtube.com/embed/qFSK5XI7QyM', title: 'BOKUBEN...' },
         { src: 'Feature/mylovecard.png', video: 'https://www.youtube.com/embed/GdB0LsAceGE', title: 'MY love STORY!!' },
         { src: 'Feature/tsuredurecard.png', video: 'https://www.youtube.com/embed/VUCFNbrVtiM', title: 'Tsuredure Children' },

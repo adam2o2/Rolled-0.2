@@ -62,6 +62,7 @@ body {
     font-family: 'PP Editorial New', sans-serif;
     margin-left: 113px;
     margin-top: 131px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .comedy-box {
@@ -89,6 +90,7 @@ body {
     margin-top: -85px;
     gap: 40px; /* Adjust the spacing as needed */
     margin-right: 67%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .text1 p span {
