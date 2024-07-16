@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'Feature/tsurunecard.png', video: 'https://www.youtube.com/embed/6w_GwGdk8_0', title: 'Tsurune' },
         { src: 'Feature/birdiecard.png', video: 'https://www.youtube.com/embed/EgmBeG0Yyl8', title: 'Birdie Wing' },
         { src: 'Feature/overtakecard.png', video: 'https://www.youtube.com/embed/x9H2uJxOREs', title: 'OVERTAKE!' },
-        { src: 'Feature/243card.png', video: 'https://www.youtube.com/embed/5utDbhnMF0s', title: '2.43 Volleyball Team' },
+        { src: 'Feature/243.png', video: 'https://www.youtube.com/embed/5utDbhnMF0s', title: '2.43 Volleyball Team' },
         { src: 'Feature/loveallplaycard.png', video: 'https://www.youtube.com/embed/PMHRDK2qjS4', title: 'Love All Play' },
         { src: 'Feature/burningkabaddicard.png', video: 'https://www.youtube.com/embed/CeUcyCPcDa4', title: 'Burning Kabaddi' },
         { src: 'Feature/pingpongcard.png', video: 'https://www.youtube.com/embed/ItlDaDfLBn8', title: 'Ping Pong' },

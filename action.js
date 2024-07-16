@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let selectedBox = null;
 
     const featureImages = [
-        { src: 'Feature/jjkcard.png', video: 'https://www.youtube.com/embed/pkKu9hLT-t8', title: 'Jujutsu Kaisen' },
+        { src: 'Feature/jjkCard.png', video: 'https://www.youtube.com/embed/pkKu9hLT-t8', title: 'Jujutsu Kaisen' },
         { src: 'Feature/mhacard.png', video: 'https://www.youtube.com/embed/LqJQqcDQxBg', title: 'My Hero Academia' },
         { src: 'Feature/akamecard.png', video: 'https://www.youtube.com/embed/NIeKMKwON0U', title: 'Akame Ga Kill' },
         { src: 'Feature/aotcard.png', video: 'https://www.youtube.com/embed/n4Nj6Y_SNYI', title: 'Attack on Titan' },
