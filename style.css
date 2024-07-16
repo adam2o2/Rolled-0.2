@@ -625,7 +625,7 @@ a {
 
 @media screen and (min-width: 320px) {
     .ribbon {
-        width: 400px;
+        width: 336px;
         height: 50px;
     }
     
@@ -635,6 +635,97 @@ a {
     
     .ribbon-left a {
         font-size: 18px;
+    }
+
+    .popup-box {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 240px;
+        height: 270px;
+        background-color: #0B0B0A;
+        color: white;
+        padding: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        z-index: 1001;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 50px;
+    }
+    
+    .popup-box h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .popup-box .version {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        backdrop-filter: blur(5px);
+    }
+    
+    .developer-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    
+    .developer-info {
+        position: relative;
+        text-align: center;
+    }
+    
+    .image-container {
+        position: relative;
+        width: 120px;
+        height: 280px;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-top: 20px;
+    }
+    
+    .image-container img {
+        width: 90%;
+        height: 40%;
+        border-radius: 12px;
+    }
+    
+    .image-text {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 13%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 10px;
+        color: white;
+        border-radius: 12px;
+    }
+    
+    .image-text p {
+        margin: 0;
+        padding: 0;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 18px;
     }
 
     .content h1 {
@@ -679,7 +770,7 @@ a {
     
     .action-text, .romance-text, .isekai-text, .thriller-text, .adventure-text, .sports-text, .comedy-text {
         font-size: 16px;
-        margin-top: 49px;
+        margin-top: 81px;
         margin-left: 3px;
         margin-right: 6px;
         display: flex;
@@ -735,7 +826,7 @@ a {
     /* Add styles for .comedy-info and .sports-info */
     .comedy-info, .sports-info, .action-info, .romance-info, .isekai-info, .thriller-info, .adventure-info {
         font-size: 10px; /* Adjust font size */
-        margin-top: -429px; /* Adjust top margin */
+        margin-top: -461px; /* Adjust top margin */
         margin-left: 10px; /* Adjust left margin */
         display: flex;
         flex-direction: column;
@@ -769,6 +860,97 @@ a {
     
     .ribbon-left a {
         font-size: 18px;
+    }
+    
+    .popup-box {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 240px;
+        height: 270px;
+        background-color: #0B0B0A;
+        color: white;
+        padding: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        z-index: 1001;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 50px;
+    }
+    
+    .popup-box h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .popup-box .version {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        backdrop-filter: blur(5px);
+    }
+    
+    .developer-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    
+    .developer-info {
+        position: relative;
+        text-align: center;
+    }
+    
+    .image-container {
+        position: relative;
+        width: 120px;
+        height: 280px;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-top: 20px;
+    }
+    
+    .image-container img {
+        width: 90%;
+        height: 40%;
+        border-radius: 12px;
+    }
+    
+    .image-text {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 13%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 10px;
+        color: white;
+        border-radius: 12px;
+    }
+    
+    .image-text p {
+        margin: 0;
+        padding: 0;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 18px;
     }
 
     .content h1 {
