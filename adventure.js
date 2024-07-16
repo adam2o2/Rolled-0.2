@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'Feature/yuyucard.png', video: 'https://www.youtube.com/embed/bGc1Na8mlw0', title: 'Yuyu Hakusho' },
         { src: 'Feature/fullmetalcard.png', video: 'https://www.youtube.com/embed/kx0nBaS_q50', title: 'Full Metal Alchemist' },        
         { src: 'Feature/goldenkamuycard.png', video: 'https://www.youtube.com/embed/Qqy7MCK4GeI', title: 'Golden Kamuy' },
-        { src: 'Feature/goldenwindcard.png', video: 'https://www.youtube.com/embed/fvSKmPdD2a4', title: 'Golden Wind' },
+        { src: 'Feature/goldenwindcard.png', video: 'https://www.youtube.com/embed/Ubve8INYEws', title: 'Golden Wind' },
         { src: 'Feature/hxhcard.png', video: 'https://www.youtube.com/embed/d6kBeJjTGnY', title: 'Hunter X Hunter' },
         { src: 'Feature/somalicard.png', video: 'https://www.youtube.com/embed/Xfw57amXb8Q', title: 'Somali' },
         { src: 'Feature/onepiececard.png', video: 'https://www.youtube.com/embed/TbHtbzAnZJ4', title: 'One Piece' },
