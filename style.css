@@ -231,7 +231,7 @@ span:nth-child(3) {
     font-size: 72px; /* Set the font size */
     font-weight: 700; /* Make the text bold */
     text-align: left; /* Center the text */
-margin-top: 375px; /* Adjust the margin as needed */
+    margin-top: 375px; /* Adjust the margin as needed */
     margin-left: calc((100% - 1790px) / 2);
     margin-right: calc((100% - 1882px) / 2);
     display: flex;
@@ -651,7 +651,19 @@ a {
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
         z-index: 1001;
         font-family: 'Poppins', sans-serif;
-        border-radius: 50px;
+        border-radius: 14px;
+    }
+
+    .fyi-section{
+    margin: 0px;
+    padding: 1px;
+    background-color: #1b1b1b;
+    border-radius: 8px;
+    margin-top: 21px;
+    }
+
+    .popup-box p {
+        font-size: 8px;
     }
     
     .popup-box h3 {
@@ -662,8 +674,9 @@ a {
     
     .popup-box .version {
         position: absolute;
-        bottom: 20px;
+        bottom: 14px;
         right: 20px;
+        font-size: 9px;
     }
     
     .overlay {
@@ -876,7 +889,19 @@ a {
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
         z-index: 1001;
         font-family: 'Poppins', sans-serif;
-        border-radius: 50px;
+        border-radius: 14px;
+    }
+
+    .fyi-section{
+    margin: 0px;
+    padding: 1px;
+    background-color: #1b1b1b;
+    border-radius: 8px;
+    margin-top: 21px;
+    }
+
+    .popup-box p {
+        font-size: 8px;
     }
     
     .popup-box h3 {
@@ -887,8 +912,9 @@ a {
     
     .popup-box .version {
         position: absolute;
-        bottom: 20px;
+        bottom: 14px;
         right: 20px;
+        font-size: 9px;
     }
     
     .overlay {
@@ -1124,6 +1150,18 @@ a {
         border-radius: 50px;
     }
     
+    .fyi-section{
+        margin: 10px;
+        padding: 2px;
+        background-color: #1b1b1b;
+        border-radius: 8px;
+        margin-top: 40px;
+    }
+
+    .popup-box p {
+        font-size: 20px;
+    }
+
     .popup-box h3 {
         font-size: 40px;
         margin-bottom: 20px;
@@ -1134,6 +1172,7 @@ a {
         position: absolute;
         bottom: 20px;
         right: 20px;
+        font-size: 14px;
     }
     
     .overlay {
