@@ -1010,6 +1010,7 @@ playVideo(null);
 });
 })
 
+// Developer & About Popup
 document.addEventListener("DOMContentLoaded", function() {
 const aboutSpan = document.querySelector(".ribbon-right span:nth-child(3)");
 const popupBox = document.getElementById("popup-box");
