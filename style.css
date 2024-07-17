@@ -32,26 +32,28 @@ span:nth-child(3) {
 .recently-added {
     position: absolute;
     width: 456px;
-    height: 712px;
+    height: 792px;
     z-index: 1;
     right: 50px;
     border-radius: 41px;
     top: 399px;
-    box-shadow: 8px 19px 24px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 34px 44px rgba(0, 0, 0, 0.3);
     border: 1px solid #808080;
 }
 
 .recently-added h2 {
     text-align: left;
-    margin-left: 18px;
-    margin-top: 23px;
+    margin-left: 46px;
+    margin-top: 43px;
+    position: absolute;
+    font-size: 24px;
 }
 
 .image-grid {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* 20 column gap between each card */
-    margin-top: 10px;
+    gap: 30px; /* 20 column gap between each card */
+    margin-top: 111px;
 }
 
 .image-card {
@@ -60,6 +62,7 @@ span:nth-child(3) {
     padding: 10px;
     border-radius: 8px;
     height: 118px;
+    margin-left: 27px;
 }
 
 .image-card h3 {
@@ -84,7 +87,7 @@ span:nth-child(3) {
 .text-content {
     font-size: 18px;
     color: black;
-    margin: -128px 0px 0px 219px;
+    margin: -128px 0px 0px 199px;
 }
 
 .popup-box {
@@ -238,6 +241,7 @@ span:nth-child(3) {
     background-size: cover;
     filter: blur(159.4px); /* Adjust blur amount as needed 
 } */
+
 
 .text1 h1 {
     color: aliceblue;
@@ -1366,7 +1370,7 @@ a {
 
     .box img {
         width: 1183px;
-        height: 712px;
+        height: 792px;
         border-radius: 45px;
         display: none;
         margin-left: -1004px;
@@ -1747,12 +1751,28 @@ a {
         font-weight: bold;
         font-size: 60px;
     }
+
     .box .image-card img{
         width: 168px;
         height: 120px;
         margin: 10px;
-        border-radius: 8px;
+        border-radius: 15px;
         margin-top: 0px;
-        box-shadow: 8px 11px 13px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+
+    .recently-wrapped{
+        margin-top: -1189px;
+        position: absolute;
+        margin-left: 1880px;
+    }
+
+    .ribbon-wrap {
+        position: absolute;
+        width: 1880px; /* or any specific width */
+        height: 350px; /* Adjust the height as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0px; /* Example top positioning */
     }
 }
