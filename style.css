@@ -1217,12 +1217,12 @@ a {
         box-sizing: border-box;
         position: absolute;
         width: 1880px;
-        height: 100px;
+        height: 10px;
         left: 50%;
         transform: translateX(-50%);
         top: 0px;
     }
-    
+
     .ribbon-left {
         color: black;
         font-size: 18px; /* Adjust font size as needed */
