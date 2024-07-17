@@ -134,7 +134,7 @@ span:nth-child(3) {
 .fyi-section {
     margin: 10px;
     padding: 2px;
-    background-color: #1b1b1b;
+    background-color: grey;
     border-radius: 8px;
     margin-top: 40px;
 }
@@ -676,8 +676,8 @@ a {
         transform: translate(-50%, -50%);
         width: 240px;
         height: 270px;
-        background-color: #0B0B0A;
-        color: white;
+        background-color: white;
+        color: black;
         padding: 20px;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
         z-index: 1001;
@@ -688,7 +688,7 @@ a {
     .fyi-section{
     margin: 0px;
     padding: 1px;
-    background-color: #1b1b1b;
+    background-color: grey;
     border-radius: 8px;
     margin-top: 21px;
     }
@@ -914,8 +914,8 @@ a {
         transform: translate(-50%, -50%);
         width: 240px;
         height: 270px;
-        background-color: #0B0B0A;
-        color: white;
+        background-color: white;
+        color: black;
         padding: 20px;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
         z-index: 1001;
@@ -926,7 +926,7 @@ a {
     .fyi-section{
     margin: 0px;
     padding: 1px;
-    background-color: #1b1b1b;
+    background-color: grey;
     border-radius: 8px;
     margin-top: 21px;
     }
@@ -1173,8 +1173,8 @@ a {
         transform: translate(-50%, -50%);
         width: 600px;
         height: 600px;
-        background-color: #0B0B0A;
-        color: white;
+        background-color: white;
+        color: black;
         padding: 20px;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
         z-index: 1001;
@@ -1185,7 +1185,7 @@ a {
     .fyi-section{
         margin: 10px;
         padding: 2px;
-        background-color: #1b1b1b;
+        background-color: grey;
         border-radius: 8px;
         margin-top: 40px;
     }
