@@ -1355,7 +1355,7 @@ a {
         font-weight: 400;
         font-family: 'PP Editorial New', sans-serif;
         margin-left: -23px;
-        transform: translateY(-99px); /* Move it down by 20px */
+        padding: 0px;
     }
 
     .text1 p {
@@ -1368,7 +1368,6 @@ a {
         margin-top: -105px;
         gap: 40px; /* Adjust the spacing as needed */
         margin-left: -23px;
-        transform: translateY(-90px); /* Move it down by 20px */
     }
 
     .text1 p span {
@@ -1753,7 +1752,7 @@ a {
 
     .text1 {
         margin-left: -1130px;
-        margin-top: 872px;
+        margin-top: 897px;
         width: 610px;
         height: 190px;
     }
