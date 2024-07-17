@@ -1,5 +1,5 @@
 body {
-    background: #0B0B0A;
+    background: white;
     font-family: 'Poppins', sans-serif; /* Apply the custom font */
 }
 
@@ -25,6 +25,9 @@ span:nth-child(3) {
     cursor: pointer;
 }
 
+.box h3{
+    
+}
 .popup-box {
     display: none;
     position: fixed;
@@ -147,7 +150,7 @@ span:nth-child(3) {
 }
 
 .ribbon-left {
-    color: #FFF500;
+    color: black;
     font-size: 18px; /* Adjust font size as needed */
     font-weight: 700; /* Bold text */
     margin-left: 24px;
@@ -165,7 +168,7 @@ span:nth-child(3) {
     font-weight: 700; /* Bold text */
 }
 
-.background-image {
+/* .background-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -174,8 +177,8 @@ span:nth-child(3) {
     z-index: -1;
     background-image: url('Feature/kaijuno8Card.png');
     background-size: cover;
-    filter: blur(159.4px); /* Adjust blur amount as needed */
-}
+    filter: blur(159.4px); /* Adjust blur amount as needed 
+} */
 
 .text1 h1 {
     color: aliceblue;
@@ -871,18 +874,6 @@ a {
         display: flex;
         flex-direction: column;
     }
-
-    .background-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 450px;
-        z-index: -1;
-        background-image: url('Feature/jjkCard.png');
-        background-size: cover;
-        filter: blur(159.4px); /* Adjust blur amount as needed */
-    }
     
     .watch-button {
         width: 200px;
@@ -1122,18 +1113,6 @@ a {
         flex-direction: column;
     }
 
-    .background-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 450px;
-        z-index: -1;
-        background-image: url('Feature/jjkCard.png');
-        background-size: cover;
-        filter: blur(159.4px); /* Adjust blur amount as needed */
-    }
-
     .watch-button {
         width: 200px;
         height: 35px;
@@ -1167,7 +1146,7 @@ a {
     }
 
     .ribbon-left {
-        color: white;
+        color: black;
         font-size: 18px; /* Adjust font size as needed */
         font-weight: 700; /* Bold text */
         margin-left: 24px;
@@ -1180,7 +1159,7 @@ a {
     }
 
     .ribbon-right span {
-        color: white;
+        color: #7D7D7D;
         font-size: 18px; /* Adjust font size as needed */
         font-weight: 700; /* Bold text */
     }
@@ -1289,42 +1268,32 @@ a {
         line-height: 28px;
     }
 
-    .background-image {
-        position: absolute;
-        top: 182px;
-        left: 0px;
-        width: 100%;
-        height: 1126px;
-        z-index: -1;
-        background-image: url(Feature/kaijuno8Card.png);
-        background-size: cover;
-        filter: blur(11.5px);
-    }
-
     .text1 h1 {
         color: aliceblue;
         display: flex;
-        justify-content: center;
+        justify-content: left;
         align-items: flex-end;
         padding-top: 186px;
-        font-size: 130px;
+        font-size: 72px;
         font-weight: 400;
         font-family: 'PP Editorial New', sans-serif;
+        margin-left: -23px;
     }
 
     .text1 p {
         color: aliceblue;
         display: flex;
-        justify-content: center;
+        justify-content: left;
         align-items: flex-end;
         padding-top: 0px;
         font-size: 20px;
-        margin-top: -85px;
+        margin-top: -105px;
         gap: 40px; /* Adjust the spacing as needed */
+        margin-left: -23px;
     }
 
     .text1 p span {
-        font-weight: 700; /* Adjust font weight as needed */
+        font-weight: 100; /* Adjust font weight as needed */
     }
 
     .box {
@@ -1335,11 +1304,12 @@ a {
     }
 
     .box img {
-        width: 1664.47px;
-        height: 801px;
+        width: 1183px;
+        height: 712px;
         border-radius: 20px;
         display: none;
-        
+        margin-left: -600px;
+        margin-top: 140px;
     }
 
     .icon {
@@ -1350,7 +1320,7 @@ a {
     }
 
     .action-text {
-        color: #ffffff; /* Adjust the color as needed */
+        color: black; /* Adjust the color as needed */
         font-size: 72px; /* Set the font size */
         font-weight: 700; /* Make the text bold */
         text-align: left; /* Center the text */
@@ -1404,7 +1374,7 @@ a {
     }
 
     .title {
-        color: white;
+        color: black;
         font-size: 24px;
         font-weight: 700;
     }
@@ -1417,7 +1387,7 @@ a {
 
     /* The other cards start here */
     .romance-text {
-        color: #ffffff; /* Adjust the color as needed */
+        color: black; /* Adjust the color as needed */
         font-size: 72px; /* Set the font size */
         font-weight: 700; /* Make the text bold */
         text-align: left; /* Center the text */
@@ -1461,7 +1431,7 @@ a {
     }
 
     .isekai-text {
-        color: #ffffff; /* Adjust the color as needed */
+        color: black; /* Adjust the color as needed */
         font-size: 72px; /* Set the font size */
         font-weight: 700; /* Make the text bold */
         text-align: left; /* Center the text */
@@ -1506,7 +1476,7 @@ a {
     /* The other cards start here */
 
     .thriller-text {
-        color: #ffffff; /* Adjust the color as needed */
+        color: black; /* Adjust the color as needed */
         font-size: 72px; /* Set the font size */
         font-weight: 700; /* Make the text bold */
         text-align: left; /* Center the text */
@@ -1550,7 +1520,7 @@ a {
     }
 
     .adventure-text {
-        color: #ffffff; /* Adjust the color as needed */
+        color: black; /* Adjust the color as needed */
         font-size: 72px; /* Set the font size */
         font-weight: 700; /* Make the text bold */
         text-align: left; /* Center the text */
@@ -1594,7 +1564,7 @@ a {
     }
 
     .sports-text {
-        color: #ffffff; /* Adjust the color as needed */
+        color: black; /* Adjust the color as needed */
         font-size: 72px; /* Set the font size */
         font-weight: 700; /* Make the text bold */
         text-align: left; /* Center the text */
@@ -1638,7 +1608,7 @@ a {
     }
 
     .comedy-text {
-        color: #ffffff; /* Adjust the color as needed */
+        color: black; /* Adjust the color as needed */
         font-size: 72px; /* Set the font size */
         font-weight: 700; /* Make the text bold */
         text-align: left; /* Center the text */
@@ -1698,5 +1668,11 @@ a {
     .watch-button img {
         width: 29px;
         height: 26px;
+    }
+
+    .text1{
+        margin-left: -1130px;
+        margin-top: 360px;
+        width: 1130px;
     }
 }
