@@ -1194,21 +1194,35 @@ a {
 
 @media screen and (min-width: 1200px) {
     .ribbon {
-        width: 1783px;
-        height: 87px;
-        border-radius: 93px;
-        position: absolute;
-        top: 20px;
-        left: 980px;
-        transform: translateX(-50%);
         z-index: 1;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0 20px;
         box-sizing: border-box;
+        position: absolute;
+        width: 1880px;
+        height: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0px;
     }
 
+    .text2{
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+        position: absolute;
+        width: 1880px;
+        height: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0px;
+    }
+    
     .ribbon-left {
         color: black;
         font-size: 18px; /* Adjust font size as needed */
@@ -1765,14 +1779,5 @@ a {
         margin-top: -1189px;
         position: absolute;
         margin-left: 1880px;
-    }
-
-    .ribbon-wrap {
-        position: absolute;
-        width: 1880px; /* or any specific width */
-        height: 350px; /* Adjust the height as needed */
-        left: 50%;
-        transform: translateX(-50%);
-        top: 0px; /* Example top positioning */
     }
 }
