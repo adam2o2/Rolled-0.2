@@ -1,5 +1,5 @@
 body {
-    background: #0B0B0A;
+    background: white;
     font-family: 'Poppins', sans-serif; /* Apply the custom font */
 }
 
@@ -23,6 +23,71 @@ body {
 span:nth-child(2),
 span:nth-child(3) {
     cursor: pointer;
+}
+
+.box {
+    position: relative;
+}
+
+.recently-added {
+    position: absolute;
+    width: 456px;
+    height: 792px;
+    z-index: 1;
+    right: 50px;
+    border-radius: 41px;
+    top: 399px;
+    box-shadow: 0px 34px 44px rgba(0, 0, 0, 0.3);
+    border: 1px solid #808080;
+}
+
+.recently-added h2 {
+    text-align: left;
+    margin-left: 46px;
+    margin-top: 43px;
+    position: absolute;
+    font-size: 24px;
+}
+
+.image-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* 20 column gap between each card */
+    margin-top: 111px;
+}
+
+.image-card {
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    height: 118px;
+    margin-left: 27px;
+}
+
+.image-card h3 {
+    font-size: 24px;
+    color: black;
+    text-align: left;
+}
+
+.image-card p {
+    font-size: 18px;
+    color: #808080;
+    text-align: left;
+    margin-top: -21px;
+}
+
+.image-card img {
+    width: 168px;
+    height: 120px;
+    border-radius: 8px;
+}
+
+.text-content {
+    font-size: 18px;
+    color: black;
+    margin: -128px 0px 0px 199px;
 }
 
 .popup-box {
@@ -131,7 +196,7 @@ span:nth-child(3) {
 .fyi-section {
     margin: 10px;
     padding: 2px;
-    background-color: #1b1b1b;
+    background-color: grey;
     border-radius: 8px;
     margin-top: 40px;
 }
@@ -147,7 +212,7 @@ span:nth-child(3) {
 }
 
 .ribbon-left {
-    color: white;
+    color: black;
     font-size: 18px; /* Adjust font size as needed */
     font-weight: 700; /* Bold text */
     margin-left: 24px;
@@ -165,7 +230,7 @@ span:nth-child(3) {
     font-weight: 700; /* Bold text */
 }
 
-.background-image {
+/* .background-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -174,15 +239,16 @@ span:nth-child(3) {
     z-index: -1;
     background-image: url('Feature/kaijuno8Card.png');
     background-size: cover;
-    filter: blur(159.4px); /* Adjust blur amount as needed */
-}
+    filter: blur(159.4px); /* Adjust blur amount as needed 
+} */
+
 
 .text1 h1 {
     color: aliceblue;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding-top: 100px; /* Adjust this value */
+    padding-top: 246px;
     font-size: 130px;
     font-weight: 400;
     font-family: 'PP Editorial New', sans-serif;
@@ -194,7 +260,7 @@ span:nth-child(3) {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding-top: 0px;
+    padding-top: 20px;
     font-size: 20px;
     margin-top: -85px;
     gap: 40px; /* Adjust the spacing as needed */
@@ -217,6 +283,7 @@ span:nth-child(3) {
     height: 801px;
     border-radius: 20px;
     display: none;
+    box-shadow: 8px 19px 24px rgba(0, 0, 0, 0.3);
 }
 
 .icon {
@@ -231,7 +298,7 @@ span:nth-child(3) {
     font-size: 72px; /* Set the font size */
     font-weight: 700; /* Make the text bold */
     text-align: left; /* Center the text */
-    margin-top: 375px; /* Adjust the margin as needed */
+    margin-top: 240px; /* Adjust the margin as needed */
     margin-left: calc((100% - 1790px) / 2);
     margin-right: calc((100% - 1882px) / 2);
     display: flex;
@@ -296,7 +363,7 @@ span:nth-child(3) {
     font-size: 72px; /* Set the font size */
     font-weight: 700; /* Make the text bold */
     text-align: left; /* Center the text */
-    margin-top: 375px; /* Adjust the margin as needed */
+    margin-top: 240px; /* Adjust the margin as needed */
     margin-left: calc((100% - 1790px) / 2);
     margin-right: calc((100% - 1882px) / 2);
     display: flex;
@@ -340,7 +407,7 @@ span:nth-child(3) {
     font-size: 72px; /* Set the font size */
     font-weight: 700; /* Make the text bold */
     text-align: left; /* Center the text */
-    margin-top: 375px; /* Adjust the margin as needed */
+    margin-top: 240px; /* Adjust the margin as needed */
     margin-left: calc((100% - 1790px) / 2);
     margin-right: calc((100% - 1882px) / 2);
     display: flex;
@@ -385,7 +452,7 @@ span:nth-child(3) {
     font-size: 72px; /* Set the font size */
     font-weight: 700; /* Make the text bold */
     text-align: left; /* Center the text */
-    margin-top: 375px; /* Adjust the margin as needed */
+    margin-top: 240px; /* Adjust the margin as needed */
     margin-left: calc((100% - 1790px) / 2);
     margin-right: calc((100% - 1882px) / 2);
     display: flex;
@@ -429,7 +496,7 @@ span:nth-child(3) {
     font-size: 72px; /* Set the font size */
     font-weight: 700; /* Make the text bold */
     text-align: left; /* Center the text */
-    margin-top: 375px; /* Adjust the margin as needed */
+    margin-top: 240px; /* Adjust the margin as needed */
     margin-left: calc((100% - 1790px) / 2);
     margin-right: calc((100% - 1882px) / 2);
     display: flex;
@@ -473,7 +540,7 @@ span:nth-child(3) {
     font-size: 72px; /* Set the font size */
     font-weight: 700; /* Make the text bold */
     text-align: left; /* Center the text */
-    margin-top: 375px; /* Adjust the margin as needed */
+    margin-top: 240px; /* Adjust the margin as needed */
     margin-left: calc((100% - 1790px) / 2);
     margin-right: calc((100% - 1882px) / 2);
     display: flex;
@@ -517,7 +584,7 @@ span:nth-child(3) {
     font-size: 72px; /* Set the font size */
     font-weight: 700; /* Make the text bold */
     text-align: left; /* Center the text */
-    margin-top: 375px; /* Adjust the margin as needed */
+    margin-top: 240px; /* Adjust the margin as needed */
     margin-left: calc((100% - 1790px) / 2);
     margin-right: calc((100% - 1882px) / 2);
     display: flex;
@@ -672,8 +739,8 @@ a {
         transform: translate(-50%, -50%);
         width: 240px;
         height: 270px;
-        background-color: #0B0B0A;
-        color: white;
+        background-color: white;
+        color: black;
         padding: 20px;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
         z-index: 1001;
@@ -684,7 +751,7 @@ a {
     .fyi-section{
     margin: 0px;
     padding: 1px;
-    background-color: #1b1b1b;
+    background-color: grey;
     border-radius: 8px;
     margin-top: 21px;
     }
@@ -871,18 +938,6 @@ a {
         display: flex;
         flex-direction: column;
     }
-
-    .background-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 450px;
-        z-index: -1;
-        background-image: url('Feature/jjkCard.png');
-        background-size: cover;
-        filter: blur(159.4px); /* Adjust blur amount as needed */
-    }
     
     .watch-button {
         width: 200px;
@@ -922,8 +977,8 @@ a {
         transform: translate(-50%, -50%);
         width: 240px;
         height: 270px;
-        background-color: #0B0B0A;
-        color: white;
+        background-color: white;
+        color: black;
         padding: 20px;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
         z-index: 1001;
@@ -934,7 +989,7 @@ a {
     .fyi-section{
     margin: 0px;
     padding: 1px;
-    background-color: #1b1b1b;
+    background-color: grey;
     border-radius: 8px;
     margin-top: 21px;
     }
@@ -1122,18 +1177,6 @@ a {
         flex-direction: column;
     }
 
-    .background-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 450px;
-        z-index: -1;
-        background-image: url('Feature/jjkCard.png');
-        background-size: cover;
-        filter: blur(159.4px); /* Adjust blur amount as needed */
-    }
-
     .watch-button {
         width: 200px;
         height: 35px;
@@ -1151,23 +1194,37 @@ a {
 
 @media screen and (min-width: 1200px) {
     .ribbon {
-        width: 1453px;
-        height: 87px;
-        border-radius: 93px;
-        position: absolute;
-        top: 20px; /* Adjust the spacing from the top */
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1; /* Ensure the ribbon is on top */
+        z-index: 1;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 20px; /* Add padding for spacing */
-        box-sizing: border-box; /* Ensure padding doesn't affect width */
+        padding: 0 20px;
+        box-sizing: border-box;
+        position: absolute;
+        width: 1880px;
+        height: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0px;
+    }
+
+    .text2{
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+        position: absolute;
+        width: 1880px;
+        height: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0px;
     }
 
     .ribbon-left {
-        color: white;
+        color: black;
         font-size: 18px; /* Adjust font size as needed */
         font-weight: 700; /* Bold text */
         margin-left: 24px;
@@ -1180,7 +1237,7 @@ a {
     }
 
     .ribbon-right span {
-        color: white;
+        color: #7D7D7D;
         font-size: 18px; /* Adjust font size as needed */
         font-weight: 700; /* Bold text */
     }
@@ -1193,8 +1250,8 @@ a {
         transform: translate(-50%, -50%);
         width: 600px;
         height: 600px;
-        background-color: #0B0B0A;
-        color: white;
+        background-color: white;
+        color: black;
         padding: 20px;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
         z-index: 1001;
@@ -1205,7 +1262,7 @@ a {
     .fyi-section{
         margin: 10px;
         padding: 2px;
-        background-color: #1b1b1b;
+        background-color: grey;
         border-radius: 8px;
         margin-top: 40px;
     }
@@ -1289,42 +1346,32 @@ a {
         line-height: 28px;
     }
 
-    .background-image {
-        position: absolute;
-        top: 182px;
-        left: 0px;
-        width: 100%;
-        height: 1126px;
-        z-index: -1;
-        background-image: url(Feature/kaijuno8Card.png);
-        background-size: cover;
-        filter: blur(11.5px);
-    }
-
     .text1 h1 {
         color: aliceblue;
         display: flex;
-        justify-content: center;
+        justify-content: left;
         align-items: flex-end;
-        padding-top: 186px;
-        font-size: 130px;
+        font-size: 72px;
         font-weight: 400;
         font-family: 'PP Editorial New', sans-serif;
+        margin-left: -23px;
+        padding: 0px;
     }
 
     .text1 p {
         color: aliceblue;
         display: flex;
-        justify-content: center;
+        justify-content: left;
         align-items: flex-end;
-        padding-top: 0px;
+        padding-top: 20px;
         font-size: 20px;
-        margin-top: -85px;
+        margin-top: -105px;
         gap: 40px; /* Adjust the spacing as needed */
+        margin-left: -23px;
     }
 
     .text1 p span {
-        font-weight: 700; /* Adjust font weight as needed */
+        font-weight: 100; /* Adjust font weight as needed */
     }
 
     .box {
@@ -1335,11 +1382,14 @@ a {
     }
 
     .box img {
-        width: 1664.47px;
-        height: 801px;
-        border-radius: 20px;
+        width: 1183px;
+        height: 792px;
+        border-radius: 45px;
         display: none;
-        
+        margin-left: -1004px;
+        margin-top: 400px;
+        display: block;
+        cursor: pointer;
     }
 
     .icon {
@@ -1350,7 +1400,7 @@ a {
     }
 
     .action-text {
-        color: #ffffff; /* Adjust the color as needed */
+        color: black; /* Adjust the color as needed */
         font-size: 72px; /* Set the font size */
         font-weight: 700; /* Make the text bold */
         text-align: left; /* Center the text */
@@ -1404,7 +1454,7 @@ a {
     }
 
     .title {
-        color: white;
+        color: black;
         font-size: 24px;
         font-weight: 700;
     }
@@ -1417,7 +1467,7 @@ a {
 
     /* The other cards start here */
     .romance-text {
-        color: #ffffff; /* Adjust the color as needed */
+        color: black; /* Adjust the color as needed */
         font-size: 72px; /* Set the font size */
         font-weight: 700; /* Make the text bold */
         text-align: left; /* Center the text */
@@ -1461,7 +1511,7 @@ a {
     }
 
     .isekai-text {
-        color: #ffffff; /* Adjust the color as needed */
+        color: black; /* Adjust the color as needed */
         font-size: 72px; /* Set the font size */
         font-weight: 700; /* Make the text bold */
         text-align: left; /* Center the text */
@@ -1506,7 +1556,7 @@ a {
     /* The other cards start here */
 
     .thriller-text {
-        color: #ffffff; /* Adjust the color as needed */
+        color: black; /* Adjust the color as needed */
         font-size: 72px; /* Set the font size */
         font-weight: 700; /* Make the text bold */
         text-align: left; /* Center the text */
@@ -1550,7 +1600,7 @@ a {
     }
 
     .adventure-text {
-        color: #ffffff; /* Adjust the color as needed */
+        color: black; /* Adjust the color as needed */
         font-size: 72px; /* Set the font size */
         font-weight: 700; /* Make the text bold */
         text-align: left; /* Center the text */
@@ -1594,7 +1644,7 @@ a {
     }
 
     .sports-text {
-        color: #ffffff; /* Adjust the color as needed */
+        color: black; /* Adjust the color as needed */
         font-size: 72px; /* Set the font size */
         font-weight: 700; /* Make the text bold */
         text-align: left; /* Center the text */
@@ -1638,7 +1688,7 @@ a {
     }
 
     .comedy-text {
-        color: #ffffff; /* Adjust the color as needed */
+        color: black; /* Adjust the color as needed */
         font-size: 72px; /* Set the font size */
         font-weight: 700; /* Make the text bold */
         text-align: left; /* Center the text */
@@ -1698,5 +1748,35 @@ a {
     .watch-button img {
         width: 29px;
         height: 26px;
+    }
+
+    .text1 {
+        margin-left: -1130px;
+        margin-top: 897px;
+        width: 610px;
+        height: 190px;
+    }
+    
+    .text2 span {
+        position: absolute; /* Position the span element absolutely within the .text2 container */
+        left: 131px;
+        top: 150px; /* Move it down by 20px */
+        font-weight: bold;
+        font-size: 60px;
+    }
+
+    .box .image-card img{
+        width: 168px;
+        height: 120px;
+        margin: 10px;
+        border-radius: 15px;
+        margin-top: 0px;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+
+    .recently-wrapped{
+        margin-top: -1189px;
+        position: absolute;
+        margin-left: 1880px;
     }
 }
