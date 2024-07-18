@@ -327,7 +327,7 @@ span:nth-child(3) {
     align-items: center;
     padding-bottom: 20px;
     box-sizing: border-box;
-    
+    position: relative; /* Allows absolute positioning of .box-text */
 }
 
 .box-image {
