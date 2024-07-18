@@ -1,12 +1,11 @@
 body {
-    background: black;
+    background: white;
     font-family: 'Poppins', sans-serif; /* Apply the custom font */
 }
 
 .ribbon {
-    width: 1453px;
+    width: 1880px;
     height: 87px;
-    background-color: #121212; /* Change the color as needed */
     border-radius: 93px;
     position: absolute;
     top: 20px; /* Adjust the spacing from the top */
@@ -21,7 +20,7 @@ body {
 }
 
 .ribbon-left {
-    color: white;
+    color: black;
     font-size: 18px; /* Adjust font size as needed */
     font-weight: 700; /* Bold text */
     margin-left: 24px;
@@ -130,7 +129,6 @@ span:nth-child(3) {
 .image-text p {
     margin: 0;
     padding: 0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
     font-size: 25px;
     font-weight: bold;
     line-height: 28px;
@@ -166,20 +164,10 @@ span:nth-child(3) {
     font-size: 16px;
 }
 
-.background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 1430px;
-    z-index: -1;
-    background-image: url('Feature/jjkCard.png');
-    background-size: cover;
-    filter: blur(159.4px); /* Adjust blur amount as needed */
-}
+
 
 .text1 h1 {
-    color: aliceblue;
+    color: black;
     display: flex;
     justify-content: flex-start; /* Align text to the left */
     align-items: flex-end;
@@ -189,7 +177,6 @@ span:nth-child(3) {
     font-family: 'PP Editorial New', sans-serif;
     margin-left: 113px;
     margin-top: 131px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .thriller-box {
@@ -208,7 +195,7 @@ span:nth-child(3) {
 }
 
 .text1 p {
-    color: aliceblue;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -217,7 +204,6 @@ span:nth-child(3) {
     margin-top: -85px;
     gap: 40px; /* Adjust the spacing as needed */
     margin-right: 67%;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .text1 p span {
@@ -264,7 +250,7 @@ span:nth-child(3) {
 }
 
 .thriller-text {
-    color: #ffffff; /* Adjust the color as needed */
+    color: black; /* Adjust the color as needed */
     font-size: 72px; /* Set the font size */
     font-weight: 700; /* Make the text bold */
     text-align: left; /* Center the text */
@@ -318,7 +304,7 @@ span:nth-child(3) {
 }
 
 .title {
-    color: white;
+    color: black;
     font-size: 24px;
     font-weight: 700;
     margin-top: auto;
@@ -507,7 +493,6 @@ a {
     .image-text p {
         margin: 0;
         padding: 0;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
         font-size: 15px;
         font-weight: bold;
         line-height: 18px;
@@ -517,14 +502,9 @@ a {
         width: 100%;
         height: auto;
         margin-left: 1px;
+        box-shadow: 0 12px 44px rgba(0, 0, 0, 0.5);
     }
 
-    .background-image {
-        background-image: url('your_background_image.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 200px;
-    }
 
     .content {
         padding: 10px;
@@ -586,6 +566,7 @@ a {
         width: 100px;
         height: 130px;
         margin-right: 0px;
+        border-radius: 12px;
     }
 
     .play-button{
@@ -655,7 +636,7 @@ a {
     }
 
     .text1 p {
-        font-size: 12px;
+        font-size: 10px;
         margin-top: -151px;
         margin-right: 10px;
     }
@@ -798,7 +779,6 @@ a {
     .image-text p {
         margin: 0;
         padding: 0;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
         font-size: 15px;
         font-weight: bold;
         line-height: 18px;
@@ -808,14 +788,9 @@ a {
         width: 100%;
         height: auto;
         margin-left: 1px;
+        box-shadow: 0 12px 44px rgba(0, 0, 0, 0.5);
     }
 
-    .background-image {
-        background-image: url('your_background_image.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 200px;
-    }
 
     .content {
         padding: 10px;
@@ -977,10 +952,10 @@ a {
     }
 }
 
-/* Media query for desktop view with a minimum width of 1200px */
+/* This is the new one */
 @media screen and (min-width: 1200px) {
     .ribbon {
-        width: 1453px;
+        width: 1190px;
         height: 87px;
         top: 20px; /* Adjust the spacing from the top */
         left: 50%;
@@ -1099,17 +1074,579 @@ a {
     .image-text p {
         margin: 0;
         padding: 0;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
         font-size: 25px;
         font-weight: bold;
         line-height: 28px;
     }
 
-    .background-image {
-        height: 1430px;
-        background-size: cover;
-        filter: blur(159.4px); /* Adjust blur amount as needed */
+
+    .thriller-info .title {
+        font-size: 27px;
+        margin-top: -17px;
     }
+
+    .thriller-info .episodes {
+        font-size: 19px;
+        margin-top: -17px;
+    }
+
+    .text1 h1 {
+        font-size: 130px;
+        font-weight: 400;
+        margin-left: 3px;
+        margin-top: 131px;
+    }
+
+    .thriller-box {
+        width: 118px;
+        height: 50px;
+        margin-left: 88%;
+        font-size: 18px;
+        transform: translateY(-185px);
+    }
+
+    .text1 p {
+        font-size: 20px;
+        margin-top: -155px;
+        margin-right: 3%;
+    }
+
+    .box {
+        margin-top: 30px;
+    }
+
+    .box img {
+        width: 1134.47px;
+        height: 681px;
+        border-radius: 20px;
+        margin-top: 480px;
+        box-shadow: 0 34px 44px rgba(0, 0, 0, 0.5);
+    }
+
+    .thriller-box-container{
+    margin: 0 auto;
+    width: 1193px;
+    }
+
+    .play-button .circle{
+        width: 1197px;
+        height: 801px;
+        border-radius: 20px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .boxwrap{
+        margin: 0 auto;
+        width: 0px;
+    }
+
+    .boxwrap .box{
+        width: 1192px;
+        margin-left: -587px;
+    }
+
+    .circle {
+        width: 1667px;
+        height: 801px;
+        border-radius: 20px;
+        margin-top: -802px;
+        margin-left: 109px;
+    }
+
+    .play-button {
+        position: relative;
+        right: -13.8%;
+        bottom: -19.6%;
+        height: 691px;
+        width: 1132px;
+        margin-left: -557px;
+    }
+
+    .icon {
+        width: 32px; /* Increased size */
+        height: 32px; /* Increased size */
+        margin-right: 8px; /* Adjust spacing between the icon and the text */
+    }
+
+    .thriller-text {
+        font-size: 72px; /* Set the font size */
+        font-weight: 700; /* Make the text bold */
+        margin-top: 121px; /* Adjust the margin as needed */
+        margin-left: calc((100% - 1130px) / 2);
+        width: 1000px;
+    }
+
+    .thriller-text span {
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: 44px; /* Align to the right side of the container */
+    }
+
+    .grid-wrap {
+        width: 1193px;
+    }
+
+    .grid-container {
+        gap: 141px 38px;
+        grid-template-columns: auto auto auto;
+        margin-left: -329px;
+        margin-top: 10px;
+    }
+
+    .yellow-box {
+        width: 327px;
+        height: 427px;
+    }
+
+    .box-image {
+        width: 100%;
+        height: auto;
+        max-height: 104%;
+        object-fit: cover; 
+    }
+
+    .thriller-info {
+        margin-top: -13px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .episodes {
+        font-size: 24px;
+    }
+
+    .watch-button {
+        width: 303px;
+        height: 49px;
+        line-height: 49px;
+        font-size: 18px;
+        margin-bottom: -2px;
+    }
+
+    .watch-button img {
+        width: 29px;
+        height: 26px;
+    }
+
+    .watch-button span {
+        font-size: 19px;
+    }
+}
+
+/* For the macbook */
+@media screen and (min-width: 1400px) {
+    .ribbon {
+        width: 1190px;
+        height: 87px;
+        top: 20px; /* Adjust the spacing from the top */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .ribbon-left {
+        font-size: 18px; /* Adjust font size as needed */
+        margin-left: 24px;
+    }
+
+    .ribbon-right {
+        gap: 20px; /* Adjust the spacing as needed */
+        margin-right: 18px;
+    }
+
+    .ribbon-right span {
+        font-size: 18px; /* Adjust font size as needed */
+    }
+
+    .popup-box {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 600px;
+        height: 600px;
+        background-color: #0B0B0A;
+        color: white;
+        padding: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        z-index: 1001;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 50px;
+    }
+    
+    .fyi-section{
+        margin: 10px;
+        padding: 2px;
+        background-color: #1b1b1b;
+        border-radius: 8px;
+        margin-top: 40px;
+    }
+
+    .popup-box p {
+        font-size: 20px;
+    }
+
+    .popup-box h3 {
+        font-size: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .popup-box .version {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-size: 14px;
+    }
+    
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        backdrop-filter: blur(5px);
+    }
+    
+    .developer-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    
+    .developer-info {
+        position: relative;
+        text-align: center;
+    }
+    
+    .image-container {
+        position: relative;
+        width: 270px;
+        height: 280px;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-top: 20px;
+    }
+    
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+    }
+    
+    .image-text {
+        position: absolute;
+        top: 210px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 10px;
+        color: white;
+        border-radius: 12px;
+    }
+    
+    .image-text p {
+        margin: 0;
+        padding: 0;
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 28px;
+    }
+
+
+    .thriller-info .title {
+        font-size: 20px;
+        margin-top: -17px;
+    }
+
+    .thriller-info .episodes {
+        font-size: 19px;
+        margin-top: -17px;
+    }
+
+    .text1 h1 {
+        font-size: 130px;
+        font-weight: 400;
+        margin-left: 3px;
+        margin-top: 131px;
+    }
+
+    .thriller-box {
+        width: 118px;
+        height: 50px;
+        margin-left: 88%;
+        font-size: 18px;
+        transform: translateY(-185px);
+    }
+
+    .text1 p {
+        font-size: 20px;
+        margin-top: -155px;
+        margin-right: 3%;
+    }
+
+    .box {
+        margin-top: 30px;
+    }
+
+    .box img {
+        width: 1134.47px;
+        height: 681px;
+        border-radius: 20px;
+        margin-top: 480px;
+        box-shadow: 0 34px 44px rgba(0, 0, 0, 0.5);
+    }
+
+    .thriller-box-container{
+    margin: 0 auto;
+    width: 1193px;
+    }
+
+    .play-button .circle{
+        width: 1197px;
+        height: 801px;
+        border-radius: 20px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .boxwrap{
+        margin: 0 auto;
+        width: 0px;
+    }
+
+    .boxwrap .box{
+        width: 1192px;
+        margin-left: -587px;
+    }
+
+    .circle {
+        width: 1667px;
+        height: 801px;
+        border-radius: 20px;
+        margin-top: -802px;
+        margin-left: 109px;
+    }
+
+    .play-button {
+        position: relative;
+        right: -13.8%;
+        bottom: -19.6%;
+        height: 691px;
+        width: 1132px;
+        margin-left: -557px;
+    }
+
+    .icon {
+        width: 32px; /* Increased size */
+        height: 32px; /* Increased size */
+        margin-right: 8px; /* Adjust spacing between the icon and the text */
+    }
+
+    .thriller-text {
+        font-size: 72px; /* Set the font size */
+        font-weight: 700; /* Make the text bold */
+        margin-top: 121px; /* Adjust the margin as needed */
+        margin-left: calc((100% - 1360px) / 2);
+        width: 1000px;
+    }
+
+    .thriller-text span {
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: 44px; /* Align to the right side of the container */
+    }
+
+    .grid-wrap {
+        width: 1193px;
+    }
+
+    .grid-container {
+        gap: 11px 38px;
+        grid-template-columns: auto auto auto auto auto;
+        margin-left: -479px;
+        margin-top: 10px;
+    }
+
+    .yellow-box {
+        width: 237px;
+        height: 427px;
+    }
+
+    .box-image {
+        width: 100%;
+        height: auto;
+        max-height: 104%;
+        object-fit: cover; 
+    }
+
+    .thriller-info {
+        margin-top: -13px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .episodes {
+        font-size: 24px;
+    }
+
+    .watch-button {
+        width: 303px;
+        height: 49px;
+        line-height: 49px;
+        font-size: 18px;
+        margin-bottom: -2px;
+    }
+
+    .watch-button img {
+        width: 29px;
+        height: 26px;
+    }
+
+    .watch-button span {
+        font-size: 19px;
+    }
+}
+
+/* Media query for desktop view with a minimum width of 1900px  This is a test this was the orginal 1200*/
+@media screen and (min-width: 1900px) {
+    .ribbon {
+        width: 1880px;
+        height: 87px;
+        top: 20px; /* Adjust the spacing from the top */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .ribbon-left {
+        font-size: 18px; /* Adjust font size as needed */
+        margin-left: 24px;
+    }
+
+    .ribbon-right {
+        gap: 20px; /* Adjust the spacing as needed */
+        margin-right: 18px;
+    }
+
+    .ribbon-right span {
+        font-size: 18px; /* Adjust font size as needed */
+    }
+
+    .popup-box {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 600px;
+        height: 600px;
+        background-color: #0B0B0A;
+        color: white;
+        padding: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        z-index: 1001;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 50px;
+    }
+    
+    .fyi-section{
+        margin: 10px;
+        padding: 2px;
+        background-color: #1b1b1b;
+        border-radius: 8px;
+        margin-top: 40px;
+    }
+
+    .popup-box p {
+        font-size: 20px;
+    }
+
+    .popup-box h3 {
+        font-size: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .popup-box .version {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-size: 14px;
+    }
+    
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        backdrop-filter: blur(5px);
+    }
+    
+    .developer-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    
+    .developer-info {
+        position: relative;
+        text-align: center;
+    }
+    
+    .image-container {
+        position: relative;
+        width: 270px;
+        height: 280px;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-top: 20px;
+    }
+    
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+    }
+    
+    .image-text {
+        position: absolute;
+        top: 210px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 10px;
+        color: white;
+        border-radius: 12px;
+    }
+    
+    .image-text p {
+        margin: 0;
+        padding: 0;
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 28px;
+    }
+
 
     .thriller-info .title {
         font-size: 27px;
@@ -1138,7 +1675,7 @@ a {
 
     .text1 p {
         font-size: 20px;
-        margin-top: -85px;
+        margin-top: -155px;
         margin-right: 67%;
     }
 
@@ -1151,6 +1688,7 @@ a {
         height: 801px;
         border-radius: 20px;
         margin-top: 590px;
+        box-shadow: 0 34px 44px rgba(0, 0, 0, 0.5);
     }
 
     .thriller-box-container{
