@@ -1118,6 +1118,7 @@ a {
         height: 801px;
         border-radius: 20px;
         margin-top: 590px;
+        box-shadow: 0 34px 44px rgba(0, 0, 0, 0.5);
     }
 
     .action-box-container{
