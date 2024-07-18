@@ -327,7 +327,7 @@ span:nth-child(3) {
     align-items: center;
     padding-bottom: 20px;
     box-sizing: border-box;
-    position: relative; /* Allows absolute positioning of .box-text */
+    
 }
 
 .box-image {
@@ -2144,7 +2144,7 @@ a {
         display: flex;
         gap: 30px;
         margin-left: calc((100% - 1869px) / 2);
-        margin-top: 47px; /* Space between the "Action" text and the yellow box */
+        margin-top: -1px; /* Space between the "Action" text and the yellow box */
     }
 
     .yellow-box {
@@ -2155,15 +2155,18 @@ a {
         align-items: center;
         padding-bottom: 20px;
         box-sizing: border-box;
-        position: relative; /* Allows absolute positioning of .box-text */
+        position: relative;
+        margin-top: 50px; /* Adjust this value to move the element down */
     }
+    
+    
 
     .box-image {
         width: 99%;
         height: auto;
         max-height: 104%;
         object-fit: cover;
-        margin-top: 268px;
+        margin-top: -22px;
         border-radius: 12px;
         cursor: pointer;
     }
@@ -2171,7 +2174,7 @@ a {
     .action-info {
         text-align: left;
         position: absolute;
-        top: 1085px;
+        top: 954px;
         width: 100%;
         left: -4px;
     }
@@ -2190,11 +2193,11 @@ a {
 
     /* The other cards start here */
     .romance-text {
-        color: black; /* Adjust the color as needed */
-        font-size: 72px; /* Set the font size */
-        font-weight: 700; /* Make the text bold */
-        text-align: left; /* Center the text */
-        margin-top: 375px; /* Adjust the margin as needed */
+        color: black;
+        font-size: 72px;
+        font-weight: 700;
+        text-align: left;
+        margin-top: 167px;
         margin-left: calc((100% - 1790px) / 2);
         margin-right: calc((100% - 1882px) / 2);
         display: flex;
@@ -2209,10 +2212,10 @@ a {
     }
 
     .red-box-container {
-        display: flex;
+                display: flex;
         gap: 30px;
         margin-left: calc((100% - 1869px) / 2);
-        margin-top: 47px; /* Space between the "Action" text and the yellow box */
+        margin-top: -1px; /* Space between the "Action" text and the yellow box */
     }
 
     .red-box {
@@ -2223,23 +2226,24 @@ a {
         align-items: center;
         padding-bottom: 20px;
         box-sizing: border-box;
-        position: relative; /* Allows absolute positioning of .box-text */
+        position: relative;
+        margin-top: 50px; /* Allows absolute positioning of .box-text */
     }
 
     .romance-info {
         text-align: left;
         position: absolute;
-        top: 1085px;
+        top: 954px;
         width: 100%;
         left: -4px;
     }
 
     .isekai-text {
-        color: black; /* Adjust the color as needed */
-        font-size: 72px; /* Set the font size */
-        font-weight: 700; /* Make the text bold */
-        text-align: left; /* Center the text */
-        margin-top: 375px; /* Adjust the margin as needed */
+        color: black;
+        font-size: 72px;
+        font-weight: 700;
+        text-align: left;
+        margin-top: 167px;
         margin-left: calc((100% - 1790px) / 2);
         margin-right: calc((100% - 1882px) / 2);
         display: flex;
@@ -2254,10 +2258,10 @@ a {
     }
 
     .blue-box-container {
-        display: flex;
+                display: flex;
         gap: 30px;
         margin-left: calc((100% - 1869px) / 2);
-        margin-top: 47px; /* Space between the "Action" text and the yellow box */
+        margin-top: -1px; /* Space between the "Action" text and the yellow box */
     }
 
     .blue-box {
@@ -2268,24 +2272,25 @@ a {
         align-items: center;
         padding-bottom: 20px;
         box-sizing: border-box;
-        position: relative; /* Allows absolute positioning of .box-text */
+        position: relative;
+        margin-top: 50px; /* Allows absolute positioning of .box-text */
     }
 
     .isekai-info {
         text-align: left;
         position: absolute;
-        top: 1085px;
+        top: 954px;
         width: 100%;
         left: -4px;
     }
     /* The other cards start here */
 
     .thriller-text {
-        color: black; /* Adjust the color as needed */
-        font-size: 72px; /* Set the font size */
-        font-weight: 700; /* Make the text bold */
-        text-align: left; /* Center the text */
-        margin-top: 375px; /* Adjust the margin as needed */
+        color: black;
+        font-size: 72px;
+        font-weight: 700;
+        text-align: left;
+        margin-top: 167px;
         margin-left: calc((100% - 1790px) / 2);
         margin-right: calc((100% - 1882px) / 2);
         display: flex;
@@ -2300,10 +2305,10 @@ a {
     }
 
     .green-box-container {
-        display: flex;
+                display: flex;
         gap: 30px;
         margin-left: calc((100% - 1869px) / 2);
-        margin-top: 47px; /* Space between the "Action" text and the yellow box */
+        margin-top: -1px; /* Space between the "Action" text and the yellow box */
     }
 
     .green-box {
@@ -2314,23 +2319,24 @@ a {
         align-items: center;
         padding-bottom: 20px;
         box-sizing: border-box;
-        position: relative; /* Allows absolute positioning of .box-text */
+        position: relative;
+        margin-top: 50px; /* Allows absolute positioning of .box-text */
     }
 
     .thriller-info {
         text-align: left;
         position: absolute;
-        top: 1085px;
+        top: 954px;
         width: 100%;
         left: -4px;
     }
 
     .adventure-text {
-        color: black; /* Adjust the color as needed */
-        font-size: 72px; /* Set the font size */
-        font-weight: 700; /* Make the text bold */
-        text-align: left; /* Center the text */
-        margin-top: 375px; /* Adjust the margin as needed */
+        color: black;
+        font-size: 72px;
+        font-weight: 700;
+        text-align: left;
+        margin-top: 167px;
         margin-left: calc((100% - 1790px) / 2);
         margin-right: calc((100% - 1882px) / 2);
         display: flex;
@@ -2345,10 +2351,10 @@ a {
     }
 
     .black-box-container {
-       display: flex;
+               display: flex;
         gap: 30px;
         margin-left: calc((100% - 1869px) / 2);
-        margin-top: 47px; /* Space between the "Action" text and the yellow box */
+        margin-top: -1px; /* Space between the "Action" text and the yellow box */
     }
 
     .black-box {
@@ -2359,23 +2365,24 @@ a {
         align-items: center;
         padding-bottom: 20px;
         box-sizing: border-box;
-        position: relative; /* Allows absolute positioning of .box-text */
+        position: relative;
+        margin-top: 50px; /* Allows absolute positioning of .box-text */
     }
 
     .adventure-info {
         text-align: left;
         position: absolute;
-        top: 1085px;
+        top: 954px;
         width: 100%;
         left: -4px;
     }
 
     .sports-text {
-        color: black; /* Adjust the color as needed */
-        font-size: 72px; /* Set the font size */
-        font-weight: 700; /* Make the text bold */
-        text-align: left; /* Center the text */
-        margin-top: 375px; /* Adjust the margin as needed */
+        color: black;
+        font-size: 72px;
+        font-weight: 700;
+        text-align: left;
+        margin-top: 167px;
         margin-left: calc((100% - 1790px) / 2);
         margin-right: calc((100% - 1882px) / 2);
         display: flex;
@@ -2390,10 +2397,10 @@ a {
     }
 
     .purple-box-container {
-        display: flex;
+                display: flex;
         gap: 30px;
         margin-left: calc((100% - 1869px) / 2);
-        margin-top: 47px; /* Space between the "Action" text and the yellow box */
+        margin-top: -1px; /* Space between the "Action" text and the yellow box */
     }
 
     .purple-box {
@@ -2404,23 +2411,24 @@ a {
         align-items: center;
         padding-bottom: 20px;
         box-sizing: border-box;
-        position: relative; /* Allows absolute positioning of .box-text */
+        position: relative;
+        margin-top: 50px; /* Allows absolute positioning of .box-text */
     }
 
     .sports-info {
         text-align: left;
         position: absolute;
-        top: 1085px;
+        top: 954px;
         width: 100%;
         left: -4px;
     }
 
     .comedy-text {
-        color: black; /* Adjust the color as needed */
-        font-size: 72px; /* Set the font size */
-        font-weight: 700; /* Make the text bold */
-        text-align: left; /* Center the text */
-        margin-top: 375px; /* Adjust the margin as needed */
+        color: black;
+        font-size: 72px;
+        font-weight: 700;
+        text-align: left;
+        margin-top: 167px;
         margin-left: calc((100% - 1790px) / 2);
         margin-right: calc((100% - 1882px) / 2);
         display: flex;
@@ -2435,10 +2443,10 @@ a {
     }
 
     .orange-box-container {
-        display: flex;
+                display: flex;
         gap: 30px;
         margin-left: calc((100% - 1869px) / 2);
-        margin-top: 47px; /* Space between the "Action" text and the yellow box */
+        margin-top: -1px; /* Space between the "Action" text and the yellow box */
     }
 
     .orange-box {
@@ -2449,13 +2457,14 @@ a {
         align-items: center;
         padding-bottom: 20px;
         box-sizing: border-box;
-        position: relative; /* Allows absolute positioning of .box-text */
+        position: relative;
+        margin-top: 50px; /* Allows absolute positioning of .box-text */
     }
 
     .comedy-info {
         text-align: left;
         position: absolute;
-        top: 1085px;
+        top: 954px;
         width: 100%;
         left: -4px;
     }
