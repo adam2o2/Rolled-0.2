@@ -1048,3 +1048,53 @@ overlay.style.display = "none";
 });
 });
 
+
+//Recently added section
+document.addEventListener('DOMContentLoaded', function() {
+    const videoIframe = document.getElementById('video-iframe');
+    const videoOverlay = document.getElementById('video-overlay');
+    const crunchyrollButton = document.getElementById('crunchyroll-button');
+
+    const videoLinks = {
+        'fairy-tail-card': 'https://www.youtube.com/embed/E1a5MRYIGUk',
+        'wistoria-card': 'https://www.youtube.com/embed/Br9na3MPEh8',
+        'elusive-samurai-card': 'https://www.youtube.com/embed/O4AqQNg1MI0',
+        'kaiju-no-8-card': 'https://www.youtube.com/embed/JwF7bhvnCxI'
+    };
+
+    function playVideo(videoUrl) {
+        if (videoUrl) {
+            videoIframe.src = videoUrl;
+            videoIframe.style.display = 'block';
+            videoOverlay.style.display = 'block'; // Show overlay
+            document.body.style.overflow = 'hidden'; // Disable scrolling
+
+            if (window.innerWidth <= 414) {
+                // Mobile styles
+                videoIframe.style.width = '391px';
+                videoIframe.style.height = '221px';
+            } else {
+                // Desktop styles
+                videoIframe.style.width = '1666.47px';
+                videoIframe.style.height = '801px';
+            }
+        } else {
+            videoIframe.style.display = 'none';
+        }
+    }
+
+    document.querySelectorAll('.image-card').forEach(card => {
+        card.addEventListener('click', function() {
+            const videoUrl = videoLinks[card.id];
+            playVideo(videoUrl);
+        });
+    });
+
+    // Click event listener for overlay to close video
+    videoOverlay.addEventListener('click', function() {
+        videoIframe.style.display = 'none';
+        videoIframe.src = '';
+        videoOverlay.style.display = 'none'; // Hide overlay
+        document.body.style.overflow = 'auto'; // Enable scrolling
+    });
+});
