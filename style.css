@@ -294,7 +294,7 @@ span:nth-child(3) {
 }
 
 .action-text {
-    color: #ffffff; /* Adjust the color as needed */
+    color: black; /* Adjust the color as needed */
     font-size: 72px; /* Set the font size */
     font-weight: 700; /* Make the text bold */
     text-align: left; /* Center the text */
@@ -346,7 +346,7 @@ span:nth-child(3) {
 }
 
 .title {
-    color: white;
+    color: black;
     font-size: 24px;
     font-weight: 700;
 }
@@ -359,7 +359,7 @@ span:nth-child(3) {
 
 /* The other cards start here */
 .romance-text {
-    color: #ffffff; /* Adjust the color as needed */
+    color: black; /* Adjust the color as needed */
     font-size: 72px; /* Set the font size */
     font-weight: 700; /* Make the text bold */
     text-align: left; /* Center the text */
@@ -403,7 +403,7 @@ span:nth-child(3) {
 }
 
 .isekai-text {
-    color: #ffffff; /* Adjust the color as needed */
+    color: black; /* Adjust the color as needed */
     font-size: 72px; /* Set the font size */
     font-weight: 700; /* Make the text bold */
     text-align: left; /* Center the text */
@@ -448,7 +448,7 @@ span:nth-child(3) {
 /* The other cards start here */
 
 .thriller-text {
-    color: #ffffff; /* Adjust the color as needed */
+    color: black; /* Adjust the color as needed */
     font-size: 72px; /* Set the font size */
     font-weight: 700; /* Make the text bold */
     text-align: left; /* Center the text */
@@ -492,7 +492,7 @@ span:nth-child(3) {
 }
 
 .adventure-text {
-    color: #ffffff; /* Adjust the color as needed */
+    color: black; /* Adjust the color as needed */
     font-size: 72px; /* Set the font size */
     font-weight: 700; /* Make the text bold */
     text-align: left; /* Center the text */
@@ -536,7 +536,7 @@ span:nth-child(3) {
 }
 
 .sports-text {
-    color: #ffffff; /* Adjust the color as needed */
+    color: black; /* Adjust the color as needed */
     font-size: 72px; /* Set the font size */
     font-weight: 700; /* Make the text bold */
     text-align: left; /* Center the text */
@@ -580,7 +580,7 @@ span:nth-child(3) {
 }
 
 .comedy-text {
-    color: #ffffff; /* Adjust the color as needed */
+    color: black; /* Adjust the color as needed */
     font-size: 72px; /* Set the font size */
     font-weight: 700; /* Make the text bold */
     text-align: left; /* Center the text */
@@ -857,22 +857,29 @@ a {
         background-size: cover;
         filter: blur(50px); /* Reduce blur for smaller screens */
     }
+
+    .text1 {
+        position: absolute;
+        top: 190px;
+    }
     
     .text1 h1 {
-        font-size: 36px;
-        padding-top: 90px;
+        font-size: 22px;
+        padding-top: 0px;
     }
     
     .text1 p {
-        font-size: 14px;
-        margin-top: -92px;
+        font-size: 9px;
+        margin-top: -112px;
         margin-bottom: -18px;
     }
 
     .box img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px; /* Reduce border-radius */
+        width: 340px;
+        height: 200px;
+        border-radius: 10px;
+        margin-left: -6px;
+        margin-top: 60px;
     }
     
     .action-text, .romance-text, .isekai-text, .thriller-text, .adventure-text, .sports-text, .comedy-text {
@@ -933,7 +940,7 @@ a {
     /* Add styles for .comedy-info and .sports-info */
     .comedy-info, .sports-info, .action-info, .romance-info, .isekai-info, .thriller-info, .adventure-info {
         font-size: 10px; /* Adjust font size */
-        margin-top: -461px; /* Adjust top margin */
+        margin-top: -437px;
         margin-left: 10px; /* Adjust left margin */
         display: flex;
         flex-direction: column;
@@ -950,6 +957,18 @@ a {
     .watch-button img {
         width: 24px;
         height: 21px;
+    }
+
+    .recently-added,
+    .recently-added h2,
+    .image-grid,
+    .image-card,
+    .image-card h3,
+    .image-card p,
+    .image-card img,
+    .text-content,
+    .text2 {
+        display: none;
     }
 }
 
@@ -1095,22 +1114,29 @@ a {
         background-size: cover;
         filter: blur(50px); /* Reduce blur for smaller screens */
     }
+
+    .text1 {
+        position: absolute;
+        top: 186px;
+    }
     
     .text1 h1 {
-        font-size: 36px;
-        padding-top: 90px;
+        font-size: 22px;
+        padding-top: 0px;
     }
     
     .text1 p {
-        font-size: 14px;
-        margin-top: -92px;
+        font-size: 9px;
+        margin-top: -112px;
         margin-bottom: -18px;
     }
 
     .box img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px; /* Reduce border-radius */
+        width: 340px;
+        height: 200px;
+        border-radius: 10px;
+        margin-left: -6px;
+        margin-top: 60px;
     }
     
     .action-text, .romance-text, .isekai-text, .thriller-text, .adventure-text, .sports-text, .comedy-text {
@@ -1188,6 +1214,18 @@ a {
     .watch-button img {
         width: 24px;
         height: 21px;
+    }
+
+    .recently-added,
+    .recently-added h2,
+    .image-grid,
+    .image-card,
+    .image-card h3,
+    .image-card p,
+    .image-card img,
+    .text-content,
+    .text2 {
+        display: none;
     }
     
 }
@@ -1386,7 +1424,7 @@ a {
         height: 792px;
         border-radius: 45px;
         display: none;
-        margin-left: -1004px;
+        margin-left: -664px;
         margin-top: 400px;
         display: block;
         cursor: pointer;
@@ -1404,7 +1442,7 @@ a {
         font-size: 72px; /* Set the font size */
         font-weight: 700; /* Make the text bold */
         text-align: left; /* Center the text */
-        margin-top: 322px;
+        margin-top: 67px;
         margin-left: calc((100% - 1790px) / 2);
         margin-right: calc((100% - 1882px) / 2);
         display: flex;
@@ -1751,9 +1789,9 @@ a {
     }
 
     .text1 {
-        margin-left: -1130px;
-        margin-top: 897px;
-        width: 610px;
+        margin-left: -955px;
+        margin-top: 870px;
+        width: 736px;
         height: 190px;
     }
     
@@ -1779,4 +1817,73 @@ a {
         position: absolute;
         margin-left: 1880px;
     }
+
+    .recently-added {
+        position: absolute;
+        width: 456px;
+        height: 792px;
+        z-index: 1;
+        right: 50px;
+        border-radius: 41px;
+        top: 399px;
+        box-shadow: 0px 34px 44px rgba(0, 0, 0, 0.3);
+        border: 1px solid #808080;
+        display: block;
+    }
+    
+    .recently-added h2 {
+        text-align: left;
+        margin-left: 46px;
+        margin-top: 43px;
+        position: absolute;
+        font-size: 24px;
+        display: block;
+    }
+    
+    .image-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px; /* 20 column gap between each card */
+        margin-top: 111px;
+        display: block;
+    }
+    
+    .image-card {
+        text-align: center;
+        background-color: white;
+        padding: 23px;
+        border-radius: 8px;
+        height: 118px;
+        margin-left: 11px;
+        display: block;
+    }
+    
+    .image-card h3 {
+        font-size: 24px;
+        color: black;
+        text-align: left;
+        display: block;
+    }
+    
+    .image-card p {
+        font-size: 18px;
+        color: #808080;
+        text-align: left;
+        margin-top: -21px;
+        display: block;
+    }
+    
+    .image-card img {
+        width: 168px;
+        height: 120px;
+        border-radius: 8px;
+    }
+    
+    .text-content {
+        font-size: 18px;
+        color: black;
+        margin: -128px 0px 0px 199px;
+        display: block;
+    }
+    
 }
