@@ -2206,7 +2206,7 @@ a {
     .yellow-box-container {
         display: flex;
         gap: 30px;
-        margin-left: -10px;
+        margin-left: calc((100% - 1379px) / 2);
         margin-top: -1px; /* Space between the "Action" text and the yellow box */
     }
 
@@ -2277,7 +2277,7 @@ a {
     .red-box-container {
                 display: flex;
                 gap: 30px;
-                margin-left: -10px;
+                margin-left: calc((100% - 1379px) / 2);
                 margin-top: -1px; /* Space between the "Action" text and the yellow box */
     }
 
@@ -2296,7 +2296,7 @@ a {
     .romance-info {
         text-align: left;
         position: absolute;
-        top: 954px;
+        top: 834px;
         width: 100%;
         left: -4px;
     }
@@ -2323,7 +2323,7 @@ a {
     .blue-box-container {
                 display: flex;
                 gap: 30px;
-                margin-left: -10px;
+                margin-left: calc((100% - 1379px) / 2);
                 margin-top: -1px; /* Space between the "Action" text and the yellow box */
     }
 
@@ -2342,7 +2342,7 @@ a {
     .isekai-info {
         text-align: left;
         position: absolute;
-        top: 954px;
+        top: 834px;
         width: 100%;
         left: -4px;
     }
@@ -2370,7 +2370,7 @@ a {
     .green-box-container {
                 display: flex;
                 gap: 30px;
-                margin-left: -10px;
+                margin-left: calc((100% - 1379px) / 2);
                 margin-top: -1px; /* Space between the "Action" text and the yellow box */
     }
 
@@ -2389,7 +2389,7 @@ a {
     .thriller-info {
         text-align: left;
         position: absolute;
-        top: 954px;
+        top: 834px;
         width: 100%;
         left: -4px;
     }
@@ -2416,7 +2416,7 @@ a {
     .black-box-container {
                display: flex;
                gap: 30px;
-               margin-left: -10px;
+               margin-left: calc((100% - 1379px) / 2);
                margin-top: -1px; /* Space between the "Action" text and the yellow box */
     }
 
@@ -2435,7 +2435,7 @@ a {
     .adventure-info {
         text-align: left;
         position: absolute;
-        top: 954px;
+        top: 834px;
         width: 100%;
         left: -4px;
     }
@@ -2462,7 +2462,7 @@ a {
     .purple-box-container {
                 display: flex;
                 gap: 30px;
-                margin-left: -10px;
+                margin-left: calc((100% - 1379px) / 2);
                 margin-top: -1px; /* Space between the "Action" text and the yellow box */
     }
 
@@ -2481,7 +2481,7 @@ a {
     .sports-info {
         text-align: left;
         position: absolute;
-        top: 954px;
+        top: 834px;
         width: 100%;
         left: -4px;
     }
@@ -2508,7 +2508,7 @@ a {
     .orange-box-container {
                 display: flex;
                 gap: 30px;
-                margin-left: -10px;
+                margin-left: calc((100% - 1379px) / 2);
                 margin-top: -1px; /* Space between the "Action" text and the yellow box */
     }
 
@@ -2527,7 +2527,7 @@ a {
     .comedy-info {
         text-align: left;
         position: absolute;
-        top: 954px;
+        top: 834px;
         width: 100%;
         left: -4px;
     }
@@ -2586,13 +2586,13 @@ a {
         width: 396px;
         height: 593px;
         z-index: 1;
-        right: 50px;
+        right: 310px;
         border-radius: 41px;
         top: 499px;
         box-shadow: 0px 34px 44px rgba(0, 0, 0, 0.3);
         border: 1px solid #808080;
         display: block;
-        margin-right: 260px;
+        /* margin-right: 260px; */
     }
     
     .recently-added h2 {
@@ -3235,7 +3235,7 @@ a {
     
     .text2 span {
         position: absolute; /* Position the span element absolutely within the .text2 container */
-        left: 131px;
+        left: 391px;
         top: 150px; /* Move it down by 20px */
         font-weight: bold;
         font-size: 60px;
@@ -3261,7 +3261,7 @@ a {
         width: 456px;
         height: 792px;
         z-index: 1;
-        right: 50px;
+        right: -180px;
         border-radius: 41px;
         top: 399px;
         box-shadow: 0px 34px 44px rgba(0, 0, 0, 0.3);
