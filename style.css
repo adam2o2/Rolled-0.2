@@ -1465,7 +1465,7 @@ a {
 
     .yellow-box {
         width: 260px;
-        height: 536px;
+        height: 343px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -1473,7 +1473,7 @@ a {
         box-sizing: border-box;
         position: relative;
         margin-left: 31px;
-        margin-top: -126px;
+        margin-top: -36px;
     }
 
     .box-image {
@@ -1489,7 +1489,7 @@ a {
     .action-info {
         text-align: left;
         position: absolute;
-        top: 875px;
+        top: 765px;
         width: 100%;
     }
 
@@ -1511,7 +1511,7 @@ a {
         font-size: 72px;
         font-weight: 700;
         text-align: left;
-        margin-top: 95px;
+        margin-top: 178px;
         margin-left: calc((100% - 1167px) / 2);
         margin-right: calc((100% - 1182px) / 2);
         display: flex;
@@ -1534,7 +1534,7 @@ a {
 
     .red-box {
         width: 260px;
-        height: 536px;
+        height: 343px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -1542,13 +1542,13 @@ a {
         box-sizing: border-box;
         position: relative;
         margin-left: 31px;
-        margin-top: -126px;
+        margin-top: -36px;
     }
 
     .romance-info {
         text-align: left;
         position: absolute;
-        top: 875px;
+        top: 765px;
         width: 100%;
     }
 
@@ -1557,7 +1557,7 @@ a {
         font-size: 72px;
         font-weight: 700;
         text-align: left;
-        margin-top: 95px;
+        margin-top: 178px;
         margin-left: calc((100% - 1167px) / 2);
         margin-right: calc((100% - 1182px) / 2);
         display: flex;
@@ -1580,7 +1580,7 @@ a {
 
     .blue-box {
         width: 260px;
-        height: 536px;
+        height: 343px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -1588,13 +1588,13 @@ a {
         box-sizing: border-box;
         position: relative;
         margin-left: 31px;
-        margin-top: -126px;
+        margin-top: -36px;
     }
 
     .isekai-info {
         text-align: left;
         position: absolute;
-        top: 875px;
+        top: 765px;
         width: 100%;
     }
     /* The other cards start here */
@@ -1604,7 +1604,7 @@ a {
         font-size: 72px;
         font-weight: 700;
         text-align: left;
-        margin-top: 95px;
+        margin-top: 178px;
         margin-left: calc((100% - 1167px) / 2);
         margin-right: calc((100% - 1182px) / 2);
         display: flex;
@@ -1627,7 +1627,7 @@ a {
 
     .green-box {
         width: 260px;
-        height: 536px;
+        height: 343px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -1635,13 +1635,13 @@ a {
         box-sizing: border-box;
         position: relative;
         margin-left: 31px;
-        margin-top: -126px;
+        margin-top: -36px;
     }
 
     .thriller-info {
         text-align: left;
         position: absolute;
-        top: 875px;
+        top: 765px;
         width: 100%;
     }
 
@@ -1650,7 +1650,7 @@ a {
         font-size: 72px;
         font-weight: 700;
         text-align: left;
-        margin-top: 95px;
+        margin-top: 178px;
         margin-left: calc((100% - 1167px) / 2);
         margin-right: calc((100% - 1182px) / 2);
         display: flex;
@@ -1673,7 +1673,7 @@ a {
 
     .black-box {
         width: 260px;
-        height: 536px;
+        height: 343px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -1681,13 +1681,13 @@ a {
         box-sizing: border-box;
         position: relative;
         margin-left: 31px;
-        margin-top: -126px;
+        margin-top: -36px;
     }
 
     .adventure-info {
         text-align: left;
         position: absolute;
-        top: 875px;
+        top: 765px;
         width: 100%;
     }
 
@@ -1696,7 +1696,7 @@ a {
         font-size: 72px;
         font-weight: 700;
         text-align: left;
-        margin-top: 95px;
+        margin-top: 178px;
         margin-left: calc((100% - 1167px) / 2);
         margin-right: calc((100% - 1182px) / 2);
         display: flex;
@@ -1719,7 +1719,7 @@ a {
 
     .purple-box {
         width: 260px;
-        height: 536px;
+        height: 343px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -1727,13 +1727,13 @@ a {
         box-sizing: border-box;
         position: relative;
         margin-left: 31px;
-        margin-top: -126px;
+        margin-top: -36px;
     }
 
     .sports-info {
         text-align: left;
         position: absolute;
-        top: 875px;
+        top: 765px;
         width: 100%;
     }
 
@@ -1742,7 +1742,7 @@ a {
         font-size: 72px;
         font-weight: 700;
         text-align: left;
-        margin-top: 95px;
+        margin-top: 178px;
         margin-left: calc((100% - 1167px) / 2);
         margin-right: calc((100% - 1182px) / 2);
         display: flex;
@@ -1765,7 +1765,7 @@ a {
 
     .orange-box {
         width: 260px;
-        height: 536px;
+        height: 343px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -1773,13 +1773,13 @@ a {
         box-sizing: border-box;
         position: relative;
         margin-left: 31px;
-        margin-top: -126px;
+        margin-top: -36px;
     }
 
     .comedy-info {
         text-align: left;
         position: absolute;
-        top: 875px;
+        top: 765px;
         width: 100%;
     }
 
