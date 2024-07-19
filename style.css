@@ -1230,6 +1230,23 @@ a {
     
 }
 
+@media screen and (min-width: 415px) {
+    .yellow-box-container, .red-box-container, .blue-box-container, .green-box-container, .black-box-container, .purple-box-container, .orange-box-container {
+        flex-direction: row;
+        gap: 10px;
+        margin-left: 5px;
+        margin-right: -5px;
+        margin-top: -9px;
+        flex-wrap: wrap;
+    }
+
+    .yellow-box, .red-box, .blue-box, .green-box, .black-box, .purple-box, .orange-box {
+        width: calc(25% - 10px); /* Make the boxes 25% width with margin */
+        height: auto; /* Adjust height */
+        padding-bottom: 10px; /* Reduce padding */
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .ribbon {
         z-index: 1;
@@ -1913,6 +1930,52 @@ a {
     }
     
 }
+
+@media screen and (min-width: 1205px) {
+    .yellow-box-container {
+        display: flex;
+        gap: 1px;
+        margin-left: calc((100% - 1219px) / 2);
+        margin-top: 39px;
+    }
+    .red-box-container {
+        display: flex;
+        gap: 1px;
+        margin-left: calc((100% - 1219px) / 2);
+        margin-top: 39px;
+    }
+    .blue-box-container {
+        display: flex;
+        gap: 1px;
+        margin-left: calc((100% - 1219px) / 2);
+        margin-top: 39px;
+    }
+    .black-box-container {
+        display: flex;
+        gap: 1px;
+        margin-left: calc((100% - 1219px) / 2);
+        margin-top: 39px;
+    }
+    .green-box-container {
+        display: flex;
+        gap: 1px;
+        margin-left: calc((100% - 1219px) / 2);
+        margin-top: 39px;
+    }
+    .purple-box-container {
+        display: flex;
+        gap: 1px;
+        margin-left: calc((100% - 1219px) / 2);
+        margin-top: 39px;
+    }
+    .orange-box-container {
+        display: flex;
+        gap: 1px;
+        margin-left: calc((100% - 1219px) / 2);
+        margin-top: 39px;
+    }
+}
+
 
 @media screen and (min-width: 1900px) {
     .ribbon {
