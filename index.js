@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     let currentVideoUrl = '';
+    let currentCrunchyrollLink = '';
 
     function getRandomIndex(max) {
         return Math.floor(Math.random() * max);
@@ -48,11 +49,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Change background image dynamically
         background.style.backgroundImage = `url(${selectedImage.src})`;
 
-        // Store the current video URL
+        // Store the current video URL and Crunchyroll link
         currentVideoUrl = selectedImage.video;
-
-        // Update Crunchyroll button href
-        crunchyrollButton.href = selectedImage.crunchyrollLink;
+        currentCrunchyrollLink = selectedImage.crunchyrollLink;
     }
 
     // Function to play video
@@ -79,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     featureImage.addEventListener('click', function() {
         playVideo(currentVideoUrl);
+        crunchyrollButton.href = currentCrunchyrollLink; // Update Crunchyroll button link
     });
 
     // Click event listener for overlay to close video
@@ -91,23 +91,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize on page load
     changeFeature();
-});
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-
-            // Select all yellow boxes for action anime
-            const yellowBoxes = document.querySelectorAll('.yellow-box');
-            const videoOverlay = document.getElementById('video-overlay');
-            const videoIframe = document.getElementById('video-iframe');
+    const yellowBoxes = document.querySelectorAll('.yellow-box');
 
     // Define array for action anime images with titles, videos, and episodes
     let actionImages = [
-        { src: 'mha.png', video: 'https://www.youtube.com/embed/LqJQqcDQxBg', title: 'My Hero Academia', episodes: '138 episodes' },
-        { src: 'fireforce.png', video: 'https://www.youtube.com/embed/fzM43HZ6oeg', title: 'Fire Force', episodes: '48 episodes' },
-        { src: 'bungo.png', video: 'https://www.youtube.com/embed/YUH1mfV3IEU', title: 'Bungo Stray Dogs', episodes: '62 episodes' },
-        { src: 'jjk.png', video: 'https://www.youtube.com/embed/pkKu9hLT-t8', title: 'Jujutsu Kaisen', episodes: '24 episodes' },
+        { src: 'mha.png', video: 'https://www.youtube.com/embed/LqJQqcDQxBg', title: 'My Hero Academia', episodes: '138 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G6NQ5DWZ6/my-hero-academia' },
+        { src: 'fireforce.png', video: 'https://www.youtube.com/embed/fzM43HZ6oeg', title: 'Fire Force', episodes: '48 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GYQWNXPZY/fire-force' },
+        { src: 'bungo.png', video: 'https://www.youtube.com/embed/YUH1mfV3IEU', title: 'Bungo Stray Dogs', episodes: '62 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GR5VXQ8PR/bungo-stray-dogs' },
+        { src: 'jjk.png', video: 'https://www.youtube.com/embed/pkKu9hLT-t8', title: 'Jujutsu Kaisen', episodes: '24 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen' },
         { src: 'akame.png', video: 'https://www.youtube.com/embed/NIeKMKwON0U', title: 'Akame Ga Kill', episodes: '24 episodes' },
         { src: 'AOT.png', video: 'https://www.youtube.com/embed/n4Nj6Y_SNYI', title: 'Attack On Titan', episodes: '99 episodes'  },
         { src: 'demonslayer.png', video: 'https://www.youtube.com/embed/Sl2k7bfBeCw', title: 'Demon Slayer', episodes: '26 episodes' },
@@ -141,12 +135,6 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'vinland.png', video: 'https://www.youtube.com/embed/f8JrZ7Q_p-8', title: 'Vinland Saga', episodes: '24 episodes' },
     ];
 
-    // Function to get random index
-    function getRandomIndex(max) {
-        return Math.floor(Math.random() * max);
-    }
-
-    // Function to load random action anime
     function loadRandomActionAnime() {
         yellowBoxes.forEach(box => {
             if (actionImages.length === 0) {
@@ -167,8 +155,9 @@ document.addEventListener('DOMContentLoaded', function() {
             titleElement.textContent = selectedAnime.title;
             episodesElement.textContent = selectedAnime.episodes;
 
-            // Set the data-video-url attribute to the video URL
+            // Set the data-video-url and data-crunchyroll-link attributes
             box.setAttribute('data-video-url', selectedAnime.video);
+            box.setAttribute('data-crunchyroll-link', selectedAnime.crunchyrollLink);
 
             // Remove the selected anime from actionImages array to avoid duplicates
             actionImages.splice(index, 1);
@@ -182,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Action anime script executed successfully.');
 
     // Function to play video
-    function playVideo(videoUrl) {
+    function playActionVideo(videoUrl, crunchyrollLink) {
         if (videoUrl) {
             videoIframe.src = videoUrl;
             videoIframe.style.display = 'block';
@@ -198,6 +187,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 videoIframe.style.width = '1666.47px';
                 videoIframe.style.height = '801px';
             }
+
+            // Set the Crunchyroll button link for action anime
+            crunchyrollButton.href = crunchyrollLink;
         } else {
             videoIframe.style.display = 'none';
             videoOverlay.style.display = 'none'; // Hide overlay
@@ -209,13 +201,14 @@ document.addEventListener('DOMContentLoaded', function() {
     yellowBoxes.forEach(box => {
         box.addEventListener('click', function() {
             const videoUrl = this.getAttribute('data-video-url');
-            playVideo(videoUrl);
+            const crunchyrollLink = this.getAttribute('data-crunchyroll-link');
+            playActionVideo(videoUrl, crunchyrollLink);
         });
     });
 
     // Add event listener to video overlay to close the video
     videoOverlay.addEventListener('click', function() {
-        playVideo(null);
+        playActionVideo(null, '');
     });
 
 
@@ -224,9 +217,9 @@ const redBoxes = document.querySelectorAll('.red-box');
 
 // Define array for romance anime images with titles, videos, and episodes
 const romanceImages = [
-{ src: 'duke.png', video: 'https://www.youtube.com/embed/55T_YNvgBbE', title: 'The Duke of Death', episodes: '12 episodes' },
-{ src: 'asign.png', video: 'https://www.youtube.com/embed/v50CI8LVwEY', title: 'A Sign of Affection', episodes: '12 episodes' },
-{ src: 'dressup.png', video: 'https://www.youtube.com/embed/8oveGY6h6T8', title: 'My Dress-Up Darling', episodes: '12 episodes' },
+{ src: 'duke.png', video: 'https://www.youtube.com/embed/55T_YNvgBbE', title: 'The Duke of Death', episodes: '12 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G79H23V0G/the-duke-of-death-and-his-maid' },
+{ src: 'asign.png', video: 'https://www.youtube.com/embed/v50CI8LVwEY', title: 'A Sign of Affection', episodes: '12 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GEXH3W2V7/a-sign-of-affection' },
+{ src: 'dressup.png', video: 'https://www.youtube.com/embed/8oveGY6h6T8', title: 'My Dress-Up Darling', episodes: '12 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GQWH0M9N8/my-dress-up-darling' },
 { src: 'nagatoro.png', video: 'https://www.youtube.com/embed/6dVQ93xBYUg', title: 'NAGATORO', episodes: '12 episodes' },
 { src: 'tonikawa.png', video: 'https://www.youtube.com/embed/97wksuHdnF4', title: 'TONIKAWA', episodes: '24 episodes' },
 { src: 'girlfriend.png', video: 'https://www.youtube.com/embed/1foV8Fh0WRc', title: 'Girlfriend Girlfriend', episodes: '12 episodes' },
@@ -278,33 +271,33 @@ const romanceImages = [
 
 ];
 
-// Function to load random romance anime
 function loadRandomRomanceAnime() {
-redBoxes.forEach(box => {
-if (romanceImages.length === 0) {
-    console.log('No more unique romance anime images available.');
-    return;
-}
+    redBoxes.forEach(box => {
+        if (romanceImages.length === 0) {
+            console.log('No more unique anime images available.');
+            return;
+        }
 
-const index = getRandomIndex(romanceImages.length);
-const selectedAnime = romanceImages[index];
+        const index = getRandomIndex(romanceImages.length);
+        const selectedAnime = romanceImages[index];
 
-const imageElement = box.querySelector('.box-image');
-const titleElement = box.querySelector('.title');
-const episodesElement = box.querySelector('.episodes');
+        const imageElement = box.querySelector('.box-image');
+        const titleElement = box.querySelector('.title');
+        const episodesElement = box.querySelector('.episodes');
 
-// Set image source, alt text, title, and episodes
-imageElement.src = `Romance/${selectedAnime.src}`;
-imageElement.alt = selectedAnime.title;
-titleElement.textContent = selectedAnime.title;
-episodesElement.textContent = selectedAnime.episodes;
+        // Set image source, alt text, title, and episodes
+        imageElement.src = `Romance/${selectedAnime.src}`;
+        imageElement.alt = selectedAnime.title;
+        titleElement.textContent = selectedAnime.title;
+        episodesElement.textContent = selectedAnime.episodes;
 
-// Set the data-video-url attribute to the video URL
-box.setAttribute('data-video-url', selectedAnime.video);
+        // Set the data-video-url and data-crunchyroll-link attributes
+        box.setAttribute('data-video-url', selectedAnime.video);
+        box.setAttribute('data-crunchyroll-link', selectedAnime.crunchyrollLink);
 
-// Remove the selected anime from romanceImages array to avoid duplicates
-romanceImages.splice(index, 1);
-});
+        // Remove the selected anime from romanceImages array to avoid duplicates
+        romanceImages.splice(index, 1);
+    });
 }
 
 // Call the function to load random romance anime on page load
@@ -314,40 +307,44 @@ loadRandomRomanceAnime();
 console.log('Romance anime script executed successfully.');
 
 // Function to play video
-function playVideo(videoUrl) {
-if (videoUrl) {
-videoIframe.src = videoUrl;
-videoIframe.style.display = 'block';
-videoOverlay.style.display = 'flex'; // Show overlay
-document.body.style.overflow = 'hidden'; // Disable scrolling
+function playRomanceVideo(videoUrl, crunchyrollLink) {
+    if (videoUrl) {
+        videoIframe.src = videoUrl;
+        videoIframe.style.display = 'block';
+        videoOverlay.style.display = 'flex'; // Show overlay
+        document.body.style.overflow = 'hidden'; // Disable scrolling
 
-if (window.innerWidth <= 414) {
-    // Mobile styles
-    videoIframe.style.width = '391px';
-    videoIframe.style.height = '221px';
-} else {
-    // Desktop styles
-    videoIframe.style.width = '1666.47px';
-    videoIframe.style.height = '801px';
-}
-} else {
-videoIframe.style.display = 'none';
-videoOverlay.style.display = 'none'; // Hide overlay
-document.body.style.overflow = 'auto'; // Enable scrolling
-}
+        if (window.innerWidth <= 414) {
+            // Mobile styles
+            videoIframe.style.width = '391px';
+            videoIframe.style.height = '221px';
+        } else {
+            // Desktop styles
+            videoIframe.style.width = '1666.47px';
+            videoIframe.style.height = '801px';
+        }
+
+        // Set the Crunchyroll button link for romance anime
+        crunchyrollButton.href = crunchyrollLink;
+    } else {
+        videoIframe.style.display = 'none';
+        videoOverlay.style.display = 'none'; // Hide overlay
+        document.body.style.overflow = 'auto'; // Enable scrolling
+    }
 }
 
 // Add event listener to red boxes
 redBoxes.forEach(box => {
-box.addEventListener('click', function() {
-const videoUrl = this.getAttribute('data-video-url');
-playVideo(videoUrl);
-});
+    box.addEventListener('click', function() {
+        const videoUrl = this.getAttribute('data-video-url');
+        const crunchyrollLink = this.getAttribute('data-crunchyroll-link');
+        playRomanceVideo(videoUrl, crunchyrollLink);
+    });
 });
 
 // Add event listener to video overlay to close the video
 videoOverlay.addEventListener('click', function() {
-playVideo(null);
+    playRomanceVideo(null, '');
 });
 
 
@@ -356,11 +353,11 @@ const blueBoxes = document.querySelectorAll('.blue-box');
 
 // Define array for isekai anime images with titles, videos, and episodes
 const isekaiImages = [
-{ src: 'mushoku.png', video: 'https://www.youtube.com/embed/k5VxfJpzy1Q', title: 'Mushoku Tensei', episodes: '23 episodes' },
-{ src: 'nogamenolife.png', video: 'https://www.youtube.com/embed/ZgWgnSG9PB0', title: 'No Game No Life', episodes: '12 episodes' },
-{ src: 'overlord.png', video: 'https://www.youtube.com/embed/uhlBqFj9kDw', title: 'OverLord', episodes: '52 episodes' },
+{ src: 'mushoku.png', video: 'https://www.youtube.com/embed/k5VxfJpzy1Q', title: 'Mushoku Tensei', episodes: '23 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G24H1N3MP/mushoku-tensei-jobless-reincarnation' },
+{ src: 'nogamenolife.png', video: 'https://www.youtube.com/embed/ZgWgnSG9PB0', title: 'No Game No Life', episodes: '12 episodes'},
+{ src: 'overlord.png', video: 'https://www.youtube.com/embed/uhlBqFj9kDw', title: 'OverLord', episodes: '52 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G69PZ5PDY/overlord' },
 { src: 'rezero.png', video: 'https://www.youtube.com/embed/lXs3yIc_2CU', title: 'Re:Zero', episodes: '50 episodes' },
-{ src: 'sagaoftanya.png', video: 'https://www.youtube.com/embed/V8Gx2_sHMRI', title: 'Saga of Tanya', episodes: '12 episodes' },
+{ src: 'sagaoftanya.png', video: 'https://www.youtube.com/embed/V8Gx2_sHMRI', title: 'Saga of Tanya', episodes: '12 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GR9P57W96/saga-of-tanya-the-evil' },
 { src: 'sao.png', video: 'https://www.youtube.com/embed/6ohYYtxfDCg', title: 'Sword Art Online', episodes: '96 episodes' },
 { src: 'shieldhero.png', video: 'https://www.youtube.com/embed/rKnyi3TRznA', title: 'Shield Hero', episodes: '38 episodes' },
 { src: 'slime.png', video: 'https://www.youtube.com/embed/uOzwqb74K34', title: 'Reincarnated as A Slime', episodes: '48 episodes' },
@@ -410,33 +407,33 @@ const isekaiImages = [
 ];
 
 
-// Function to load random isekai anime
 function loadRandomIsekaiAnime() {
-blueBoxes.forEach(box => {
-if (isekaiImages.length === 0) {
-    console.log('No more unique isekai anime images available.');
-    return;
-}
+    blueBoxes.forEach(box => {
+        if (isekaiImages.length === 0) {
+            console.log('No more unique anime images available.');
+            return;
+        }
 
-const index = getRandomIndex(isekaiImages.length);
-const selectedAnime = isekaiImages[index];
+        const index = getRandomIndex(isekaiImages.length);
+        const selectedAnime = isekaiImages[index];
 
-const imageElement = box.querySelector('.box-image');
-const titleElement = box.querySelector('.title');
-const episodesElement = box.querySelector('.episodes');
+        const imageElement = box.querySelector('.box-image');
+        const titleElement = box.querySelector('.title');
+        const episodesElement = box.querySelector('.episodes');
 
-// Set image source, alt text, title, and episodes
-imageElement.src = `Isekai/${selectedAnime.src}`;
-imageElement.alt = selectedAnime.title;
-titleElement.textContent = selectedAnime.title;
-episodesElement.textContent = selectedAnime.episodes;
+        // Set image source, alt text, title, and episodes
+        imageElement.src = `Isekai/${selectedAnime.src}`;
+        imageElement.alt = selectedAnime.title;
+        titleElement.textContent = selectedAnime.title;
+        episodesElement.textContent = selectedAnime.episodes;
 
-// Set the data-video-url attribute to the video URL
-box.setAttribute('data-video-url', selectedAnime.video);
+        // Set the data-video-url and data-crunchyroll-link attributes
+        box.setAttribute('data-video-url', selectedAnime.video);
+        box.setAttribute('data-crunchyroll-link', selectedAnime.crunchyrollLink);
 
-// Remove the selected anime from isekaiImages array to avoid duplicates
-isekaiImages.splice(index, 1);
-});
+        // Remove the selected anime from isekaiImages array to avoid duplicates
+        isekaiImages.splice(index, 1);
+    });
 }
 
 // Call the function to load random isekai anime on page load
@@ -446,42 +443,45 @@ loadRandomIsekaiAnime();
 console.log('Isekai anime script executed successfully.');
 
 // Function to play video
-function playVideo(videoUrl) {
-if (videoUrl) {
-videoIframe.src = videoUrl;
-videoIframe.style.display = 'block';
-videoOverlay.style.display = 'flex'; // Show overlay
-document.body.style.overflow = 'hidden'; // Disable scrolling
+function playIsekaiVideo(videoUrl, crunchyrollLink) {
+    if (videoUrl) {
+        videoIframe.src = videoUrl;
+        videoIframe.style.display = 'block';
+        videoOverlay.style.display = 'flex'; // Show overlay
+        document.body.style.overflow = 'hidden'; // Disable scrolling
 
-if (window.innerWidth <= 414) {
-    // Mobile styles
-    videoIframe.style.width = '391px';
-    videoIframe.style.height = '221px';
-} else {
-    // Desktop styles
-    videoIframe.style.width = '1666.47px';
-    videoIframe.style.height = '801px';
-}
-} else {
-videoIframe.style.display = 'none';
-videoOverlay.style.display = 'none'; // Hide overlay
-document.body.style.overflow = 'auto'; // Enable scrolling
-}
+        if (window.innerWidth <= 414) {
+            // Mobile styles
+            videoIframe.style.width = '391px';
+            videoIframe.style.height = '221px';
+        } else {
+            // Desktop styles
+            videoIframe.style.width = '1666.47px';
+            videoIframe.style.height = '801px';
+        }
+
+        // Set the Crunchyroll button link for isekai anime
+        crunchyrollButton.href = crunchyrollLink;
+    } else {
+        videoIframe.style.display = 'none';
+        videoOverlay.style.display = 'none'; // Hide overlay
+        document.body.style.overflow = 'auto'; // Enable scrolling
+    }
 }
 
 // Add event listener to blue boxes
 blueBoxes.forEach(box => {
-box.addEventListener('click', function() {
-const videoUrl = this.getAttribute('data-video-url');
-playVideo(videoUrl);
-});
+    box.addEventListener('click', function() {
+        const videoUrl = this.getAttribute('data-video-url');
+        const crunchyrollLink = this.getAttribute('data-crunchyroll-link');
+        playIsekaiVideo(videoUrl, crunchyrollLink);
+    });
 });
 
 // Add event listener to video overlay to close the video
 videoOverlay.addEventListener('click', function() {
-playVideo(null);
+    playIsekaiVideo(null, '');
 });
-
 
 
 // Select all green boxes for thriller anime
@@ -489,9 +489,9 @@ const greenBoxes = document.querySelectorAll('.green-box');
 
 // Define array for thriller anime images with titles, videos, and episodes
 const thrillerImages = [
-{ src: 'erased.png', video: 'https://www.youtube.com/embed/dky7my5xd2c', title: 'Erased', episodes: '12 episodes' },
-{ src: 'futurediary.png', video: 'https://www.youtube.com/embed/KfznTm8mJA4', title: 'Future Diary', episodes: '26 episodes' },
-{ src: 'hellsing.png', video: 'https://www.youtube.com/embed/7CQKMDFAKMk', title: 'Hellsing', episodes: '13 episodes' },
+{ src: 'erased.png', video: 'https://www.youtube.com/embed/dky7my5xd2c', title: 'Erased', episodes: '12 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GYGG92K7Y/erased' },
+{ src: 'futurediary.png', video: 'https://www.youtube.com/embed/KfznTm8mJA4', title: 'Future Diary', episodes: '26 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GYGGXPQ2Y/the-future-diary' },
+{ src: 'hellsing.png', video: 'https://www.youtube.com/embed/7CQKMDFAKMk', title: 'Hellsing', episodes: '13 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G649DPXQY/hellsing' },
 { src: 'paranoiaagent.png', video: 'https://www.youtube.com/embed/QEsNDDwhSJ4', title: 'Paranoia Agent', episodes: '13 episodes' },
 { src: 'psychopass.png', video: 'https://www.youtube.com/embed/YzuJnyebc40', title: 'Psycho-Pass', episodes: '22 episodes' },
 { src: 'terrorinresonance.png', video: 'https://www.youtube.com/embed/aiZrjeZvF8Y', title: 'Terror in...', episodes: '11 episodes' },
@@ -542,33 +542,33 @@ const thrillerImages = [
 ];
 
 
-// Function to load random thriller anime
 function loadRandomThrillerAnime() {
-greenBoxes.forEach(box => {
-if (thrillerImages.length === 0) {
-    console.log('No more unique thriller anime images available.');
-    return;
-}
+    greenBoxes.forEach(box => {
+        if (thrillerImages.length === 0) {
+            console.log('No more unique anime images available.');
+            return;
+        }
 
-const index = getRandomIndex(thrillerImages.length);
-const selectedAnime = thrillerImages[index];
+        const index = getRandomIndex(thrillerImages.length);
+        const selectedAnime = thrillerImages[index];
 
-const imageElement = box.querySelector('.box-image');
-const titleElement = box.querySelector('.title');
-const episodesElement = box.querySelector('.episodes');
+        const imageElement = box.querySelector('.box-image');
+        const titleElement = box.querySelector('.title');
+        const episodesElement = box.querySelector('.episodes');
 
-// Set image source, alt text, title, and episodes
-imageElement.src = `Thriller/${selectedAnime.src}`;
-imageElement.alt = selectedAnime.title;
-titleElement.textContent = selectedAnime.title;
-episodesElement.textContent = selectedAnime.episodes;
+        // Set image source, alt text, title, and episodes
+        imageElement.src = `Thriller/${selectedAnime.src}`;
+        imageElement.alt = selectedAnime.title;
+        titleElement.textContent = selectedAnime.title;
+        episodesElement.textContent = selectedAnime.episodes;
 
-// Set the data-video-url attribute to the video URL
-box.setAttribute('data-video-url', selectedAnime.video);
+        // Set the data-video-url and data-crunchyroll-link attributes
+        box.setAttribute('data-video-url', selectedAnime.video);
+        box.setAttribute('data-crunchyroll-link', selectedAnime.crunchyrollLink);
 
-// Remove the selected anime from thrillerImages array to avoid duplicates
-thrillerImages.splice(index, 1);
-});
+        // Remove the selected anime from thrillerImages array to avoid duplicates
+        thrillerImages.splice(index, 1);
+    });
 }
 
 // Call the function to load random thriller anime on page load
@@ -578,42 +578,45 @@ loadRandomThrillerAnime();
 console.log('Thriller anime script executed successfully.');
 
 // Function to play video
-function playVideo(videoUrl) {
-if (videoUrl) {
-videoIframe.src = videoUrl;
-videoIframe.style.display = 'block';
-videoOverlay.style.display = 'flex'; // Show overlay
-document.body.style.overflow = 'hidden'; // Disable scrolling
+function playThrillerVideo(videoUrl, crunchyrollLink) {
+    if (videoUrl) {
+        videoIframe.src = videoUrl;
+        videoIframe.style.display = 'block';
+        videoOverlay.style.display = 'flex'; // Show overlay
+        document.body.style.overflow = 'hidden'; // Disable scrolling
 
-if (window.innerWidth <= 414) {
-    // Mobile styles
-    videoIframe.style.width = '391px';
-    videoIframe.style.height = '221px';
-} else {
-    // Desktop styles
-    videoIframe.style.width = '1666.47px';
-    videoIframe.style.height = '801px';
-}
-} else {
-videoIframe.style.display = 'none';
-videoOverlay.style.display = 'none'; // Hide overlay
-document.body.style.overflow = 'auto'; // Enable scrolling
-}
+        if (window.innerWidth <= 414) {
+            // Mobile styles
+            videoIframe.style.width = '391px';
+            videoIframe.style.height = '221px';
+        } else {
+            // Desktop styles
+            videoIframe.style.width = '1666.47px';
+            videoIframe.style.height = '801px';
+        }
+
+        // Set the Crunchyroll button link for thriller anime
+        crunchyrollButton.href = crunchyrollLink;
+    } else {
+        videoIframe.style.display = 'none';
+        videoOverlay.style.display = 'none'; // Hide overlay
+        document.body.style.overflow = 'auto'; // Enable scrolling
+    }
 }
 
 // Add event listener to green boxes
 greenBoxes.forEach(box => {
-box.addEventListener('click', function() {
-const videoUrl = this.getAttribute('data-video-url');
-playVideo(videoUrl);
-});
+    box.addEventListener('click', function() {
+        const videoUrl = this.getAttribute('data-video-url');
+        const crunchyrollLink = this.getAttribute('data-crunchyroll-link');
+        playThrillerVideo(videoUrl, crunchyrollLink);
+    });
 });
 
 // Add event listener to video overlay to close the video
 videoOverlay.addEventListener('click', function() {
-playVideo(null);
+    playThrillerVideo(null, '');
 });
-
 
 
 // Select all black boxes for adventure anime
@@ -621,9 +624,9 @@ const blackBoxes = document.querySelectorAll('.black-box');
 
 // Define array for adventure anime images with titles, videos, and episodes
 const adventureImages = [
-{ src: 'fairytail.png', video: 'https://www.youtube.com/embed/mAAKPx-ndAg', title: 'Fairy Tail', episodes: '328 episodes' },
-{ src: 'drstone.png', video: 'https://www.youtube.com/embed/S6OmSIxSj14', title: 'Dr. Stone', episodes: '35 episodes' },
-{ src: 'frieren.png', video: 'https://www.youtube.com/embed/pqUZaKn7flw', title: 'Frieren', episodes: '28 episodes' },
+{ src: 'fairytail.png', video: 'https://www.youtube.com/embed/mAAKPx-ndAg', title: 'Fairy Tail', episodes: '328 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G6DQDD3WR/fairy-tail' },
+{ src: 'drstone.png', video: 'https://www.youtube.com/embed/S6OmSIxSj14', title: 'Dr. Stone', episodes: '35 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GYEXQKJG6/dr-stone' },
+{ src: 'frieren.png', video: 'https://www.youtube.com/embed/pqUZaKn7flw', title: 'Frieren', episodes: '28 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GG5H5XQX4/frieren-beyond-journeys-end' },
 { src: 'yuyu.png', video: 'https://www.youtube.com/embed/bGc1Na8mlw0', title: 'Yuyu Hakusho', episodes: '112 episodes' },
 { src: 'fullmetal.png', video: 'https://www.youtube.com/embed/kx0nBaS_q50', title: 'Full Metal Alchemist', episodes: '94 episodes' },
 { src: 'goldenkamuy.png', video: 'https://www.youtube.com/embed/Qqy7MCK4GeI', title: 'Golden Kamuy', episodes: '49 episodes' },
@@ -674,33 +677,33 @@ const adventureImages = [
 ];
 
 
-// Function to load random adventure anime
 function loadRandomAdventureAnime() {
-blackBoxes.forEach(box => {
-if (adventureImages.length === 0) {
-    console.log('No more unique adventure anime images available.');
-    return;
-}
+    blackBoxes.forEach(box => {
+        if (adventureImages.length === 0) {
+            console.log('No more unique anime images available.');
+            return;
+        }
 
-const index = getRandomIndex(adventureImages.length);
-const selectedAnime = adventureImages[index];
+        const index = getRandomIndex(adventureImages.length);
+        const selectedAnime = adventureImages[index];
 
-const imageElement = box.querySelector('.box-image');
-const titleElement = box.querySelector('.title');
-const episodesElement = box.querySelector('.episodes');
+        const imageElement = box.querySelector('.box-image');
+        const titleElement = box.querySelector('.title');
+        const episodesElement = box.querySelector('.episodes');
 
-// Set image source, alt text, title, and episodes
-imageElement.src = `Adventure/${selectedAnime.src}`;
-imageElement.alt = selectedAnime.title;
-titleElement.textContent = selectedAnime.title;
-episodesElement.textContent = selectedAnime.episodes;
+        // Set image source, alt text, title, and episodes
+        imageElement.src = `Adventure/${selectedAnime.src}`;
+        imageElement.alt = selectedAnime.title;
+        titleElement.textContent = selectedAnime.title;
+        episodesElement.textContent = selectedAnime.episodes;
 
-// Set the data-video-url attribute to the video URL
-box.setAttribute('data-video-url', selectedAnime.video);
+        // Set the data-video-url and data-crunchyroll-link attributes
+        box.setAttribute('data-video-url', selectedAnime.video);
+        box.setAttribute('data-crunchyroll-link', selectedAnime.crunchyrollLink);
 
-// Remove the selected anime from adventureImages array to avoid duplicates
-adventureImages.splice(index, 1);
-});
+        // Remove the selected anime from adventureImages array to avoid duplicates
+        adventureImages.splice(index, 1);
+    });
 }
 
 // Call the function to load random adventure anime on page load
@@ -710,40 +713,44 @@ loadRandomAdventureAnime();
 console.log('Adventure anime script executed successfully.');
 
 // Function to play video
-function playVideo(videoUrl) {
-if (videoUrl) {
-videoIframe.src = videoUrl;
-videoIframe.style.display = 'block';
-videoOverlay.style.display = 'flex'; // Show overlay
-document.body.style.overflow = 'hidden'; // Disable scrolling
+function playAdventureVideo(videoUrl, crunchyrollLink) {
+    if (videoUrl) {
+        videoIframe.src = videoUrl;
+        videoIframe.style.display = 'block';
+        videoOverlay.style.display = 'flex'; // Show overlay
+        document.body.style.overflow = 'hidden'; // Disable scrolling
 
-if (window.innerWidth <= 414) {
-    // Mobile styles
-    videoIframe.style.width = '391px';
-    videoIframe.style.height = '221px';
-} else {
-    // Desktop styles
-    videoIframe.style.width = '1666.47px';
-    videoIframe.style.height = '801px';
-}
-} else {
-videoIframe.style.display = 'none';
-videoOverlay.style.display = 'none'; // Hide overlay
-document.body.style.overflow = 'auto'; // Enable scrolling
-}
+        if (window.innerWidth <= 414) {
+            // Mobile styles
+            videoIframe.style.width = '391px';
+            videoIframe.style.height = '221px';
+        } else {
+            // Desktop styles
+            videoIframe.style.width = '1666.47px';
+            videoIframe.style.height = '801px';
+        }
+
+        // Set the Crunchyroll button link for adventure anime
+        crunchyrollButton.href = crunchyrollLink;
+    } else {
+        videoIframe.style.display = 'none';
+        videoOverlay.style.display = 'none'; // Hide overlay
+        document.body.style.overflow = 'auto'; // Enable scrolling
+    }
 }
 
 // Add event listener to black boxes
 blackBoxes.forEach(box => {
-box.addEventListener('click', function() {
-const videoUrl = this.getAttribute('data-video-url');
-playVideo(videoUrl);
-});
+    box.addEventListener('click', function() {
+        const videoUrl = this.getAttribute('data-video-url');
+        const crunchyrollLink = this.getAttribute('data-crunchyroll-link');
+        playAdventureVideo(videoUrl, crunchyrollLink);
+    });
 });
 
 // Add event listener to video overlay to close the video
 videoOverlay.addEventListener('click', function() {
-playVideo(null);
+    playAdventureVideo(null, '');
 });
 
 
@@ -753,9 +760,9 @@ const purpleBoxes = document.querySelectorAll('.purple-box');
 
 // Define array for sports anime images with titles, videos, and episodes
 const sportsImages = [
-{ src: 'haikyu.png', video: 'https://www.youtube.com/embed/KhZG9Uw7PxM', title: 'Haikyu!!', episodes: '85 episodes' },
-{ src: 'yuri.png', video: 'https://www.youtube.com/embed/KuhLOnIszok', title: 'Yuri on Ice', episodes: '12 episodes' },
-{ src: 'ippo.png', video: 'https://www.youtube.com/embed/a94NcwNgPdo?start=1', title: 'Hajime No Ippo', episodes: '127 episodes' },
+{ src: 'haikyu.png', video: 'https://www.youtube.com/embed/KhZG9Uw7PxM', title: 'Haikyu!!', episodes: '85 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GY8VM8MWY/haikyu' },
+{ src: 'yuri.png', video: 'https://www.youtube.com/embed/KuhLOnIszok', title: 'Yuri on Ice', episodes: '12 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GY2PEJ0MY/yuri-on-ice' },
+{ src: 'ippo.png', video: 'https://www.youtube.com/embed/a94NcwNgPdo?start=1', title: 'Hajime No Ippo', episodes: '127 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GW4HM7N7X/hajime-no-ippo-the-fighting' },
 { src: 'kurokobasket.png', video: 'https://www.youtube.com/embed/1KLvA6FMNiE', title: 'Kurokos Basketball', episodes: '75 episodes' },
 { src: 'princeoftennis.png', video: 'https://www.youtube.com/embed/H0aHXo8q85g', title: 'The Prince of Tennis', episodes: '178 episodes' },
 { src: 'runwiththewind.png', video: 'https://www.youtube.com/embed/hECoG4DhFVQ', title: 'Run With the Wind', episodes: '23 episodes' },
@@ -809,33 +816,33 @@ const sportsImages = [
 
 
 
-// Function to load random sports anime
 function loadRandomSportsAnime() {
-purpleBoxes.forEach(box => {
-if (sportsImages.length === 0) {
-    console.log('No more unique sports anime images available.');
-    return;
-}
+    purpleBoxes.forEach(box => {
+        if (sportsImages.length === 0) {
+            console.log('No more unique anime images available.');
+            return;
+        }
 
-const index = getRandomIndex(sportsImages.length);
-const selectedAnime = sportsImages[index];
+        const index = getRandomIndex(sportsImages.length);
+        const selectedAnime = sportsImages[index];
 
-const imageElement = box.querySelector('.box-image');
-const titleElement = box.querySelector('.title');
-const episodesElement = box.querySelector('.episodes');
+        const imageElement = box.querySelector('.box-image');
+        const titleElement = box.querySelector('.title');
+        const episodesElement = box.querySelector('.episodes');
 
-// Set image source, alt text, title, and episodes
-imageElement.src = `Sports/${selectedAnime.src}`;
-imageElement.alt = selectedAnime.title;
-titleElement.textContent = selectedAnime.title;
-episodesElement.textContent = selectedAnime.episodes;
+        // Set image source, alt text, title, and episodes
+        imageElement.src = `Sports/${selectedAnime.src}`;
+        imageElement.alt = selectedAnime.title;
+        titleElement.textContent = selectedAnime.title;
+        episodesElement.textContent = selectedAnime.episodes;
 
-// Set the data-video-url attribute to the video URL
-box.setAttribute('data-video-url', selectedAnime.video);
+        // Set the data-video-url and data-crunchyroll-link attributes
+        box.setAttribute('data-video-url', selectedAnime.video);
+        box.setAttribute('data-crunchyroll-link', selectedAnime.crunchyrollLink);
 
-// Remove the selected anime from sportsImages array to avoid duplicates
-sportsImages.splice(index, 1);
-});
+        // Remove the selected anime from sportsImages array to avoid duplicates
+        sportsImages.splice(index, 1);
+    });
 }
 
 // Call the function to load random sports anime on page load
@@ -845,40 +852,44 @@ loadRandomSportsAnime();
 console.log('Sports anime script executed successfully.');
 
 // Function to play video
-function playVideo(videoUrl) {
-if (videoUrl) {
-videoIframe.src = videoUrl;
-videoIframe.style.display = 'block';
-videoOverlay.style.display = 'flex'; // Show overlay
-document.body.style.overflow = 'hidden'; // Disable scrolling
+function playSportsVideo(videoUrl, crunchyrollLink) {
+    if (videoUrl) {
+        videoIframe.src = videoUrl;
+        videoIframe.style.display = 'block';
+        videoOverlay.style.display = 'flex'; // Show overlay
+        document.body.style.overflow = 'hidden'; // Disable scrolling
 
-if (window.innerWidth <= 414) {
-    // Mobile styles
-    videoIframe.style.width = '391px';
-    videoIframe.style.height = '221px';
-} else {
-    // Desktop styles
-    videoIframe.style.width = '1666.47px';
-    videoIframe.style.height = '801px';
-}
-} else {
-videoIframe.style.display = 'none';
-videoOverlay.style.display = 'none'; // Hide overlay
-document.body.style.overflow = 'auto'; // Enable scrolling
-}
+        if (window.innerWidth <= 414) {
+            // Mobile styles
+            videoIframe.style.width = '391px';
+            videoIframe.style.height = '221px';
+        } else {
+            // Desktop styles
+            videoIframe.style.width = '1666.47px';
+            videoIframe.style.height = '801px';
+        }
+
+        // Set the Crunchyroll button link for sports anime
+        crunchyrollButton.href = crunchyrollLink;
+    } else {
+        videoIframe.style.display = 'none';
+        videoOverlay.style.display = 'none'; // Hide overlay
+        document.body.style.overflow = 'auto'; // Enable scrolling
+    }
 }
 
 // Add event listener to purple boxes
 purpleBoxes.forEach(box => {
-box.addEventListener('click', function() {
-const videoUrl = this.getAttribute('data-video-url');
-playVideo(videoUrl);
-});
+    box.addEventListener('click', function() {
+        const videoUrl = this.getAttribute('data-video-url');
+        const crunchyrollLink = this.getAttribute('data-crunchyroll-link');
+        playSportsVideo(videoUrl, crunchyrollLink);
+    });
 });
 
 // Add event listener to video overlay to close the video
 videoOverlay.addEventListener('click', function() {
-playVideo(null);
+    playSportsVideo(null, '');
 });
 
 
@@ -887,9 +898,9 @@ const orangeBoxes = document.querySelectorAll('.orange-box');
 
 // Define array for comedy anime images with titles, videos, and episodes
 const comedyImages = [
-{ src: 'bucchigiri.png', video: 'https://www.youtube.com/embed/Kw6JkejW_Hw', title: 'BUCCHIGIRI?!', episodes: '12 episodes' },
-{ src: 'buddy.png', video: 'https://www.youtube.com/embed/Oqxm1mn917g', title: 'Buddy Daddies', episodes: '12 episodes' },
-{ src: 'combatants.png', video: 'https://www.youtube.com/embed/-uJdqz-fBl8', title: 'Combatants Will...', episodes: '12 episodes' },
+{ src: 'bucchigiri.png', video: 'https://www.youtube.com/embed/Kw6JkejW_Hw', title: 'BUCCHIGIRI?!', episodes: '12 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G5PHNM985/bucchigiri' },
+{ src: 'buddy.png', video: 'https://www.youtube.com/embed/Oqxm1mn917g', title: 'Buddy Daddies', episodes: '12 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GG5H5X3DE/buddy-daddies' },
+{ src: 'combatants.png', video: 'https://www.youtube.com/embed/-uJdqz-fBl8', title: 'Combatants Will...', episodes: '12 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GQWH0M98E/combatants-will-be-dispatched' },
 { src: 'ghost.png', video: 'https://www.youtube.com/embed/kOi5SpwDQR4', title: 'Ghost Stories', episodes: '20 episodes' },
 { src: 'gintama.png', video: 'https://www.youtube.com/embed/Eh43PgDfSxU', title: 'Gintama', episodes: '367 episodes' },
 { src: 'grandblue.png', video: 'https://www.youtube.com/embed/YILULCpNg9U', title: 'Grand Blue', episodes: '12 episodes' },
@@ -941,33 +952,33 @@ const comedyImages = [
 
 
 
-// Function to load random comedy anime
 function loadRandomComedyAnime() {
-orangeBoxes.forEach(box => {
-if (comedyImages.length === 0) {
-    console.log('No more unique comedy anime images available.');
-    return;
-}
+    orangeBoxes.forEach(box => {
+        if (comedyImages.length === 0) {
+            console.log('No more unique anime images available.');
+            return;
+        }
 
-const index = getRandomIndex(comedyImages.length);
-const selectedAnime = comedyImages[index];
+        const index = getRandomIndex(comedyImages.length);
+        const selectedAnime = comedyImages[index];
 
-const imageElement = box.querySelector('.box-image');
-const titleElement = box.querySelector('.title');
-const episodesElement = box.querySelector('.episodes');
+        const imageElement = box.querySelector('.box-image');
+        const titleElement = box.querySelector('.title');
+        const episodesElement = box.querySelector('.episodes');
 
-// Set image source, alt text, title, and episodes
-imageElement.src = `Comedy/${selectedAnime.src}`;
-imageElement.alt = selectedAnime.title;
-titleElement.textContent = selectedAnime.title;
-episodesElement.textContent = selectedAnime.episodes;
+        // Set image source, alt text, title, and episodes
+        imageElement.src = `Comedy/${selectedAnime.src}`;
+        imageElement.alt = selectedAnime.title;
+        titleElement.textContent = selectedAnime.title;
+        episodesElement.textContent = selectedAnime.episodes;
 
-// Set the data-video-url attribute to the video URL
-box.setAttribute('data-video-url', selectedAnime.video);
+        // Set the data-video-url and data-crunchyroll-link attributes
+        box.setAttribute('data-video-url', selectedAnime.video);
+        box.setAttribute('data-crunchyroll-link', selectedAnime.crunchyrollLink);
 
-// Remove the selected anime from comedyImages array to avoid duplicates
-comedyImages.splice(index, 1);
-});
+        // Remove the selected anime from comedyImages array to avoid duplicates
+        comedyImages.splice(index, 1);
+    });
 }
 
 // Call the function to load random comedy anime on page load
@@ -977,74 +988,44 @@ loadRandomComedyAnime();
 console.log('Comedy anime script executed successfully.');
 
 // Function to play video
-function playVideo(videoUrl) {
-if (videoUrl) {
-videoIframe.src = videoUrl;
-videoIframe.style.display = 'block';
-videoOverlay.style.display = 'flex'; // Show overlay
-document.body.style.overflow = 'hidden'; // Disable scrolling
+function playComedyVideo(videoUrl, crunchyrollLink) {
+    if (videoUrl) {
+        videoIframe.src = videoUrl;
+        videoIframe.style.display = 'block';
+        videoOverlay.style.display = 'flex'; // Show overlay
+        document.body.style.overflow = 'hidden'; // Disable scrolling
 
-if (window.innerWidth <= 414) {
-    // Mobile styles
-    videoIframe.style.width = '391px';
-    videoIframe.style.height = '221px';
-} else {
-    // Desktop styles
-    videoIframe.style.width = '1666.47px';
-    videoIframe.style.height = '801px';
-}
-} else {
-videoIframe.style.display = 'none';
-videoOverlay.style.display = 'none'; // Hide overlay
-document.body.style.overflow = 'auto'; // Enable scrolling
-}
+        if (window.innerWidth <= 414) {
+            // Mobile styles
+            videoIframe.style.width = '391px';
+            videoIframe.style.height = '221px';
+        } else {
+            // Desktop styles
+            videoIframe.style.width = '1666.47px';
+            videoIframe.style.height = '801px';
+        }
+
+        // Set the Crunchyroll button link for comedy anime
+        crunchyrollButton.href = crunchyrollLink;
+    } else {
+        videoIframe.style.display = 'none';
+        videoOverlay.style.display = 'none'; // Hide overlay
+        document.body.style.overflow = 'auto'; // Enable scrolling
+    }
 }
 
 // Add event listener to orange boxes
 orangeBoxes.forEach(box => {
-box.addEventListener('click', function() {
-const videoUrl = this.getAttribute('data-video-url');
-playVideo(videoUrl);
-});
+    box.addEventListener('click', function() {
+        const videoUrl = this.getAttribute('data-video-url');
+        const crunchyrollLink = this.getAttribute('data-crunchyroll-link');
+        playComedyVideo(videoUrl, crunchyrollLink);
+    });
 });
 
 // Add event listener to video overlay to close the video
 videoOverlay.addEventListener('click', function() {
-playVideo(null);
-});
-})
-
-// Developer & About Popup
-document.addEventListener("DOMContentLoaded", function() {
-const aboutSpan = document.querySelector(".ribbon-right span:nth-child(3)");
-const popupBox = document.getElementById("popup-box");
-const overlay = document.getElementById("overlay");
-
-aboutSpan.addEventListener("click", function() {
-popupBox.style.display = "block";
-overlay.style.display = "block";
-});
-
-
-overlay.addEventListener("click", function() {
-popupBox.style.display = "none";
-overlay.style.display = "none";
-});
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-const developerSpan = document.querySelector(".ribbon-right span:nth-child(1)");
-const developerPopupBox = document.getElementById("developer-popup");
-const overlay = document.getElementById("overlay");
-
-developerSpan.addEventListener("click", function() {
-developerPopupBox.style.display = "block";
-overlay.style.display = "block";
-});
-
-overlay.addEventListener("click", function() {
-developerPopupBox.style.display = "none";
-overlay.style.display = "none";
+    playComedyVideo(null, '');
 });
 });
 
