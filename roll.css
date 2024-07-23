@@ -29,8 +29,6 @@ span:nth-child(3) {
     position: relative;
 }
 
-
-
 .recently-added h2 {
     text-align: left;
     margin-left: 46px;
@@ -214,10 +212,15 @@ span:nth-child(3) {
     margin-right: 18px;
 }
 
-.ribbon-right span {
+.ribbon-right span,
+.ribbon-right a {
     color: #7D7D7D;
-    font-size: 18px; /* Adjust font size as needed */
-    font-weight: 700; /* Bold text */
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 /* .background-image {
