@@ -7,6 +7,70 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="box"><h1>This is a new box</h1></div>
+
+    <!-- This is the ribbon -->
+    <div class="ribbon">
+        <div class="ribbon-left"><a href="index.html">Rolled</a></div>
+        <div class="ribbon-right">
+            <span>Developer</span> <a href="roll.html"><span>Roll</span></a> <span>About</span>
+        </div>
+    </div>
+
+    <!-- Wrap for text -->
+     <div class="text-wrap">
+        <p class="text">What was rolled</p>
+        <h3 class="title">Jujutsu Kaisen</h3>
+    </div>
+    
+    <!-- This is where i will be inserting the images -->
+    <div class="box-wrap">
+
+        <div class="box-background">
+            <img src="Feature/jjkcard.png" alt="Background Image" class="background-image">
+        </div>
+        <div class="box">
+            <img src="Feature/jjkcard.png" alt="Jujutsu Kaisen Card" class="box-image">
+        </div>
+        <p class="description">Jujutsu Kaisen is filled with intense battles and well-animated fight scenes, much like Bleach and My Hero Academia.</p>
+    </div>   
+
+    <!-- Developer About -->
+    <div id="overlay" class="overlay"></div>
+    <div id="popup-box" class="popup-box">
+        <h3>About the app</h3>
+        <p>Rolled is an anime-based website that recommends anime across all genres.
+              While watching the trailer, users are prompted to continue watching the series on Crunchyroll with a direct link.</p>
+              <div class="fyi-section">
+                  <h3>F.Y.I</h3>
+                  <p>You cannot watch anime episodes on this website as it would be illegal and considered piracy.</p>
+                </div>
+        <div class="version">version .02</div>
+    </div>
+
+    <div id="developer-popup" class="popup-box">
+        <h3>Who are the developers</h3>
+        <div class="developer-container">
+            <div class="developer-info">
+                <div class="image-container">
+                    <img src="Developer/Abraham.png" alt="Abraham May">
+                    <div class="image-text">
+                        <p>Abraham</p>
+                        <p>May</p>
+                    </div>
+                </div>
+            </div>
+            <div class="developer-info">
+                <div class="image-container">
+                    <img src="Developer/Adam.png" alt="Adam May">
+                    <div class="image-text">
+                        <p>Adam</p>
+                        <p>May</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <script src="roll.js"></script>
 </body>
 </html>
