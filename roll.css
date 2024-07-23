@@ -8,16 +8,34 @@ body {
     margin: 0; /* Remove default margin */
 }
 
+.box-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+}
+
+.box-background {
+    position: absolute;
+    width: 1130px;
+    height: 230px;
+    background-color: red;
+    filter: blur(220px); /* Apply the blur effect */
+    z-index: 1; /* Ensure it’s behind the .box */
+}
+
 .box {
     position: relative;
-    background-color: blue;
     width: 830px;
     height: 530px;
     border-radius: 11px;
     overflow: hidden;
+    z-index: 2; /* Ensure it’s above the .box-background */
 }
 
-.box-image{
+.box-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
