@@ -1406,7 +1406,7 @@ a {
         display: flex;
         justify-content: left;
         align-items: flex-end;
-        font-size: 72px;
+        font-size: 52px;
         font-weight: 400;
         font-family: 'PP Editorial New', sans-serif;
         margin-left: -23px;
@@ -1419,10 +1419,10 @@ a {
         justify-content: left;
         align-items: flex-end;
         padding-top: 20px;
-        font-size: 20px;
-        margin-top: -105px;
+        font-size: 15px;
+        margin-top: -116px;
         gap: 40px; /* Adjust the spacing as needed */
-        margin-left: 167px;
+        margin-left: -20px;
     }
 
     .text1 p span {
@@ -1437,12 +1437,12 @@ a {
     }
 
     .box img {
-        width: 913px;
-        height: 592px;
+        width: 663px;
+        height: 408px;
         border-radius: 45px;
         display: none;
-        margin-left: 6px;
-        margin-top: 153px;
+        margin-left: -432px;
+        margin-top: 199px;
         display: block;
         cursor: pointer;
     }
@@ -1820,8 +1820,8 @@ a {
     }
 
     .text1 {
-        margin-left: -5px;
-        margin-top: 388px;
+        margin-left: -285px;
+        margin-top: 292px;
         width: 736px;
         height: 190px;
     }
@@ -1917,16 +1917,96 @@ a {
         display: block;
     }
 
-    .recently-added,
-    .recently-added h2,
-    .image-grid,
-    .image-card,
-    .image-card h3,
-    .image-card p,
-    .image-card img,
-    .text-content,
-    .text2 {
-        display: none;
+    .text2 span {
+        position: absolute; /* Position the span element absolutely within the .text2 container */
+        left: 391px;
+        top: 87px; /* Move it down by 20px */
+        font-weight: bold;
+        font-size: 33px;
+    }
+
+    .box .image-card img{
+        width: 119px;
+        height: 80px;
+        margin: 10px;
+        border-radius: 15px;
+        margin-top: 0px;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+
+    .recently-wrapped{
+        margin-top: -1189px;
+        position: absolute;
+        margin-left: 1410px;
+    }
+
+    .recently-added {
+        position: absolute;
+        width: 316px;
+        height: 479px;
+        z-index: 1;
+        right: 157px;
+        border-radius: 41px;
+        top: 455px;
+        box-shadow: 0px 34px 44px rgba(0, 0, 0, 0.3);
+        border: 1px solid #808080;
+        display: block;
+    }
+    
+    .recently-added h2 {
+        text-align: left;
+        margin-left: 63px;
+        margin-top: 31px;
+        position: absolute;
+        font-size: 24px;
+        display: block;
+    }
+    
+    .image-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px; /* 20 column gap between each card */
+        margin-top: 88px;
+        display: block;
+    }
+    
+    .image-card {
+        text-align: center;
+        background-color: white;
+        padding: 0px;
+        border-radius: 8px;
+        height: 95px;
+        margin-left: 11px;
+        display: block;
+        width: 296px;
+    }
+    
+    .image-card h3 {
+        font-size: 14px;
+        color: black;
+        text-align: left;
+        display: block;
+    }
+    
+    .image-card p {
+        font-size: 11px;
+        color: #808080;
+        text-align: left;
+        margin-top: -21px;
+        display: block;
+    }
+    
+    .image-card img {
+        width: 168px;
+        height: 120px;
+        border-radius: 8px;
+    }
+    
+    .text-content {
+        font-size: 18px;
+        color: black;
+        margin: -80px 0px 0px 142px;
+        display: block;
     }
     
 }
