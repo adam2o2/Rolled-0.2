@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'mha.png', video: 'https://www.youtube.com/embed/LqJQqcDQxBg', title: 'My Hero Academia', episodes: '138 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G6NQ5DWZ6/my-hero-academia' },
         { src: 'fireforce.png', video: 'https://www.youtube.com/embed/fzM43HZ6oeg', title: 'Fire Force', episodes: '48 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GYQWNXPZY/fire-force' },
         { src: 'bungo.png', video: 'https://www.youtube.com/embed/YUH1mfV3IEU', title: 'Bungo Stray Dogs', episodes: '62 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GR5VXQ8PR/bungo-stray-dogs' },
-        { src: 'jjk.png', video: 'https://www.youtube.com/embed/pkKu9hLT-t8', title: 'Jujutsu Kaisen', episodes: '24 episodes', crunchyrollLink: 'https://www.crunchyroll.com/' },
+        { src: 'jjk.png', video: 'https://www.youtube.com/embed/pkKu9hLT-t8', title: 'Jujutsu Kaisen', episodes: '24 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen' },
         { src: 'akame.png', video: 'https://www.youtube.com/embed/NIeKMKwON0U', title: 'Akame Ga Kill', episodes: '24 episodes', crunchyrollLink: 'https://www.crunchyroll.com/' },
         { src: 'AOT.png', video: 'https://www.youtube.com/embed/n4Nj6Y_SNYI', title: 'Attack On Titan', episodes: '99 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan'  },
         { src: 'demonslayer.png', video: 'https://www.youtube.com/embed/Sl2k7bfBeCw', title: 'Demon Slayer', episodes: '26 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba' },
