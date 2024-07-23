@@ -3213,6 +3213,10 @@ a {
         font-size: 30px;
     }
 
+    .ribbon-right a {
+        margin-top: -12px;
+    }
+
     .watch-button {
         width: 303px;
         height: 49px;
