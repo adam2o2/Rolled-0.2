@@ -11,15 +11,16 @@ body {
     margin-bottom: 20px; /* Space between text and box-wrap */
     z-index: 1; /* Ensure it is above the .box-wrap */
     font-family: 'PP Editorial New', sans-serif;
+    margin-top: 110px;
 }
 
 .text-wrap .text {
-    font-size: 18px; /* Adjust font size as needed */
+    font-size: 24px; /* Adjust font size as needed */
     font-weight: bold; /* Make text bold if desired */
 }
 
 .text-wrap .title {
-    font-size: 24px; /* Adjust font size as needed */
+    font-size: 84px; /* Adjust font size as needed */
     font-weight: bold; /* Make title bold */
 }
 
@@ -30,6 +31,7 @@ body {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center;     /* Center vertically */
+    margin-top: -130px;
 }
 
 .box-background {
