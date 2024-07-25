@@ -19,12 +19,6 @@ body {
     box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
-.ribbon-right span:nth-child(1),
-span:nth-child(2),
-span:nth-child(3) {
-    cursor: pointer;
-}
-
 .box {
     position: relative;
 }
@@ -131,6 +125,12 @@ span:nth-child(3) {
     backdrop-filter: blur(5px);
 }
 
+.roll-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
 .developer-container {
     display: flex;
     justify-content: space-around;
@@ -224,8 +224,7 @@ span:nth-child(3) {
     margin-right: 18px;
 }
 
-.ribbon-right span,
-.ribbon-right a {
+.ribbon-right span{
     color: #7D7D7D;
     font-size: 18px;
     font-weight: 700;
@@ -789,6 +788,12 @@ a {
         z-index: 1000;
         backdrop-filter: blur(5px);
     }
+
+    .roll-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
     
     .developer-container {
         display: flex;
@@ -1044,6 +1049,12 @@ a {
         background: rgba(0, 0, 0, 0.5);
         z-index: 1000;
         backdrop-filter: blur(5px);
+    }
+
+    .roll-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
     }
     
     .developer-container {
@@ -1353,6 +1364,12 @@ a {
         background: rgba(0, 0, 0, 0.5);
         z-index: 1000;
         backdrop-filter: blur(5px);
+    }
+
+    .roll-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
     }
     
     .developer-container {
@@ -2164,6 +2181,12 @@ a {
         z-index: 1000;
         backdrop-filter: blur(5px);
     }
+
+    .roll-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
     
     .developer-container {
         display: flex;
@@ -2838,6 +2861,12 @@ a {
         background: rgba(0, 0, 0, 0.5);
         z-index: 1000;
         backdrop-filter: blur(5px);
+    }
+    
+    .roll-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
     }
     
     .developer-container {
