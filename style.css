@@ -131,6 +131,12 @@ body {
     align-items: flex-start;
 }
 
+#roll-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
 .developer-container {
     display: flex;
     justify-content: space-around;
@@ -2868,7 +2874,7 @@ a {
         justify-content: space-around;
         align-items: flex-start;
     }
-    
+
     .developer-container {
         display: flex;
         justify-content: space-around;
