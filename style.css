@@ -19,12 +19,6 @@ body {
     box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
-.ribbon-right span:nth-child(1),
-span:nth-child(2),
-span:nth-child(3) {
-    cursor: pointer;
-}
-
 .box {
     position: relative;
 }
@@ -131,6 +125,25 @@ span:nth-child(3) {
     backdrop-filter: blur(5px);
 }
 
+.roll-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#roll-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 8px 19px 24px rgba(0, 0, 0, 0.3);
+}
+
+.roll-container .watch-button{
+    position: absolute;
+    margin-bottom: 30px;
+}
+
 .developer-container {
     display: flex;
     justify-content: space-around;
@@ -224,8 +237,7 @@ span:nth-child(3) {
     margin-right: 18px;
 }
 
-.ribbon-right span,
-.ribbon-right a {
+.ribbon-right span{
     color: #7D7D7D;
     font-size: 18px;
     font-weight: 700;
@@ -789,6 +801,12 @@ a {
         z-index: 1000;
         backdrop-filter: blur(5px);
     }
+
+    .roll-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
     
     .developer-container {
         display: flex;
@@ -1044,6 +1062,12 @@ a {
         background: rgba(0, 0, 0, 0.5);
         z-index: 1000;
         backdrop-filter: blur(5px);
+    }
+
+    .roll-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
     }
     
     .developer-container {
@@ -1353,6 +1377,12 @@ a {
         background: rgba(0, 0, 0, 0.5);
         z-index: 1000;
         backdrop-filter: blur(5px);
+    }
+
+    .roll-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
     }
     
     .developer-container {
@@ -2164,6 +2194,12 @@ a {
         z-index: 1000;
         backdrop-filter: blur(5px);
     }
+
+    .roll-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
     
     .developer-container {
         display: flex;
@@ -2711,6 +2747,7 @@ a {
         color: black;
         text-align: left;
         display: block;
+        width: 150px;
     }
     
     .image-card p {
@@ -2719,6 +2756,7 @@ a {
         text-align: left;
         margin-top: -21px;
         display: block;
+        width: 150px;
     }
     
     .image-card img {
@@ -2730,7 +2768,7 @@ a {
     .text-content {
         font-size: 18px;
         color: black;
-        margin: -92px 0px 0px 199px;
+        margin: -112px 0px 0px 189px;
         display: block;
     }
     
@@ -2840,6 +2878,12 @@ a {
         backdrop-filter: blur(5px);
     }
     
+    .roll-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
     .developer-container {
         display: flex;
         justify-content: space-around;
@@ -3386,7 +3430,7 @@ a {
         color: black;
         text-align: left;
         display: block;
-        width: 223px;
+        width: 219px;
     }
     
     .image-card p {
@@ -3395,6 +3439,7 @@ a {
         text-align: left;
         margin-top: -21px;
         display: block;
+        width: 120px;
     }
     
     .image-card img {

@@ -1078,24 +1078,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Developer & About Popup
-document.addEventListener("DOMContentLoaded", function() {
-    const aboutSpan = document.querySelector(".ribbon-right span:nth-child(3)");
-    const popupBox = document.getElementById("popup-box");
-    const overlay = document.getElementById("overlay");
-    
-    aboutSpan.addEventListener("click", function() {
-    popupBox.style.display = "block";
-    overlay.style.display = "block";
-    });
-    
-    
-    overlay.addEventListener("click", function() {
-    popupBox.style.display = "none";
-    overlay.style.display = "none";
-    });
-    });
-    
+// Developer / Roll / About Popup
+
+    //Developer
     document.addEventListener("DOMContentLoaded", function() {
     const developerSpan = document.querySelector(".ribbon-right span:nth-child(1)");
     const developerPopupBox = document.getElementById("developer-popup");
@@ -1108,6 +1093,45 @@ document.addEventListener("DOMContentLoaded", function() {
     
     overlay.addEventListener("click", function() {
     developerPopupBox.style.display = "none";
+    overlay.style.display = "none";
+    });
+    });
+
+    //Roll
+    document.addEventListener("DOMContentLoaded", function() {
+    const rollSpan = document.querySelector(".ribbon-right span:nth-child(2)");
+    const popupBox = document.getElementById("roll-popup");
+    const overlay = document.getElementById("overlay");
+    
+    rollSpan.addEventListener("click", function() {
+    popupBox.style.display = "block";
+    overlay.style.display = "block";
+    });
+    
+    
+    overlay.addEventListener("click", function() {
+    popupBox.style.display = "none";
+    overlay.style.display = "none";
+    });
+    });
+
+
+
+
+    //About
+    document.addEventListener("DOMContentLoaded", function() {
+    const aboutSpan = document.querySelector(".ribbon-right span:nth-child(3)");
+    const popupBox = document.getElementById("popup-box");
+    const overlay = document.getElementById("overlay");
+    
+    aboutSpan.addEventListener("click", function() {
+    popupBox.style.display = "block";
+    overlay.style.display = "block";
+    });
+    
+    
+    overlay.addEventListener("click", function() {
+    popupBox.style.display = "none";
     overlay.style.display = "none";
     });
     });
