@@ -1145,13 +1145,16 @@ document.addEventListener('DOMContentLoaded', function() {
         const rollImage = document.getElementById("roll-image");
         const crunchyrollButton = document.getElementById("roll-crunchyroll-button");
         const rollTitle = document.getElementById("roll-title");
+        const rollGenre = document.getElementById("roll-genre")
+        const rollSeason = document.getElementById("roll-season")
+        const rollEpisode = document.getElementById("roll-episode")
     
         const images = [
-            { src: 'Feature/jjkcard.png', title: 'Jujutsu Kaisen', crunchyrollLink: 'https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen' },
-            { src: 'Feature/kaijuno8Card.png', title: 'Kaiju No 8',crunchyrollLink: 'https://www.crunchyroll.com/series/GG5H5XQ7D/kaiju-no-8' },
-            { src: 'Feature/fairytail100card.png', title: 'Fairy Tail 100 Years Quest',crunchyrollLink: 'https://www.crunchyroll.com/series/GG5H5XQED/fairy-tail-100-years-quest' },
-            { src: 'Feature/wistoriacard.png', title: 'Wistoria',crunchyrollLink: 'https://www.crunchyroll.com/series/GW4HM7WK9/wistoria-wand-and-sword' },
-            { src: 'Feature/elusivesamuraicard.png', title: 'Elusive Samurai',crunchyrollLink: 'https://www.crunchyroll.com/series/GQWH0M19X/the-elusive-samurai' }
+            { src: 'Feature/jjkcard.png', title: 'Jujutsu Kaisen', crunchyrollLink: 'https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen', episode: '48 Episodes', season: '3 Seasons', genre: 'Action' },
+            { src: 'Feature/kaijuno8Card.png', title: 'Kaiju No 8',crunchyrollLink: 'https://www.crunchyroll.com/series/GG5H5XQ7D/kaiju-no-8', episode: '12 Episodes', season: '1 Seasons', genre: 'Action' },
+            { src: 'Feature/fairytail100card.png', title: 'Fairy Tail 100 Years Quest',crunchyrollLink: 'https://www.crunchyroll.com/series/GG5H5XQED/fairy-tail-100-years-quest', episode: '332 Episodes', season: '4 Seasons', genre: 'Action' },
+            { src: 'Feature/wistoriacard.png', title: 'Wistoria',crunchyrollLink: 'https://www.crunchyroll.com/series/GW4HM7WK9/wistoria-wand-and-sword', episode: '3 Episodes', season: '1 Seasons', genre: 'Action' },
+            { src: 'Feature/elusivesamuraicard.png', title: 'Elusive Samurai',crunchyrollLink: 'https://www.crunchyroll.com/series/GQWH0M19X/the-elusive-samurai', episode: '3 Episodes', season: '1 Seasons', genre: 'Action' }
         ];
     
         rollSpan.addEventListener("click", function() {
@@ -1160,6 +1163,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
             rollImage.src = selectedImage.src;
             rollTitle.textContent = selectedImage.title;
+            rollGenre.textContent = selectedImage.genre;
+            rollSeason.textContent = selectedImage.season;
+            rollEpisode.textContent = selectedImage.episode;
             crunchyrollButton.href = selectedImage.crunchyrollLink;
             popupBox.style.display = "block";
             overlay.style.display = "block";
