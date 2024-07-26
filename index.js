@@ -132,6 +132,21 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'plunderer.png', video: 'https://www.youtube.com/embed/L1Y9r8psTmo', title: 'Plunderer', episodes: '24 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GNVHKN70Z/plunderer' },
         { src: 'irregular.png', video: 'https://www.youtube.com/embed/U-gkwdGooDU', title: 'The Irregular', episodes: '13 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GRMGDGZVR/the-irregular-at-magic-high-school' },
         { src: 'vinland.png', video: 'https://www.youtube.com/embed/f8JrZ7Q_p-8', title: 'Vinland Saga', episodes: '24 episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GEXH3WKK0/vinland-saga' },
+        { src: 'trigger.png', video: 'https://www.youtube.com/embed/pqc0AS1nFlA', title: 'World Trigger', episodes: '99 episodes', seasons: '3 seasons', crunchyrollLink: 'https://www.crunchyroll.com/series/GR757DMKY/world-trigger' },
+        { src: 'trigun.png', video: 'https://www.youtube.com/embed/bJVyIXeUznY', title: 'Trigun', episodes: '27 episodes', seasons: '1 season', crunchyrollLink: 'https://www.crunchyroll.com/series/GYP58QMMY/trigun' },
+        { src: 'freezing.png', video: 'https://www.youtube.com/embed/V5NefFZiaQc', title: 'Freezing', episodes: '24 episodes', seasons: '2 seasons', crunchyrollLink: 'https://www.crunchyroll.com/series/GYP58QMMY/trigun' },
+        { src: 'butler.png', video: 'https://www.youtube.com/embed/S8j5iEklHyI', title: 'Black Butler', episodes: '58 episodes', seasons: '4 seasons', crunchyrollLink: 'https://www.crunchyroll.com/series/GYQ43P3E6/black-butler' },
+        { src: 'date.png', video: 'https://www.youtube.com/embed/4CA7RDDhz2Q', title: 'Date A Live', episodes: '58 episodes', seasons: '5 seasons', crunchyrollLink: 'https://www.crunchyroll.com/series/GYEX5E1G6/date-a-live' },
+        { src: 'assassination.png', video: 'https://www.youtube.com/embed/kgNkGohA20k', title: 'Assassination Classroom', episodes: '47 episodes', seasons: '2 seasons', crunchyrollLink: 'https://www.crunchyroll.com/series/GRE59JGX6/assassination-classroom' },
+        { src: 'wistoria.png', video: 'https://www.youtube.com/embed/Br9na3MPEh8', title: 'Wistoria', episodes: '3 episodes', seasons: '1 season', crunchyrollLink: 'https://www.crunchyroll.com/series/GW4HM7WK9/wistoria-wand-and-sword' },
+        { src: 'soul.png', video: 'https://www.youtube.com/embed/ac-ir1b1p-k', title: 'Soul Eater', episodes: '51 episodes', seasons: '1 season', crunchyrollLink: 'https://www.crunchyroll.com/series/GYX0ZW80R/soul-eater' },
+        { src: '86.png', video: 'https://www.youtube.com/embed/VSdS29SDvn4', title: '86 EIGHTY-SIX', episodes: '23 episodes', seasons: '1 season', crunchyrollLink: 'https://www.crunchyroll.com/series/GVDHX8DM5/86-eighty-six' },
+        { src: 'healing.png', video: 'https://www.youtube.com/embed/UkPRnHQJrws', title: 'The Wrong Way...', episodes: '13 episodes', seasons: '1 season', crunchyrollLink: 'https://www.crunchyroll.com/series/G0XHWM1EK/the-wrong-way-to-use-healing-magic' },
+        { src: 'trigger.png', video: 'https://www.youtube.com/embed/pqc0AS1nFlA', title: 'World Trigger', episodes: '99 episodes', seasons: '3 season', crunchyrollLink: 'https://www.crunchyroll.com/series/GR757DMKY/world-trigger' },
+        { src: 'trigun.png', video: 'https://www.youtube.com/embed/bJVyIXeUznY', title: 'Trigun', episodes: '27 episodes', seasons: '1 season', crunchyrollLink: 'https://www.crunchyroll.com/series/GYP58QMMY/trigun' },
+        { src: 'freezing.png', video: 'https://www.youtube.com/embed/V5NefFZiaQc', title: 'Freezing', episodes: '24 episodes', seasons: '2 season', crunchyrollLink: 'https://www.crunchyroll.com/series/GYP58QMMY/trigun' },
+        { src: 'butler.png', video: 'https://www.youtube.com/embed/S8j5iEklHyI', title: 'Black Butler', episodes: '58 episodes', seasons: '4 season', crunchyrollLink: 'https://www.crunchyroll.com/series/GYQ43P3E6/black-butler' },
+        { src: 'date.png', video: 'https://www.youtube.com/embed/4CA7RDDhz2Q', title: 'Date A Live', episodes: '58 episodes', seasons: '5 season', crunchyrollLink: 'https://www.crunchyroll.com/series/GYEX5E1G6/date-a-live' },
     ];
 
     function loadRandomActionAnime() {

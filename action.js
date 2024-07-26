@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'Feature/datecard.png', video: 'https://www.youtube.com/embed/4CA7RDDhz2Q', title: 'Date A Live' },
         { src: 'Feature/assassinationcard.png', video: 'https://www.youtube.com/embed/kgNkGohA20k', title: 'Assassination Classroom' },
         { src: 'Feature/wistoriacard.png', video: 'https://www.youtube.com/embed/Br9na3MPEh8', title: 'Wistoria' },
-        { src: 'Feature/soulcard.png', video: 'https://www.youtube.com/embed/ZJyKOEabFdo&t=2s', title: 'Soul Eater' },
+        { src: 'Feature/soulcard.png', video: 'https://www.youtube.com/embed/ac-ir1b1p-k', title: 'Soul Eater' },
         { src: 'Feature/86card.png', video: 'https://www.youtube.com/embed/VSdS29SDvn4', title: '86 EIGHTY-SIX' },
         { src: 'Feature/healingcard.png', video: 'https://www.youtube.com/embed/UkPRnHQJrws', title: 'The Wrong Way to...' },
         { src: 'Feature/windcard.png', video: 'https://www.youtube.com/embed/62r_G9bEPlU', title: 'WIND BREAKER' },
