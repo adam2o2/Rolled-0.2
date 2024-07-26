@@ -125,6 +125,20 @@ body {
     backdrop-filter: blur(5px);
 }
 
+.roll-text {
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+    margin-top: -15px;
+    color: #7D7D7D;
+    font-weight: 700;
+    text-align: center;
+}
+
+.roll-text span {
+    display: inline-block;
+}
+
 .roll-container {
     display: flex;
     justify-content: space-around;
@@ -139,9 +153,44 @@ body {
     box-shadow: 8px 19px 24px rgba(0, 0, 0, 0.3);
 }
 
-.roll-container .watch-button{
+.roll-container .roll-watch-button{
     position: absolute;
     margin-bottom: 30px;
+}
+
+.roll-watch-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 303px;
+    height: 49px;
+    background-color: #F47521;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 52px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+.roll-watch-button:hover {
+    opacity: 0.9;
+}
+
+.roll-watch-button span {
+    font-size: 18px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.roll-watch-button img {
+    width: 29px;
+    height: 26px;
+    vertical-align: middle;
 }
 
 .developer-container {
@@ -679,7 +728,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1000;
+    z-index: 10001;
     width: 560px;
     height: 315px;
     max-width: 100%;
@@ -697,9 +746,26 @@ a {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
-    z-index: 999;
+    z-index: 9991;
     cursor: pointer;
     backdrop-filter: blur(5px);
+}
+
+#video-overlay1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9991;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+}
+
+#video-overlay1 .roll-watch-button{
+    margin-bottom: -160px;
 }
 
 .watch-button {
@@ -778,7 +844,7 @@ a {
     }
     
     .popup-box h3 {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 20px;
         text-align: center;
     }
@@ -806,6 +872,18 @@ a {
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
+        margin-top: -15px;
+    }
+    
+    .roll-container .roll-watch-button {
+        position: absolute;
+        margin-bottom: 10px;
+    }
+
+    .roll-watch-button span {
+        font-size: 14px;
+        vertical-align: middle;
+        margin-right: 10px;
     }
     
     .developer-container {
@@ -982,6 +1060,19 @@ a {
         height: 21px;
     }
 
+    .roll-watch-button {
+        width: 200px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+        margin-bottom: 150px;
+    }
+
+    .roll-watch-button img {
+        width: 24px;
+        height: 21px;
+    }
+
     .recently-added,
     .recently-added h2,
     .image-grid,
@@ -1040,7 +1131,7 @@ a {
     }
     
     .popup-box h3 {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 20px;
         text-align: center;
     }
@@ -1068,8 +1159,20 @@ a {
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
+        margin-top: -15px;
     }
     
+    .roll-container .roll-watch-button {
+        position: absolute;
+        margin-bottom: 5px;
+    }
+
+    .roll-watch-button span {
+        font-size: 14px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
     .developer-container {
         display: flex;
         justify-content: space-around;
@@ -1244,6 +1347,19 @@ a {
         height: 21px;
     }
 
+    .roll-watch-button {
+        width: 200px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+        margin-bottom: 150px;
+    }
+
+    .roll-watch-button img {
+        width: 24px;
+        height: 21px;
+    }
+
     .recently-added,
     .recently-added h2,
     .image-grid,
@@ -1383,6 +1499,7 @@ a {
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
+        margin-top: -30px;
     }
     
     .developer-container {
@@ -1853,6 +1970,30 @@ a {
         height: 26px;
     }
 
+    .roll-watch-button {
+        width: 303px;
+        height: 49px;
+        line-height: 49px;
+        font-size: 18px;
+        margin-bottom: -2px;
+    }
+
+    .roll-watch-button img {
+        width: 29px;
+        height: 26px;
+    }
+
+    .roll-container .roll-watch-button {
+        position: absolute;
+        margin-bottom: 29px;
+    }
+
+    .roll-watch-button span {
+        font-size: 18px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
     .text1 {
         margin-left: -285px;
         margin-top: 292px;
@@ -2199,8 +2340,20 @@ a {
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
+        margin-top: -30px;
     }
     
+    .roll-container .roll-watch-button {
+        position: absolute;
+        margin-bottom: 29px;
+    }
+
+    .roll-watch-button span {
+        font-size: 18px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
     .developer-container {
         display: flex;
         justify-content: space-around;
@@ -2671,6 +2824,19 @@ a {
         height: 26px;
     }
 
+    .roll-watch-button {
+        width: 303px;
+        height: 49px;
+        line-height: 49px;
+        font-size: 18px;
+        margin-bottom: -2px;
+    }
+
+    .roll-watch-button img {
+        width: 29px;
+        height: 26px;
+    }
+
     .text1 {
         margin-left: -485px;
         margin-top: 629px;
@@ -2882,6 +3048,18 @@ a {
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
+        margin-top: -30px;
+    }
+
+    .roll-container .roll-watch-button {
+        position: absolute;
+        margin-bottom: 29px;
+    }
+
+    .roll-watch-button span {
+        font-size: 18px;
+        vertical-align: middle;
+        margin-right: 10px;
     }
 
     .developer-container {
@@ -3351,6 +3529,19 @@ a {
     }
 
     .watch-button img {
+        width: 29px;
+        height: 26px;
+    }
+
+    .roll-watch-button {
+        width: 303px;
+        height: 49px;
+        line-height: 49px;
+        font-size: 18px;
+        margin-bottom: -2px;
+    }
+
+    .roll-watch-button img {
         width: 29px;
         height: 26px;
     }

@@ -1150,3 +1150,90 @@ document.addEventListener('DOMContentLoaded', function() {
     overlay.style.display = "none";
     });
     });
+
+    //Roll random anime
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const rollSpan = document.querySelector(".ribbon-right span:nth-child(2)");
+        const popupBox = document.getElementById("roll-popup");
+        const overlay = document.getElementById("overlay");
+        const rollImage = document.getElementById("roll-image");
+        const rollCrunchyrollButton1 = document.getElementById("roll-crunchyroll-button-1");
+        const rollCrunchyrollButton2 = document.getElementById("roll-crunchyroll-button-2");
+        const rollTitle = document.getElementById("roll-title");
+        const rollGenre = document.getElementById("roll-genre");
+        const rollSeason = document.getElementById("roll-season");
+        const rollEpisode = document.getElementById("roll-episode");
+        const videoIframe = document.getElementById('video-iframe');
+        const videoOverlay = document.getElementById('video-overlay1');
+    
+        const images = [
+            { src: 'Feature/jjkcard.png', video: 'https://www.youtube.com/embed/pkKu9hLT-t8', title: 'Jujutsu Kaisen', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen', episode: '48 Episodes', season: '3 Seasons', genre: 'Action' },
+            { src: 'Feature/kaijuno8Card.png', video: 'https://www.youtube.com/embed/JwF7bhvnCxI', title: 'Kaiju No 8', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/GG5H5XQ7D/kaiju-no-8', episode: '12 Episodes', season: '1 Seasons', genre: 'Action' },
+            { src: 'Feature/fairytail100card.png', video: 'https://www.youtube.com/embed/E1a5MRYIGUk', title: 'Fairy Tail 100 Years Quest', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/GG5H5XQED/fairy-tail-100-years-quest', episode: '332 Episodes', season: '4 Seasons', genre: 'Action' },
+            { src: 'Feature/wistoriacard.png', video: 'https://www.youtube.com/embed/Br9na3MPEh8', title: 'Wistoria', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/GW4HM7WK9/wistoria-wand-and-sword', episode: '3 Episodes', season: '1 Seasons', genre: 'Action' },
+            { src: 'Feature/elusivesamuraicard.png', video: 'https://www.youtube.com/embed/O4AqQNg1MI0', title: 'Elusive Samurai', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/GQWH0M19X/the-elusive-samurai', episode: '3 Episodes', season: '1 Seasons', genre: 'Action' }
+        ];
+    
+        let rollCurrentVideoUrl = '';
+        let rollCurrentCrunchyrollLink = '';
+    
+        rollSpan.addEventListener("click", function() {
+            const randomIndex = Math.floor(Math.random() * images.length);
+            const selectedImage = images[randomIndex];
+    
+            rollImage.src = selectedImage.src;
+            rollTitle.textContent = selectedImage.title;
+            rollGenre.textContent = selectedImage.genre;
+            rollSeason.textContent = selectedImage.season;
+            rollEpisode.textContent = selectedImage.episode;
+            rollCrunchyrollButton1.href = selectedImage.rollcrunchyrollLink; 
+            rollCrunchyrollButton2.href = selectedImage.rollcrunchyrollLink;
+            popupBox.style.display = "block";
+            overlay.style.display = "block";
+    
+            rollCurrentVideoUrl = selectedImage.video;
+            rollCurrentCrunchyrollLink = selectedImage.rollcrunchyrollLink;
+        });
+    
+        overlay.addEventListener("click", function() {
+            popupBox.style.display = "none";
+            overlay.style.display = "none";
+            videoOverlay.style.display = 'none';
+            videoIframe.style.display = 'none';
+            videoIframe.src = '';
+            document.body.style.overflow = 'auto';
+        });
+    
+        function playVideo(videoUrl) {
+            if (videoUrl) {
+                videoIframe.src = videoUrl;
+                videoIframe.style.display = 'block';
+                videoOverlay.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+    
+                if (window.innerWidth <= 414) {
+                    videoIframe.style.width = '391px';
+                    videoIframe.style.height = '221px';
+                } else {
+                    videoIframe.style.width = '1666.47px';
+                    videoIframe.style.height = '801px';
+                }
+            } else {
+                videoIframe.style.display = 'none';
+            }
+        }
+    
+        rollImage.addEventListener('click', function() {
+            playVideo(rollCurrentVideoUrl);
+            rollCrunchyrollButton1.href = rollCurrentCrunchyrollLink;
+            rollCrunchyrollButton2.href = rollCurrentCrunchyrollLink;
+        });
+    
+        videoOverlay.addEventListener('click', function() {
+            videoIframe.style.display = 'none';
+            videoIframe.src = '';
+            videoOverlay.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+    });
