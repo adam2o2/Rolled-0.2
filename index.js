@@ -1043,20 +1043,32 @@ videoOverlay.addEventListener('click', function() {
 });
 
 
-//Recently added section
+// Recently added section
 document.addEventListener('DOMContentLoaded', function() {
     const videoIframe = document.getElementById('video-iframe');
     const videoOverlay = document.getElementById('video-overlay');
     const crunchyrollButton = document.getElementById('crunchyroll-button');
 
     const videoLinks = {
-        'fairy-tail-card': 'https://www.youtube.com/embed/E1a5MRYIGUk',
-        'wistoria-card': 'https://www.youtube.com/embed/Br9na3MPEh8',
-        'elusive-samurai-card': 'https://www.youtube.com/embed/O4AqQNg1MI0',
-        'kaiju-no-8-card': 'https://www.youtube.com/embed/JwF7bhvnCxI'
+        'fairy-tail-card': {
+            video: 'https://www.youtube.com/embed/E1a5MRYIGUk',
+            crunchyroll: 'https://www.crunchyroll.com/series/GG5H5XQED/fairy-tail-100-years-quest'
+        },
+        'wistoria-card': {
+            video: 'https://www.youtube.com/embed/Br9na3MPEh8',
+            crunchyroll: 'https://www.crunchyroll.com/series/GR9PKENW6/wistoria'
+        },
+        'elusive-samurai-card': {
+            video: 'https://www.youtube.com/embed/O4AqQNg1MI0',
+            crunchyroll: 'https://www.crunchyroll.com/series/GQWH0M19X/the-elusive-samurai'
+        },
+        'kaiju-no-8-card': {
+            video: 'https://www.youtube.com/embed/JwF7bhvnCxI',
+            crunchyroll: 'https://www.crunchyroll.com/series/GG5H5XQ7D/kaiju-no-8'
+        }
     };
 
-    function playVideo(videoUrl) {
+    function playVideo(videoUrl, crunchyrollUrl) {
         if (videoUrl) {
             videoIframe.src = videoUrl;
             videoIframe.style.display = 'block';
@@ -1072,19 +1084,29 @@ document.addEventListener('DOMContentLoaded', function() {
                 videoIframe.style.width = '1666.47px';
                 videoIframe.style.height = '801px';
             }
+
+            // Set Crunchyroll button link and display
+            if (crunchyrollButton) {
+                crunchyrollButton.href = crunchyrollUrl;
+                crunchyrollButton.style.display = 'block'; // Show button
+            }
         } else {
             videoIframe.style.display = 'none';
+            if (crunchyrollButton) {
+                crunchyrollButton.style.display = 'none'; // Hide button
+            }
         }
     }
 
     document.querySelectorAll('.image-card').forEach(card => {
         card.addEventListener('click', function() {
-            const videoUrl = videoLinks[card.id];
-            playVideo(videoUrl);
+            const links = videoLinks[card.id];
+            if (links) {
+                playVideo(links.video, links.crunchyroll);
+            }
         });
     });
 
-    // Click event listener for overlay to close video
     videoOverlay.addEventListener('click', function() {
         videoIframe.style.display = 'none';
         videoIframe.src = '';
