@@ -61,7 +61,24 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'Feature/icebladecard.png', video: 'https://www.youtube.com/embed/l1hx7s7Ywcs', title: 'The Iceblade Sorcerer' },
         { src: 'Feature/plunderercard.png', video: 'https://www.youtube.com/embed/L1Y9r8psTmo', title: 'Plunderer' },
         { src: 'Feature/irregularcard.png', video: 'https://www.youtube.com/embed/U-gkwdGooDU', title: 'The Irregular' },
-        { src: 'Feature/vinlandcard.png', video: 'https://www.youtube.com/embed/f8JrZ7Q_p-8', title: 'Vinland Saga' }
+        { src: 'Feature/vinlandcard.png', video: 'https://www.youtube.com/embed/f8JrZ7Q_p-8', title: 'Vinland Saga' },
+        { src: 'Feature/triggercard.png', video: 'https://www.youtube.com/embed/pqc0AS1nFlA', title: 'World Trigger' },
+        { src: 'Feature/triguncard.png', video: 'https://www.youtube.com/embed/bJVyIXeUznY', title: 'Trigun' },
+        { src: 'Feature/freezingcard.png', video: 'https://www.youtube.com/embed/V5NefFZiaQc', title: 'Freezing' },
+        { src: 'Feature/butlercard.png', video: 'https://www.youtube.com/embed/S8j5iEklHyI', title: 'Black Butler' },
+        { src: 'Feature/datecard.png', video: 'https://www.youtube.com/embed/4CA7RDDhz2Q', title: 'Date A Live' },
+        { src: 'Feature/assassinationcard.png', video: 'https://www.youtube.com/embed/kgNkGohA20k', title: 'Assassination Classroom' },
+        { src: 'Feature/wistoriacard.png', video: 'https://www.youtube.com/embed/Br9na3MPEh8', title: 'Wistoria' },
+        { src: 'Feature/soulcard.png', video: 'https://www.youtube.com/embed/ZJyKOEabFdo&t=2s', title: 'Soul Eater' },
+        { src: 'Feature/86card.png', video: 'https://www.youtube.com/embed/VSdS29SDvn4', title: '86 EIGHTY-SIX' },
+        { src: 'Feature/healingcard.png', video: 'https://www.youtube.com/embed/UkPRnHQJrws', title: 'The Wrong Way to...' },
+        { src: 'Feature/windcard.png', video: 'https://www.youtube.com/embed/62r_G9bEPlU', title: 'WIND BREAKER' },
+        { src: 'Feature/viralcard.png', video: 'https://www.youtube.com/embed/J6BdqP4lOkE', title: 'Viral Hit' },
+        { src: 'Feature/towercard.png', video: 'https://www.youtube.com/embed/RNyClma6awo', title: 'Tower of God' },
+        { src: 'Feature/elusivesamuraicard.png', video: 'https://www.youtube.com/embed/O4AqQNg1MI0', title: 'The Elusive Samurai' },
+        { src: 'Feature/kaijuno8card.png', video: 'https://www.youtube.com/embed/JwF7bhvnCxI', title: 'Kaiju No. 8' }
+
+
         // Add other images and their corresponding videos and titles here
     ];
 
