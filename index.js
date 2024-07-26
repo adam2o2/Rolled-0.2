@@ -1135,3 +1135,38 @@ document.addEventListener('DOMContentLoaded', function() {
     overlay.style.display = "none";
     });
     });
+
+    //Roll random anime
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const rollSpan = document.querySelector(".ribbon-right span:nth-child(2)");
+        const popupBox = document.getElementById("roll-popup");
+        const overlay = document.getElementById("overlay");
+        const rollImage = document.getElementById("roll-image");
+        const crunchyrollButton = document.getElementById("roll-crunchyroll-button");
+    
+        const images = [
+            { src: 'Feature/jjkcard.png', crunchyrollLink: 'https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen' },
+            { src: 'Feature/kaijuno8Card.png', crunchyrollLink: 'https://www.crunchyroll.com/series/GG5H5XQ7D/kaiju-no-8' },
+            { src: 'Feature/fairytail100card.png', crunchyrollLink: 'https://www.crunchyroll.com/series/GG5H5XQED/fairy-tail-100-years-quest' },
+            { src: 'Feature/wistoriacard.png', crunchyrollLink: 'https://www.crunchyroll.com/series/GW4HM7WK9/wistoria-wand-and-sword' },
+            { src: 'Feature/elusivesamuraicard.png', crunchyrollLink: 'https://www.crunchyroll.com/series/GQWH0M19X/the-elusive-samurai' }
+        ];
+    
+        rollSpan.addEventListener("click", function() {
+            const randomIndex = Math.floor(Math.random() * images.length);
+            const selectedImage = images[randomIndex];
+    
+            rollImage.src = selectedImage.src;
+            crunchyrollButton.href = selectedImage.crunchyrollLink;
+            popupBox.style.display = "block";
+            overlay.style.display = "block";
+        });
+    
+        overlay.addEventListener("click", function() {
+            popupBox.style.display = "none";
+            overlay.style.display = "none";
+        });
+    });
+    
+    
