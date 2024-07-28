@@ -1,6 +1,22 @@
-body {
+body, html {
     background: white;
     font-family: 'Poppins', sans-serif; /* Apply the custom font */
+    height: auto;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    width: 100%; /* Ensures the footer takes up the full width of the screen */
+    background-color: #333; /* Background color of the footer */
+    color: white; /* Text color */
+    text-align: center; /* Centers the text horizontally */
+    padding: 150px 0; /* Padding for top and bottom */
+    font-family: 'Poppins', sans-serif; /* Ensures consistent font styling */
 }
 
 .ribbon {
@@ -670,6 +686,7 @@ body {
     gap: 50px; /* Space between each yellow box */
     margin-left: calc((100% - 1790px) / 2); /* Align with the left side of the image */
     margin-top: 47px; /* Space between the "Action" text and the yellow box */
+    height: 662px;
 }
 
 .orange-box {
@@ -684,10 +701,8 @@ body {
 }
 
 .comedy-info {
-    text-align: left;
     position: absolute; /* Position it absolutely */
     top: 550px; /* Adjust as needed to move it below the box */
-    width: 100%; /* Align with the width of the yellow box */
 }
 
 a {
@@ -3188,8 +3203,10 @@ a {
     .yellow-box-container {
         display: flex;
         gap: 30px;
-        margin-left: calc((100% - 1869px) / 2);
-        margin-top: -1px; /* Space between the "Action" text and the yellow box */
+        width: 1854px;
+        margin: 0px auto;
+        padding: 24px;
+        transform: translateX(0%);/* Space between the "Action" text and the yellow box */
     }
 
     .yellow-box {
@@ -3257,10 +3274,12 @@ a {
     }
 
     .red-box-container {
-                display: flex;
+        display: flex;
         gap: 30px;
-        margin-left: calc((100% - 1869px) / 2);
-        margin-top: -1px; /* Space between the "Action" text and the yellow box */
+        width: 1854px;
+        margin: 0px auto;
+        padding: 24px;
+        transform: translateX(0%);
     }
 
     .red-box {
@@ -3303,10 +3322,12 @@ a {
     }
 
     .blue-box-container {
-                display: flex;
+        display: flex;
         gap: 30px;
-        margin-left: calc((100% - 1869px) / 2);
-        margin-top: -1px; /* Space between the "Action" text and the yellow box */
+        width: 1854px;
+        margin: 0px auto;
+        padding: 24px;
+        transform: translateX(0%);
     }
 
     .blue-box {
@@ -3350,10 +3371,12 @@ a {
     }
 
     .green-box-container {
-                display: flex;
+        display: flex;
         gap: 30px;
-        margin-left: calc((100% - 1869px) / 2);
-        margin-top: -1px; /* Space between the "Action" text and the yellow box */
+        width: 1854px;
+        margin: 0px auto;
+        padding: 24px;
+        transform: translateX(0%);
     }
 
     .green-box {
@@ -3396,10 +3419,12 @@ a {
     }
 
     .black-box-container {
-               display: flex;
+        display: flex;
         gap: 30px;
-        margin-left: calc((100% - 1869px) / 2);
-        margin-top: -1px; /* Space between the "Action" text and the yellow box */
+        width: 1854px;
+        margin: 0px auto;
+        padding: 24px;
+        transform: translateX(0%);
     }
 
     .black-box {
@@ -3442,10 +3467,12 @@ a {
     }
 
     .purple-box-container {
-                display: flex;
+        display: flex;
         gap: 30px;
-        margin-left: calc((100% - 1869px) / 2);
-        margin-top: -1px; /* Space between the "Action" text and the yellow box */
+        width: 1854px;
+        margin: 0px auto;
+        padding: 24px;
+        transform: translateX(0%);
     }
 
     .purple-box {
@@ -3488,10 +3515,12 @@ a {
     }
 
     .orange-box-container {
-                display: flex;
+        display: flex;
         gap: 30px;
-        margin-left: calc((100% - 1869px) / 2);
-        margin-top: -1px; /* Space between the "Action" text and the yellow box */
+        width: 1854px;
+        margin: 0px auto;
+        padding: 24px;
+        transform: translateX(0%);
     }
 
     .orange-box {
