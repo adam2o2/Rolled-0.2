@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'Feature/mydaughtercard.png', video: 'https://www.youtube.com/embed/hnhdx8TQ4UU', title: 'My Daughter Left', genre: 'Adventure', seasons: '1 Season', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G5PHNM9M5/my-daughter-left-the-nest-and-returned-an-s-rank-adventurer' },
         { src: 'Feature/stabbercard.png', video: 'https://www.youtube.com/embed/1m9S8wQ3SlE', title: 'Sorcerous Stabber Orphen', genre: 'Adventure', seasons: '1 Season', episodes: '13 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GJ0H7QXDW/sorcerous-stabber-orphen' },
         { src: 'Feature/magicard.png', video: 'https://www.youtube.com/embed/2E7o26G1T0c', title: 'Magi', genre: 'Adventure', seasons: '3 Seasons', episodes: '50 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GY09XN14Y/magi' },
+        //Action
         { src: 'Feature/jjkcard.png', video: 'https://www.youtube.com/embed/pkKu9hLT-t8', title: 'Jujutsu Kaisen', crunchyrollLink: 'https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen', episodes: '48 Episodes', seasons: '3 Seasons', genre: 'Action' },
         { src: 'Feature/kaijuno8Card.png', video: 'https://www.youtube.com/embed/JwF7bhvnCxI', title: 'Kaiju No 8', crunchyrollLink: 'https://www.crunchyroll.com/series/GG5H5XQ7D/kaiju-no-8', episodes: '12 Episodes', seasons: '1 Seasons', genre: 'Action' },
         { src: 'Feature/fairytail100card.png', video: 'https://www.youtube.com/embed/E1a5MRYIGUk', title: 'Fairy Tail 100...', crunchyrollLink: 'https://www.crunchyroll.com/series/GG5H5XQED/fairy-tail-100-years-quest', episodes: '332 Episodes', seasons: '4 Seasons', genre: 'Action' },
@@ -74,6 +75,9 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'Feature/windcard.png', video: 'https://www.youtube.com/embed/62r_G9bEPlU', title: 'WIND BREAKER', episodes: '13 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G3KHEVDPE/wind-breaker', genre: 'Action', seasons: '1 Seasons' }, 
         { src: 'Feature/viralcard.png', video: 'https://www.youtube.com/embed/J6BdqP4lOkE', title: 'Viral Hit', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GJ0H7QGME/viral-hit', genre: 'Action', seasons: '1 Seasons' }, 
         { src: 'Feature/towercard.png', video: 'https://www.youtube.com/embed/RNyClma6awo', title: 'Tower of God', episodes: '16 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G6J0G49DR/tower-of-god', genre: 'Action', seasons: '1 Seasons' },
+        //Action
+        //Isekai
+        { src: 'Feature/mushokucard.png', video: 'https://www.youtube.com/embed/k5VxfJpzy1Q', title: 'Mushoku Tensei', episode: '23 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/G24H1N3MP/mushoku-tensei-jobless-reincarnation', genre: 'Isekai', season: '2 Seasons' },
         { src: 'Feature/nogamenolifecard.png', video: 'https://www.youtube.com/embed/ZgWgnSG9PB0', title: 'No Game No Life', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/', genre: 'Isekai', seasons: '1 Seasons' },
         { src: 'Feature/overlordcard.png', video: 'https://www.youtube.com/embed/uhlBqFj9kDw', title: 'OverLord', episodes: '52 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G69PZ5PDY/overlord', genre: 'Isekai', seasons: '5 Seasons' },
         { src: 'Feature/rezerocard.png', video: 'https://www.youtube.com/embed/lXs3yIc_2CU', title: 'Re:Zero', episodes: '50 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/', genre: 'Isekai', seasons: '4 Seasons' },
@@ -123,6 +127,8 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'Feature/sengokucard.png', video: 'https://www.youtube.com/embed/fAYhdawxFwc', title: 'SENGOKU NIGHT...', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G65VGXVQ6/sengoku-night-blood', genre: 'Isekai', seasons: '1 Seasons' },
         { src: 'Feature/problemcard.png', video: 'https://www.youtube.com/embed/qQpOcHsMUnA', title: 'Problem Children...', episodes: '10 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G6Q49G21R/problem-children-are-coming-from-another-world-arent-they', genre: 'Isekai', seasons: '1 Seasons' },
         { src: 'Feature/tobecard.png', video: 'https://www.youtube.com/embed/z2WARBz4QXc', title: 'To Be Heroine', episodes: '7 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G63KVV3E6/to-be-heroine', genre: 'Isekai', seasons: '1 Seasons' },   
+        //Isekai
+        //Romance
         { src: 'Feature/dukecard.png', video: 'https://www.youtube.com/embed/55T_YNvgBbE', title: 'The Duke of Death', episodes: '36 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G79H23V0G/the-duke-of-death-and-his-maid', genre: 'Romance', seasons: '3 Seasons' },
         { src: 'Feature/asigncard.png', video: 'https://www.youtube.com/embed/v50CI8LVwEY', title: 'A Sign of Affection', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GEXH3W2V7/a-sign-of-affection', genre: 'Romance', seasons: '1 Seasons' },
         { src: 'Feature/dressupcard.png', video: 'https://www.youtube.com/embed/8oveGY6h6T8', title: 'My Dress-Up Darling', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GQWH0M9N8/my-dress-up-darling', genre: 'Romance', seasons: '1 Seasons' },
@@ -173,6 +179,8 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'Feature/netsuzoucard.png', video: 'https://www.youtube.com/embed/E6y5q55Q2rU', title: 'Netsuzou Trap -NTR-', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G609E9EW6/netsuzou-trap--ntr-', genre: 'Romance', seasons: '1 Seasons' },
         { src: 'Feature/chihayafurucard.png', video: 'https://www.youtube.com/embed/yEflqf1U9lA', title: 'Chihayafuru', episodes: '26 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GYGG57V3Y/chihayafuru', genre: 'Romance', seasons: '2 Seasons' },
         { src: 'Feature/galaxycard.png', video: 'https://www.youtube.com/embed/Y4fOhmP1050', title: 'A Galaxy Next Door', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GXJHM3PZW/a-galaxy-next-door', genre: 'Romance', seasons: '1 Seasons' },  
+        //Romance
+        //Thriller
         { src: 'Feature/erasedcard.png', video: 'https://www.youtube.com/embed/dky7my5xd2c', title: 'Erased', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GYGG92K7Y/erased', genre: 'Thriller', seasons: '1 Seasons' },
         { src: 'Feature/futurediarycard.png', video: 'https://www.youtube.com/embed/KfznTm8mJA4', title: 'Future Diary', episodes: '26 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GYGGXPQ2Y/the-future-diary', genre: 'Thriller', seasons: '1 Seasons' },
         { src: 'Feature/hellsingcard.png', video: 'https://www.youtube.com/embed/7CQKMDFAKMk', title: 'Hellsing', episodes: '13 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G649DPXQY/hellsing', genre: 'Thriller', seasons: '1 Seasons' },
@@ -223,6 +231,8 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'Feature/accacard.png', video: 'https://www.youtube.com/embed/_lSK9EYLCP4', title: 'ACCA', episodes: '13 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GR5V95N8R/acca-13-territory-inspection-dept', genre: 'Thriller', seasons: '2 Seasons' },
         { src: 'Feature/gacard.png', video: 'https://www.youtube.com/embed/NG0Sfkm1D9U', title: 'Ga-Rei-Zero', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G6ZXZD93R/ga-rei-zero', genre: 'Thriller', seasons: '1 Seasons' },
         { src: 'Feature/strangecard.png', video: 'https://www.youtube.com/embed/aAZ6kSyUf-E', title: 'Strange+', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GRGGVKZWR/strange', genre: 'Thriller', seasons: '2 Seasons' }, 
+        //Thriller
+        //Adventure        
         { src: 'Feature/fairytailcard.png', video: 'https://www.youtube.com/embed/mAAKPx-ndAg', title: 'Fairy Tail', episodes: '328 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G6DQDD3WR/fairy-tail', genre: 'Adventure', seasons: '3 Seasons' },
         { src: 'Feature/drstonecard.png', video: 'https://www.youtube.com/embed/S6OmSIxSj14', title: 'Dr. Stone', episodes: '35 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GYEXQKJG6/dr-stone', genre: 'Adventure', seasons: '4 Seasons' },
         { src: 'Feature/frierencard.png', video: 'https://www.youtube.com/embed/pqUZaKn7flw', title: 'Frieren', episodes: '28 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GG5H5XQX4/frieren-beyond-journeys-end', genre: 'Adventure', seasons: '1 Seasons' },
