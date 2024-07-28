@@ -3203,8 +3203,10 @@ a {
     .yellow-box-container {
         display: flex;
         gap: 30px;
-        margin-left: calc((100% - 1869px) / 2);
-        margin-top: -1px; /* Space between the "Action" text and the yellow box */
+        width: 1854px;
+        margin: 0px auto;
+        padding: 24px;
+        transform: translateX(0%);/* Space between the "Action" text and the yellow box */
     }
 
     .yellow-box {
@@ -3272,10 +3274,12 @@ a {
     }
 
     .red-box-container {
-                display: flex;
+        display: flex;
         gap: 30px;
-        margin-left: calc((100% - 1869px) / 2);
-        margin-top: -1px; /* Space between the "Action" text and the yellow box */
+        width: 1854px;
+        margin: 0px auto;
+        padding: 24px;
+        transform: translateX(0%);
     }
 
     .red-box {
@@ -3318,10 +3322,12 @@ a {
     }
 
     .blue-box-container {
-                display: flex;
+        display: flex;
         gap: 30px;
-        margin-left: calc((100% - 1869px) / 2);
-        margin-top: -1px; /* Space between the "Action" text and the yellow box */
+        width: 1854px;
+        margin: 0px auto;
+        padding: 24px;
+        transform: translateX(0%);
     }
 
     .blue-box {
@@ -3365,10 +3371,12 @@ a {
     }
 
     .green-box-container {
-                display: flex;
+        display: flex;
         gap: 30px;
-        margin-left: calc((100% - 1869px) / 2);
-        margin-top: -1px; /* Space between the "Action" text and the yellow box */
+        width: 1854px;
+        margin: 0px auto;
+        padding: 24px;
+        transform: translateX(0%);
     }
 
     .green-box {
@@ -3411,10 +3419,12 @@ a {
     }
 
     .black-box-container {
-               display: flex;
+        display: flex;
         gap: 30px;
-        margin-left: calc((100% - 1869px) / 2);
-        margin-top: -1px; /* Space between the "Action" text and the yellow box */
+        width: 1854px;
+        margin: 0px auto;
+        padding: 24px;
+        transform: translateX(0%);
     }
 
     .black-box {
@@ -3457,10 +3467,12 @@ a {
     }
 
     .purple-box-container {
-                display: flex;
+        display: flex;
         gap: 30px;
-        margin-left: calc((100% - 1869px) / 2);
-        margin-top: -1px; /* Space between the "Action" text and the yellow box */
+        width: 1854px;
+        margin: 0px auto;
+        padding: 24px;
+        transform: translateX(0%);
     }
 
     .purple-box {
@@ -3503,10 +3515,12 @@ a {
     }
 
     .orange-box-container {
-                display: flex;
+        display: flex;
         gap: 30px;
-        margin-left: calc((100% - 1869px) / 2);
-        margin-top: -1px; /* Space between the "Action" text and the yellow box */
+        width: 1854px;
+        margin: 0px auto;
+        padding: 24px;
+        transform: translateX(0%);
     }
 
     .orange-box {
