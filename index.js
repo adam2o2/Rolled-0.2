@@ -1544,6 +1544,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const popupBox = document.getElementById("roll-popup");
         const overlay = document.getElementById("overlay");
         const rollImage = document.getElementById("roll-image");
+        //const rollImage1 = document.getElementById("roll-image1");
+        //const rollImage2 = document.getElementById("roll-image1");
+        //const rollImage3 = document.getElementById("roll-image1");
+        //const rollImage4 = document.getElementById("roll-image1");
         const rollCrunchyrollButton1 = document.getElementById("roll-crunchyroll-button-1");
         const rollCrunchyrollButton2 = document.getElementById("roll-crunchyroll-button-2");
         const rollTitle = document.getElementById("roll-title");
@@ -1928,6 +1932,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const selectedImage = images[randomIndex];
     
             rollImage.src = selectedImage.src;
+            //rollImage1.src = selectedImage.src;
+            //rollImage2.src = selectedImage.src;
+            //rollImage3.src = selectedImage.src;
+            //rollImage4.src = selectedImage.src;
             rollTitle.textContent = selectedImage.title;
             rollGenre.textContent = selectedImage.genre;
             rollSeason.textContent = selectedImage.season;
