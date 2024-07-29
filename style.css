@@ -3522,7 +3522,7 @@ a {
         margin: 0px auto;
         padding: 24px;
         transform: translateX(0%);
-        padding-bottom: 113px;
+        padding-bottom: 125px;
     }
 
     .orange-box {
@@ -3671,6 +3671,10 @@ a {
         padding-top: 0px;
         transform: translateY(164px);
     }
+
+    .highlight-o {
+        color: #F47521; /* Replace with the specific orange color you like */
+    }
     
     .anime {
         display: inline-block;
@@ -3683,6 +3687,24 @@ a {
         top: 50%;
         transform: rotate(270deg) translateY(16px) translateX(138px);
     }
+
+    .narollto-image {
+        width: 380px;
+        height: auto;
+        vertical-align: middle;
+        position: absolute;
+        transform: translateY(-52px) translateX(-301px);
+
+    }
+
+    .wave-image {
+        width: 1916px;
+        height: 170px;
+        vertical-align: middle;
+        position: absolute;
+        transform: translateY(753px) translateX(-38px);
+    }
+    
     
     .footer hr {
         transform: translateY(-21px) translateX(134px);
@@ -3712,6 +3734,15 @@ a {
         transform: translateY(-7px);
         font-weight: bold;
     }
+
+    .github-image {
+        width: 30px; /* Set the width as needed */
+        height: auto;
+        vertical-align: middle; /* Aligns the image vertically with the text */
+        margin-left: 10px; /* Space between the text and the image */
+        transform: translateY(-2px);
+    }
+    
     
     .footer1 a {
         font-size: 20px;
@@ -3736,6 +3767,14 @@ a {
         transform: translateY(-7px);
         font-weight: bold;
     }
+
+    .email-image {
+        width: 30px; /* Set the width as needed */
+        height: auto;
+        vertical-align: middle; /* Aligns the image vertically with the text */
+        margin-left: 10px; /* Space between the text and the image */
+        transform: translateY(-2px);
+    }
     
     .footer3 {
         text-align: left;
@@ -3755,6 +3794,14 @@ a {
         font-size: 33px;
         transform: translateY(-7px);
         font-weight: bold;
+    }
+
+    .tiktok-image {
+        width: 30px; /* Set the width as needed */
+        height: auto;
+        vertical-align: middle; /* Aligns the image vertically with the text */
+        margin-left: 10px; /* Space between the text and the image */
+        transform: translateY(-2px);
     }
     
     .footer3 a {
