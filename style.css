@@ -3689,7 +3689,71 @@ a {
         border: none;
     }
     
+    .footer1 {
+        text-align: left;
+        padding-top: 20px;
+        font-family: 'Maven Pro', sans-serif;
+        transform: translateY(-143px) translateX(134px);
+    }
     
+    .footer1 p {
+        margin: 5px 0;
+        font-size: 20px; /* Adjust the size as needed */
+    }
+
+    .footer1 .github {
+        font-size: 33px;
+        transform: translateY(-7px);
+        font-weight: bold;
+    }
+    
+    .footer1 .underline {
+        text-decoration: underline;
+    }
+
+    .footer2 {
+        text-align: left;
+        padding-top: 20px;
+        font-family: 'Maven Pro', sans-serif;
+        transform: translateY(-268px) translateX(884px);
+    }
+
+    .footer2 p {
+        margin: 5px 0;
+        font-size: 20px; /* Adjust the size as needed */
+    }
+
+    .footer2 .email {
+        font-size: 33px;
+        transform: translateY(-7px);
+        font-weight: bold;
+    }
+
+    .footer2 .underline {
+        text-decoration: underline;
+    }
+    .footer3 {
+        text-align: left;
+        padding-top: 20px;
+        font-family: 'Maven Pro', sans-serif;
+        transform: translateY(-393px) translateX(1644px);
+    }
+
+    .footer3 p {
+        margin: 5px 0;
+        font-size: 20px; /* Adjust the size as needed */
+    }
+
+    .footer3 .tiktok {
+        font-size: 33px;
+        transform: translateY(-7px);
+        font-weight: bold;
+    }
+
+    .footer3 .underline {
+        text-decoration: underline;
+    }
+
     .image-card p {
         font-size: 18px;
         color: #808080;
