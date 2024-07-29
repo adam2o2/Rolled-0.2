@@ -230,7 +230,7 @@ body{
 }
 
 .roll-box{
-    box-shadow: 8px 19px 24px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
     border-radius: 29px;
     width: 395px;
     height: 88px;
@@ -280,6 +280,7 @@ body{
     color: white;
     text-align: center;
     border-radius: 50px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3)
 }
 
 #roll-crunchyroll-button-2 span{
@@ -287,7 +288,7 @@ body{
     font-weight: bold;
     left: 5px;
     position: relative;
-    top: 13px;
+    top: 16px;
 }
 
 .roll-watch-button:hover {
@@ -3171,7 +3172,7 @@ a {
     align-items: center;
     width: 600px;
     position: absolute;
-    top: 30px;
+    top: 60px;
 }
 
     .roll-container .roll-watch-button {
