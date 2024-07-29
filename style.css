@@ -165,8 +165,8 @@ body{
 }
 
 #roll-image {
-    max-width: 475px;
-    height: auto;
+    max-width: 466px;
+    height: 266px;
     border-radius: 10px;
     box-shadow: 8px 19px 24px rgba(0, 0, 0, 0.3);
     cursor: pointer;
@@ -182,8 +182,6 @@ body{
     border-radius: 29px;
     width: 395px;
     height: 88px;
-    position: absolute;
-    left: 20%;
 }
 
 .roll-container .roll-watch-button{
@@ -191,7 +189,14 @@ body{
     margin-bottom: 30px;
 }
 
-.roll-watch-button {
+.roll-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Creates a 30px gap between children */
+    margin-top: -54px;
+}
+
+ #roll-crunchyroll-button-1 {
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -213,21 +218,24 @@ body{
 .roll-container,
 .roll-box,
 #roll-crunchyroll-button-2 {
-    margin-bottom: 35px;
+    
 }
 
 #roll-crunchyroll-button-2{
     width: 81px;
     height: 81px;
-    margin: 0;
+    background-color: #F47521;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
 }
 
 #roll-crunchyroll-button-2 span{
     font-size: 25px;
     font-weight: bold;
-    position: absolute;
-    left: 18px;
-    top: 15px;
+    left: 5px;
+    position: relative;
+    top: 13px;
 }
 
 .roll-watch-button:hover {
@@ -3102,6 +3110,17 @@ a {
         align-items: flex-start;
         
     }
+
+    .roll-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Creates a 30px gap between children */
+    margin-top: -54px;
+    align-items: center;
+    width: 600px;
+    position: absolute;
+    top: 30px;
+}
 
     .roll-container .roll-watch-button {
         position: absolute;
