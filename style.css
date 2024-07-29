@@ -3688,6 +3688,18 @@ a {
         transform: rotate(270deg) translateY(16px) translateX(138px);
     }
 
+    .footer-wrapped {
+        width: 1903px;
+        margin: 0 auto; /* Center horizontally */
+        text-align: center; /* Centers text within each child element */
+    }
+
+    .footer-wrapped1 {
+        width: 1903px;
+        margin: 0 auto; /* Center horizontally */
+        text-align: center; /* Centers text within each child element */
+    }
+
     .narollto-image {
         width: 380px;
         height: auto;
