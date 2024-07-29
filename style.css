@@ -12,7 +12,7 @@ body{
 
 .footer {
     width: 100%; /* Ensures the footer takes up the full width of the screen */
-    background-color: #333; /* Background color of the footer */
+    background-color: #F47521; /* Background color of the footer */
     color: white; /* Text color */
     text-align: center; /* Centers the text horizontally */
     padding: 0px 0; /* Padding for top and bottom */
@@ -3656,12 +3656,39 @@ a {
     }
 
     .footer h3 {
-        font-size: 280px;
+        font-size: 550px;
         text-align: center;
         justify-content: center;
         margin: 0;
         background-color: #F47521;
+        font-family: 'Lalezar', sans-serif;
+        padding-top: 228px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-right: 70px;
     }
+    
+    .anime {
+        display: inline-block;
+        font-size: 111px;
+        font-family: 'Maven Pro', sans-serif;
+        margin-left: 20px;
+        position: absolute;
+        right: 0;
+        letter-spacing: -9px;
+        top: 50%;
+        transform: rotate(270deg) translateY(2px) translateX(-5px);
+    }
+    
+    .footer hr {
+        transform: translateY(-229px) translateX(14px);
+        width: 1663px;
+        background-color: white;
+        height: 2px;
+        border: none;
+    }
+    
     
     .image-card p {
         font-size: 18px;
