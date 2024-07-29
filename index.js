@@ -307,7 +307,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'Feature/tsurunecard.png', video: 'https://www.youtube.com/embed/6w_GwGdk8_0', title: 'Tsurune', episodes: '14 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GRDKVP34Y/tsurune', genre: 'Sports', seasons: '1 Seasons' },
         { src: 'Feature/birdiecard.png', video: 'https://www.youtube.com/embed/EgmBeG0Yyl8', title: 'Birdie Wing', episodes: '25 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GNVHKN714/birdie-wing--golf-girls', genre: 'Sports', seasons: '1 Seasons' },
         { src: 'Feature/overtakecard.png', video: 'https://www.youtube.com/embed/x9H2uJxOREs', title: 'OVERTAKE!', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G9VHN9Q4N/overtake', genre: 'Sports', seasons: '1 Seasons' },
-        { src: 'Feature/243card.png', video: 'https://www.youtube.com/embed/5utDbhnMF0s', title: '2.43 Volleyball Team', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G1XHJVEZ1/243-seiin-high-school-volleyball', genre: 'Sports', seasons: '1 Seasons' },
+        { src: 'Feature/243.png', video: 'https://www.youtube.com/embed/5utDbhnMF0s', title: '2.43 Volleyball Team', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G1XHJVEZ1/243-seiin-high-school-volleyball', genre: 'Sports', seasons: '1 Seasons' },
         { src: 'Feature/loveallplaycard.png', video: 'https://www.youtube.com/embed/PMHRDK2qjS4', title: 'Love All Play', episodes: '24 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GKEH2G4MW/love-all-play', genre: 'Sports', seasons: '1 Seasons' },
         { src: 'Feature/burningkabaddicard.png', video: 'https://www.youtube.com/embed/CeUcyCPcDa4', title: 'Burning Kabaddi', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G9VHN9W5J/burning-kabaddi', genre: 'Sports', seasons: '1 Seasons' },
         { src: 'Feature/pingpongcard.png', video: 'https://www.youtube.com/embed/ItlDaDfLBn8', title: 'Ping Pong', episodes: '11 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GRJQV0N3Y/ping-pong-the-animation', genre: 'Sports', seasons: '1 Seasons' },
@@ -1841,7 +1841,7 @@ document.addEventListener('DOMContentLoaded', function() {
             { src: 'Feature/tsurunecard.png', video: 'https://www.youtube.com/embed/6w_GwGdk8_0', title: 'Tsurune', episode: '14 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/GRDKVP34Y/tsurune', genre: 'Sports', season: '1 Seasons' },
             { src: 'Feature/birdiecard.png', video: 'https://www.youtube.com/embed/EgmBeG0Yyl8', title: 'Birdie Wing', episode: '25 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/GNVHKN714/birdie-wing--golf-girls', genre: 'Sports', season: '1 Seasons' },
             { src: 'Feature/overtakecard.png', video: 'https://www.youtube.com/embed/x9H2uJxOREs', title: 'OVERTAKE!', episode: '12 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/G9VHN9Q4N/overtake', genre: 'Sports', season: '1 Seasons' },
-            { src: 'Feature/243card.png', video: 'https://www.youtube.com/embed/5utDbhnMF0s', title: '2.43 Volleyball Team', episode: '12 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/G1XHJVEZ1/243-seiin-high-school-volleyball', genre: 'Sports', season: '1 Seasons' },
+            { src: 'Feature/243.png', video: 'https://www.youtube.com/embed/5utDbhnMF0s', title: '2.43 Volleyball Team', episode: '12 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/G1XHJVEZ1/243-seiin-high-school-volleyball', genre: 'Sports', season: '1 Seasons' },
             { src: 'Feature/loveallplaycard.png', video: 'https://www.youtube.com/embed/PMHRDK2qjS4', title: 'Love All Play', episode: '24 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/GKEH2G4MW/love-all-play', genre: 'Sports', season: '1 Seasons' },
             { src: 'Feature/burningkabaddicard.png', video: 'https://www.youtube.com/embed/CeUcyCPcDa4', title: 'Burning Kabaddi', episode: '12 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/G9VHN9W5J/burning-kabaddi', genre: 'Sports', season: '1 Seasons' },
             { src: 'Feature/pingpongcard.png', video: 'https://www.youtube.com/embed/ItlDaDfLBn8', title: 'Ping Pong', episode: '11 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/GRJQV0N3Y/ping-pong-the-animation', genre: 'Sports', season: '1 Seasons' },
@@ -1924,75 +1924,75 @@ document.addEventListener('DOMContentLoaded', function() {
             //Comedy
         ];
     
-        let rollCurrentVideoUrl = '';
-        let rollCurrentCrunchyrollLink = '';
-    
-        rollSpan.addEventListener("click", function() {
-            const selectedImages = [];
-            while (selectedImages.length < 5) {
-                const randomIndex = Math.floor(Math.random() * images.length);
-                const selectedImage = images[randomIndex];
-                if (!selectedImages.includes(selectedImage)) {
-                    selectedImages.push(selectedImage);
-                }
-            }
-    
-            rollImage.src = selectedImages[0].src;
-            rollImage1.src = selectedImages[1].src;
-            rollImage2.src = selectedImages[2].src;
-            rollImage3.src = selectedImages[3].src;
-            rollImage4.src = selectedImages[4].src;
-            rollTitle.textContent = selectedImages[0].title;
-            rollGenre.textContent = selectedImages[0].genre;
-            rollSeason.textContent = selectedImages[0].season;
-            rollEpisode.textContent = selectedImages[0].episode;
-            rollCrunchyrollButton1.href = selectedImages[0].rollcrunchyrollLink; 
-            rollCrunchyrollButton2.href = selectedImages[0].rollcrunchyrollLink;
-            popupBox.style.display = "block";
-            overlay.style.display = "block";
-    
-            rollCurrentVideoUrl = selectedImages[0].video;
-            rollCurrentCrunchyrollLink = selectedImages[0].rollcrunchyrollLink;
-        });
-    
-        overlay.addEventListener("click", function() {
-            popupBox.style.display = "none";
-            overlay.style.display = "none";
-            videoOverlay.style.display = 'none';
-            videoIframe.style.display = 'none';
-            videoIframe.src = '';
-            document.body.style.overflow = 'auto';
-        });
-    
-        function playVideo(videoUrl) {
-            if (videoUrl) {
-                videoIframe.src = videoUrl;
-                videoIframe.style.display = 'block';
-                videoOverlay.style.display = 'block';
-                document.body.style.overflow = 'hidden';
-    
-                if (window.innerWidth <= 414) {
-                    videoIframe.style.width = '391px';
-                    videoIframe.style.height = '221px';
-                } else {
-                    videoIframe.style.width = '1666.47px';
-                    videoIframe.style.height = '801px';
-                }
-            } else {
-                videoIframe.style.display = 'none';
+    let rollCurrentVideoUrl = '';
+    let rollCurrentCrunchyrollLink = '';
+
+    rollSpan.addEventListener("click", function() {
+        const selectedImages = [];
+        while (selectedImages.length < 5) {
+            const randomIndex = Math.floor(Math.random() * images.length);
+            const selectedImage = images[randomIndex];
+            if (!selectedImages.includes(selectedImage)) {
+                selectedImages.push(selectedImage);
             }
         }
-    
-        rollImage.addEventListener('click', function() {
-            playVideo(rollCurrentVideoUrl);
-            rollCrunchyrollButton1.href = rollCurrentCrunchyrollLink;
-            rollCrunchyrollButton2.href = rollCurrentCrunchyrollLink;
-        });
-    
-        videoOverlay.addEventListener('click', function() {
-            videoIframe.style.display = 'none';
-            videoIframe.src = '';
-            videoOverlay.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        });
+
+        rollImage.src = selectedImages[0].src;
+        rollImage1.src = selectedImages[1].src;
+        rollImage2.src = selectedImages[2].src;
+        rollImage3.src = selectedImages[3].src;
+        rollImage4.src = selectedImages[4].src;
+        rollTitle.textContent = selectedImages[0].title;
+        rollGenre.textContent = selectedImages[0].genre;
+        rollSeason.textContent = selectedImages[0].season;
+        rollEpisode.textContent = selectedImages[0].episode;
+        rollCrunchyrollButton1.href = selectedImages[0].rollcrunchyrollLink; 
+        rollCrunchyrollButton2.href = selectedImages[0].rollcrunchyrollLink;
+        popupBox.style.display = "block";
+        overlay.style.display = "block";
+
+        rollCurrentVideoUrl = selectedImages[0].video;
+        rollCurrentCrunchyrollLink = selectedImages[0].rollcrunchyrollLink;
     });
+
+    overlay.addEventListener("click", function() {
+        popupBox.style.display = "none";
+        overlay.style.display = "none";
+        videoOverlay.style.display = 'none';
+        videoIframe.style.display = 'none';
+        videoIframe.src = '';
+        document.body.style.overflow = 'auto';
+    });
+
+    function playVideo(videoUrl) {
+        if (videoUrl) {
+            videoIframe.src = videoUrl;
+            videoIframe.style.display = 'block';
+            videoOverlay.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+
+            if (window.innerWidth <= 414) {
+                videoIframe.style.width = '391px';
+                videoIframe.style.height = '221px';
+            } else {
+                videoIframe.style.width = '1666.47px';
+                videoIframe.style.height = '801px';
+            }
+        } else {
+            videoIframe.style.display = 'none';
+        }
+    }
+
+    rollImage.addEventListener('click', function() {
+        playVideo(rollCurrentVideoUrl);
+        rollCrunchyrollButton1.href = rollCurrentCrunchyrollLink;
+        rollCrunchyrollButton2.href = rollCurrentCrunchyrollLink;
+    });
+
+    videoOverlay.addEventListener('click', function() {
+        videoIframe.style.display = 'none';
+        videoIframe.src = '';
+        videoOverlay.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    });
+});
