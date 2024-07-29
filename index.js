@@ -1544,10 +1544,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const popupBox = document.getElementById("roll-popup");
         const overlay = document.getElementById("overlay");
         const rollImage = document.getElementById("roll-image");
-        //const rollImage1 = document.getElementById("roll-image1");
-        //const rollImage2 = document.getElementById("roll-image1");
-        //const rollImage3 = document.getElementById("roll-image1");
-        //const rollImage4 = document.getElementById("roll-image1");
+        const rollImage1 = document.getElementById("roll-image1");
+        const rollImage2 = document.getElementById("roll-image2");
+        const rollImage3 = document.getElementById("roll-image3");
+        const rollImage4 = document.getElementById("roll-image4");
         const rollCrunchyrollButton1 = document.getElementById("roll-crunchyroll-button-1");
         const rollCrunchyrollButton2 = document.getElementById("roll-crunchyroll-button-2");
         const rollTitle = document.getElementById("roll-title");
@@ -1928,25 +1928,31 @@ document.addEventListener('DOMContentLoaded', function() {
         let rollCurrentCrunchyrollLink = '';
     
         rollSpan.addEventListener("click", function() {
-            const randomIndex = Math.floor(Math.random() * images.length);
-            const selectedImage = images[randomIndex];
+            const selectedImages = [];
+            while (selectedImages.length < 5) {
+                const randomIndex = Math.floor(Math.random() * images.length);
+                const selectedImage = images[randomIndex];
+                if (!selectedImages.includes(selectedImage)) {
+                    selectedImages.push(selectedImage);
+                }
+            }
     
-            rollImage.src = selectedImage.src;
-            //rollImage1.src = selectedImage.src;
-            //rollImage2.src = selectedImage.src;
-            //rollImage3.src = selectedImage.src;
-            //rollImage4.src = selectedImage.src;
-            rollTitle.textContent = selectedImage.title;
-            rollGenre.textContent = selectedImage.genre;
-            rollSeason.textContent = selectedImage.season;
-            rollEpisode.textContent = selectedImage.episode;
-            rollCrunchyrollButton1.href = selectedImage.rollcrunchyrollLink; 
-            rollCrunchyrollButton2.href = selectedImage.rollcrunchyrollLink;
+            rollImage.src = selectedImages[0].src;
+            rollImage1.src = selectedImages[1].src;
+            rollImage2.src = selectedImages[2].src;
+            rollImage3.src = selectedImages[3].src;
+            rollImage4.src = selectedImages[4].src;
+            rollTitle.textContent = selectedImages[0].title;
+            rollGenre.textContent = selectedImages[0].genre;
+            rollSeason.textContent = selectedImages[0].season;
+            rollEpisode.textContent = selectedImages[0].episode;
+            rollCrunchyrollButton1.href = selectedImages[0].rollcrunchyrollLink; 
+            rollCrunchyrollButton2.href = selectedImages[0].rollcrunchyrollLink;
             popupBox.style.display = "block";
             overlay.style.display = "block";
     
-            rollCurrentVideoUrl = selectedImage.video;
-            rollCurrentCrunchyrollLink = selectedImage.rollcrunchyrollLink;
+            rollCurrentVideoUrl = selectedImages[0].video;
+            rollCurrentCrunchyrollLink = selectedImages[0].rollcrunchyrollLink;
         });
     
         overlay.addEventListener("click", function() {
