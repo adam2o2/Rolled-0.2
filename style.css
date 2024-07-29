@@ -171,7 +171,59 @@ body{
     box-shadow: 8px 19px 24px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     margin-top: 120px;
+    z-index: 2;
 }
+
+#roll-image1 {
+    position: absolute;
+    max-width: 404px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 8px 19px 24px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin-top: 136px;
+    margin-left: 150px;
+    z-index: 1;
+    filter: blur(2px);
+}
+
+#roll-image2 {
+    position: absolute;
+    max-width: 404px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 8px 19px 24px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin-top: 136px;
+    margin-left: -150px;
+    z-index: 1;
+    filter: blur(2px);
+}
+
+#roll-image3 {
+    position: absolute;
+    max-width: 370px;
+    height: 211px;
+    border-radius: 10px;
+    box-shadow: 8px 19px 24px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin-top: 144px;
+    margin-left: 260px;
+    filter: blur(8px);
+}
+
+#roll-image4 {
+    position: absolute;
+    max-width: 370px;
+    height: 211px;
+    border-radius: 10px;
+    box-shadow: 8px 19px 24px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin-top: 144px;
+    margin-left: -260px;
+    filter: blur(8px);
+}
+
 
 #roll-title{
     font-size: 18px;
