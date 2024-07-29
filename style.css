@@ -3522,6 +3522,7 @@ a {
         margin: 0px auto;
         padding: 24px;
         transform: translateX(0%);
+        padding-bottom: 113px;
     }
 
     .orange-box {
