@@ -1931,13 +1931,13 @@ document.addEventListener('DOMContentLoaded', function() {
             const nextIndex2 = (nextIndex + 1) % images.length;
             const nextIndex3 = (nextIndex2 + 1) % images.length;
             const nextIndex4 = (nextIndex3 + 1) % images.length;
-        
+
             rollImage.src = images[nextIndex2].src;
             rollImage1.src = images[nextIndex3].src;
             rollImage2.src = images[nextIndex].src;
             rollImage3.src = images[nextIndex4].src;
             rollImage4.src = images[currentIndex].src;
-        
+
             const centralImage = images[nextIndex2];
             rollTitle.textContent = centralImage.title;
             rollGenre.textContent = centralImage.genre;
@@ -1945,15 +1945,15 @@ document.addEventListener('DOMContentLoaded', function() {
             rollEpisode.textContent = `${centralImage.episode}`;
             rollCrunchyrollButton1.href = centralImage.rollcrunchyrollLink;
             rollCrunchyrollButton2.href = centralImage.rollcrunchyrollLink;
-        
+
             currentIndex = nextIndex;
-        
+
             rollImage.classList.add('roll-image');
             rollImage1.classList.add('roll-image1');
             rollImage2.classList.add('roll-image2');
             rollImage3.classList.add('roll-image3');
             rollImage4.classList.add('roll-image4');
-        
+
             setTimeout(() => {
                 rollImage.classList.remove('roll-image');
                 rollImage1.classList.remove('roll-image1');
@@ -1962,12 +1962,24 @@ document.addEventListener('DOMContentLoaded', function() {
                 rollImage4.classList.remove('roll-image4');
             }, 500);
         }
-        
-        document.getElementById("roll-crunchyroll-button-2").addEventListener("click", function() {
+
+        function spinAndSelectRandomAnime() {
             const interval = setInterval(updateCarousel, 100);
-            setTimeout(() => clearInterval(interval), 2000);
+            setTimeout(() => {
+                clearInterval(interval);
+
+                // Select a random anime from the images array
+                const randomIndex = Math.floor(Math.random() * images.length);
+                currentIndex = (randomIndex - 2 + images.length) % images.length; // Adjust to set central image
+
+                updateCarousel();
+            }, 2000); // Spins for 2 seconds
+        }
+
+        document.getElementById("roll-crunchyroll-button-2").addEventListener("click", function() {
+            spinAndSelectRandomAnime();
         });
-        
+
         overlay.addEventListener("click", function() {
             popupBox.style.display = "none";
             overlay.style.display = "none";
@@ -1976,14 +1988,14 @@ document.addEventListener('DOMContentLoaded', function() {
             videoIframe.src = '';
             document.body.style.overflow = 'auto';
         });
-        
+
         function playVideo(videoUrl) {
             if (videoUrl) {
                 videoIframe.src = videoUrl;
                 videoIframe.style.display = 'block';
                 videoOverlay.style.display = 'block';
                 document.body.style.overflow = 'hidden';
-        
+
                 if (window.innerWidth <= 414) {
                     videoIframe.style.width = '391px';
                     videoIframe.style.height = '221px';
@@ -1995,13 +2007,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 videoIframe.style.display = 'none';
             }
         }
-        
+
         rollImage.addEventListener('click', function() {
             const videoUrl = images[(currentIndex + 1) % images.length].video;
             playVideo(videoUrl);
             rollCrunchyrollButton1.href = images[(currentIndex + 1) % images.length].rollcrunchyrollLink;
         });
-        
+
         videoOverlay.addEventListener('click', function() {
             videoIframe.style.display = 'none';
             videoIframe.src = '';
