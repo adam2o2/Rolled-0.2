@@ -1154,7 +1154,7 @@ a {
     /* Add styles for .comedy-info and .sports-info */
     .comedy-info, .sports-info, .action-info, .romance-info, .isekai-info, .thriller-info, .adventure-info {
         font-size: 10px; /* Adjust font size */
-        margin-top: -437px;
+        margin-top: -453px;
         margin-left: 10px; /* Adjust left margin */
         display: flex;
         flex-direction: column;
@@ -1255,7 +1255,7 @@ a {
         height: 148px;
         vertical-align: middle;
         position: absolute;
-        transform: translateY(627px) translateX(-327px);
+        transform: translateY(250px) translateX(-327px);
     }
     
     
@@ -1360,6 +1360,20 @@ a {
     
     .footer3 a {
         font-size: 15px;
+    }
+
+    .orange-box-container {
+        height: 142px;
+        padding-bottom: 133px;
+    }
+
+    .comedy-info {
+        font-size: 10px;
+        margin-top: -437px;
+        margin-left: 2px;
+        display: flex;
+        flex-direction: column;
+        width: 68px;
     }
 
 }
@@ -1611,7 +1625,7 @@ a {
     /* Add styles for .comedy-info and .sports-info */
     .comedy-info, .sports-info, .action-info, .romance-info, .isekai-info, .thriller-info, .adventure-info {
         font-size: 10px; /* Adjust font size */
-        margin-top: -429px; /* Adjust top margin */
+        margin-top: -423px;
         margin-left: 10px; /* Adjust left margin */
         display: flex;
         flex-direction: column;
@@ -1712,7 +1726,7 @@ a {
         height: 148px;
         vertical-align: middle;
         position: absolute;
-        transform: translateY(627px) translateX(-327px);
+        transform: translateY(250px) translateX(-327px);
     }
     
     
@@ -1818,6 +1832,20 @@ a {
     .footer3 a {
         font-size: 15px;
     }
+
+    .orange-box-container {
+        height: 142px;
+        padding-bottom: 133px;
+    }
+
+    .comedy-info {
+        font-size: 10px;
+        margin-top: -423px;
+        margin-left: 2px;
+        display: flex;
+        flex-direction: column;
+        width: 93px;
+    }
     
 }
 
@@ -1836,6 +1864,8 @@ a {
         height: auto; /* Adjust height */
         padding-bottom: 10px; /* Reduce padding */
     }
+
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -2688,7 +2718,7 @@ a {
         height: 170px;
         vertical-align: middle;
         position: absolute;
-        transform: translateY(627px) translateX(-40px);
+        transform: translateY(565px) translateX(-40px);
     }
     
     
@@ -2794,6 +2824,20 @@ a {
         font-size: 20px;
     }
     
+    .orange-box-container {
+        height: 142px;
+        padding-bottom: 453px;
+    }
+
+    .comedy-info {
+        font-size: 10px;
+        margin-top: -423px;
+        margin-left: 2px;
+        display: flex;
+        flex-direction: column;
+        width: 259px;
+    }
+
 }
 
 @media screen and (min-width: 1400px) {
@@ -3601,11 +3645,11 @@ a {
     }
 
     .wave-image {
-        width: 1435px;
+        width: 1434px;
         height: 170px;
         vertical-align: middle;
         position: absolute;
-        transform: translateY(631px) translateX(-45px);
+        transform: translateY(753px) translateX(-45px);
     }
     
     
@@ -3710,6 +3754,20 @@ a {
     
     .footer3 a {
         font-size: 20px;
+    }
+
+    .orange-box-container {
+        height: 142px;
+        padding-bottom: 686px;
+    }
+
+    .comedy-info {
+        font-size: 10px;
+        margin-top: -423px;
+        margin-left: 2px;
+        display: flex;
+        flex-direction: column;
+        width: 412px;
     }
     
 }
@@ -4482,7 +4540,7 @@ a {
         height: 170px;
         vertical-align: middle;
         position: absolute;
-        transform: translateY(753px) translateX(-38px);
+        transform: translateY(800px) translateX(-38px);
     }
     
     
@@ -4610,6 +4668,20 @@ a {
         color: black;
         margin: -128px 0px 0px 199px;
         display: block;
+    }
+
+    .orange-box-container {
+        height: 142px;
+        padding-bottom: 686px;
+    }
+
+    .comedy-info {
+        font-size: 10px;
+        margin-top: -423px;
+        margin-left: 2px;
+        display: flex;
+        flex-direction: column;
+        width: 412px;
     }
     
 }
