@@ -1924,56 +1924,48 @@ document.addEventListener('DOMContentLoaded', function() {
             //Comedy
         ];
     
-        let currentIndex = 0; // To track the current index of the image
+        let currentIndex = 0;
 
 function updateCarousel() {
-    // Calculate the indices for the images
     const nextIndex = (currentIndex + 1) % images.length;
     const nextIndex2 = (nextIndex + 1) % images.length;
     const nextIndex3 = (nextIndex2 + 1) % images.length;
     const nextIndex4 = (nextIndex3 + 1) % images.length;
 
-    // Update images based on the custom order
-    rollImage.src = images[nextIndex2].src; // New image
+    rollImage.src = images[nextIndex2].src;
     rollImage1.src = images[nextIndex3].src;
+    rollImage2.src = images[nextIndex].src;
     rollImage3.src = images[nextIndex4].src;
     rollImage4.src = images[currentIndex].src;
-    rollImage2.src = images[nextIndex].src; // This stays the same
 
-    // Set the title, genre, season, and episode of the new central image
-    const centralImage = images[nextIndex2]; // Updated to match rollImage's new image
+    const centralImage = images[nextIndex2];
     rollTitle.textContent = centralImage.title;
     rollGenre.textContent = centralImage.genre;
-    rollSeason.textContent = centralImage.season;
-    rollEpisode.textContent = centralImage.episode;
+    rollSeason.textContent = `${centralImage.season}`;
+    rollEpisode.textContent = `${centralImage.episode}`;
     rollCrunchyrollButton1.href = centralImage.rollcrunchyrollLink;
     rollCrunchyrollButton2.href = centralImage.rollcrunchyrollLink;
 
-    // Update current index
     currentIndex = nextIndex;
 
-    // Add classes to trigger scaling effect
     rollImage.classList.add('roll-image');
     rollImage1.classList.add('roll-image1');
     rollImage2.classList.add('roll-image2');
     rollImage3.classList.add('roll-image3');
     rollImage4.classList.add('roll-image4');
 
-    // Delay the update of classes to ensure the transition is applied
     setTimeout(() => {
         rollImage.classList.remove('roll-image');
         rollImage1.classList.remove('roll-image1');
         rollImage2.classList.remove('roll-image2');
         rollImage3.classList.remove('roll-image3');
         rollImage4.classList.remove('roll-image4');
-    }, 500); // Match the transition duration
+    }, 500);
 }
 
-// Event listeners
 document.getElementById("roll-crunchyroll-button-2").addEventListener("click", function() {
-    updateCarousel();
-    popupBox.style.display = "block";
-    overlay.style.display = "block";
+    const interval = setInterval(updateCarousel, 100);
+    setTimeout(() => clearInterval(interval), 2000); // Spins for 5 seconds
 });
 
 overlay.addEventListener("click", function() {
@@ -2004,14 +1996,12 @@ function playVideo(videoUrl) {
     }
 }
 
-// Ensure the images are properly selected
 rollImage.addEventListener('click', function() {
-    const videoUrl = images[currentIndex + 1].video; // Ensure videoUrl is fetched correctly
+    const videoUrl = images[(currentIndex + 1) % images.length].video;
     playVideo(videoUrl);
-    rollCrunchyrollButton1.href = images[currentIndex + 1].rollcrunchyrollLink; // Ensure link is correct
+    rollCrunchyrollButton1.href = images[(currentIndex + 1) % images.length].rollcrunchyrollLink;
 });
 
-// Ensure the video overlay is properly handled
 videoOverlay.addEventListener('click', function() {
     videoIframe.style.display = 'none';
     videoIframe.src = '';
