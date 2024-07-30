@@ -294,12 +294,12 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'Feature/pedalcard.png', video: 'https://www.youtube.com/embed/4pwc916s8J0', title: 'Yowamushi Pedal', episodes: '112 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GRGGVKP4R/yowamushi-pedal', genre: 'Sports', seasons: '5 Seasons' },
         { src: 'Feature/slamdunkcard.png', video: 'https://www.youtube.com/embed/CbK6Yy4f4zY', title: 'Slam Dunk', episodes: '101 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G69PJJM3Y/slam-dunk', genre: 'Sports', seasons: '3 Seasons' },
         { src: 'Feature/freedivecard.png', video: 'https://www.youtube.com/embed/iLUZd5e_9vs', title: 'Free', episodes: '37 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GRDQV2VWY/free---iwatobi-swim-club', genre: 'Sports', seasons: '8 Seasons' },
-        { src: 'Feature/aoashicard.png', video: 'https://www.youtube.com/embed/UdKoCImaUeQ', title: 'Aoashi', episodes: '24 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G4PH0WX5J/aoashi', genre: 'Sports', seasons: '1 Seasons' },
-        { src: 'Feature/bluelockcard.png', video: 'https://www.youtube.com/embed/IVsII3dLbWc?start=1', title: 'Blue Lock', episodes: '24 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G4PH0WEKE/blue-lock', genre: 'Sports', seasons: '1 Seasons' },
+        { src: 'Feature/aoashicard.jpg', video: 'https://www.youtube.com/embed/UdKoCImaUeQ', title: 'Aoashi', episodes: '24 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G4PH0WX5J/aoashi', genre: 'Sports', seasons: '1 Seasons' },
+        { src: 'Feature/bluelockcard.jpg', video: 'https://www.youtube.com/embed/IVsII3dLbWc?start=1', title: 'Blue Lock', episodes: '24 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G4PH0WEKE/blue-lock', genre: 'Sports', seasons: '1 Seasons' },
         { src: 'Feature/megaloboxcard.jpg', video: 'https://www.youtube.com/embed/gVxLZityaR0', title: 'MEGALOBOX', episodes: '26 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GR4PVJ1WY/megalobox', genre: 'Sports', seasons: '2 Seasons' },
-        { src: 'Feature/sk8card.png', video: 'https://www.youtube.com/embed/vuoYi-1rCA4', title: 'SK8 the Infinity', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G5PHNM434/sk8-the-infinity', genre: 'Sports', seasons: '1 Seasons' },
-        { src: 'Feature/eyeshieldcard.png', video: 'https://www.youtube.com/embed/IYgnjsihha4', title: 'Eyeshield', episodes: '145 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GRE5KGN36/eyeshield-21', genre: 'Sports', seasons: '3 Seasons' },
-        { src: 'Feature/ahirunosoracard.png', video: 'https://www.youtube.com/embed/rsqxACPa8EU', title: 'Ahiru no Sora', episodes: '50 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G6NVGNJGY/ahiru-no-sora', genre: 'Sports', seasons: '1 Seasons' },
+        { src: 'Feature/sk8card.jpg', video: 'https://www.youtube.com/embed/vuoYi-1rCA4', title: 'SK8 the Infinity', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G5PHNM434/sk8-the-infinity', genre: 'Sports', seasons: '1 Seasons' },
+        { src: 'Feature/eyeshieldcard.jpg', video: 'https://www.youtube.com/embed/IYgnjsihha4', title: 'Eyeshield', episodes: '145 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GRE5KGN36/eyeshield-21', genre: 'Sports', seasons: '3 Seasons' },
+        { src: 'Feature/ahirunosoracard.jpg', video: 'https://www.youtube.com/embed/rsqxACPa8EU', title: 'Ahiru no Sora', episodes: '50 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G6NVGNJGY/ahiru-no-sora', genre: 'Sports', seasons: '1 Seasons' },
         { src: 'Feature/captaincard.png', video: 'https://www.youtube.com/embed/K6zQ1qs2hLY', title: 'Captain Tsubasa', episodes: '39 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G4PH0WJDQ/captain-tsubasa-junior', genre: 'Sports', seasons: '1 Seasons' },
         { src: 'Feature/daycard.png', video: 'https://www.youtube.com/embed/VKavtkIZXoI', title: 'DAYS', episodes: '24 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GYX040PKR/days', genre: 'Sports', seasons: '1 Seasons' },
         { src: 'Feature/mfghostcard.png', video: 'https://www.youtube.com/embed/zNWZjjkKfXs', title: 'MF GHOST', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GEXH3W2W7/mf-ghost', genre: 'Sports', seasons: '1 Seasons' },
@@ -307,9 +307,9 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'Feature/tsurunecard.png', video: 'https://www.youtube.com/embed/6w_GwGdk8_0', title: 'Tsurune', episodes: '14 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GRDKVP34Y/tsurune', genre: 'Sports', seasons: '1 Seasons' },
         { src: 'Feature/birdiecard.png', video: 'https://www.youtube.com/embed/EgmBeG0Yyl8', title: 'Birdie Wing', episodes: '25 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GNVHKN714/birdie-wing--golf-girls', genre: 'Sports', seasons: '1 Seasons' },
         { src: 'Feature/overtakecard.png', video: 'https://www.youtube.com/embed/x9H2uJxOREs', title: 'OVERTAKE!', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G9VHN9Q4N/overtake', genre: 'Sports', seasons: '1 Seasons' },
-        { src: 'Feature/243card.png', video: 'https://www.youtube.com/embed/5utDbhnMF0s', title: '2.43 Volleyball Team', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G1XHJVEZ1/243-seiin-high-school-volleyball', genre: 'Sports', seasons: '1 Seasons' },
+        { src: 'Feature/243.png', video: 'https://www.youtube.com/embed/5utDbhnMF0s', title: '2.43 Volleyball Team', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G1XHJVEZ1/243-seiin-high-school-volleyball', genre: 'Sports', seasons: '1 Seasons' },
         { src: 'Feature/loveallplaycard.png', video: 'https://www.youtube.com/embed/PMHRDK2qjS4', title: 'Love All Play', episodes: '24 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GKEH2G4MW/love-all-play', genre: 'Sports', seasons: '1 Seasons' },
-        { src: 'Feature/burningkabaddicard.png', video: 'https://www.youtube.com/embed/CeUcyCPcDa4', title: 'Burning Kabaddi', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G9VHN9W5J/burning-kabaddi', genre: 'Sports', seasons: '1 Seasons' },
+        { src: 'Feature/burningkabaddicard.jpg', video: 'https://www.youtube.com/embed/CeUcyCPcDa4', title: 'Burning Kabaddi', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/G9VHN9W5J/burning-kabaddi', genre: 'Sports', seasons: '1 Seasons' },
         { src: 'Feature/pingpongcard.png', video: 'https://www.youtube.com/embed/ItlDaDfLBn8', title: 'Ping Pong', episodes: '11 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GRJQV0N3Y/ping-pong-the-animation', genre: 'Sports', seasons: '1 Seasons' },
         { src: 'Feature/iwakakerucard.png', video: 'https://www.youtube.com/embed/T8Skpo5daFI', title: 'Iwakakeru -Sport Climbing Girls-', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GRJK7WV4Y/iwakakeru--sport-climbing-girls', genre: 'Sports', seasons: '1 Seasons' },
         { src: 'Feature/tamayomicard.png', video: 'https://www.youtube.com/embed/BohDWS5YWdo', title: 'TAMAYOMI: The Baseball Girls', episodes: '12 Episodes', crunchyrollLink: 'https://www.crunchyroll.com/series/GXJHM39XE/tamayomi-the-baseball-girls', genre: 'Sports', seasons: '1 Seasons' },
@@ -1544,6 +1544,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const popupBox = document.getElementById("roll-popup");
         const overlay = document.getElementById("overlay");
         const rollImage = document.getElementById("roll-image");
+        const rollImage1 = document.getElementById("roll-image1");
+        const rollImage2 = document.getElementById("roll-image2");
+        const rollImage3 = document.getElementById("roll-image3");
+        const rollImage4 = document.getElementById("roll-image4");
         const rollCrunchyrollButton1 = document.getElementById("roll-crunchyroll-button-1");
         const rollCrunchyrollButton2 = document.getElementById("roll-crunchyroll-button-2");
         const rollTitle = document.getElementById("roll-title");
@@ -1824,12 +1828,12 @@ document.addEventListener('DOMContentLoaded', function() {
             { src: 'Feature/pedalcard.png', video: 'https://www.youtube.com/embed/4pwc916s8J0', title: 'Yowamushi Pedal', episode: '112 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/GRGGVKP4R/yowamushi-pedal', genre: 'Sports', season: '5 Seasons' },
             { src: 'Feature/slamdunkcard.png', video: 'https://www.youtube.com/embed/CbK6Yy4f4zY', title: 'Slam Dunk', episode: '101 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/G69PJJM3Y/slam-dunk', genre: 'Sports', season: '3 Seasons' },
             { src: 'Feature/freedivecard.png', video: 'https://www.youtube.com/embed/iLUZd5e_9vs', title: 'Free', episode: '37 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/GRDQV2VWY/free---iwatobi-swim-club', genre: 'Sports', season: '8 Seasons' },
-            { src: 'Feature/aoashicard.png', video: 'https://www.youtube.com/embed/UdKoCImaUeQ', title: 'Aoashi', episode: '24 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/G4PH0WX5J/aoashi', genre: 'Sports', season: '1 Seasons' },
-            { src: 'Feature/bluelockcard.png', video: 'https://www.youtube.com/embed/IVsII3dLbWc?start=1', title: 'Blue Lock', episode: '24 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/G4PH0WEKE/blue-lock', genre: 'Sports', season: '1 Seasons' },
+            { src: 'Feature/aoashicard.jpg', video: 'https://www.youtube.com/embed/UdKoCImaUeQ', title: 'Aoashi', episode: '24 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/G4PH0WX5J/aoashi', genre: 'Sports', season: '1 Seasons' },
+            { src: 'Feature/bluelockcard.jpg', video: 'https://www.youtube.com/embed/IVsII3dLbWc?start=1', title: 'Blue Lock', episode: '24 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/G4PH0WEKE/blue-lock', genre: 'Sports', season: '1 Seasons' },
             { src: 'Feature/megaloboxcard.jpg', video: 'https://www.youtube.com/embed/gVxLZityaR0', title: 'MEGALOBOX', episode: '26 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/GR4PVJ1WY/megalobox', genre: 'Sports', season: '2 Seasons' },
-            { src: 'Feature/sk8card.png', video: 'https://www.youtube.com/embed/vuoYi-1rCA4', title: 'SK8 the Infinity', episode: '12 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/G5PHNM434/sk8-the-infinity', genre: 'Sports', season: '1 Seasons' },
-            { src: 'Feature/eyeshieldcard.png', video: 'https://www.youtube.com/embed/IYgnjsihha4', title: 'Eyeshield', episode: '145 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/GRE5KGN36/eyeshield-21', genre: 'Sports', season: '3 Seasons' },
-            { src: 'Feature/ahirunosoracard.png', video: 'https://www.youtube.com/embed/rsqxACPa8EU', title: 'Ahiru no Sora', episode: '50 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/G6NVGNJGY/ahiru-no-sora', genre: 'Sports', season: '1 Seasons' },
+            { src: 'Feature/sk8card.jpg', video: 'https://www.youtube.com/embed/vuoYi-1rCA4', title: 'SK8 the Infinity', episode: '12 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/G5PHNM434/sk8-the-infinity', genre: 'Sports', season: '1 Seasons' },
+            { src: 'Feature/eyeshieldcard.jpg', video: 'https://www.youtube.com/embed/IYgnjsihha4', title: 'Eyeshield', episode: '145 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/GRE5KGN36/eyeshield-21', genre: 'Sports', season: '3 Seasons' },
+            { src: 'Feature/ahirunosoracard.jpg', video: 'https://www.youtube.com/embed/rsqxACPa8EU', title: 'Ahiru no Sora', episode: '50 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/G6NVGNJGY/ahiru-no-sora', genre: 'Sports', season: '1 Seasons' },
             { src: 'Feature/captaincard.png', video: 'https://www.youtube.com/embed/K6zQ1qs2hLY', title: 'Captain Tsubasa', episode: '39 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/G4PH0WJDQ/captain-tsubasa-junior', genre: 'Sports', season: '1 Seasons' },
             { src: 'Feature/daycard.png', video: 'https://www.youtube.com/embed/VKavtkIZXoI', title: 'DAYS', episode: '24 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/GYX040PKR/days', genre: 'Sports', season: '1 Seasons' },
             { src: 'Feature/mfghostcard.png', video: 'https://www.youtube.com/embed/zNWZjjkKfXs', title: 'MF GHOST', episode: '12 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/GEXH3W2W7/mf-ghost', genre: 'Sports', season: '1 Seasons' },
@@ -1837,9 +1841,9 @@ document.addEventListener('DOMContentLoaded', function() {
             { src: 'Feature/tsurunecard.png', video: 'https://www.youtube.com/embed/6w_GwGdk8_0', title: 'Tsurune', episode: '14 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/GRDKVP34Y/tsurune', genre: 'Sports', season: '1 Seasons' },
             { src: 'Feature/birdiecard.png', video: 'https://www.youtube.com/embed/EgmBeG0Yyl8', title: 'Birdie Wing', episode: '25 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/GNVHKN714/birdie-wing--golf-girls', genre: 'Sports', season: '1 Seasons' },
             { src: 'Feature/overtakecard.png', video: 'https://www.youtube.com/embed/x9H2uJxOREs', title: 'OVERTAKE!', episode: '12 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/G9VHN9Q4N/overtake', genre: 'Sports', season: '1 Seasons' },
-            { src: 'Feature/243card.png', video: 'https://www.youtube.com/embed/5utDbhnMF0s', title: '2.43 Volleyball Team', episode: '12 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/G1XHJVEZ1/243-seiin-high-school-volleyball', genre: 'Sports', season: '1 Seasons' },
+            { src: 'Feature/243.png', video: 'https://www.youtube.com/embed/5utDbhnMF0s', title: '2.43 Volleyball Team', episode: '12 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/G1XHJVEZ1/243-seiin-high-school-volleyball', genre: 'Sports', season: '1 Seasons' },
             { src: 'Feature/loveallplaycard.png', video: 'https://www.youtube.com/embed/PMHRDK2qjS4', title: 'Love All Play', episode: '24 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/GKEH2G4MW/love-all-play', genre: 'Sports', season: '1 Seasons' },
-            { src: 'Feature/burningkabaddicard.png', video: 'https://www.youtube.com/embed/CeUcyCPcDa4', title: 'Burning Kabaddi', episode: '12 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/G9VHN9W5J/burning-kabaddi', genre: 'Sports', season: '1 Seasons' },
+            { src: 'Feature/burningkabaddicard.jpg', video: 'https://www.youtube.com/embed/CeUcyCPcDa4', title: 'Burning Kabaddi', episode: '12 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/G9VHN9W5J/burning-kabaddi', genre: 'Sports', season: '1 Seasons' },
             { src: 'Feature/pingpongcard.png', video: 'https://www.youtube.com/embed/ItlDaDfLBn8', title: 'Ping Pong', episode: '11 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/GRJQV0N3Y/ping-pong-the-animation', genre: 'Sports', season: '1 Seasons' },
             { src: 'Feature/iwakakerucard.png', video: 'https://www.youtube.com/embed/T8Skpo5daFI', title: 'Iwakakeru -Sport Climbing Girls-', episode: '12 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/GRJK7WV4Y/iwakakeru--sport-climbing-girls', genre: 'Sports', season: '1 Seasons' },
             { src: 'Feature/tamayomicard.png', video: 'https://www.youtube.com/embed/BohDWS5YWdo', title: 'TAMAYOMI: The Baseball Girls', episode: '12 Episodes', rollcrunchyrollLink: 'https://www.crunchyroll.com/series/GXJHM39XE/tamayomi-the-baseball-girls', genre: 'Sports', season: '1 Seasons' },
@@ -1920,65 +1924,98 @@ document.addEventListener('DOMContentLoaded', function() {
             //Comedy
         ];
     
-        let rollCurrentVideoUrl = '';
-        let rollCurrentCrunchyrollLink = '';
-    
-        rollSpan.addEventListener("click", function() {
-            const randomIndex = Math.floor(Math.random() * images.length);
-            const selectedImage = images[randomIndex];
-    
-            rollImage.src = selectedImage.src;
-            rollTitle.textContent = selectedImage.title;
-            rollGenre.textContent = selectedImage.genre;
-            rollSeason.textContent = selectedImage.season;
-            rollEpisode.textContent = selectedImage.episode;
-            rollCrunchyrollButton1.href = selectedImage.rollcrunchyrollLink; 
-            rollCrunchyrollButton2.href = selectedImage.rollcrunchyrollLink;
-            popupBox.style.display = "block";
-            overlay.style.display = "block";
-    
-            rollCurrentVideoUrl = selectedImage.video;
-            rollCurrentCrunchyrollLink = selectedImage.rollcrunchyrollLink;
-        });
-    
-        overlay.addEventListener("click", function() {
-            popupBox.style.display = "none";
-            overlay.style.display = "none";
-            videoOverlay.style.display = 'none';
-            videoIframe.style.display = 'none';
-            videoIframe.src = '';
-            document.body.style.overflow = 'auto';
-        });
-    
-        function playVideo(videoUrl) {
-            if (videoUrl) {
-                videoIframe.src = videoUrl;
-                videoIframe.style.display = 'block';
-                videoOverlay.style.display = 'block';
-                document.body.style.overflow = 'hidden';
-    
-                if (window.innerWidth <= 414) {
-                    videoIframe.style.width = '391px';
-                    videoIframe.style.height = '221px';
-                } else {
-                    videoIframe.style.width = '1666.47px';
-                    videoIframe.style.height = '801px';
-                }
-            } else {
-                videoIframe.style.display = 'none';
-            }
+        let currentIndex = 0; // To track the current index of the image
+
+function updateCarousel() {
+    // Calculate the indices for the images
+    const nextIndex = (currentIndex + 1) % images.length;
+    const nextIndex2 = (nextIndex + 1) % images.length;
+    const nextIndex3 = (nextIndex2 + 1) % images.length;
+    const nextIndex4 = (nextIndex3 + 1) % images.length;
+
+    // Update images based on the custom order
+    rollImage.src = images[nextIndex2].src; // New image
+    rollImage1.src = images[nextIndex3].src;
+    rollImage3.src = images[nextIndex4].src;
+    rollImage4.src = images[currentIndex].src;
+    rollImage2.src = images[nextIndex].src; // This stays the same
+
+    // Set the title, genre, season, and episode of the new central image
+    const centralImage = images[nextIndex2]; // Updated to match rollImage's new image
+    rollTitle.textContent = centralImage.title;
+    rollGenre.textContent = centralImage.genre;
+    rollSeason.textContent = centralImage.season;
+    rollEpisode.textContent = centralImage.episode;
+    rollCrunchyrollButton1.href = centralImage.rollcrunchyrollLink;
+    rollCrunchyrollButton2.href = centralImage.rollcrunchyrollLink;
+
+    // Update current index
+    currentIndex = nextIndex;
+
+    // Add classes to trigger scaling effect
+    rollImage.classList.add('roll-image');
+    rollImage1.classList.add('roll-image1');
+    rollImage2.classList.add('roll-image2');
+    rollImage3.classList.add('roll-image3');
+    rollImage4.classList.add('roll-image4');
+
+    // Delay the update of classes to ensure the transition is applied
+    setTimeout(() => {
+        rollImage.classList.remove('roll-image');
+        rollImage1.classList.remove('roll-image1');
+        rollImage2.classList.remove('roll-image2');
+        rollImage3.classList.remove('roll-image3');
+        rollImage4.classList.remove('roll-image4');
+    }, 500); // Match the transition duration
+}
+
+// Event listeners
+document.getElementById("roll-crunchyroll-button-2").addEventListener("click", function() {
+    updateCarousel();
+    popupBox.style.display = "block";
+    overlay.style.display = "block";
+});
+
+overlay.addEventListener("click", function() {
+    popupBox.style.display = "none";
+    overlay.style.display = "none";
+    videoOverlay.style.display = 'none';
+    videoIframe.style.display = 'none';
+    videoIframe.src = '';
+    document.body.style.overflow = 'auto';
+});
+
+function playVideo(videoUrl) {
+    if (videoUrl) {
+        videoIframe.src = videoUrl;
+        videoIframe.style.display = 'block';
+        videoOverlay.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+
+        if (window.innerWidth <= 414) {
+            videoIframe.style.width = '391px';
+            videoIframe.style.height = '221px';
+        } else {
+            videoIframe.style.width = '1666.47px';
+            videoIframe.style.height = '801px';
         }
-    
-        rollImage.addEventListener('click', function() {
-            playVideo(rollCurrentVideoUrl);
-            rollCrunchyrollButton1.href = rollCurrentCrunchyrollLink;
-            rollCrunchyrollButton2.href = rollCurrentCrunchyrollLink;
-        });
-    
-        videoOverlay.addEventListener('click', function() {
-            videoIframe.style.display = 'none';
-            videoIframe.src = '';
-            videoOverlay.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        });
-    });
+    } else {
+        videoIframe.style.display = 'none';
+    }
+}
+
+// Ensure the images are properly selected
+rollImage.addEventListener('click', function() {
+    const videoUrl = images[currentIndex + 1].video; // Ensure videoUrl is fetched correctly
+    playVideo(videoUrl);
+    rollCrunchyrollButton1.href = images[currentIndex + 1].rollcrunchyrollLink; // Ensure link is correct
+});
+
+// Ensure the video overlay is properly handled
+videoOverlay.addEventListener('click', function() {
+    videoIframe.style.display = 'none';
+    videoIframe.src = '';
+    videoOverlay.style.display = 'none';
+    document.body.style.overflow = 'auto';
+});
+});
