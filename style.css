@@ -3062,6 +3062,100 @@ a {
         top: 60px;
     }
 
+    #roll-image {
+        max-width: 466px;
+        height: 266px;
+        border-radius: 10px;
+        box-shadow: 8px 19px 24px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        margin-top: 120px;
+        z-index: 2;
+    }
+    
+    #roll-image1 {
+        position: absolute;
+        max-width: 404px;
+        height: 230px;
+        border-radius: 10px;
+        box-shadow: 8px 19px 24px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        margin-top: 136px;
+        margin-left: 150px;
+        z-index: 1;
+        filter: blur(2px);
+    }
+    
+    #roll-image2 {
+        position: absolute;
+        max-width: 404px;
+        height: 230px;
+        border-radius: 10px;
+        box-shadow: 8px 19px 24px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        margin-top: 136px;
+        margin-left: -150px;
+        z-index: 1;
+        filter: blur(2px);
+    }
+    
+    #roll-image3 {
+        position: absolute;
+        max-width: 370px;
+        height: 211px;
+        border-radius: 10px;
+        box-shadow: 8px 19px 24px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        margin-top: 144px;
+        margin-left: 260px;
+        filter: blur(8px);
+    }
+    
+    #roll-image4 {
+        position: absolute;
+        max-width: 370px;
+        height: 211px;
+        border-radius: 10px;
+        box-shadow: 8px 19px 24px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        margin-top: 144px;
+        margin-left: -260px;
+        filter: blur(8px);
+    }
+    
+    #roll-title{
+        font-size: 20px;
+    }
+    
+    #roll-crunchyroll-button-2{
+        width: 81px;
+        height: 81px;
+        background-color: #F47521;
+        color: white;
+        text-align: center;
+        border-radius: 50px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+        border: none;
+    }
+    
+    #roll-crunchyroll-button-2 span{
+        font-size: 25px;
+        font-weight: bold;
+        left: 5px;
+        position: relative;
+    }
+    
+    .roll-text span {
+        display: inline-block;
+        font-size: 14px;
+    }
+
+    .roll-box{
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+        border-radius: 29px;
+        width: 395px;
+        height: 88px;
+    }
+
 }
 
 @media screen and (min-width: 1400px) {
