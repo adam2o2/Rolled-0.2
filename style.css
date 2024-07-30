@@ -2837,6 +2837,17 @@ a {
         width: 259px;
     }
 
+    .roll-content-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: -54px;
+        align-items: center;
+        width: 600px;
+        position: absolute;
+        top: 60px;
+    }
+
 }
 
 @media screen and (min-width: 1400px) {
