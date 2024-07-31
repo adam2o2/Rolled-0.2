@@ -1385,11 +1385,11 @@ a {
         transform: translate(-50%, -50%);
         width: 600px;
         height: 600px;
-        background-color: #0B0B0A;
-        color: white;
+        background-color: white;
+        color: black;
         padding: 20px;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-        z-index: 1001;
+        z-index: 9;
         font-family: 'Poppins', sans-serif;
         border-radius: 50px;
     }
@@ -1803,6 +1803,137 @@ a {
     .footer3 a {
         font-size: 20px;
     }
+
+        /* roll */
+        #roll-image {
+            max-width: 466px;
+            height: 266px;
+            border-radius: 10px;
+            box-shadow: 8px 19px 24px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            margin-top: 120px;
+            z-index: 2;
+        }
+        
+        #roll-image1 {
+            position: absolute;
+            max-width: 404px;
+            height: 230px;
+            border-radius: 10px;
+            box-shadow: 8px 19px 24px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            margin-top: 136px;
+            margin-left: 150px;
+            z-index: 1;
+            filter: blur(2px);
+        }
+        
+        #roll-image2 {
+            position: absolute;
+            max-width: 404px;
+            height: 230px;
+            border-radius: 10px;
+            box-shadow: 8px 19px 24px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            margin-top: 136px;
+            margin-left: -150px;
+            z-index: 1;
+            filter: blur(2px);
+        }
+        
+        #roll-image3 {
+            position: absolute;
+            max-width: 370px;
+            height: 211px;
+            border-radius: 10px;
+            box-shadow: 8px 19px 24px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            margin-top: 144px;
+            margin-left: 260px;
+            filter: blur(8px);
+        }
+        
+        #roll-image4 {
+            position: absolute;
+            max-width: 370px;
+            height: 211px;
+            border-radius: 10px;
+            box-shadow: 8px 19px 24px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            margin-top: 144px;
+            margin-left: -260px;
+            filter: blur(8px);
+        }
+        
+        #roll-title{
+            font-size: 20px;
+        }
+        
+        #roll-crunchyroll-button-2{
+            width: 81px;
+            height: 81px;
+            background-color: #F47521;
+            color: white;
+            text-align: center;
+            border-radius: 50px;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+            border: none;
+        }
+        
+        #roll-crunchyroll-button-2 span{
+            font-size: 25px;
+            font-weight: bold;
+            left: 0px;
+            position: relative;
+        }
+        
+        .roll-text span {
+            display: inline-block;
+            font-size: 14px;
+        }
+    
+        .roll-box{
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 29px;
+            width: 395px;
+            height: 88px;
+            text-align: center;
+        }
+    
+            .roll-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            
+        }
+    
+        .roll-content-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px; /* Creates a 30px gap between children */
+        margin-top: -54px;
+        align-items: center;
+        width: 600px;
+        position: absolute;
+        top: 60px;
+        }
+    
+        .roll-container .roll-watch-button {
+            position: absolute;
+            margin-bottom: 29px;
+        }
+    
+        .roll-text {
+            display: flex;
+            justify-content: center; 
+            gap: 30px;
+            margin-top: -15px;
+            color: #7D7D7D;
+            font-weight: 700;
+            text-align: center;
+            font-size: 14px;
+        }
+        /* roll */
 }
 
 /* For the macbook */
