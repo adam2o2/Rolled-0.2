@@ -3,6 +3,18 @@ body {
     font-family: 'Poppins', sans-serif; /* Apply the custom font */
 }
 
+.footer {
+    width: 100%;
+    background-color: #F2608A;
+    color: white;
+    text-align: center;
+    padding: 0px 0px;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+}
+
 .ribbon {
     width: 1880px;
     height: 87px;
@@ -567,6 +579,7 @@ a {
 
     .content {
         padding: 10px;
+        padding-bottom: 144px;
     }
 
     .action-box-container h1 {
@@ -724,6 +737,170 @@ a {
         margin: 0 auto;
         width: 293px;
     }
+
+    .footer h3 {
+        font-size: 100px;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        background-color: #F2608A;
+        font-family: 'Lalezar', sans-serif;
+        padding-top: 228px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-right: 1px;
+        padding-top: 0px;
+        transform: translateY(370px);
+    }
+
+    .highlight-o {
+        color: #F2608A; /* Replace with the specific orange color you like */
+    }
+    
+    .anime {
+        display: inline-block;
+        font-size: 100px;
+        font-family: 'Lalezar', sans-serif;
+        margin-left: 20px;
+        position: absolute;
+        right: 0;
+        letter-spacing: -3px;
+        top: 50%;
+        transform: translateY(-13px) translateX(-32px);
+    }
+
+    .footer-wrapped {
+        width: 320px;
+        margin: 0 auto; /* Center horizontally */
+        text-align: center; /* Centers text within each child element */
+    }
+
+    .footer-wrapped1 {
+        width: 320px;
+        margin: 0 auto; /* Center horizontally */
+        text-align: center; /* Centers text within each child element */
+    }
+
+    .narollto-image {
+        width: 66px;
+        height: auto;
+        vertical-align: middle;
+        position: absolute;
+        transform: translateY(-10px) translateX(-55px);
+    }
+
+    .wave-image {
+        width: 736px;
+        height: 148px;
+        vertical-align: middle;
+        position: absolute;
+        transform: translateY(120px) translateX(-456px);
+    }
+    
+    
+    .footer hr {
+        transform: translateY(228px) translateX(16px);
+        width: 283px;
+        background-color: white;
+        height: 2px;
+        border: none;
+        margin: 0;
+    }
+    
+    .footer1 {
+        text-align: left;
+        padding-top: 0px; /* Reduced padding to minimize space */
+        font-family: 'Maven Pro', sans-serif;
+        transform: translateY(117px) translateX(18px);
+        font-weight: bold;
+    }
+    
+    .footer1 p {
+        margin: 5px 0;
+        font-size: 20px; /* Adjust the size as needed */
+        padding-bottom: 0px;
+    }
+    
+    .footer1 .github {
+        font-size: 26px;
+        transform: translateY(8px);
+        font-weight: bold;
+    }
+
+    .github-image {
+        width: 24px; /* Set the width as needed */
+        height: auto;
+        vertical-align: middle; /* Aligns the image vertically with the text */
+        margin-left: 10px; /* Space between the text and the image */
+        transform: translateY(-2px);
+    }
+    
+    
+    .footer1 a {
+        font-size: 15px;
+    }
+    
+    .footer2 {
+        text-align: left;
+        padding-top: 0px; /* Reduced padding to minimize space */
+        font-family: 'Maven Pro', sans-serif;
+        transform: translateY(-86px) translateX(19px);
+        font-weight: bold;
+    }
+    
+    .footer2 p {
+        margin: 5px 0;
+        font-size: 15px; /* Adjust the size as needed */
+        padding-bottom: 10px;
+    }
+    
+    .footer2 .email {
+        font-size: 24px;
+        transform: translateY(8px);
+        font-weight: bold;
+    }
+
+    .email-image {
+        width: 24px; /* Set the width as needed */
+        height: auto;
+        vertical-align: middle; /* Aligns the image vertically with the text */
+        margin-left: 10px; /* Space between the text and the image */
+        transform: translateY(-2px);
+    }
+    
+    .footer3 {
+        text-align: left;
+        padding-top: 0px; /* Reduced padding to minimize space */
+        font-family: 'Maven Pro', sans-serif;
+        transform: translateY(-393px) translateX(21px);
+        font-weight: bold;
+        margin-top: 99px;
+    }
+    
+    .footer3 p {
+        margin: 5px 0;
+        font-size: 20px; /* Adjust the size as needed */
+        padding-bottom: -3px;
+    }
+    
+    .footer3 .tiktok {
+        font-size: 26px;
+        transform: translateY(6px);
+        font-weight: bold;
+    }
+
+    .tiktok-image {
+        width: 24px; /* Set the width as needed */
+        height: auto;
+        vertical-align: middle; /* Aligns the image vertically with the text */
+        margin-left: 10px; /* Space between the text and the image */
+        transform: translateY(-2px);
+    }
+    
+    .footer3 a {
+        font-size: 15px;
+    }
 }
 /* Media query for mobile view with a minimum width of 414px */
 @media screen and (min-width: 414px) {
@@ -853,6 +1030,7 @@ a {
 
     .content {
         padding: 10px;
+        padding-bottom: 144px;
     }
 
     .action-box-container h1 {
@@ -1008,6 +1186,170 @@ a {
     .action-wrap{
         margin: 0 auto;
         width: 343px;
+    }
+
+    .footer h3 {
+        font-size: 127px;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        background-color: #F2608A;
+        font-family: 'Lalezar', sans-serif;
+        padding-top: 228px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-right: 1px;
+        padding-top: 0px;
+        transform: translateY(370px);
+    }
+
+    .highlight-o {
+        color: #F2608A; /* Replace with the specific orange color you like */
+    }
+    
+    .anime {
+        display: inline-block;
+        font-size: 127px;
+        font-family: 'Lalezar', sans-serif;
+        margin-left: 20px;
+        position: absolute;
+        right: 0;
+        letter-spacing: -3px;
+        top: 50%;
+        transform: translateY(-13px) translateX(-37px);
+    }
+
+    .footer-wrapped {
+        width: 414px;
+        margin: 0 auto; /* Center horizontally */
+        text-align: center; /* Centers text within each child element */
+    }
+
+    .footer-wrapped1 {
+        width: 414px;
+        margin: 0 auto; /* Center horizontally */
+        text-align: center; /* Centers text within each child element */
+    }
+
+    .narollto-image {
+        width: 86px;
+        height: auto;
+        vertical-align: middle;
+        position: absolute;
+        transform: translateY(-14px) translateX(-71px);
+    }
+
+    .wave-image {
+        width: 736px;
+        height: 148px;
+        vertical-align: middle;
+        position: absolute;
+        transform: translateY(120px) translateX(-340px);
+    }
+    
+    
+    .footer hr {
+        transform: translateY(188px) translateX(26px);
+        width: 360px;
+        background-color: white;
+        height: 2px;
+        border: none;
+        margin: 0;
+    }
+    
+    .footer1 {
+        text-align: left;
+        padding-top: 0px; /* Reduced padding to minimize space */
+        font-family: 'Maven Pro', sans-serif;
+        transform: translateY(71px) translateX(24px);
+        font-weight: bold;
+    }
+    
+    .footer1 p {
+        margin: 5px 0;
+        font-size: 20px; /* Adjust the size as needed */
+        padding-bottom: 0px;
+    }
+    
+    .footer1 .github {
+        font-size: 26px;
+        transform: translateY(8px);
+        font-weight: bold;
+    }
+
+    .github-image {
+        width: 24px; /* Set the width as needed */
+        height: auto;
+        vertical-align: middle; /* Aligns the image vertically with the text */
+        margin-left: 10px; /* Space between the text and the image */
+        transform: translateY(-2px);
+    }
+    
+    
+    .footer1 a {
+        font-size: 15px;
+    }
+    
+    .footer2 {
+        text-align: left;
+        padding-top: 0px; /* Reduced padding to minimize space */
+        font-family: 'Maven Pro', sans-serif;
+        transform: translateY(-126px) translateX(24px);
+        font-weight: bold;
+    }
+    
+    .footer2 p {
+        margin: 5px 0;
+        font-size: 15px; /* Adjust the size as needed */
+        padding-bottom: 10px;
+    }
+    
+    .footer2 .email {
+        font-size: 24px;
+        transform: translateY(8px);
+        font-weight: bold;
+    }
+
+    .email-image {
+        width: 24px; /* Set the width as needed */
+        height: auto;
+        vertical-align: middle; /* Aligns the image vertically with the text */
+        margin-left: 10px; /* Space between the text and the image */
+        transform: translateY(-2px);
+    }
+    
+    .footer3 {
+        text-align: left;
+        padding-top: 0px; /* Reduced padding to minimize space */
+        font-family: 'Maven Pro', sans-serif;
+        transform: translateY(-431px) translateX(25px);
+        font-weight: bold;
+        margin-top: 99px;
+    }
+    
+    .footer3 p {
+        margin: 5px 0;
+        font-size: 20px; /* Adjust the size as needed */
+        padding-bottom: -3px;
+    }
+    
+    .footer3 .tiktok {
+        font-size: 26px;
+        transform: translateY(6px);
+        font-weight: bold;
+    }
+
+    .tiktok-image {
+        width: 24px; /* Set the width as needed */
+        height: auto;
+        vertical-align: middle; /* Aligns the image vertically with the text */
+        margin-left: 10px; /* Space between the text and the image */
+        transform: translateY(-2px);
+    }
+    
+    .footer3 a {
+        font-size: 15px;
     }
 }
 
@@ -1182,6 +1524,11 @@ a {
         box-shadow: 0 34px 44px rgba(0, 0, 0, 0.5);
     }
 
+    .content {
+        padding: 10px;
+        padding-bottom: 238px;
+    }
+
     .action-box-container{
     margin: 0 auto;
     width: 1193px;
@@ -1292,6 +1639,169 @@ a {
 
     .watch-button span {
         font-size: 19px;
+    }
+
+    .footer h3 {
+        font-size: 327px;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        background-color: #F2608A;
+        font-family: 'Lalezar', sans-serif;
+        padding-top: 228px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-right: 86px;
+        padding-top: 0px;
+        transform: translateY(135px);
+    }
+
+    .highlight-o {
+        color: #F2608A; /* Replace with the specific orange color you like */
+    }
+    
+    .anime {
+        display: inline-block;
+        font-size: 73px;
+        font-family: 'Lalezar', sans-serif;
+        margin-left: 20px;
+        position: absolute;
+        right: 0;
+        letter-spacing: -3px;
+        top: 50%;
+        transform: rotate(270deg) translateY(-19px) translateX(82px);
+    }
+
+    .footer-wrapped {
+        width: 1200px;
+        margin: 0 auto; /* Center horizontally */
+        text-align: center; /* Centers text within each child element */
+    }
+
+    .footer-wrapped1 {
+        width: 1200px;
+        margin: 0 auto; /* Center horizontally */
+        text-align: center; /* Centers text within each child element */
+    }
+
+    .narollto-image {
+        width: 222px;
+        height: auto;
+        vertical-align: middle;
+        position: absolute;
+        transform: translateY(-33px) translateX(-179px);
+    }
+
+    .wave-image {
+        width: 1238px;
+        height: 170px;
+        vertical-align: middle;
+        position: absolute;
+        transform: translateY(210px) translateX(-446px);
+    }
+    
+    
+    .footer hr {
+        transform: translateY(18px) translateX(94px);
+        width: 1010px;
+        background-color: white;
+        height: 2px;
+        border: none;
+        margin: 0; /* Adjust margin to reduce extra space */
+    }
+    
+    .footer1 {
+        text-align: left;
+        padding-top: 0px; /* Reduced padding to minimize space */
+        font-family: 'Maven Pro', sans-serif;
+        transform: translateY(78px) translateX(104px);
+        font-weight: bold;
+    }
+    
+    .footer1 p {
+        margin: 5px 0;
+        font-size: 20px; /* Adjust the size as needed */
+        padding-bottom: 9px;
+    }
+    
+    .footer1 .github {
+        font-size: 33px;
+        transform: translateY(-7px);
+        font-weight: bold;
+    }
+
+    .github-image {
+        width: 30px; /* Set the width as needed */
+        height: auto;
+        vertical-align: middle; /* Aligns the image vertically with the text */
+        margin-left: 10px; /* Space between the text and the image */
+        transform: translateY(-2px);
+    }
+    
+    
+    .footer1 a {
+        font-size: 20px;
+    }
+    
+    .footer2 {
+        text-align: left;
+        padding-top: 0px; /* Reduced padding to minimize space */
+        font-family: 'Maven Pro', sans-serif;
+        transform: translateY(-48px) translateX(490px);
+        font-weight: bold;
+    }
+    
+    .footer2 p {
+        margin: 5px 0;
+        font-size: 20px; /* Adjust the size as needed */
+        padding-bottom: 10px;
+    }
+    
+    .footer2 .email {
+        font-size: 33px;
+        transform: translateY(-7px);
+        font-weight: bold;
+    }
+
+    .email-image {
+        width: 30px; /* Set the width as needed */
+        height: auto;
+        vertical-align: middle; /* Aligns the image vertically with the text */
+        margin-left: 10px; /* Space between the text and the image */
+        transform: translateY(-2px);
+    }
+    
+    .footer3 {
+        text-align: left;
+        padding-top: 0px; /* Reduced padding to minimize space */
+        font-family: 'Maven Pro', sans-serif;
+        transform: translateY(-178px) translateX(940px);
+        font-weight: bold;
+    }
+    
+    .footer3 p {
+        margin: 5px 0;
+        font-size: 20px; /* Adjust the size as needed */
+        padding-bottom: 10px;
+    }
+    
+    .footer3 .tiktok {
+        font-size: 33px;
+        transform: translateY(-7px);
+        font-weight: bold;
+    }
+
+    .tiktok-image {
+        width: 30px; /* Set the width as needed */
+        height: auto;
+        vertical-align: middle; /* Aligns the image vertically with the text */
+        margin-left: 10px; /* Space between the text and the image */
+        transform: translateY(-2px);
+    }
+    
+    .footer3 a {
+        font-size: 20px;
     }
 }
 
@@ -1466,6 +1976,11 @@ a {
         box-shadow: 0 34px 44px rgba(0, 0, 0, 0.5);
     }
 
+    .content {
+        padding: 10px;
+        padding-bottom: 238px;
+    }
+
     .action-box-container{
     margin: 0 auto;
     width: 1193px;
@@ -1576,6 +2091,170 @@ a {
 
     .watch-button span {
         font-size: 19px;
+    }
+
+    .footer h3 {
+        font-size: 387px;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        background-color: #F2608A;
+        font-family: 'Lalezar', sans-serif;
+        padding-top: 228px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-right: 94px;
+        padding-top: 0px;
+        transform: translateY(135px);
+    }
+
+    .highlight-o {
+        color: #F2608A; /* Replace with the specific orange color you like */
+    }
+    
+    .anime {
+        display: inline-block;
+        font-size: 86px;
+        font-family: 'Lalezar', sans-serif;
+        margin-left: 20px;
+        position: absolute;
+        right: 0;
+        letter-spacing: -3px;
+        top: 50%;
+        transform: rotate(270deg) translateY(-12px) translateX(102px);
+    }
+
+    .footer-wrapped {
+        width: 1400px;
+        margin: 0 auto; /* Center horizontally */
+        text-align: center; /* Centers text within each child element */
+    }
+
+    .footer-wrapped1 {
+        width: 1400px;
+        margin: 0 auto; /* Center horizontally */
+        text-align: center; /* Centers text within each child element */
+    }
+
+    .narollto-image {
+        width: 262px;
+        height: auto;
+        vertical-align: middle;
+        position: absolute;
+        transform: translateY(-39px) translateX(-211px);
+    }
+
+    .wave-image {
+        width: 1434px;
+        height: 170px;
+        vertical-align: middle;
+        position: absolute;
+        transform: translateY(210px) translateX(-542px);
+    }
+    
+    
+    .footer hr {
+        transform: translateY(-21px) translateX(105px);
+        width: 1190px;
+        background-color: white;
+        height: 2px;
+        border: none;
+        margin: 0; /* Adjust margin to reduce extra space */
+    }
+    
+    .footer1 {
+        text-align: left;
+        padding-top: 0px; /* Reduced padding to minimize space */
+        font-family: 'Maven Pro', sans-serif;
+        transform: translateY(78px) translateX(104px);
+        font-weight: bold;
+    }
+    
+    .footer1 p {
+        margin: 5px 0;
+        font-size: 20px; /* Adjust the size as needed */
+        padding-bottom: 9px;
+    }
+    
+    .footer1 .github {
+        font-size: 33px;
+        transform: translateY(-7px);
+        font-weight: bold;
+    }
+
+    .github-image {
+        width: 30px; /* Set the width as needed */
+        height: auto;
+        vertical-align: middle; /* Aligns the image vertically with the text */
+        margin-left: 10px; /* Space between the text and the image */
+        transform: translateY(-2px);
+    }
+    
+    
+    .footer1 a {
+        font-size: 20px;
+    }
+    
+    .footer2 {
+        text-align: left;
+        padding-top: 0px; /* Reduced padding to minimize space */
+        font-family: 'Maven Pro', sans-serif;
+        transform: translateY(-48px) translateX(574px);
+        font-weight: bold;
+    }
+    
+    .footer2 p {
+        margin: 5px 0;
+        font-size: 20px; /* Adjust the size as needed */
+        padding-bottom: 10px;
+    }
+    
+    .footer2 .email {
+        font-size: 33px;
+        transform: translateY(-7px);
+        font-weight: bold;
+    }
+
+    .email-image {
+        width: 30px; /* Set the width as needed */
+        height: auto;
+        vertical-align: middle; /* Aligns the image vertically with the text */
+        margin-left: 10px; /* Space between the text and the image */
+        transform: translateY(-2px);
+    }
+    
+    .footer3 {
+        text-align: left;
+        padding-top: 0px; /* Reduced padding to minimize space */
+        font-family: 'Maven Pro', sans-serif;
+        transform: translateY(-178px) translateX(1134px);
+        font-weight: bold;
+        margin-top: 0px;
+    }
+    
+    .footer3 p {
+        margin: 5px 0;
+        font-size: 20px; /* Adjust the size as needed */
+        padding-bottom: 10px;
+    }
+    
+    .footer3 .tiktok {
+        font-size: 33px;
+        transform: translateY(-7px);
+        font-weight: bold;
+    }
+
+    .tiktok-image {
+        width: 30px; /* Set the width as needed */
+        height: auto;
+        vertical-align: middle; /* Aligns the image vertically with the text */
+        margin-left: 10px; /* Space between the text and the image */
+        transform: translateY(-2px);
+    }
+    
+    .footer3 a {
+        font-size: 20px;
     }
 }
 
@@ -1750,6 +2429,11 @@ a {
         box-shadow: 0 34px 44px rgba(0, 0, 0, 0.5);
     }
 
+    .content {
+        padding: 10px;
+        padding-bottom: 309px;
+    }
+
     .action-box-container{
     margin: 0 auto;
     width: 1823px;
@@ -1860,6 +2544,172 @@ a {
 
     .watch-button span {
         font-size: 19px;
+    }
+
+
+    .footer h3 {
+        font-size: 550px;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        background-color: #F2608A;
+        font-family: 'Lalezar', sans-serif;
+        padding-top: 228px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-right: 70px;
+        padding-top: 0px;
+        transform: translateY(164px);
+    }
+
+    .highlight-o {
+        color: #F2608A; /* Replace with the specific orange color you like */
+    }
+    
+    .anime {
+        display: inline-block;
+        font-size: 111px;
+        font-family: 'Lalezar', sans-serif;
+        margin-left: 20px;
+        position: absolute;
+        right: 0;
+        letter-spacing: -3px;
+        top: 50%;
+        transform: rotate(270deg) translateY(16px) translateX(138px);
+    }
+
+    .footer-wrapped {
+        width: 1903px;
+        margin: 0 auto; /* Center horizontally */
+        text-align: center; /* Centers text within each child element */
+    }
+
+    .footer-wrapped1 {
+        width: 1903px;
+        margin: 0 auto; /* Center horizontally */
+        text-align: center; /* Centers text within each child element */
+    }
+
+    .narollto-image {
+        width: 380px;
+        height: auto;
+        vertical-align: middle;
+        position: absolute;
+        transform: translateY(-52px) translateX(-301px);
+
+    }
+
+    .wave-image {
+        width: 1916px;
+        height: 170px;
+        vertical-align: middle;
+        position: absolute;
+        transform: translateY(280px) translateX(-774px);
+    }
+    
+    
+    .footer hr {
+        transform: translateY(-21px) translateX(134px);
+        width: 1663px;
+        background-color: white;
+        height: 2px;
+        border: none;
+        margin: 0; /* Adjust margin to reduce extra space */
+    }
+    
+    .footer1 {
+        text-align: left;
+        padding-top: 0px; /* Reduced padding to minimize space */
+        font-family: 'Maven Pro', sans-serif;
+        transform: translateY(78px) translateX(134px);
+        font-weight: bold;
+    }
+    
+    .footer1 p {
+        margin: 5px 0;
+        font-size: 20px; /* Adjust the size as needed */
+        padding-bottom: 9px;
+    }
+    
+    .footer1 .github {
+        font-size: 33px;
+        transform: translateY(-7px);
+        font-weight: bold;
+    }
+
+    .github-image {
+        width: 30px; /* Set the width as needed */
+        height: auto;
+        vertical-align: middle; /* Aligns the image vertically with the text */
+        margin-left: 10px; /* Space between the text and the image */
+        transform: translateY(-2px);
+    }
+    
+    
+    .footer1 a {
+        font-size: 20px;
+    }
+    
+    .footer2 {
+        text-align: left;
+        padding-top: 0px; /* Reduced padding to minimize space */
+        font-family: 'Maven Pro', sans-serif;
+        transform: translateY(-48px) translateX(884px);
+        font-weight: bold;
+    }
+    
+    .footer2 p {
+        margin: 5px 0;
+        font-size: 20px; /* Adjust the size as needed */
+        padding-bottom: 10px;
+    }
+    
+    .footer2 .email {
+        font-size: 33px;
+        transform: translateY(-7px);
+        font-weight: bold;
+    }
+
+    .email-image {
+        width: 30px; /* Set the width as needed */
+        height: auto;
+        vertical-align: middle; /* Aligns the image vertically with the text */
+        margin-left: 10px; /* Space between the text and the image */
+        transform: translateY(-2px);
+    }
+    
+    .footer3 {
+        text-align: left;
+        padding-top: 0px; /* Reduced padding to minimize space */
+        font-family: 'Maven Pro', sans-serif;
+        transform: translateY(-178px) translateX(1644px);
+        font-weight: bold;
+        margin-top: 0px;
+    }
+    
+    .footer3 p {
+        margin: 5px 0;
+        font-size: 20px; /* Adjust the size as needed */
+        padding-bottom: 10px;
+    }
+    
+    .footer3 .tiktok {
+        font-size: 33px;
+        transform: translateY(-7px);
+        font-weight: bold;
+    }
+
+    .tiktok-image {
+        width: 30px; /* Set the width as needed */
+        height: auto;
+        vertical-align: middle; /* Aligns the image vertically with the text */
+        margin-left: 10px; /* Space between the text and the image */
+        transform: translateY(-2px);
+    }
+    
+    .footer3 a {
+        font-size: 20px;
     }
 
     /* roll */
