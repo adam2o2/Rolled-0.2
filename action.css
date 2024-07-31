@@ -925,11 +925,11 @@ a {
         transform: translate(-50%, -50%);
         width: 240px;
         height: 270px;
-        background-color: #0B0B0A;
-        color: white;
+        background-color: white;
+        color: black;
         padding: 20px;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-        z-index: 1001;
+        z-index: 9;
         font-family: 'Poppins', sans-serif;
         border-radius: 14px;
     }
@@ -1351,6 +1351,137 @@ a {
     .footer3 a {
         font-size: 15px;
     }
+
+        /* roll */
+        #roll-image {
+            max-width: 196px;
+            height: 136px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            margin-top: 20px;
+            z-index: 2;
+        }
+        
+        #roll-image1 {
+            position: absolute;
+            max-width: 196px;
+            height: 126px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            margin-top: 24px;
+            margin-left: 39px;
+            z-index: 1;
+            filter: blur(2px);
+        }
+        
+        #roll-image2 {
+            position: absolute;
+            max-width: 196px;
+            height: 126px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            margin-top: 24px;
+            margin-left: -39px;
+            z-index: 1;
+            filter: blur(2px);
+        }
+        
+        #roll-image3 {
+            position: absolute;
+            max-width: 270px;
+            height: 111px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            margin-top: 33px;
+            margin-left: 72px;
+            filter: blur(8px);
+        }
+        
+        #roll-image4 {
+            position: absolute;
+            max-width: 270px;
+            height: 111px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            margin-top: 33px;
+            margin-left: -72px;
+            filter: blur(8px);
+        }
+        
+        #roll-title{
+            font-size: 13px;
+        }
+        
+        #roll-crunchyroll-button-2{
+            width: 41px;
+        height: 41px;
+        background-color: #F47521;
+        color: white;
+        text-align: center;
+        border-radius: 50px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+        border: none;
+        margin-bottom: 0;
+        }
+        
+        #roll-crunchyroll-button-2 span{
+            font-size: 15px;
+            font-weight: bold;
+            left: 0px;
+            position: relative;
+        }
+        
+        .roll-text span {
+            display: inline-block;
+            font-size: 10px;
+        }
+    
+        .roll-box{
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 11px;
+            width: 234px;
+            height: 68px;
+        }
+    
+        .roll-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-top: -15px;
+        }
+    
+        .roll-content-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: -52px;
+            align-items: center;
+            width: 242px;
+            position: absolute;
+            top: 61px;
+        }
+    
+        .roll-container .roll-watch-button {
+            position: absolute;
+            margin-bottom: 29px;
+        }
+    
+        .roll-text {
+            display: flex;
+            justify-content: center; 
+            gap: 30px;
+            margin-top: -15px;
+            color: #7D7D7D;
+            font-weight: 700;
+            text-align: center;
+            font-size: 14px;
+        }
+        /* roll */
 }
 
 /* This is the new one */
