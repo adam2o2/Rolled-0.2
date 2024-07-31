@@ -1924,98 +1924,100 @@ document.addEventListener('DOMContentLoaded', function() {
             //Comedy
         ];
     
-        let currentIndex = 0; // To track the current index of the image
+        let currentIndex = 0;
 
-function updateCarousel() {
-    // Calculate the indices for the images
-    const nextIndex = (currentIndex + 1) % images.length;
-    const nextIndex2 = (nextIndex + 1) % images.length;
-    const nextIndex3 = (nextIndex2 + 1) % images.length;
-    const nextIndex4 = (nextIndex3 + 1) % images.length;
+        function updateCarousel() {
+            const nextIndex = (currentIndex + 1) % images.length;
+            const nextIndex2 = (nextIndex + 1) % images.length;
+            const nextIndex3 = (nextIndex2 + 1) % images.length;
+            const nextIndex4 = (nextIndex3 + 1) % images.length;
 
-    // Update images based on the custom order
-    rollImage.src = images[nextIndex2].src; // New image
-    rollImage1.src = images[nextIndex3].src;
-    rollImage3.src = images[nextIndex4].src;
-    rollImage4.src = images[currentIndex].src;
-    rollImage2.src = images[nextIndex].src; // This stays the same
+            rollImage.src = images[nextIndex2].src;
+            rollImage1.src = images[nextIndex3].src;
+            rollImage2.src = images[nextIndex].src;
+            rollImage3.src = images[nextIndex4].src;
+            rollImage4.src = images[currentIndex].src;
 
-    // Set the title, genre, season, and episode of the new central image
-    const centralImage = images[nextIndex2]; // Updated to match rollImage's new image
-    rollTitle.textContent = centralImage.title;
-    rollGenre.textContent = centralImage.genre;
-    rollSeason.textContent = centralImage.season;
-    rollEpisode.textContent = centralImage.episode;
-    rollCrunchyrollButton1.href = centralImage.rollcrunchyrollLink;
-    rollCrunchyrollButton2.href = centralImage.rollcrunchyrollLink;
+            const centralImage = images[nextIndex2];
+            rollTitle.textContent = centralImage.title;
+            rollGenre.textContent = centralImage.genre;
+            rollSeason.textContent = `${centralImage.season}`;
+            rollEpisode.textContent = `${centralImage.episode}`;
+            rollCrunchyrollButton1.href = centralImage.rollcrunchyrollLink;
+            rollCrunchyrollButton2.href = centralImage.rollcrunchyrollLink;
 
-    // Update current index
-    currentIndex = nextIndex;
+            currentIndex = nextIndex;
 
-    // Add classes to trigger scaling effect
-    rollImage.classList.add('roll-image');
-    rollImage1.classList.add('roll-image1');
-    rollImage2.classList.add('roll-image2');
-    rollImage3.classList.add('roll-image3');
-    rollImage4.classList.add('roll-image4');
+            rollImage.classList.add('roll-image');
+            rollImage1.classList.add('roll-image1');
+            rollImage2.classList.add('roll-image2');
+            rollImage3.classList.add('roll-image3');
+            rollImage4.classList.add('roll-image4');
 
-    // Delay the update of classes to ensure the transition is applied
-    setTimeout(() => {
-        rollImage.classList.remove('roll-image');
-        rollImage1.classList.remove('roll-image1');
-        rollImage2.classList.remove('roll-image2');
-        rollImage3.classList.remove('roll-image3');
-        rollImage4.classList.remove('roll-image4');
-    }, 500); // Match the transition duration
-}
-
-// Event listeners
-document.getElementById("roll-crunchyroll-button-2").addEventListener("click", function() {
-    updateCarousel();
-    popupBox.style.display = "block";
-    overlay.style.display = "block";
-});
-
-overlay.addEventListener("click", function() {
-    popupBox.style.display = "none";
-    overlay.style.display = "none";
-    videoOverlay.style.display = 'none';
-    videoIframe.style.display = 'none';
-    videoIframe.src = '';
-    document.body.style.overflow = 'auto';
-});
-
-function playVideo(videoUrl) {
-    if (videoUrl) {
-        videoIframe.src = videoUrl;
-        videoIframe.style.display = 'block';
-        videoOverlay.style.display = 'block';
-        document.body.style.overflow = 'hidden';
-
-        if (window.innerWidth <= 414) {
-            videoIframe.style.width = '391px';
-            videoIframe.style.height = '221px';
-        } else {
-            videoIframe.style.width = '1666.47px';
-            videoIframe.style.height = '801px';
+            setTimeout(() => {
+                rollImage.classList.remove('roll-image');
+                rollImage1.classList.remove('roll-image1');
+                rollImage2.classList.remove('roll-image2');
+                rollImage3.classList.remove('roll-image3');
+                rollImage4.classList.remove('roll-image4');
+            }, 500);
         }
-    } else {
-        videoIframe.style.display = 'none';
-    }
-}
 
-// Ensure the images are properly selected
-rollImage.addEventListener('click', function() {
-    const videoUrl = images[currentIndex + 1].video; // Ensure videoUrl is fetched correctly
-    playVideo(videoUrl);
-    rollCrunchyrollButton1.href = images[currentIndex + 1].rollcrunchyrollLink; // Ensure link is correct
-});
+        function spinAndSelectRandomAnime() {
+            const interval = setInterval(updateCarousel, 100);
+            setTimeout(() => {
+                clearInterval(interval);
 
-// Ensure the video overlay is properly handled
-videoOverlay.addEventListener('click', function() {
-    videoIframe.style.display = 'none';
-    videoIframe.src = '';
-    videoOverlay.style.display = 'none';
-    document.body.style.overflow = 'auto';
-});
-});
+                // Select a random anime from the images array
+                const randomIndex = Math.floor(Math.random() * images.length);
+                currentIndex = (randomIndex - 2 + images.length) % images.length; // Adjust to set central image
+
+                updateCarousel();
+            }, 2000); // Spins for 2 seconds
+        }
+
+        document.getElementById("roll-crunchyroll-button-2").addEventListener("click", function() {
+            spinAndSelectRandomAnime();
+        });
+
+        overlay.addEventListener("click", function() {
+            popupBox.style.display = "none";
+            overlay.style.display = "none";
+            videoOverlay.style.display = 'none';
+            videoIframe.style.display = 'none';
+            videoIframe.src = '';
+            document.body.style.overflow = 'auto';
+        });
+
+        function playVideo(videoUrl) {
+            if (videoUrl) {
+                videoIframe.src = videoUrl;
+                videoIframe.style.display = 'block';
+                videoOverlay.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+
+                if (window.innerWidth <= 414) {
+                    videoIframe.style.width = '391px';
+                    videoIframe.style.height = '221px';
+                } else {
+                    videoIframe.style.width = '1666.47px';
+                    videoIframe.style.height = '801px';
+                }
+            } else {
+                videoIframe.style.display = 'none';
+            }
+        }
+
+        rollImage.addEventListener('click', function() {
+            const videoUrl = images[(currentIndex + 1) % images.length].video;
+            playVideo(videoUrl);
+            rollCrunchyrollButton1.href = images[(currentIndex + 1) % images.length].rollcrunchyrollLink;
+        });
+
+        videoOverlay.addEventListener('click', function() {
+            videoIframe.style.display = 'none';
+            videoIframe.src = '';
+            videoOverlay.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+    });
