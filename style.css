@@ -18,6 +18,8 @@ body{
     padding: 0px 0; /* Padding for top and bottom */
     font-family: 'Poppins', sans-serif; /* Ensures consistent font styling */
     overflow: hidden; /* Prevents content from overflowing */
+    position: relative;
+    right: 0px;
 }
 
 .ribbon {
@@ -1255,7 +1257,7 @@ a {
         height: 148px;
         vertical-align: middle;
         position: absolute;
-        transform: translateY(250px) translateX(-327px);
+        transform: translateY(250px) translateX(-421px);
     }
     
     
