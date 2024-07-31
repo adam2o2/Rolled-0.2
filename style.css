@@ -4299,29 +4299,6 @@ a {
         z-index: 1000;
         backdrop-filter: blur(5px);
     }
-    
-    .roll-container {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        
-    }
-
-    .roll-content-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px; /* Creates a 30px gap between children */
-    margin-top: -54px;
-    align-items: center;
-    width: 600px;
-    position: absolute;
-    top: 60px;
-}
-
-    .roll-container .roll-watch-button {
-        position: absolute;
-        margin-bottom: 29px;
-    }
 
     .roll-watch-button span {
         font-size: 18px;
@@ -5108,6 +5085,7 @@ a {
         width: 412px;
     }
 
+    /* roll */
     #roll-image {
         max-width: 466px;
         height: 266px;
@@ -5201,5 +5179,28 @@ a {
         width: 395px;
         height: 88px;
     }
-    
+
+        .roll-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        
+    }
+
+    .roll-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Creates a 30px gap between children */
+    margin-top: -54px;
+    align-items: center;
+    width: 600px;
+    position: absolute;
+    top: 60px;
+    }
+
+    .roll-container .roll-watch-button {
+        position: absolute;
+        margin-bottom: 29px;
+    }
+    /* roll */
 }
